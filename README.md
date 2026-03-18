@@ -1,2 +1,3 @@
 # COCC-Compatibility
+## About this mod
 Confluence of Creation is a Minecraft Modpack based on Create and Confluence: Otherworld mods. His name was chosen because it represents an intersection enter a lot of creation and aventure mods, it represents a CONFLUENCE... 
