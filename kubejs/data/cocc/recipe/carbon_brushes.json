@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "csc",
+    "###"
+  ],
+  "key": {
+    "#": [
+      {
+        "item": "oritech:reinforced_carbon_sheet"
+      },
+      {
+        "item": "create:andesite_alloy"
+      }
+    ],
+    "c": [
+      {
+        "tag": "minecraft:coals"
+      },
+      {
+        "item": "oritech:reinforced_carbon_sheet"
+      }
+    ],
+    "s": {
+      "item": "create:shaft"
+    }
+  },
+  "result": {
+    "id": "create_new_age:carbon_brushes"
+  }
+}

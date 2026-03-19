@@ -1,0 +1,10 @@
+{
+  "values": [
+    "create:mechanical_press",
+    "createcasing:brass_press",
+    "createcasing:copper_press",
+    "createcasing:industrial_iron_press",
+    "createcasing:railway_press",
+    "createcasing:weathered_iron_press"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "12",
+    "34",
+    "56"
+  ],
+  "key": {
+    "1": {
+      "item": "create:cogwheel"
+    },
+    "2": {
+      "item": "create:millstone"
+    },
+    "4": {
+      "item": "oritech:motor"
+    },
+    "6": {
+      "tag": "c:glass_blocks"
+    },
+    "5": {
+      "tag": "cocc:all_bassin"
+    },
+    "3": {
+      "tag": "cocc:heavy_presses"
+    }
+  },
+  "result": {
+    "id": "confluence:extractinator"
+  }
+}

@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" G ",
+		"CBC"
+	],
+	"key": {
+		"G": {
+			"item": "minecraft:green_dye"
+		},
+		"B": {
+			"item": "minecraft:leather_boots"
+		},
+		"C": {
+			"item": "confluence:star_cloud_block"
+		}
+	},
+	"result": {
+		"id": "terra_curio:hermes_boots"
+	}
+}
