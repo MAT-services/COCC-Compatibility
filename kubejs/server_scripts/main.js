@@ -4,7 +4,6 @@ console.info('Hello, World! (Loaded server example script)')
 
 // RECIPIES
 ServerEvents.recipes(event => {
-  // Basic motor
   event.remove({ output: 'create_new_age:basic_motor' })
   event.shaped('create_new_age:basic_motor', [
     '###',
@@ -2064,27 +2063,6 @@ ServerEvents.recipes(event => {
     }
   });
 
-  event.remove({output: "create_new_age:generator_coil"});
-  event.custom({
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-      "###",
-      "#A#",
-      "###"
-    ],
-    "key": {
-      "A": {
-        "item": "create:andesite_alloy_block"
-      },
-      "#": {
-        "item": "oritech:magnetic_coil"
-      }
-    },
-    "result": {
-      "id": "create_new_age:generator_coil"
-    }
-  });
-
   event.remove({output: "create:rope_pulley"});
   event.custom({
     "type": "minecraft:crafting_shaped",
@@ -2108,24 +2086,38 @@ ServerEvents.recipes(event => {
       "id": "create:rope_pulley"
     }
   });
+
+  event.remove({output: "create_new_age:generator_coil"});
+  event.custom({
+    "type": "create:mechanical_crafting",
+    "category": "misc",
+    "key": {
+      "#": {
+        "item": "oritech:magnetic_coil"
+      },
+      "S": {
+        "tag": "c:ingots/steel"
+      },
+      "H": {
+        "item": "create:shaft"
+      }
+    },
+    "pattern": [
+      " ### ",
+      "#SSS#",
+      "#SHS#",
+      "#SSS#",
+      " ### "
+    ],
+    "result": {
+      "id": "create_new_age:generator_coil",
+      "count": 2
+    },
+    "accept_mirrored": true
+  });
 /*
   event.remove({output: ""});
   event.custom();
 */
 
-// Comportements
-/*BlockEvents.rightClicked('kubejs:proxy_extractinator', event => {
-  let player = event.player
-  let block = event.block
-  let above = block.up
-
-  if (above.inventory) {
-    let inv = above.inventory
-    let stack = inv.getStackInSlot(0)
-
-    if (stack.id == 'andesite') {
-      stack.count--
-      inv.insertItem('minecraft:dirt', 64)
-    }
-  }*/
 })
