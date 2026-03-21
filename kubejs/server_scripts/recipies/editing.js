@@ -2729,6 +2729,89 @@ ServerEvents.recipes(event => {
     ],
     "time": 120
   })
+
+  event.remove({output: "oritech:laser_arm_block"});
+  event.custom({
+    "type": "create:mechanical_crafting",
+    "category": "misc",
+    "key": {
+      "A": {
+        "item": "oritech:enderic_lens"
+      },
+      "B": {
+        "item": "create:mechanical_arm"
+      },
+      "C": {
+        "item": "kubejs:overcharged_motor"
+      },
+      "D": {
+        "tag": "oritech:plating"
+      }
+    },
+    "pattern": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "result": {
+      "id": "oritech:laser_arm_block"
+    },
+    "accept_mirrored": true
+  }); 
+
+  event.remove({output: "alexscaves:drain"});
+  event.custom({
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "A",
+      "B"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:iron_bars"
+      },
+      "B": {
+        "item": "alexscaves:scrap_metal_plate"
+      }
+    },
+    "result": {
+      "id": "alexscaves:drain"
+    }
+  });
+
+  event.custom({
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "C",
+      "T"
+    ],
+    "key": {
+      "C": {
+        "item": "alexscaves:depth_charge"
+      },
+      "T": {
+        "item": "minecraft:tnt"
+      }
+    },
+    "result": {
+      "id": "confluence:instantaneous_explosion_tnt",
+      "count": 2
+    }
+  })
+
+  event.custom({
+    "type": "minecraft:smelting",
+    "category": "misc",
+    "ingredient": {
+      "item": "alexscaves:depth_charge"
+    },
+    "result": {
+      "id": "minecraft:redstone_block"
+    },
+    "experience": 0.5,
+    "cookingtime": 120
+  })
 /*
   event.remove({output: ""});
   event.custom();

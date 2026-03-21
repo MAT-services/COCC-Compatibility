@@ -1,5 +1,17 @@
 ServerEvents.tags('block', event => {
   event.add('create:wrench_pickup', 'kubejs:proxy_extractinator')
+
+  event.add('alexscaves:ferromagnetic_blocks', [
+    "confluence:iron_bricks_slab",
+    "confluence:iron_bricks_stairs",
+    "confluence:iron_bricks",
+    "confluence:chiseled_iron_bricks",
+    "confluence:iron_crate",
+    "create:industrial_iron_block",
+    "create:weathered_iron_block",
+    "create:industrial_iron_window",
+    "create:weathered_iron_window"
+  ])
 })
 ServerEvents.tags('item', event => {
 

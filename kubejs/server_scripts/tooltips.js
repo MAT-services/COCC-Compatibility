@@ -11,4 +11,7 @@ ItemEvents.modifyTooltips(event => {
         text.add(Text.gray("Ranged Damage: 1.5"))
         text.add(Text.gray("Irradiate the target."))
     });
+    event.modify("alexscaves:drain", text => {
+        text.add(Text.gray("Empty Water from one place to another."))
+    });
 });
