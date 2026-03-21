@@ -24,4 +24,8 @@ ClientEvents.lang('en_us', event => {
    event.renameItem('toms_storage:inventory_proxy', 'Inventory Access Chain')
    event.renameItem('create_new_age:nuclear_fuel', 'Thorium Tube')
    event.renameItem('create_new_age:incomplete_fuel', 'Incomplete Tube')
+   //event.renameItem('confluence:honey', "Royal Honey")
+   event.renameItem('confluence:honey_bucket', "Royal Honey Bucket")
+   event.renameItem('confluence:bottomless_honey_bucket', "Bottomless Royal Honey Bucket")
+   event.renameItem('toms_storage:paint_kit', "Paint Kit (STORAGE)")
 });

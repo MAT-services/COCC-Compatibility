@@ -8,3 +8,5 @@ StartupEvents.modifyCreativeTab('create:base', event => {
     event.addAfter('create:copper_casing', 'create:refined_radiance_casing')
     event.addAfter('create:copper_casing', 'create:shadow_steel_casing')
 })
+
+Platform.mods.kubejs.name = 'Confluence Of Creation'

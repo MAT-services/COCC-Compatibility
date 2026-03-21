@@ -697,24 +697,6 @@ ServerEvents.recipes(event => {
       },
       {
         "type": "neoforge:single",
-        "fluid": "slag:molten_quartz",
-        "amount": 100
-      }
-    ],
-    "results": [
-      {
-        "id": "create:limestone"
-      }
-    ]
-  });
-  event.custom({
-    "type": "create:filling",
-    "ingredients": [
-      {
-        "item": "minecraft:dripstone_block"
-      },
-      {
-        "type": "neoforge:single",
         "fluid": "slag:molten_obsidian",
         "amount": 100
       }
@@ -2123,6 +2105,115 @@ ServerEvents.recipes(event => {
       "id": "kubejs:molten_brass"
     }]
   });
+
+  event.remove({output: "oritech:clay_catalyst_beads"});
+  event.remove({id: "oritech:assembler/claybeads"})
+  event.custom({
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "minecraft:clay"
+      },
+      {
+        "tag": "c:sands"
+      }
+    ],
+    "result": {
+      "id": "oritech:clay_catalyst_beads",
+      "count": 7
+    }
+  });
+  event.custom({
+    "type": "oritech:assembler",
+    "ingredients": [
+      {
+        "item": "minecraft:clay_ball"
+      },
+      {
+        "item": "minecraft:clay_ball"
+      },
+      {
+        "item": "minecraft:clay_ball"
+      },
+      {
+        "item": "minecraft:clay_ball"
+      }
+    ],
+    "results": [
+      {
+        "count": 4,
+        "id": "oritech:clay_catalyst_beads"
+      }
+    ],
+    "time": 5
+  });
+
+  event.remove({output: "alexscaves:scarlet_neodymium_ingot"});
+  event.custom({
+    "type": "create:mixing",
+    "ingredients": [
+      {
+        "item": "minecraft:iron_ingot"
+      },
+      {
+        "item": "alexscaves:raw_scarlet_neodymium"
+      }
+    ],
+    "results": [
+      {
+        "id": "alexscaves:scarlet_neodymium_ingot"
+      }
+    ],
+    "heat_requirement": "heated"
+  });
+
+  event.remove({output: "alexscaves:azure_neodymium_ingot"});
+  event.custom({
+    "type": "create:mixing",
+    "ingredients": [
+      {
+        "item": "minecraft:iron_ingot"
+      },
+      {
+        "item": "alexscaves:raw_azure_neodymium"
+      }
+    ],
+    "results": [
+      {
+        "id": "alexscaves:azure_neodymium_ingot"
+      }
+    ],
+    "heat_requirement": "heated"
+  });
+  
+  event.remove({ id: "oritech:assembler/enderlens"});
+  event.custom({
+    "type": "oritech:assembler",
+    "ingredients": [
+      {
+        "item": "oritech:adamant_ingot"
+      },
+      {
+        "item": "oritech:carbon_fibre_strands"
+      },
+      {
+        "item": "oritech:enderic_compound"
+      },
+      {
+        "item": "confluence:lens"
+      }
+    ],
+    "results": [
+      {
+        "count": 1,
+        "id": "oritech:enderic_lens"
+      }
+    ],
+    "time": 144
+  });
+
+  event.shaped('oritech:electrum_block', ['AAA', 'AAA', 'AAA'], { A: 'oritech:electrum_ingot' });
+  event.shapeless('9x oritech:electrum_ingot', ['oritech:electrum_block']);
 /*
   event.remove({output: ""});
   event.custom();
