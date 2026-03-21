@@ -2214,6 +2214,521 @@ ServerEvents.recipes(event => {
 
   event.shaped('oritech:electrum_block', ['AAA', 'AAA', 'AAA'], { A: 'oritech:electrum_ingot' });
   event.shapeless('9x oritech:electrum_ingot', ['oritech:electrum_block']);
+
+  event.smelting('confluence:lens', 'minecraft:glass_pane').xp(0.1).cookingTime(200);
+  event.custom({
+    "type": "create:sequenced_assembly",
+    "ingredient": {
+      "item": "confluence:lens"
+    },
+    "transitional_item": {
+      "id": "confluence:lens"
+    },
+    "sequence": [
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "confluence:lens"
+          },
+          {
+            "item": "oritech:carbon_fibre_strands"
+          }
+        ],
+        "results": [
+          {
+            "id": "confluence:lens"
+          }
+        ]
+      },
+      {
+        "type": "create:pressing",
+        "ingredients": [
+          {
+            "item": "confluence:lens"
+          }
+        ],
+        "results": [
+          {
+            "id": "confluence:lens"
+          }
+        ]
+      }
+    ],
+    "results": [
+      {
+        "id": "confluence:black_lens",
+        "chance": 1
+      }
+    ],
+    "loops": 1
+  })
+
+  event.remove({output: "terra_guns:high_velocity_bullet"})
+  event.custom({
+    "type": "confluence:heavy_work_bench",
+    "ingredients": [
+      {
+        "type": "confluence_magic_lib:amount_ingredient",
+        "count": 50,
+        "ingredient": {
+          "item": "confluence:empty_bullet"
+        }
+      },
+      {
+        "item": "confluence:cog"
+      },
+      {
+        "item": "confluence:soul_of_flight"
+      }
+    ],
+    "result": {
+      "count": 50,
+      "id": "terra_guns:high_velocity_bullet"
+    }
+  })
+
+  event.shaped('confluence:cog', ['AAA', 'ABA', 'AAA'], { A: 'create:brass_nugget', B: 'create:andesite_alloy' })
+
+  event.remove({output: "create:precision_mechanism"});
+  event.custom({
+    "type": "create:sequenced_assembly",
+    "ingredient": {
+      "tag": "c:plates/gold"
+    },
+    "loops": 5,
+    "results": [
+      {
+        "chance": 120.0,
+        "id": "create:precision_mechanism"
+      },
+      {
+        "chance": 8.0,
+        "id": "create:golden_sheet"
+      },
+      {
+        "chance": 8.0,
+        "id": "create:andesite_alloy"
+      },
+      {
+        "chance": 5.0,
+        "id": "confluence:cog"
+      },
+      {
+        "chance": 3.0,
+        "id": "minecraft:gold_nugget"
+      },
+      {
+        "chance": 2.0,
+        "id": "create:shaft"
+      },
+      {
+        "chance": 2.0,
+        "id": "create:crushed_raw_gold"
+      },
+      {
+        "id": "minecraft:iron_ingot"
+      },
+      {
+        "id": "minecraft:clock"
+      }
+    ],
+    "sequence": [
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "create:incomplete_precision_mechanism"
+          },
+          {
+            "item": "confluence:cog"
+          }
+        ],
+        "results": [
+          {
+            "id": "create:incomplete_precision_mechanism"
+          }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "create:incomplete_precision_mechanism"
+          },
+          {
+            "item": "petrolsparts:coaxial_gear"
+          }
+        ],
+        "results": [
+          {
+            "id": "create:incomplete_precision_mechanism"
+          }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "create:incomplete_precision_mechanism"
+          },
+          {
+            "tag": "c:nuggets/iron"
+          }
+        ],
+        "results": [
+          {
+            "id": "create:incomplete_precision_mechanism"
+          }
+        ]
+      }
+    ],
+    "transitional_item": {
+      "id": "create:incomplete_precision_mechanism"
+    }
+  })
+
+  event.custom({
+    "type": "create:sequenced_assembly",
+    "ingredient": {
+      "item": "create:iron_sheet"
+    },
+    "transitional_item": {
+      "id": "create:incomplete_precision_mechanism"
+    },
+    "sequence": [
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "create:incomplete_precision_mechanism"
+          },
+          {
+            "item": "confluence:lens"
+          }
+        ],
+        "results": [
+          {
+            "id": "create:incomplete_precision_mechanism"
+          }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "create:incomplete_precision_mechanism"
+          },
+          {
+            "item": "create:precision_mechanism"
+          }
+        ],
+        "results": [
+          {
+            "id": "create:incomplete_precision_mechanism"
+          }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "create:incomplete_precision_mechanism"
+          },
+          {
+            "item": "confluence:lens"
+          }
+        ],
+        "results": [
+          {
+            "id": "create:incomplete_precision_mechanism"
+          }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "create:incomplete_precision_mechanism"
+          },
+          {
+            "item": "create:iron_sheet"
+          }
+        ],
+        "results": [
+          {
+            "id": "create:incomplete_precision_mechanism"
+          }
+        ]
+      },
+      {
+        "type": "create:pressing",
+        "ingredients": [
+          {
+            "item": "create:incomplete_precision_mechanism"
+          }
+        ],
+        "results": [
+          {
+            "id": "create:incomplete_precision_mechanism"
+          }
+        ]
+      }
+    ],
+        "results": [
+      {
+        "chance": 145.0,
+        "id": "confluence:mechanical_lens"
+      },
+      {
+        "chance": 5.0,
+        "id": "create:precision_mechanism"
+      },
+      {
+        "chance": 3.0,
+        "id": "create:iron_sheet"
+      },
+      {
+        "chance": 3.0,
+        "id": "confluence:lens"
+      },
+      {
+        "id": "confluence:black_lens"
+      }
+    ],
+    "loops": 1
+  })
+
+  event.custom({
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "##",
+      "##"
+    ],
+    "key": {
+      "#": {
+        "item": "alexscaves:ferrouslime_ball"
+      }
+    },
+    "result": {
+      "id": "create_new_age:magnetite_block",
+      "count": 1
+    }
+  })
+  
+  event.custom({
+    "type": "create:filling",
+    "ingredients": [
+      {
+        "item": "minecraft:slime_ball"
+      },
+      {
+        "type": "neoforge:single",
+        "fluid": "slag:molten_iron",
+        "amount": 500
+      }
+    ],
+    "results": [
+      {
+        "id": "alexscaves:ferrouslime_ball"
+      }
+    ]
+  })
+
+  event.remove({output: "confluence:space_gun"});
+  event.custom({
+    "type": "confluence:heavy_work_bench",
+    "key": {
+      "#": {
+        "type": "confluence_magic_lib:amount_ingredient",
+        "count": 2,
+        "ingredient": { "item": "confluence:meteorite_ingot" }
+      },
+      "H": {
+        "type": "confluence_magic_lib:amount_ingredient",
+        "count": 4,
+        "ingredient": { "item": "confluence:meteorite_ingot" }
+      },
+      "l": {
+        "item": "oritech:enderic_lens"
+      }
+    },
+    "pattern": [
+      "#   ",
+      "H#l#",
+      "HH  ",
+      " HH "
+    ],
+    "result": {
+      "count": 1,
+      "id": "confluence:space_gun"
+    }
+  });
+  
+  event.remove({output: "oritech:iron_plating_block"});
+  event.custom({
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "NSN",
+      "SBS",
+      "NSN"
+    ],
+    "key": {
+      "B": {
+        "item": "create:industrial_iron_block"
+      },
+      "S": {
+        "item": "minecraft:smooth_stone_slab"
+      },
+      "N": {
+        "item": "oritech:steel_dust"
+      }
+    },
+    "result": {
+      "id": "oritech:iron_plating_block",
+      "count": 5
+    }
+  });
+
+  event.remove({output: "oritech:machine_plating_block"});
+  event.custom({
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "NSN",
+      "SBS",
+      "NSN"
+    ],
+    "key": {
+      "B": {
+        "tag": "c:chiseled_blocks/copper"
+      },
+      "S": {
+        "item": "minecraft:smooth_stone_slab"
+      },
+      "N": {
+        "item": "oritech:steel_dust"
+      }
+    },
+    "result": {
+      "id": "oritech:machine_plating_block",
+      "count": 5
+    }
+  });
+
+  event.remove({output: "oritech:carbon_plating_block"});
+  event.custom({
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "NSN",
+      "SBS",
+      "NSN"
+    ],
+    "key": {
+      "B": {
+        "item": "oritech:reinforced_carbon_sheet"
+      },
+      "S": {
+        "item": "minecraft:smooth_stone_slab"
+      },
+      "N": {
+        "item": "oritech:coal_dust"
+      }
+    },
+    "result": {
+      "id": "oritech:carbon_plating_block",
+      "count": 5
+    }
+  });
+
+  event.remove({output: "oritech:nickel_plating_block"});
+  event.custom({
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "NSN",
+      "S S",
+      "NSN"
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:smooth_stone_slab"
+      },
+      "N": {
+        "item": "oritech:nickel_dust"
+      }
+    },
+    "result": {
+      "id": "oritech:nickel_plating_block",
+      "count": 5
+    }
+  })
+
+  event.remove({output: "oritech:enderic_compound"});
+  /*event.remove({ id: [
+    "oritech:centrifuge/endericsculk",
+    "oritech:grinder/pearl_enderic",
+    "oritech:grinder/stone_enderic",
+    "oritech:pulverizer/pearl_enderic"
+  ]})*/
+  event.remove({ id: "oritech:centrifuge/endericsculk"});
+  event.remove({ id: "oritech:grinder/pearl_enderic"});
+  event.remove({ id: "oritech:grinder/stone_enderic"});
+  event.remove({ id: "oritech:pulverizer/pearl_enderic"});
+  event.remove({ id: "oritech:pulverizer/pearl_enderic"});
+  event.remove({id: "oritech:particle/enderic_compound"});
+  event.custom({
+    "type": "oritech:particle_collision",
+    "ingredients": [
+      {
+        "item": "confluence:raw_meteorite"
+      },
+      {
+        "item": "minecraft:ender_pearl"
+      }
+    ],
+    "results": [
+      {
+        "count": 4,
+        "id": "oritech:enderic_compound"
+      }
+    ],
+    "time": 500
+  })
+  event.custom({
+    "type": "create:mixing",
+    "ingredients": [
+      {
+        "item": "confluence:meteorite_ingot"
+      },
+      {
+        "item": "minecraft:ender_pearl"
+      }
+    ],
+    "results": [
+      {
+        "id": "oritech:enderic_compound",
+        "count": 2
+      }
+    ],
+    "heat_requirement": "heated"
+  })
+  event.custom({
+    "type": "oritech:foundry",
+    "ingredients": [
+      {
+        "item": "confluence:meteorite_ingot"
+      },
+      {
+        "item": "minecraft:ender_pearl"
+      }
+    ],
+    "results": [
+      {
+        "id": "oritech:enderic_compound",
+        "count": 2
+      }
+    ],
+    "time": 120
+  })
 /*
   event.remove({output: ""});
   event.custom();

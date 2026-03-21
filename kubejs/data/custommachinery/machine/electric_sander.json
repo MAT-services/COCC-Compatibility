@@ -1,18 +1,20 @@
 {
-  "components": [
-    {
-      "type": "custommachinery:item",
-      "config": {
-        "TOP": "INPUT",
-        "BOTTOM": "INPUT",
-        "FRONT": "INPUT",
-        "RIGHT": "INPUT",
-        "BACK": "INPUT",
-        "LEFT": "INPUT"
+  "name": {
+    "text": {
+      "translate": "Electric Sander"
+    }
+  },
+  "appearance": {
+    "running": {
+      "custommachinery:ambient_sound": {
+        "sound": "minecraft:block.furnace.fire_crackle"
       },
-      "id": "fuel",
-      "mode": "none"
+      "custommachinery:block": "minecraft:furnace#facing=north,lit=true",
+      "custommachinery:light": 15
     },
+    "custommachinery:block": "minecraft:stonecutter"
+  },
+  "components": [
     {
       "type": "custommachinery:item",
       "id": "input",
@@ -32,31 +34,11 @@
       "mode": "output"
     }
   ],
-  "name": {
-    "text": {
-      "translate": "Electric Sancer"
-    }
-  },
-  "appearance": {
-    "running": {
-      "custommachinery:ambient_sound": {
-        "sound": "minecraft:block.furnace.fire_crackle"
-      },
-      "custommachinery:light": 15,
-      "custommachinery:block": "minecraft:furnace#facing=north,lit=true"
-    },
-    "custommachinery:block": "minecraft:furnace"
-  },
   "gui": [
     {
       "type": "custommachinery:background",
       "width": 172,
       "height": 160
-    },
-    {
-      "type": "custommachinery:fuel",
-      "x": 43,
-      "y": 40
     },
     {
       "type": "custommachinery:player_inventory",
@@ -70,31 +52,25 @@
     },
     {
       "type": "custommachinery:slot",
-      "id": "fuel",
-      "x": 41,
-      "y": 55
-    },
-    {
-      "type": "custommachinery:slot",
       "id": "input",
-      "x": 41,
-      "y": 19
+      "x": 48,
+      "y": 38
     },
     {
       "type": "custommachinery:slot",
       "id": "output",
-      "x": 112,
-      "y": 32,
-      "width": 30,
-      "height": 30
+      "x": 107,
+      "y": 35,
+      "width": 25,
+      "height": 25
     },
     {
       "type": "custommachinery:text",
-      "x": 65,
+      "x": 46,
       "y": 4,
       "text": {
         "text": {
-          "translate": "Furnace"
+          "translate": "Electric Sander"
         },
         "color": "dark_gray"
       }
