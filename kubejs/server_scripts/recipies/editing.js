@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
   ], {
     N: 'minecraft:nether_brick',
     L: 'minecraft:lava_bucket',
-    F: 'minecraft:furnace',
+    F: 'slag:brick_forge',
     C: 'create:blaze_cake',
     B: 'create:blaze_cake_base'
   })
@@ -2093,19 +2093,6 @@ ServerEvents.recipes(event => {
     "accept_mirrored": true
   });
 
-
-  event.custom({
-    "type": "slag:melting",
-    "ingredient": {
-      "item": "create:brass_ingot"
-    },
-    "ingredients": [],
-    "result": [{
-      "amount": 72,
-      "id": "kubejs:molten_brass"
-    }]
-  });
-
   event.remove({output: "oritech:clay_catalyst_beads"});
   event.remove({id: "oritech:assembler/claybeads"})
   event.custom({
@@ -2674,7 +2661,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: "oritech:grinder/stone_enderic"});
   event.remove({ id: "oritech:pulverizer/pearl_enderic"});
   event.remove({ id: "oritech:pulverizer/pearl_enderic"});
-  event.remove({id: "oritech:particle/enderic_compound"});
+  event.remove({ id: "oritech:particle/enderic_compound"});
   event.custom({
     "type": "oritech:particle_collision",
     "ingredients": [
@@ -2812,9 +2799,319 @@ ServerEvents.recipes(event => {
     "experience": 0.5,
     "cookingtime": 120
   })
+
+  event.custom({
+    "type": "slag:alloying",
+    "ingredients": [
+      {
+        "amount": 8,
+        "id": "slag:molten_copper"
+      },
+      {
+        "amount": 8,
+        "id": "slag:molten_zinc"
+      }
+    ],
+    "result": {
+      "amount": 16,
+      "id": "slag:molten_brass"
+    }
+  })
+
+  event.remove({output: "oritech:pulverizer_block"});
+  event.shaped('oritech:pulverizer_block', ['AAA', 'ABA', 'CDC'], { A: 'create:cogwheel', B: 'create:millstone', C: 'oritech:motor', D: '#oritech:plating' });
+
+  event.remove({output: "waystones:warp_stone"});
+  event.shaped('waystones:warp_stone', ['ABA', 'CDC', 'AEA'], { A: 'slag:dynamic_part[slag:material_type="slag:flint",slag:part_type="slag:plate"]', B: 'minecraft:ender_eye', C: 'slag:dynamic_part[slag:material_type="slag:obsidian",slag:part_type="slag:plate"]', D: 'oritech:fluxite', E: 'minecraft:ender_pearl' });
+
+  event.remove({output: "oritech:machine_core_1"});
+  event.custom({
+    "type": "create:item_application",
+    "ingredients": [
+      {
+        "item": "create:andesite_casing"
+      },
+      {
+        "item": "create_new_age:overcharged_diamond"
+      }
+    ],
+    "results": [
+      {
+        "id": "oritech:machine_core_1"
+      }
+    ]
+  });
+
+  event.remove({output: "oritech:machine_core_2"});
+  event.custom({
+    "type": "create:item_application",
+    "ingredients": [
+      {
+        "item": "oritech:iron_plating_block"
+      },
+      {
+        "item": "create_new_age:overcharged_diamond"
+      }
+    ],
+    "results": [
+      {
+        "id": "oritech:machine_core_2"
+      }
+    ]
+  });
+
+  event.remove({output: "oritech:machine_core_3"});
+  event.custom({
+    "type": "create:item_application",
+    "ingredients": [
+      {
+        "item": "oritech:machine_core_2"
+      },
+      {
+        "item": "oritech:carbon_fibre_strands"
+      }
+    ],
+    "results": [
+      {
+        "id": "oritech:machine_core_3"
+      }
+    ]
+  });
+
+  event.remove({output: "oritech:machine_core_4"});
+  event.custom({
+    "type": "create:item_application",
+    "ingredients": [
+      {
+        "item": "oritech:machine_core_3"
+      },
+      {
+        "item": "oritech:enderic_compound"
+      }
+    ],
+    "results": [
+      {
+        "id": "oritech:machine_core_4"
+      }
+    ]
+  });
+
+  event.remove({output: "oritech:machine_core_5"});
+  event.custom({
+    "type": "create:item_application",
+    "ingredients": [
+      {
+        "item": "oritech:machine_core_4"
+      },
+      {
+        "item": "oritech:advanced_computing_engine"
+      }
+    ],
+    "results": [
+      {
+        "id": "oritech:machine_core_5"
+      }
+    ]
+  });
+
+  event.remove({output: "oritech:machine_core_6"})
+  event.custom({
+    "type": "create:sequenced_assembly",
+    "ingredient": {
+      "item": "oritech:machine_core_5"
+    },
+    "transitional_item": {
+      "id": "kubejs:incomplete_circuit"
+    },
+    "sequence": [
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "kubejs:incomplete_circuit"
+          },
+          {
+            "tag": "c:storage_blocks/platinum"
+          }
+        ],
+        "results": [
+          {
+            "id": "kubejs:incomplete_circuit"
+          }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "kubejs:incomplete_circuit"
+          },
+          {
+            "item": "oritech:dubios_container"
+          }
+        ],
+        "results": [
+          {
+            "id": "kubejs:incomplete_circuit"
+          }
+        ]
+      }
+    ],
+    "results": [
+      {
+        "id": "oritech:machine_core_6",
+        "chance": 1
+      }
+    ],
+    "loops": 1
+  })
+
+  event.remove({output: "oritech:machine_core_7"});
+  event.custom({
+    "type": "create:sequenced_assembly",
+    "ingredient": {
+      "item": "oritech:machine_core_6"
+    },
+    "transitional_item": {
+      "id": "kubejs:incomplete_circuit"
+    },
+    "sequence": [
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "kubejs:incomplete_circuit"
+          },
+          {
+            "item": "oritech:superconductor"
+          }
+        ],
+        "results": [
+          {
+            "id": "kubejs:incomplete_circuit"
+          }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "kubejs:incomplete_circuit"
+          },
+          {
+            "item": "oritech:prometheum_ingot"
+          }
+        ],
+        "results": [
+          {
+            "id": "kubejs:incomplete_circuit"
+          }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "kubejs:incomplete_circuit"
+          },
+          {
+            "item": "oritech:superconductor"
+          }
+        ],
+        "results": [
+          {
+            "id": "kubejs:incomplete_circuit"
+          }
+        ]
+      }
+    ],
+    "results": [
+      {
+        "id": "oritech:machine_core_7",
+        "chance": 1
+      }
+    ],
+    "loops": 2
+  });
+
+  event.remove({output: "create:brass_hand"});
+  event.shaped('create:brass_hand', [' A ', 'AAA', ' B '], { A: 'create:brass_ingot', B: 'slag:dynamic_part[slag:material_type="slag:andesite_alloy",slag:part_type="slag:plate"]' });
+
+  event.shaped('kubejs:andesite_clip', ['A A', 'AAA', ' B '], { A: 'create:andesite_alloy', B: 'slag:dynamic_part[slag:part_type="slag:plate",slag:material_type="slag:andesite_alloy"]' });
+  
+  event.remove({output: "create:mechanical_arm"});
+  event.shaped('create:mechanical_arm', ['ABC', 'BA ', 'DEF'], { A: 'oritech:carbon_fibre_strands', B: 'createcasing:brass_shaft', C: 'kubejs:andesite_clip', D: 'create:precision_mechanism', E: 'create:brass_casing', F: 'petrolsparts:coaxial_gear' });
+
+  event.custom({
+    "type": "slag:double_smelting",
+    "cookingTime": 200,
+    "experience": 0.6,
+    "ingredientA": {
+      "item": "minecraft:copper_ingot"
+    },
+    "ingredientB": {
+      "item": "create:zinc_ingot"
+    },
+    "result": {
+      "count": 2,
+      "id": "create:brass_ingot"
+    }
+  });
+
+  event.remove({id: "createcasing:cutting/brass_ingot"});
+  event.shaped('8x createcasing:brass_shaft', ['A', 'A'], { A: 'create:brass_ingot' })
+
+    event.custom({
+    "type": "confluence:heavy_work_bench",
+    "key": {
+      "#": {
+        "type": "confluence_magic_lib:amount_ingredient",
+        "count": 2,
+        "ingredient": { "item": "minecraft:cobblestone" }
+      },
+      "P": {
+        "item": 'minecraft:cobblestone'
+      }
+    },
+    "pattern": [
+      " PP ",
+      "P  P",
+      "####",
+      "####"
+    ],
+    "result": {
+      "count": 1,
+      "id": "confluence:encumbering_stone"
+    }
+  });
+  event.custom({
+    "type": "create:mechanical_crafting",
+    "category": "misc",
+    "key": {
+      "S": {
+        "item": 'minecraft:cobblestone'
+      },
+      "#": {
+        "item": "minecraft:cobblestone"
+      }
+    },
+    "pattern": [
+      "  SS  ",
+      " S  S ",
+      "######",
+      "######",
+      "  ##  "
+    ],
+    "result": {
+      "id": "confluence:encumbering_stone"
+    },
+    "accept_mirrored": true
+  });
+
+  event.remove({output: "create:whisk"});
+  event.shaped('create:whisk', [' A ', 'BCB', 'BBB'], { A: 'slag:dynamic_part[slag:material_type="slag:andesite_alloy",slag:part_type="slag:plate"]', B: 'create:iron_sheet', C: '#cocc:all_iron_nuggets_similar' });
 /*
   event.remove({output: ""});
   event.custom();
 */
-
 })

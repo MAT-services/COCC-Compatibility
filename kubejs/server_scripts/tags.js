@@ -1,5 +1,32 @@
 ServerEvents.tags('block', event => {
-  event.add('create:wrench_pickup', 'kubejs:proxy_extractinator')
+  event.add('create:wrench_pickup', [
+    "slag:crucible_interface",
+    "slag:melter",
+    "slag:drain",
+    "slag:basin",
+    "slag:table",
+    "slag:crucible",
+    "oritech:transparent_item_pipe",
+    "oritech:item_pipe",
+    "oritech:item_pipe_duct_block",
+    "oritech:energy_pipe",
+    "oritech:energy_pipe_duct_block",
+    "oritech:superconductor",
+    "oritech:superconductor_duct_block",
+    "oritech:fluid_pipe",
+    "oritech:fluid_pipe_duct_block",
+    "oritech:machine_frame_block",
+    "oritech:machine_extender",
+    "oritech:capacitor_addon_extender",
+    "alexscaves:hologram_projector",
+    "alexscaves:magnetic_light",
+    "oritech:creative_storage_block",
+    "oritech:large_storage_block",
+    "oritech:small_storage_block",
+    "oritech:creative_tank_block",
+    "oritech:small_tank_block",
+    "alexscaves:magnetic_activator"
+  ])
 
   event.add('alexscaves:ferromagnetic_blocks', [
     "confluence:iron_bricks_slab",
@@ -49,11 +76,29 @@ ServerEvents.tags('item', event => {
   event.add('create_new_age:nuclear/energy_8756', [
     "oritech:small_plutonium_pellet"
   ])
+
+  event.add('c:potions/bottle', [
+    "minecraft:glass_bottle"
+  ])
 })
 
 ServerEvents.tags('fluid', event => {
-  event.add('confluence:fishing_able', 'kubejs:molten_brass')
-  event.add('c:molten_brass', 'kubejs:molten_brass')
-  event.add('slag:hot_fluids', 'kubejs:molten_brass')
-  event.add('minecraft:lava', 'kubejs:molten_brass')
+  event.add('confluence:fishing_able', [
+    'slag:molten_brass',
+    'slag:molten_zinc',
+    'kubejs:molten_steel'
+  ])
+  event.add('c:molten_brass', 'slag:molten_brass')
+  event.add('c:molten_zinc', 'slag:molten_zinc')
+  event.add('c:molten_steel', 'kubejs:molten_steel')
+  event.add('slag:hot_fluids', [
+    'slag:molten_brass',
+    'slag:molten_zinc',
+    'kubejs:molten_steel'
+  ])
+  event.add('minecraft:lava', [
+    'slag:molten_brass',
+    'slag:molten_zinc',
+    'kubejs:molten_steel'
+  ])
 })

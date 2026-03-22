@@ -22,5 +22,8 @@ StartupEvents.registry('item', event => {
 
   event.create('uranium_tube')
     .displayName('Uranium Tube')
+  
+  event.create('andesite_clip')
+    .displayName('Andesite Clip')
 })
 
