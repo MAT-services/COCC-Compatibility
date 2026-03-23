@@ -3100,7 +3100,7 @@ ServerEvents.recipes(event => {
       " S  S ",
       "######",
       "######",
-      "  ##  "
+      " #### "
     ],
     "result": {
       "id": "confluence:encumbering_stone"
@@ -3127,7 +3127,7 @@ ServerEvents.recipes(event => {
         "tag": "c:plates/plastic"
       },
       "P": {
-        "item": "oritech:advanced_computing_engine"
+        "item": "oritech:advanced_computing_engine" // Potentially change it to the Oritech drone port.
       },
       "G": {
         "tag": "c:glass_panes"
@@ -3137,6 +3137,7 @@ ServerEvents.recipes(event => {
       "id": "drones:controller"
     }
   });
+
 /*
   event.remove({output: ""});
   event.custom();
