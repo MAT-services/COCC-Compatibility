@@ -3138,6 +3138,24 @@ ServerEvents.recipes(event => {
     }
   });
 
+  event.shaped('kubejs:drill', [' A ', 'ABA'], { A: 'create:andesite_alloy', B: '#c:ingots/iron' });
+  
+  event.remove({output: 'create:mechanical_drill'});
+  event.custom({
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "kubejs:drill"
+      },
+      {
+        "item": "create:andesite_casing"
+      }
+    ],
+    "result": {
+      "id": "create:mechanical_drill"
+    }
+  })
+
 /*
   event.remove({output: ""});
   event.custom();
