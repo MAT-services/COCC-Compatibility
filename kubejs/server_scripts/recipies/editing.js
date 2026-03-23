@@ -3110,7 +3110,8 @@ ServerEvents.recipes(event => {
 
   event.remove({output: "create:whisk"});
   event.shaped('create:whisk', [' A ', 'BCB', 'BBB'], { A: 'slag:dynamic_part[slag:material_type="slag:andesite_alloy",slag:part_type="slag:plate"]', B: 'create:iron_sheet', C: '#cocc:all_iron_nuggets_similar' });
-/*
+  
+  /*
   event.remove({output: ""});
   event.custom();
 */

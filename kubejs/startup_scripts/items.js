@@ -22,8 +22,14 @@ StartupEvents.registry('item', event => {
 
   event.create('uranium_tube')
     .displayName('Uranium Tube')
+    .maxStackSize(64)
   
   event.create('andesite_clip')
     .displayName('Andesite Clip')
+    .maxStackSize(64)
+
+  event.create('steel_plate')
+    .displayName('Steel Plate')
+    .maxStackSize(64)
 })
 
