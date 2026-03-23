@@ -3338,7 +3338,7 @@ ServerEvents.recipes(event => {
     }
   })
 
-  event.remove({output: "belt:belt"});
+  event.remove({output: "belts:belt"});
   event.custom({
     "type": "create:sequenced_assembly",
     "ingredient": {
@@ -3391,6 +3391,43 @@ ServerEvents.recipes(event => {
   })
 
   event.remove({output: "belts:chute"});
+  event.custom({
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+      "1",
+      "2",
+      "3"
+    ],
+    "key": {
+      "1": {
+        "item": "create:electron_tube"
+      },
+      "2": {
+        "tag": "c:ingots/steel"
+      },
+      "3": {
+        "item": "minecraft:dried_kelp"
+      }
+    },
+    "result": {
+      "id": "belts:chute",
+      "count": 2
+    }
+  })
+
+  event.custom({
+    "type": "slag:table_casting",
+    "cast": "slag:cast/plates",
+    "ingredient": {
+      "amount": 72,
+      "id": "kubejs:molten_steel"
+    },
+    "result": {
+      "id": "kubejs:steel_plate"
+    }
+  });
+  
 /*
   event.remove({output: ""});
   event.custom();

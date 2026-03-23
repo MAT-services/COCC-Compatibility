@@ -35,4 +35,38 @@ ServerEvents.recipes(event => {
             "id": "oritech:steel_block"
         }
     })
+
+    event.custom({
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+      "#P",
+      "P#"
+    ],
+    "key": {
+      "P": {
+        "item": "minecraft:paper"
+      },
+      "#": {
+        "item": "oritech:steel_ingot"
+      }
+    },
+    "result": {
+      "id": "kubejs:steel_plate",
+      "count": 1
+    }
+  })
+  event.custom({
+    "type": "slag:melting",
+    "ingredient": {
+        "tag": "kubejs:steel_plate" 
+    },
+    "ingredients": [],
+    "result": [
+        {
+        "amount": 144,
+        "id": "kubejs:molten_steel" 
+        }
+    ]
+    });
 })
