@@ -14,4 +14,16 @@ ItemEvents.modifyTooltips(event => {
     event.modify("alexscaves:drain", text => {
         text.add(Text.gray("Empty Water from one place to another."))
     });
+    event.modify("drones:wood_rotor", text => {
+        text.add(Text.gray("Used to propel drones."))
+    });
+    event.modify("drones:iron_rotor", text => {
+        text.add(Text.gray("Used to propel drones."))
+    });
+    event.modify("drones:ion_thruster", text => {
+        text.add(Text.gray("Used to propel drones."))
+    });
+    event.modify("drones:drill", text => {
+        text.add(Text.gray("Improves mining speed when a drone is equipped."))
+    });
 });

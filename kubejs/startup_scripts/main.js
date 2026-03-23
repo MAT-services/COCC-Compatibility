@@ -9,4 +9,10 @@ StartupEvents.modifyCreativeTab('create:base', event => {
     event.addAfter('create:copper_casing', 'create:shadow_steel_casing')
 })
 
+StartupEvents.modifyCreativeTab('oritech:machine_group', event => {
+	event.addAfter('oritech:transparent_item_pipe', 'belts:belt')
+    event.addAfter('belts:belt', 'belts:conveyor_support')
+    event.addAfter('belts:conveyor_support', 'belts:chute')
+})
+
 Platform.mods.kubejs.name = 'Confluence Of Creation'

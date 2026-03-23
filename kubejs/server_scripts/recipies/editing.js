@@ -3035,7 +3035,7 @@ ServerEvents.recipes(event => {
   });
 
   event.remove({output: "create:brass_hand"});
-  event.shaped('create:brass_hand', [' A ', 'AAA', ' B '], { A: 'create:brass_ingot', B: 'slag:dynamic_part[slag:material_type="slag:andesite_alloy",slag:part_type="slag:plate"]' });
+  event.shaped('create:brass_hand', [' A ', 'AAA', ' B '], { A: 'create:brass_ingot', B: 'createdeco:andesite_sheet' });
 
   event.shaped('kubejs:andesite_clip', ['A A', 'AAA', ' B '], { A: 'create:andesite_alloy', B: 'slag:dynamic_part[slag:part_type="slag:plate",slag:material_type="slag:andesite_alloy"]' });
   
@@ -3109,7 +3109,7 @@ ServerEvents.recipes(event => {
   });
 
   event.remove({output: "create:whisk"});
-  event.shaped('create:whisk', [' A ', 'BCB', 'BBB'], { A: 'slag:dynamic_part[slag:material_type="slag:andesite_alloy",slag:part_type="slag:plate"]', B: 'create:iron_sheet', C: '#cocc:all_iron_nuggets_similar' });
+  event.shaped('create:whisk', ['BBB', 'BCB', ' A '], { A: 'createdeco:andesite_sheet', B: 'create:iron_sheet', C: '#cocc:all_iron_nuggets_similar' });
   
   event.remove({output: "drones:drill"});
   event.shapeless('drones:drill', ['#oritech:plating', 'kubejs:drill']);
@@ -3127,7 +3127,7 @@ ServerEvents.recipes(event => {
         "tag": "c:plates/plastic"
       },
       "P": {
-        "item": "oritech:advanced_computing_engine" // Potentially change it to the Oritech drone port.
+        "item": "oritech:drone_port_block"
       },
       "G": {
         "tag": "c:glass_panes"
@@ -3138,24 +3138,259 @@ ServerEvents.recipes(event => {
     }
   });
 
-  event.shaped('kubejs:drill', [' A ', 'ABA'], { A: 'create:andesite_alloy', B: '#c:ingots/iron' });
+  event.shaped('kubejs:drill', [' A ', 'ABA', ' S '], { A: 'create:andesite_alloy', B: '#c:ingots/iron', S: 'createdeco:andesite_sheet' });
   
   event.remove({output: 'create:mechanical_drill'});
+  event.remove({output: 'createcasing:brass_mechanical_drill'});
+  event.remove({output: 'createcasing:copper_mechanical_drill'});
+  event.remove({output: 'createcasing:railway_mechanical_drill'});
+  event.remove({output: 'createcasing:shadow_steel_mechanical_drill'});
+  event.remove({output: 'createcasing:refined_radiance_mechanical_drill'});
+  event.remove({output: 'createcasing:industrial_iron_mechanical_drill'});
+  event.remove({output: 'createcasing:weathered_iron_mechanical_drill'});
   event.custom({
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
       {
-        "item": "kubejs:drill"
+        "item": "create:andesite_casing"
       },
       {
-        "item": "create:andesite_casing"
+        "item": "kubejs:drill"
       }
     ],
     "result": {
       "id": "create:mechanical_drill"
     }
   })
+  event.custom({
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "create:brass_casing"
+      },
+      {
+        "item": "kubejs:drill"
+      }
+    ],
+    "result": {
+      "id": "createcasing:brass_mechanical_drill"
+    }
+  })
+  event.custom({
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "create:copper_casing"
+      },
+      {
+        "item": "kubejs:drill"
+      }
+    ],
+    "result": {
+      "id": "createcasing:copper_mechanical_drill"
+    }
+  })
+  event.custom({
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "createcasing:railway_mechanical_drill"
+      },
+      {
+        "item": "kubejs:drill"
+      }
+    ],
+    "result": {
+      "id": "createcasing:railway_mechanical_drill"
+    }
+  })
+  event.custom({
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "createcasing:shadow_steel_mechanical_drill"
+      },
+      {
+        "item": "kubejs:drill"
+      }
+    ],
+    "result": {
+      "id": "createcasing:shadow_steel_mechanical_drill"
+    }
+  })
+  event.custom({
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "createcasing:refined_radiance_mechanical_drill"
+      },
+      {
+        "item": "kubejs:drill"
+      }
+    ],
+    "result": {
+      "id": "createcasing:refined_radiance_mechanical_drill"
+    }
+  })
+  event.custom({
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "createcasing:industrial_iron_mechanical_drill"
+      },
+      {
+        "item": "kubejs:drill"
+      }
+    ],
+    "result": {
+      "id": "createcasing:industrial_iron_mechanical_drill"
+    }
+  })
+  event.custom({
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "createcasing:weathered_iron_mechanical_drill"
+      },
+      {
+        "item": "kubejs:drill"
+      }
+    ],
+    "result": {
+      "id": "createcasing:weathered_iron_mechanical_drill"
+    }
+  })
+  
+  event.remove({output: "drones:wood_rotor"});
+  event.custom({
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+      {
+        "item": "oritech:motor"
+      },
+      {
+        "item": "create:sail_frame"
+      },
+      {
+        "item": "create:propeller"
+      }
+    ],
+    "result": {
+      "id": "drones:wood_rotor"
+    }
+  })
 
+  event.remove({output: "drones:iron_rotor"})
+  event.custom({
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+      {
+        "item": "oritech:motor"
+      },
+      {
+        "item": "oritech:machine_frame_block"
+      },
+      {
+        "item": "create:propeller"
+      }
+    ],
+    "result": {
+      "id": "drones:iron_rotor"
+    }
+  })
+
+  event.remove({output: "drones:frame"});
+  event.custom({
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+      "SSS",
+      "PPP",
+      "SSS"
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:smooth_stone"
+      },
+      "P": {
+        "item": "oritech:plastic_sheet"
+      }
+    },
+    "result": {
+      "id": "drones:frame"
+    }
+  });
+
+  event.remove({output: "drones:ion_thruster"});
+  event.custom({
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+      {
+        "item": "oritech:ion_thruster"
+      }
+    ],
+    "result": {
+      "id": "drones:ion_thruster",
+      "count": 2
+    }
+  })
+
+  event.remove({output: "belt:belt"});
+  event.custom({
+    "type": "create:sequenced_assembly",
+    "ingredient": {
+      "item": "create:belt_connector"
+    },
+    "transitional_item": {
+      "id": "oritech:motor"
+    },
+    "sequence": [
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "oritech:motor"
+          },
+          {
+            "item": "oritech:motor"
+          }
+        ],
+        "results": [
+          {
+            "id": "oritech:motor"
+          }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "oritech:motor"
+          },
+          {
+            "item": "kubejs:steel_plate"
+          }
+        ],
+        "results": [
+          {
+            "id": "oritech:motor"
+          }
+        ]
+      }
+    ],
+    "results": [
+      {
+        "id": "belts:belt",
+        "chance": 1
+      }
+    ],
+    "loops": 1
+  })
+
+  event.remove({output: "belts:chute"});
 /*
   event.remove({output: ""});
   event.custom();
