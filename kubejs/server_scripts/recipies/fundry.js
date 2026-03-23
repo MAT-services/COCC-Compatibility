@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
   event.custom({
     "type": "slag:melting",
     "ingredient": {
-        "tag": "kubejs:steel_plate" 
+        "item": "kubejs:steel_plate" 
     },
     "ingredients": [],
     "result": [
