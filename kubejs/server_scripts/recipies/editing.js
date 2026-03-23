@@ -145,7 +145,7 @@ ServerEvents.recipes(event => {
             "item": "create_connected:incomplete_control_chip"
           },
           {
-            "item": "oritech:plastic_sheet"
+            "tag": "c:plates/plastic"
           }
         ],
         "results": [
@@ -782,7 +782,7 @@ ServerEvents.recipes(event => {
   event.custom({
     "type": "create:sequenced_assembly",
     "ingredient": {
-      "item": "oritech:plastic_sheet"
+      "tag": "c:plates/plastic"
     },
     "transitional_item": {
       "id": "create_connected:incomplete_control_chip"
@@ -866,7 +866,7 @@ ServerEvents.recipes(event => {
   event.custom({
     "type": "create:sequenced_assembly",
     "ingredient": {
-      "item": "oritech:plastic_sheet"
+      "tag": "c:plates/plastic"
     },
     "transitional_item": {
       "id": "create_connected:incomplete_control_chip"
@@ -1109,7 +1109,7 @@ ServerEvents.recipes(event => {
         "item": "create_connected:control_chip"
       },
       {
-        "item": "oritech:plastic_sheet"
+        "tag": "c:plates/plastic"
       }
     ],
     "result": {
@@ -1123,7 +1123,7 @@ ServerEvents.recipes(event => {
     "type": "computercraft:impostor_shapeless",
     "category": "redstone",
     "group": "computercraft:disk",
-    "ingredients": [{"tag": "c:dusts/redstone"}, {"item": "oritech:plastic_sheet"}, {"item": "minecraft:black_dye"}],
+    "ingredients": [{"tag": "c:dusts/redstone"}, {"tag": "c:plates/plastic"}, {"item": "minecraft:black_dye"}],
     "result": {
       "components": {"minecraft:dyed_color": {"rgb": 1118481, "show_in_tooltip": false}},
       "count": 1,
@@ -1134,7 +1134,7 @@ ServerEvents.recipes(event => {
     "type": "computercraft:impostor_shapeless",
     "category": "redstone",
     "group": "computercraft:disk",
-    "ingredients": [{"tag": "c:dusts/redstone"}, {"item": "oritech:plastic_sheet"}, {"item": "minecraft:red_dye"}],
+    "ingredients": [{"tag": "c:dusts/redstone"}, {"tag": "c:plates/plastic"}, {"item": "minecraft:red_dye"}],
     "result": {
       "components": {"minecraft:dyed_color": {"rgb": 13388876, "show_in_tooltip": false}},
       "count": 1,
@@ -1146,7 +1146,7 @@ ServerEvents.recipes(event => {
     "type": "computercraft:impostor_shapeless",
     "category": "redstone",
     "group": "computercraft:disk",
-    "ingredients": [{"tag": "c:dusts/redstone"}, {"item": "oritech:plastic_sheet"}, {"item": "minecraft:green_dye"}],
+    "ingredients": [{"tag": "c:dusts/redstone"}, {"tag": "c:plates/plastic"}, {"item": "minecraft:green_dye"}],
     "result": {
       "components": {"minecraft:dyed_color": {"rgb": 5744206, "show_in_tooltip": false}},
       "count": 1,
@@ -1158,7 +1158,7 @@ ServerEvents.recipes(event => {
     "type": "computercraft:impostor_shapeless",
     "category": "redstone",
     "group": "computercraft:disk",
-    "ingredients": [{"tag": "c:dusts/redstone"}, {"item": "oritech:plastic_sheet"}, {"item": "minecraft:brown_dye"}],
+    "ingredients": [{"tag": "c:dusts/redstone"}, {"tag": "c:plates/plastic"}, {"item": "minecraft:brown_dye"}],
     "result": {
       "components": {"minecraft:dyed_color": {"rgb": 8349260, "show_in_tooltip": false}},
       "count": 1,
@@ -1170,7 +1170,7 @@ ServerEvents.recipes(event => {
     "type": "computercraft:impostor_shapeless",
     "category": "redstone",
     "group": "computercraft:disk",
-    "ingredients": [{"tag": "c:dusts/redstone"}, {"item": "oritech:plastic_sheet"}, {"item": "minecraft:blue_dye"}],
+    "ingredients": [{"tag": "c:dusts/redstone"}, {"tag": "c:plates/plastic"}, {"item": "minecraft:blue_dye"}],
     "result": {
       "components": {"minecraft:dyed_color": {"rgb": 3368652, "show_in_tooltip": false}},
       "count": 1,
@@ -1182,7 +1182,7 @@ ServerEvents.recipes(event => {
     "type": "computercraft:impostor_shapeless",
     "category": "redstone",
     "group": "computercraft:disk",
-    "ingredients": [{"tag": "c:dusts/redstone"}, {"item": "oritech:plastic_sheet"}, {"item": "minecraft:purple_dye"}],
+    "ingredients": [{"tag": "c:dusts/redstone"}, {"tag": "c:plates/plastic"}, {"item": "minecraft:purple_dye"}],
     "result": {
       "components": {"minecraft:dyed_color": {"rgb": 11691749, "show_in_tooltip": false}},
       "count": 1,
@@ -1194,7 +1194,7 @@ ServerEvents.recipes(event => {
     "type": "computercraft:impostor_shapeless",
     "category": "redstone",
     "group": "computercraft:disk",
-    "ingredients": [{"tag": "c:dusts/redstone"}, {"item": "oritech:plastic_sheet"}, {"item": "minecraft:cyan_dye"}],
+    "ingredients": [{"tag": "c:dusts/redstone"}, {"tag": "c:plates/plastic"}, {"item": "minecraft:cyan_dye"}],
     "result": {
       "components": {"minecraft:dyed_color": {"rgb": 5020082, "show_in_tooltip": false}},
       "count": 1,
@@ -1206,7 +1206,7 @@ ServerEvents.recipes(event => {
     "type": "computercraft:impostor_shapeless",
     "category": "redstone",
     "group": "computercraft:disk",
-    "ingredients": [{"tag": "c:dusts/redstone"}, {"item": "oritech:plastic_sheet"}, {"item": "minecraft:light_gray_dye"}],
+    "ingredients": [{"tag": "c:dusts/redstone"}, {"tag": "c:plates/plastic"}, {"item": "minecraft:light_gray_dye"}],
     "result": {
       "components": {"minecraft:dyed_color": {"rgb": 5020082, "show_in_tooltip": false}},
       "count": 1,
@@ -1218,7 +1218,7 @@ ServerEvents.recipes(event => {
     "type": "computercraft:impostor_shapeless",
     "category": "redstone",
     "group": "computercraft:disk",
-    "ingredients": [{"tag": "c:dusts/redstone"}, {"item": "oritech:plastic_sheet"}, {"item": "minecraft:gray_dye"}],
+    "ingredients": [{"tag": "c:dusts/redstone"}, {"tag": "c:plates/plastic"}, {"item": "minecraft:gray_dye"}],
     "result": {
       "components": {"minecraft:dyed_color": {"rgb": 5000268, "show_in_tooltip": false}},
       "count": 1,
@@ -1230,7 +1230,7 @@ ServerEvents.recipes(event => {
     "type": "computercraft:impostor_shapeless",
     "category": "redstone",
     "group": "computercraft:disk",
-    "ingredients": [{"tag": "c:dusts/redstone"}, {"item": "oritech:plastic_sheet"}, {"item": "minecraft:pink_dye"}],
+    "ingredients": [{"tag": "c:dusts/redstone"}, {"tag": "c:plates/plastic"}, {"item": "minecraft:pink_dye"}],
     "result": {
       "components": {"minecraft:dyed_color": {"rgb": 15905484, "show_in_tooltip": false}},
       "count": 1,
@@ -1242,7 +1242,7 @@ ServerEvents.recipes(event => {
     "type": "computercraft:impostor_shapeless",
     "category": "redstone",
     "group": "computercraft:disk",
-    "ingredients": [{"tag": "c:dusts/redstone"}, {"item": "oritech:plastic_sheet"}, {"item": "minecraft:lime_dye"}],
+    "ingredients": [{"tag": "c:dusts/redstone"}, {"tag": "c:plates/plastic"}, {"item": "minecraft:lime_dye"}],
     "result": {
       "components": {"minecraft:dyed_color": {"rgb": 8375321, "show_in_tooltip": false}},
       "count": 1,
@@ -1254,7 +1254,7 @@ ServerEvents.recipes(event => {
     "type": "computercraft:impostor_shapeless",
     "category": "redstone",
     "group": "computercraft:disk",
-    "ingredients": [{"tag": "c:dusts/redstone"}, {"item": "oritech:plastic_sheet"}, {"item": "minecraft:yellow_dye"}],
+    "ingredients": [{"tag": "c:dusts/redstone"}, {"tag": "c:plates/plastic"}, {"item": "minecraft:yellow_dye"}],
     "result": {
       "components": {"minecraft:dyed_color": {"rgb": 14605932, "show_in_tooltip": false}},
       "count": 1,
@@ -1266,7 +1266,7 @@ ServerEvents.recipes(event => {
     "type": "computercraft:impostor_shapeless",
     "category": "redstone",
     "group": "computercraft:disk",
-    "ingredients": [{"tag": "c:dusts/redstone"}, {"item": "oritech:plastic_sheet"}, {"item": "minecraft:light_blue_dye"}],
+    "ingredients": [{"tag": "c:dusts/redstone"}, {"tag": "c:plates/plastic"}, {"item": "minecraft:light_blue_dye"}],
     "result": {
       "components": {"minecraft:dyed_color": {"rgb": 10072818, "show_in_tooltip": false}},
       "count": 1,
@@ -1278,7 +1278,7 @@ ServerEvents.recipes(event => {
     "type": "computercraft:impostor_shapeless",
     "category": "redstone",
     "group": "computercraft:disk",
-    "ingredients": [{"tag": "c:dusts/redstone"}, {"item": "oritech:plastic_sheet"}, {"item": "minecraft:magenta_dye"}],
+    "ingredients": [{"tag": "c:dusts/redstone"}, {"tag": "c:plates/plastic"}, {"item": "minecraft:magenta_dye"}],
     "result": {
       "components": {"minecraft:dyed_color": {"rgb": 15040472, "show_in_tooltip": false}},
       "count": 1,
@@ -1290,7 +1290,7 @@ ServerEvents.recipes(event => {
     "type": "computercraft:impostor_shapeless",
     "category": "redstone",
     "group": "computercraft:disk",
-    "ingredients": [{"tag": "c:dusts/redstone"}, {"item": "oritech:plastic_sheet"}, {"item": "minecraft:orange_dye"}],
+    "ingredients": [{"tag": "c:dusts/redstone"}, {"tag": "c:plates/plastic"}, {"item": "minecraft:orange_dye"}],
     "result": {
       "components": {"minecraft:dyed_color": {"rgb": 15905331, "show_in_tooltip": false}},
       "count": 1,
@@ -1302,7 +1302,7 @@ ServerEvents.recipes(event => {
     "type": "computercraft:impostor_shapeless",
     "category": "redstone",
     "group": "computercraft:disk",
-    "ingredients": [{"tag": "c:dusts/redstone"}, {"item": "oritech:plastic_sheet"}, {"item": "minecraft:white_dye"}],
+    "ingredients": [{"tag": "c:dusts/redstone"}, {"tag": "c:plates/plastic"}, {"item": "minecraft:white_dye"}],
     "result": {
       "components": {"minecraft:dyed_color": {"rgb": 15790320, "show_in_tooltip": false}},
       "count": 1,
@@ -3113,7 +3113,30 @@ ServerEvents.recipes(event => {
   
   event.remove({output: "drones:drill"});
   event.shapeless('drones:drill', ['#oritech:plating', 'kubejs:drill']);
-  
+
+  event.remove({output: "drones:controller"});
+  event.custom({
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "###",
+      "#P#",
+      "#G#"
+    ],
+    "key": {
+      "#": {
+        "tag": "c:plates/plastic"
+      },
+      "P": {
+        "item": "oritech:advanced_computing_engine"
+      },
+      "G": {
+        "tag": "c:glass_panes"
+      }
+    },
+    "result": {
+      "id": "drones:controller"
+    }
+  });
 /*
   event.remove({output: ""});
   event.custom();
