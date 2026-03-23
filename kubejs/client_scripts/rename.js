@@ -28,4 +28,5 @@ ClientEvents.lang('en_us', event => {
    event.renameItem('confluence:honey_bucket', "Royal Honey Bucket")
    event.renameItem('confluence:bottomless_honey_bucket', "Bottomless Royal Honey Bucket")
    event.renameItem('toms_storage:paint_kit', "Paint Kit (STORAGE)")
+   event.renameItem('drones:drill', "Drone Drill")
 });

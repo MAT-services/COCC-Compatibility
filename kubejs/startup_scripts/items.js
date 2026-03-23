@@ -31,5 +31,9 @@ StartupEvents.registry('item', event => {
   event.create('steel_plate')
     .displayName('Steel Plate')
     .maxStackSize(64)
+    
+  event.create('drill')
+    .displayName('Drill')
+    .maxStackSize(64)
 })
 
