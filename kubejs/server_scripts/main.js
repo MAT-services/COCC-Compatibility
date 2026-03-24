@@ -16,7 +16,7 @@ BlockEvents.rightClicked(event => {
 
     if (count < 2) {
       event.cancel()
-      player.tell("§cIl faut 2 belts:chute pour placer ce bloc.")
+      player.tell("§c2 belts chutes are nedded to place a conveyor belt.")
     }
   }
 })
