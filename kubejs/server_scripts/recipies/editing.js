@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
       }
     ]
   })// TO TAPLACE WITH SEQUENCED ASSEMBLY.
-  
+
 
   event.custom({
     "type": "create:haunting",
@@ -3316,7 +3316,7 @@ ServerEvents.recipes(event => {
         "item": "minecraft:smooth_stone"
       },
       "P": {
-        "item": "oritech:plastic_sheet"
+        "tag": "c:plates/plastic"
       }
     },
     "result": {
