@@ -3445,6 +3445,9 @@ ServerEvents.recipes(event => {
       }
     ]
   });
+  event.remove({id: "oritech:centrifuge/fluid/plasticbio"});// oritech:centrifuge/fluid/plasticbiobetter oritech:centrifuge/fluid/plasticoil oritech:centrifuge/fluid/plasticoilbetter
+  event.remove({id: ""});
+  event.remove({id: ""});
   event.remove({id: ""});
   event.custom({
     "type": "oritech:centrifuge_fluid",
