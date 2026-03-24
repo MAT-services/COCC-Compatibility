@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
     "energy_needed": 5000,
     "ingredients": [
       {
-        "item": "kubejs:charged_crystal"
+        "item": "kubejs:uncharged_crystal"
       }
     ],
     "results": [

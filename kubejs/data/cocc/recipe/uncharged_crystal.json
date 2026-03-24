@@ -17,7 +17,7 @@
 		}
 	},
 	"result": {
-		"id": "kubejs:charged_crystal",
+		"id": "kubejs:uncharged_crystal",
 		"count": 3
 	}
 }

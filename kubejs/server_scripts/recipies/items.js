@@ -8,7 +8,7 @@ StartupEvents.registry('item', event => {
     .displayName('Overcharged Motor')
     .maxStackSize(64)
 
-  event.create('uncharged_crystal')
+  event.create('ununcharged_crystal')
     .displayName('Uncharged Crystal')
     .maxStackSize(64)
   

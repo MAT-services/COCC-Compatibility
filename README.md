@@ -11,4 +11,5 @@ The goal of CoC is to get the better player experience possible with Minecraft m
 ## Assets copyrights:
 - ComputerCraft X Create: https://modrinth.com/resourcepack/computer-craft-recreated
 - Tom's Simple Storage X create: https://modrinth.com/resourcepack/toms-create-storage
+- Malcolmriley unused: https://github.com/malcolmriley/unused-textures
 - Edits: MAT Services
