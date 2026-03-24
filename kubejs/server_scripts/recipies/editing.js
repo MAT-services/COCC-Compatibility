@@ -664,7 +664,7 @@ ServerEvents.recipes(event => {
         "tag": "minecraft:planks"
       },
       "N": {
-        "item": "oritech:nickel_ingot"
+        "item": "belts:belt"
       }
     },
     "result": {
@@ -3428,6 +3428,47 @@ ServerEvents.recipes(event => {
       "id": "kubejs:steel_plate"
     }
   });
+
+  event.remove({output: "oritech:plastic_sheet"});
+  event.smelting('kubejs:plastic_ingot', 'oritech:polymer_resin').xp(0.1).cookingTime(50);
+  event.blasting('kubejs:plastic_ingot', 'oritech:polymer_resin').xp(0.1).cookingTime(50);
+  event.custom({
+    "type": "create:pressing",
+    "ingredients": [
+      {
+        "item": "kubejs:plastic_ingot"
+      }
+    ],
+    "results": [
+      {
+        "id": "oritech:plastic_sheet"
+      }
+    ]
+  });
+  event.remove({id: ""});
+  event.custom({
+    "type": "oritech:centrifuge_fluid",
+    "fluidInput": {
+      "amount": 500,
+      "fluid": "minecraft:water"
+    },
+    "fluidOutputs": [],
+    "ingredients": [
+      {
+        "item": "oritech:raw_biopolymer"
+      }
+    ],
+    "results": [
+      {
+        "count": 1,
+        "id": "kubejs:plastic_ingot"
+      }
+    ],
+    "time": 120
+  });
+  
+  event.shaped('9x kubejs:plastic_ingot', ['A'], { A: 'oritech:plastic_block' });
+  event.shaped('oritech:plastic_block', ['AAA', 'AAA', 'AAA'], { A: 'kubejs:plastic_ingot' });
   
 /*
   event.remove({output: ""});
