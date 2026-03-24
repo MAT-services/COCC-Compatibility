@@ -59,7 +59,8 @@ ServerEvents.recipes(event => {
         "id": "oritech:overcharged_crystal"
       }
     ]
-  })
+  })// TO TAPLACE WITH SEQUENCED ASSEMBLY.
+  
 
   event.custom({
     "type": "create:haunting",

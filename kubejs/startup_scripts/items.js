@@ -37,7 +37,7 @@ StartupEvents.registry('item', event => {
     .maxStackSize(64)
 
   event.create('charging_crystal', 'create:sequenced_assembly')
-    .displayName('Uncharged Crystal')
+    .displayName('Charging Crystal')
     .maxStackSize(64)
 })
 
