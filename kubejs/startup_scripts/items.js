@@ -55,5 +55,15 @@ StartupEvents.registry('item', event => {
   event.create('datacard')
     .displayName('Internal Storage Device')
     .maxStackSize(64)
+
+  event.create('normal_display')
+    .displayName('Basic Display')
+    .maxStackSize(64)
+  event.create('specialized_display')
+    .displayName('Specialized Display')
+    .maxStackSize(64)
+  event.create('smart_display')
+    .displayName('Smart Display')
+    .maxStackSize(64)
 })
 
