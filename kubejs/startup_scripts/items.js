@@ -43,5 +43,17 @@ StartupEvents.registry('item', event => {
   event.create('plastic_ingot')
     .displayName('Plastic Ingot')
     .maxStackSize(64)
+
+  event.create('gpu')
+    .displayName('Graphic Card')
+    .maxStackSize(64)
+
+  event.create('cpu')
+    .displayName('Processor')
+    .maxStackSize(64)
+
+  event.create('datacard')
+    .displayName('Internal Storage Device')
+    .maxStackSize(64)
 })
 
