@@ -47,19 +47,105 @@ ServerEvents.recipes(event => {
 
   event.remove({ output: 'oritech:overcharged_crystal' })
   event.custom({
-    "type": "create_new_age:energising",
-    "energy_needed": 5000,
-    "ingredients": [
+    "type": "create:sequenced_assembly",
+    "ingredient": {
+      "item": "kubejs:uncharged_crystal"
+    },
+    "transitional_item": {
+      "id": "kubejs:charging_crystal"
+    },
+    "sequence": [
       {
-        "item": "kubejs:uncharged_crystal"
+        "type": "create_new_age:energising",
+        "energy_needed": 1000,
+        "ingredients": [
+          {
+            "item": "kubejs:charging_crystal"
+          }
+        ],
+        "results": [
+          {
+            "id": "kubejs:charging_crystal"
+          }
+        ]
+      },
+      {
+        "type": "create:filling",
+        "ingredients": [
+          {
+            "item": "kubejs:charging_crystal"
+          },
+          {
+            "fluid": "slag:molten_gold",
+            "type": "neoforge:single",
+            "amount": 250
+          }
+        ],
+        "results": [
+          {
+            "id": "kubejs:charging_crystal"
+          }
+        ]
+      },
+      {
+        "type": "create_new_age:energising",
+        "energy_needed": 2000,
+        "ingredients": [
+          {
+            "tag": "kubejs:charging_crystal"
+          }
+        ],
+        "results": [
+          {
+            "id": "kubejs:charging_crystal"
+          }
+        ]
+      },
+      {
+        "type": "create:filling",
+        "ingredients": [
+          {
+            "item": "kubejs:charging_crystal"
+          },
+          {
+            "fluid": "slag:molten_iron",
+            "type": "neoforge:single",
+            "amount": 250
+          }
+        ],
+        "results": [
+          {
+            "id": "kubejs:charging_crystal"
+          }
+        ]
+      },
+      {
+        "type": "create_new_age:energising",
+        "energy_needed": 3000,
+        "ingredients": [
+          {
+            "tag": "kubejs:charging_crystal"
+          }
+        ],
+        "results": [
+          {
+            "id": "kubejs:charging_crystal"
+          }
+        ]
       }
     ],
     "results": [
       {
-        "id": "oritech:overcharged_crystal"
+        "id": "oritech:overcharged_crystal",
+        "chance": 0.98
+      },
+      {
+        "id": "kubejs:uncharged_crystal",
+        "chance": 0.02
       }
-    ]
-  })// TO TAPLACE WITH SEQUENCED ASSEMBLY.
+    ],
+    "loops": 2
+  })
 
 
   event.custom({
@@ -2823,7 +2909,7 @@ ServerEvents.recipes(event => {
   event.shaped('oritech:pulverizer_block', ['AAA', 'ABA', 'CDC'], { A: 'create:cogwheel', B: 'create:millstone', C: 'oritech:motor', D: '#oritech:plating' });
 
   event.remove({output: "waystones:warp_stone"});
-  event.shaped('waystones:warp_stone', ['ABA', 'CDC', 'AEA'], { A: 'slag:dynamic_part[slag:material_type="slag:flint",slag:part_type="slag:plate"]', B: 'minecraft:ender_eye', C: 'slag:dynamic_part[slag:material_type="slag:obsidian",slag:part_type="slag:plate"]', D: 'oritech:fluxite', E: 'minecraft:ender_pearl' });
+  event.shaped('waystones:warp_stone', [' E ', 'O F', ' P '], { F: 'slag:dynamic_part[slag:material_type="slag:flint",slag:part_type="slag:plate"]', E: 'minecraft:ender_eye', O: 'slag:dynamic_part[slag:material_type="slag:obsidian",slag:part_type="slag:plate"]', P: 'minecraft:ender_pearl' });
 
   event.remove({output: "oritech:machine_core_1"});
   event.custom({
@@ -3445,10 +3531,10 @@ ServerEvents.recipes(event => {
       }
     ]
   });
-  event.remove({id: "oritech:centrifuge/fluid/plasticbio"});// oritech:centrifuge/fluid/plasticbiobetter oritech:centrifuge/fluid/plasticoil oritech:centrifuge/fluid/plasticoilbetter
-  event.remove({id: ""});
-  event.remove({id: ""});
-  event.remove({id: ""});
+  event.remove({id: "oritech:centrifuge/fluid/plasticbio"});
+  event.remove({id: "oritech:centrifuge/fluid/plasticbiobetter"});
+  event.remove({id: "oritech:centrifuge/fluid/plasticoil"});
+  event.remove({id: "oritech:centrifuge/fluid/plasticoilbetter"});
   event.custom({
     "type": "oritech:centrifuge_fluid",
     "fluidInput": {
@@ -3469,10 +3555,85 @@ ServerEvents.recipes(event => {
     ],
     "time": 120
   });
+  event.custom({
+    "type": "oritech:centrifuge_fluid",
+    "fluidInput": {
+      "amount": 250,
+      "fluid": "oritech:still_mineral_slurry"
+    },
+    "fluidOutputs": [],
+    "ingredients": [
+      {
+        "item": "oritech:raw_biopolymer"
+      }
+    ],
+    "results": [
+      {
+        "count": 2,
+        "id": "kubejs:plastic_ingot"
+      }
+    ],
+    "time": 120
+  });
+  event.custom({
+    "type": "oritech:centrifuge_fluid",
+    "fluidInput": {
+      "amount": 250,
+      "fluid": "oritech:still_mineral_slurry"
+    },
+    "fluidOutputs": [],
+    "ingredients": [
+      {
+        "item": "oritech:polymer_resin"
+      }
+    ],
+    "results": [
+      {
+        "count": 4,
+        "id": "kubejs:plastic_ingot"
+      }
+    ],
+    "time": 120
+  });
   
   event.shaped('9x kubejs:plastic_ingot', ['A'], { A: 'oritech:plastic_block' });
   event.shaped('oritech:plastic_block', ['AAA', 'AAA', 'AAA'], { A: 'kubejs:plastic_ingot' });
   
+  event.remove({id: "oritech:particle/overcharged_crystal"});
+  event.custom({
+    "type": "oritech:particle_collision",
+    "ingredients": [
+      {
+        "item": "oritech:fluxite"
+      },
+      {
+        "item": "oritech:energite_dust"
+      }
+    ],
+    "results": [
+      {
+        "count": 1,
+        "id": "kubejs:uncharged_crystal"
+      }
+    ],
+    "time": 5000
+  })
+
+  event.custom({
+    "type": "create:pressing",
+    "ingredients": [
+      {
+        "item": "create:copper_nugget"
+      }
+    ],
+    "results": [
+      {
+        "id": "confluence:copper_coin"
+      }
+    ]
+  })
+  event.shaped('4x confluence:copper_coin', ['A'], { A: 'createdeco:copper_coinstack' })
+  event.shaped('createdeco:copper_coinstack', ['AA', 'AA'], { A: 'confluence:copper_coin' })
 /*
   event.remove({output: ""});
   event.custom();

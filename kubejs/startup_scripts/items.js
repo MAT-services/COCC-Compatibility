@@ -10,7 +10,7 @@ StartupEvents.registry('item', event => {
 
   event.create('uncharged_crystal')
     .displayName('Uncharged Crystal')
-    .maxStackSize(64)
+    .maxStackSize(1)
   
   event.create('netherite_sheet')
     .displayName('Netherite Sheet')
@@ -38,7 +38,7 @@ StartupEvents.registry('item', event => {
 
   event.create('charging_crystal', 'create:sequenced_assembly')
     .displayName('Charging Crystal')
-    .maxStackSize(64)
+    .maxStackSize(1)
 
   event.create('plastic_ingot')
     .displayName('Plastic Ingot')
@@ -64,6 +64,14 @@ StartupEvents.registry('item', event => {
     .maxStackSize(64)
   event.create('smart_display')
     .displayName('Smart Display')
+    .maxStackSize(64)
+
+  event.create('bnwscreen')
+    .displayName('B&W Screen')
+    .maxStackSize(64)
+
+  event.create('colorscreen')
+    .displayName('Color Screen')
     .maxStackSize(64)
 })
 
