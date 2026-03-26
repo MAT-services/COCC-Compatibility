@@ -1,10 +1,10 @@
 StartupEvents.registry('block', event => {
-  event.create('auto_extractinator')
+  /*event.create('auto_extractinator')
     .displayName('Automatic Extractinator')
     .hardness(4)
     .resistance(8)
     .requiresTool(true)
-    .mapColor('metal')
+    .mapColor('metal')*/
 
   event.create('incomplete_stone')
     .displayName('Incomplete Stone Floor')
