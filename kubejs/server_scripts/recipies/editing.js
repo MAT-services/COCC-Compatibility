@@ -3642,6 +3642,9 @@ ServerEvents.recipes(event => {
   event.shaped('kubejs:specialized_display', ['AAA', 'BC ', 'AAA'], { A: '#c:plates/plastic', B: 'kubejs:gpu', C: 'kubejs:rgbscreen' });
   event.shaped('kubejs:smart_display', ['AAA', 'BCD', 'AAA'], { A: 'create:brass_ingot', B: 'kubejs:gpu', C: 'kubejs:rgbscreen', D: 'create:electron_tube' });
   
+  event.shaped('kubejs:bnwscreen', [' A', 'BA', ' A'], { A: '#c:glass_panes', B: 'minecraft:redstone' });
+  event.shaped('kubejs:rgbscreen', ['AB', 'CD', ' E'], { A: 'create:electron_tube', B: '#c:glass_panes/red', C: 'minecraft:redstone', D: '#c:glass_panes/green', E: '#c:glass_panes/blue' });
+  
 /*
   event.remove({output: ""});
   event.custom();
