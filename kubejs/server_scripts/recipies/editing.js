@@ -403,7 +403,7 @@ ServerEvents.recipes(event => {
         "item": "create_connected:control_chip"
       },
       "G": {
-        "tag": "c:glass_panes"
+        "item": "kubejs:normal_display"
       }
     },
     "result": {
@@ -419,6 +419,12 @@ ServerEvents.recipes(event => {
       },
       {
         "item": "minecraft:crafter"
+      },
+      {
+        "list": [
+          "kubejs:specialized_display",
+          "kubejs:smart_display"
+        ]
       }
     ],
     "result": {
@@ -605,7 +611,7 @@ ServerEvents.recipes(event => {
             "item": "create_connected:incomplete_control_chip"
           },
           {
-            "tag": "c:glass_panes"
+            "item": "kubejs:smart_display"
           }
         ],
         "results": [
@@ -688,7 +694,7 @@ ServerEvents.recipes(event => {
             "item": "create_connected:incomplete_control_chip"
           },
           {
-            "tag": "c:glass_panes"
+            "item": "kubejs:smart_display"
           }
         ],
         "results": [
@@ -833,7 +839,7 @@ ServerEvents.recipes(event => {
         "item": "oritech:processing_unit"
       },
       "G": {
-        "tag": "c:glass_panes"
+        "item": "kubejs:normal_display"
       }
     },
     "result": {
@@ -857,7 +863,7 @@ ServerEvents.recipes(event => {
         "item": "oritech:advanced_computing_engine"
       },
       "G": {
-        "tag": "c:glass_panes"
+        "item": "kubejs:smart_display"
       }
     },
     "result": {
@@ -914,7 +920,7 @@ ServerEvents.recipes(event => {
             "item": "create_connected:incomplete_control_chip"
           },
           {
-            "tag": "c:glass_panes"
+            "item": "kubejs:normal_display"
           }
         ],
         "results": [
@@ -998,7 +1004,7 @@ ServerEvents.recipes(event => {
             "item": "create_connected:incomplete_control_chip"
           },
           {
-            "tag": "c:glass_panes"
+            "item": "kubejs:smart_display"
           }
         ],
         "results": [
@@ -1139,7 +1145,7 @@ ServerEvents.recipes(event => {
         "item": "create_connected:control_chip"
       },
       {
-        "tag": "c:glass_panes"
+        "item": "kubejs:normal_display"
       }
     ],
     "result": {
@@ -1158,7 +1164,7 @@ ServerEvents.recipes(event => {
         "item": "oritech:processing_unit"
       },
       {
-        "tag": "c:glass_panes"
+        "item": "kubejs:smart_display"
       }
     ],
     "result": {
@@ -3216,9 +3222,10 @@ ServerEvents.recipes(event => {
       "P": {
         "item": "oritech:drone_port_block"
       },
-      "G": {
-        "tag": "c:glass_panes"
-      }
+      "G": [
+        "kubejs:specialized_display",
+        "kubejs:smart_display"
+      ]
     },
     "result": {
       "id": "drones:controller"
@@ -3644,7 +3651,7 @@ ServerEvents.recipes(event => {
   
   event.shaped('kubejs:bnwscreen', [' A', 'BA', ' A'], { A: '#c:glass_panes', B: 'minecraft:redstone' });
   event.shaped('kubejs:rgbscreen', ['AB', 'CD', ' E'], { A: 'create:electron_tube', B: '#c:glass_panes/red', C: 'minecraft:redstone', D: '#c:glass_panes/green', E: '#c:glass_panes/blue' });
-  
+
 /*
   event.remove({output: ""});
   event.custom();
