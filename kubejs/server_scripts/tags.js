@@ -39,7 +39,19 @@ ServerEvents.tags('block', event => {
     "create:industrial_iron_window",
     "create:weathered_iron_window"
   ])
+
+  event.add('drones:mining_tools', [
+    'create:mechanical_drill',
+    'createcasing:brass_mechanical_drill',
+    'createcasing:copper_mechanical_drill',
+    'createcasing:railway_mechanical_drill',
+    'createcasing:shadow_steel_mechanical_drill',
+    'createcasing:refined_radiance_mechanical_drill',
+    'createcasing:industrial_iron_mechanical_drill',
+    'createcasing:weathered_iron_mechanical_drill'
+  ])
 })
+
 ServerEvents.tags('item', event => {
 
   event.add('alexscaves:nuclear_furnace_rods', [

@@ -3205,7 +3205,7 @@ ServerEvents.recipes(event => {
   event.shaped('create:whisk', ['BBB', 'BCB', ' A '], { A: 'createdeco:andesite_sheet', B: 'create:iron_sheet', C: '#cocc:all_iron_nuggets_similar' });
   
   event.remove({output: "drones:drill"});
-  event.shapeless('drones:drill', ['#oritech:plating', 'kubejs:drill']);
+  event.shapeless('drones:drill', ['#cocc/all_iron_nugget_similar', 'kubejs:drill']);
 
   event.remove({output: "drones:controller"});
   event.custom({
