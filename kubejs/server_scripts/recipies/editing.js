@@ -3634,6 +3634,9 @@ ServerEvents.recipes(event => {
   })
   event.shaped('4x confluence:copper_coin', ['A'], { A: 'createdeco:copper_coinstack' })
   event.shaped('createdeco:copper_coinstack', ['AA', 'AA'], { A: 'confluence:copper_coin' })
+
+  event.shaped('kubejs:cpu', ['AAA'], { A: 'oritech:processing_unit' })
+  event.shapeless('kubejs:datacard', ['computercraft:disk', 'create_new_age:blank_circuit'])
 /*
   event.remove({output: ""});
   event.custom();
