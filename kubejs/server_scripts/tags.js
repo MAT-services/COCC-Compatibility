@@ -61,6 +61,12 @@ ServerEvents.tags('block', event => {
     'createcasing:weathered_iron_ deployer',
     "minecraft:hopper"
   ])
+  event.add('drones:melee_damage', [
+    {
+      "id": "#drones:mining_tools",
+      "required": false
+    }
+  ])
 })
 
 ServerEvents.tags('item', event => {
