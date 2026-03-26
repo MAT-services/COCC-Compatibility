@@ -14,11 +14,6 @@ StartupEvents.modifyCreativeTab('oritech:machine_group', event => {
 	event.remove('oritech:reactor_redstone_port');
 })
 
-StartupEvents.modifyCreativeTab('toms_peripherals:tab', event => {
-	event.remove('toms_peripherals:gpu_chip');
-	event.remove('toms_peripherals:gpu_chip_raw');
-})
-
 StartupEvents.modifyCreativeTab('createdeco:props_tab', event => {
 	event.remove('createdeco:copper_coin');
 })

@@ -52,23 +52,21 @@ ServerEvents.tags('block', event => {
   ])
   event.add('drones:pickup_tools', [
     "create:deployer",
-    'createcasing:brass_ deployer',
-    'createcasing:copper_ deployer',
-    'createcasing:railway_ deployer',
-    'createcasing:shadow_steel_ deployer',
-    'createcasing:refined_radiance_ deployer',
-    'createcasing:industrial_iron_ deployer',
-    'createcasing:weathered_iron_ deployer',
+    'createcasing:brass_deployer',
+    'createcasing:copper_deployer',
+    'createcasing:railway_deployer',
+    'createcasing:shadow_steel_deployer',
+    'createcasing:refined_radiance_deployer',
+    'createcasing:industrial_iron_deployer',
+    'createcasing:weathered_iron_deployer',
     "minecraft:hopper"
   ])
   event.add('drones:melee_damage', [
-    {
-      "id": "#drones:mining_tools",
-      "required": false
-    }
+    '#drones:mining_tools',
+    '#confluence:death'
   ])
   event.add('drones:arrow_launcher', [
-    // Add the confluence:otherworld traps here.
+    "#cocc:dart_trap"
   ])
 })
 

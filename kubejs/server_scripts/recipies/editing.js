@@ -421,10 +421,7 @@ ServerEvents.recipes(event => {
         "item": "minecraft:crafter"
       },
       {
-        "list": [
-          "kubejs:specialized_display",
-          "kubejs:smart_display"
-        ]
+        "tag": "cocc:color_displays"
       }
     ],
     "result": {
@@ -3205,7 +3202,22 @@ ServerEvents.recipes(event => {
   event.shaped('create:whisk', ['BBB', 'BCB', ' A '], { A: 'createdeco:andesite_sheet', B: 'create:iron_sheet', C: '#cocc:all_iron_nuggets_similar' });
   
   event.remove({output: "drones:drill"});
-  event.shapeless('drones:drill', ['#cocc/all_iron_nugget_similar', 'kubejs:drill']);
+  event.custom({
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+      {
+        "item": "kubejs:drill"
+      },
+      {
+        "tag": "cocc:all_iron_nuggets_similar"
+      }
+    ],
+    "result": {
+      "id": "drones:drill",
+      "count": 1
+    }
+  });
 
   event.remove({output: "drones:controller"});
   event.custom({
@@ -3222,10 +3234,9 @@ ServerEvents.recipes(event => {
       "P": {
         "item": "oritech:drone_port_block"
       },
-      "G": [
-        "kubejs:specialized_display",
-        "kubejs:smart_display"
-      ]
+      "G": {
+        "tag": "cocc:color_displays"
+      }
     },
     "result": {
       "id": "drones:controller"
@@ -3650,8 +3661,112 @@ ServerEvents.recipes(event => {
   event.shaped('kubejs:smart_display', ['AAA', 'BCD', 'AAA'], { A: 'create:brass_ingot', B: 'kubejs:gpu', C: 'kubejs:rgbscreen', D: 'create:electron_tube' });
   
   event.shaped('kubejs:bnwscreen', [' A', 'BA', ' A'], { A: '#c:glass_panes', B: 'minecraft:redstone' });
-  event.shaped('kubejs:rgbscreen', ['AB', 'CD', ' E'], { A: 'create:electron_tube', B: '#c:glass_panes/red', C: 'minecraft:redstone', D: '#c:glass_panes/green', E: '#c:glass_panes/blue' });
+  event.shaped('kubejs:rgbscreen', ['AGB', 'CGD', ' GE'], { A: 'create:electron_tube', B: 'minecraft:red_dye', C: 'minecraft:redstone', D: 'minecraft:green_dye', E: 'minecraft:blue_dye', G: '#c:glass_panes' });
 
+  event.custom({
+    "type": "create:sequenced_assembly",
+    "ingredient": {
+      "item": "create_connected:control_chip"
+    },
+    "transitional_item": {
+      "id": "create_connected:incomplete_control_chip"
+    },
+    "sequence": [
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "create_connected:incomplete_control_chip"
+          },
+          {
+            "tag": 'c:ingots/rose_gold'
+          }
+        ],
+        "results": [
+          {
+            "id": "create_connected:incomplete_control_chip"
+          }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "create_connected:incomplete_control_chip"
+          },
+          {
+            "item": "oritech:carbon_fibre_strands"
+          }
+        ],
+        "results": [
+          {
+            "id": "create_connected:incomplete_control_chip"
+          }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "create_connected:incomplete_control_chip"
+          },
+          {
+            "tag": "c:plates/plastic"
+          }
+        ],
+        "results": [
+          {
+            "id": "create_connected:incomplete_control_chip"
+          }
+        ]
+      },
+      {
+        "type": "create:pressing",
+        "ingredients": [
+          {
+            "item": "create_connected:incomplete_control_chip"
+          }
+        ],
+        "results": [
+          {
+            "id": "create_connected:incomplete_control_chip"
+          }
+        ]
+      }
+    ],
+    "results": [
+      {
+        "id": "kubejs:gpu"
+      }
+    ],
+    "loops": 1
+  });
+  event.custom({
+    "type": "oritech:assembler",
+    "ingredients": [
+      {
+        "tag": "c:plates/plastic"
+      },
+      {
+        "tag": "c:carbon_fibre"
+      },
+      {
+        "tag": 'c:ingots/rose_gold'
+      },
+      {
+        "item": "create_connected:control_chip"
+      }
+    ],
+    "results": [
+      {
+        "count": 1,
+        "id": "kubejs:gpu"
+      }
+    ],
+    "time": 96
+  });
+
+  // Add recipie for confluence:spike
 /*
   event.remove({output: ""});
   event.custom();
