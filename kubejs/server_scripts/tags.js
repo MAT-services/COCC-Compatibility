@@ -50,6 +50,17 @@ ServerEvents.tags('block', event => {
     'createcasing:industrial_iron_mechanical_drill',
     'createcasing:weathered_iron_mechanical_drill'
   ])
+  event.add('drones:pickup_tools', [
+    "create:deployer",
+    'createcasing:brass_ deployer',
+    'createcasing:copper_ deployer',
+    'createcasing:railway_ deployer',
+    'createcasing:shadow_steel_ deployer',
+    'createcasing:refined_radiance_ deployer',
+    'createcasing:industrial_iron_ deployer',
+    'createcasing:weathered_iron_ deployer',
+    "minecraft:hopper"
+  ])
 })
 
 ServerEvents.tags('item', event => {
