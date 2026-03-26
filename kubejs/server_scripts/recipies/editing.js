@@ -3617,7 +3617,7 @@ ServerEvents.recipes(event => {
       }
     ],
     "time": 5000
-  })
+  });
 
   event.custom({
     "type": "create:pressing",
@@ -3631,12 +3631,17 @@ ServerEvents.recipes(event => {
         "id": "confluence:copper_coin"
       }
     ]
-  })
-  event.shaped('4x confluence:copper_coin', ['A'], { A: 'createdeco:copper_coinstack' })
-  event.shaped('createdeco:copper_coinstack', ['AA', 'AA'], { A: 'confluence:copper_coin' })
+  });
+  event.shaped('4x confluence:copper_coin', ['A'], { A: 'createdeco:copper_coinstack' });
+  event.shaped('createdeco:copper_coinstack', ['AA', 'AA'], { A: 'confluence:copper_coin' });
 
-  event.shaped('kubejs:cpu', ['AAA'], { A: 'oritech:processing_unit' })
-  event.shapeless('kubejs:datacard', ['computercraft:disk', 'create_new_age:blank_circuit'])
+  event.shaped('kubejs:cpu', ['AAA'], { A: 'oritech:processing_unit' });
+  event.shapeless('kubejs:datacard', ['computercraft:disk', 'create_new_age:blank_circuit']);
+
+  event.shaped('kubejs:normal_display', ['AAA', 'BC ', 'AAA'], { A: 'create:andesite_alloy', B: 'kubejs:gpu', C: 'kubejs:bnwscreen' });
+  event.shaped('kubejs:specialized_display', ['AAA', 'BC ', 'AAA'], { A: '#c:plates/plastic', B: 'kubejs:gpu', C: 'kubejs:rgbscreen' });
+  event.shaped('kubejs:smart_display', ['AAA', 'BCD', 'AAA'], { A: 'create:brass_ingot', B: 'kubejs:gpu', C: 'kubejs:rgbscreen', D: 'create:electron_tube' });
+  
 /*
   event.remove({output: ""});
   event.custom();

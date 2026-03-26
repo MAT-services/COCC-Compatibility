@@ -70,7 +70,7 @@ StartupEvents.registry('item', event => {
     .displayName('B&W Screen')
     .maxStackSize(64)
 
-  event.create('colorscreen')
+  event.create('rgbscreen')
     .displayName('Color Screen')
     .maxStackSize(64)
 })
