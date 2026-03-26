@@ -67,6 +67,9 @@ ServerEvents.tags('block', event => {
       "required": false
     }
   ])
+  event.add('drones:arrow_launcher', [
+    // Add the confluence:otherworld traps here.
+  ])
 })
 
 ServerEvents.tags('item', event => {
