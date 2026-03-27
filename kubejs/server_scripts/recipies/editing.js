@@ -216,7 +216,7 @@ ServerEvents.recipes(event => {
             "item": "create_connected:incomplete_control_chip"
           },
           {
-            "item": "oritech:carbon_fibre_strands"
+            "item": "oritech:carbon_fibre_strands" // To modify for the GPU
           }
         ],
         "results": [
