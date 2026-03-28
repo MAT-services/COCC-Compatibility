@@ -11,5 +11,5 @@ ServerEvents.recipes(event => {
         "id": "kubejs:molten_steel" 
         }
     ]
-    });
+    }).id('cocc:melting/molten_steel');
 })

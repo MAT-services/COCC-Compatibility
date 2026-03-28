@@ -73,5 +73,9 @@ StartupEvents.registry('item', event => {
   event.create('rgbscreen')
     .displayName('Color Screen')
     .maxStackSize(64)
+
+  event.create('incomplete_chip', 'create:sequenced_assembly')
+    .displayName('Incomplete Unit')
+    .maxStackSize(1)
 })
 

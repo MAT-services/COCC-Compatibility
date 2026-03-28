@@ -1,5 +1,6 @@
 {
 	"type": "minecraft:crafting_shaped",
+	"id": "cocc:crafting_shaped/hermes_boots",
 	"pattern": [
 		" G ",
 		"CBC"

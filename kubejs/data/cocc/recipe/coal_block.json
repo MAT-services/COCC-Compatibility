@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "id": "cocc:crafting_shaped/coal_block",
   "show_notification": false,
   "pattern": [
     "###",

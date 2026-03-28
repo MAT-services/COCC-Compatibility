@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
         "id": "kubejs:molten_steel" 
         }
     ]
-    });
+    }).id('cocc:melting/molten_steel');
     event.custom({
         "type": "slag:table_casting",
         "cast": "slag:cast/ingots",
@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
             "count": 1,
             "id": "oritech:steel_ingot"
         }
-    })
+    }).id('cocc:table_casting/steel_ingot');
     event.custom({
         "type": "slag:basin_casting",
         "ingredient": {
@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
             "count": 1,
             "id": "oritech:steel_block"
         }
-    })
+    }).id('cocc:basin_casting/steel_block');
 
     event.custom({
     "type": "minecraft:crafting_shaped",
@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
       "id": "kubejs:steel_plate",
       "count": 1
     }
-  })
+  }).id('cocc:crafting_shaped/steel_plate');
   event.custom({
     "type": "slag:melting",
     "ingredient": {
@@ -68,5 +68,5 @@ ServerEvents.recipes(event => {
         "id": "kubejs:molten_steel" 
         }
     ]
-    });
+    }).id('cocc:melting/molten_steel_from_plate');
 })

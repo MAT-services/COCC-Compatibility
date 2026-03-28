@@ -42,6 +42,5 @@ ServerEvents.recipes(event => {
         "id": "output",
         "item": "create:polished_rose_quartz",
         "amount": 1
-    }]// SEE IF IT WORKS WITH "ID:" ENTRY.  (Awnser: No.)
-})
+    }]}).id('cocc:custom_machine/polished_rose_quartz');
 })

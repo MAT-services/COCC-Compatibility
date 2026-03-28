@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
     B: 'create:industrial_iron_block',
     C: 'create:shaft',
     '#': '#cocc:all_iron_nuggets_similar'
-  })
+  }).id('cocc:shaped/basic_motor')
 
   event.remove({ output: 'create_new_age:advanced_motor' })
   event.shaped('create_new_age:advanced_motor', [
@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
     B: 'create:rotation_speed_controller',
     C: 'create:shaft',
     '#': 'create:brass_nugget'
-  })
+  }).id('cocc:shaped/advanced_motor')
 
   event.shaped('kubejs:overcharged_motor', [
 		" A ",
@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
     A: 'oritech:nickel_ingot',
     '#': 'kubejs:overcharged_steel',
     B: 'oritech:magnetic_coil'
-  })
+  }).id('cocc:shaped/overcharged_motor')
 
   event.recipes.create.mechanical_crafting('confluence:hellforge', [
     'NNNL',
@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
     F: 'slag:brick_forge',
     C: 'create:blaze_cake',
     B: 'create:blaze_cake_base'
-  })
+  }).id('cocc:mechanical_crafting/hellforge')
 
   event.remove({ output: 'oritech:overcharged_crystal' })
   event.custom({
@@ -145,7 +145,7 @@ ServerEvents.recipes(event => {
       }
     ],
     "loops": 2
-  })
+  }).id('cocc:sequenced_assembly/overcharged_crystal');
 
 
   event.custom({
@@ -160,7 +160,7 @@ ServerEvents.recipes(event => {
         "id": "confluence:granite"
       }
     ]
-  })
+  }).id('cocc:haunting/confluence_granite');
   
   event.remove({ id: 'oritech:atomicforge/reinfdeepslate' })
   event.remove({ id: 'oritech:particle/heavy_core' })
@@ -180,7 +180,7 @@ ServerEvents.recipes(event => {
     },
     "experience": 0.2,
     "cookingtime": 250
-  })
+  }).id('cocc:smelting/uranium');
 
   event.remove({ output: 'oritech:processing_unit' })
   event.remove({ id: "oritech:assembler/processingunit"})
@@ -190,14 +190,14 @@ ServerEvents.recipes(event => {
       "item": "create_connected:control_chip"
     },
     "transitional_item": {
-      "id": "create_connected:incomplete_control_chip"
+      "id": "kubejs:incomplete_chip"
     },
     "sequence": [
       {
         "type": "create:deploying",
         "ingredients": [
           {
-            "item": "create_connected:incomplete_control_chip"
+            "item": "kubejs:incomplete_chip"
           },
           {
             "item": "oritech:electrum_ingot"
@@ -205,7 +205,7 @@ ServerEvents.recipes(event => {
         ],
         "results": [
           {
-            "id": "create_connected:incomplete_control_chip"
+            "id": "kubejs:incomplete_chip"
           }
         ]
       },
@@ -213,15 +213,15 @@ ServerEvents.recipes(event => {
         "type": "create:deploying",
         "ingredients": [
           {
-            "item": "create_connected:incomplete_control_chip"
+            "item": "kubejs:incomplete_chip"
           },
           {
-            "item": "oritech:carbon_fibre_strands" // To modify for the GPU
+            "item": "oritech:carbon_fibre_strands"
           }
         ],
         "results": [
           {
-            "id": "create_connected:incomplete_control_chip"
+            "id": "kubejs:incomplete_chip"
           }
         ]
       },
@@ -229,7 +229,7 @@ ServerEvents.recipes(event => {
         "type": "create:deploying",
         "ingredients": [
           {
-            "item": "create_connected:incomplete_control_chip"
+            "item": "kubejs:incomplete_chip"
           },
           {
             "tag": "c:plates/plastic"
@@ -237,7 +237,7 @@ ServerEvents.recipes(event => {
         ],
         "results": [
           {
-            "id": "create_connected:incomplete_control_chip"
+            "id": "kubejs:incomplete_chip"
           }
         ]
       },
@@ -245,12 +245,12 @@ ServerEvents.recipes(event => {
         "type": "create:pressing",
         "ingredients": [
           {
-            "item": "create_connected:incomplete_control_chip"
+            "item": "kubejs:incomplete_chip"
           }
         ],
         "results": [
           {
-            "id": "create_connected:incomplete_control_chip"
+            "id": "kubejs:incomplete_chip"
           }
         ]
       }
@@ -261,7 +261,7 @@ ServerEvents.recipes(event => {
       }
     ],
     "loops": 1
-  });
+  }).id('cocc:sequenced_assembly/processing_unit');
   event.custom({
     "type": "oritech:assembler",
     "ingredients": [
@@ -285,7 +285,7 @@ ServerEvents.recipes(event => {
       }
     ],
     "time": 96
-  });
+  }).id('cocc:assembler/processing_unit');
 
   event.custom({
     "type": "create_new_age:energising",
@@ -300,7 +300,7 @@ ServerEvents.recipes(event => {
         "id": "alexscaves:energized_galena_neutral"
       }
     ]
-  })
+  }).id('cocc:energising/energized_galena_neutral');
   event.custom({
     "type": "create:sequenced_assembly",
     "ingredient": {
@@ -365,7 +365,7 @@ ServerEvents.recipes(event => {
       }
     ],
     "loops": 5
-  });
+  }).id('cocc:sequenced_assembly/galena');
   event.remove({ output: 'toms_storage:inventory_connector'});
   event.custom({
 	"type": "minecraft:crafting_shapeless",
@@ -409,7 +409,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "toms_storage:storage_terminal"
     }
-  })
+  }).id('cocc:crafting_shaped/storage_terminal');
   event.remove({output : 'toms_storage:crafting_terminal'});
   event.custom({
     "type": "minecraft:crafting_shapeless",
@@ -442,7 +442,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "toms_storage:trim"
     }
-  });
+  }).id('cocc:crafting_shapeless/trim');
   event.remove({output: 'toms_storage:inventory_cable'});
   event.custom({
     "type": "minecraft:crafting_shaped",
@@ -460,7 +460,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "toms_storage:inventory_cable"
     }
-  });
+  }).id('cocc:crafting_shaped/inventory_cable');
   event.remove({output: 'toms_storage:basic_inventory_hopper'});
   event.custom({
     "type": "minecraft:crafting_shapeless",
@@ -475,7 +475,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "toms_storage:basic_inventory_hopper"
     }
-  });
+  }).id('cocc:crafting_shapeless/basic_inventory_hopper');
   event.remove({output: 'toms_storage:inventory_cable_connector'});
   event.custom({
     "type": "minecraft:crafting_shaped",
@@ -504,7 +504,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "toms_storage:inventory_cable_connector"
     }
-  });
+  }).id('cocc:crafting_shaped/inventory_cable_connector');
   event.remove({output: 'toms_storage:inventory_proxy'});
   event.custom({
     "type": "minecraft:crafting_shaped",
@@ -532,7 +532,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "toms_storage:inventory_proxy"
     }
-  });
+  }).id('cocc:crafting_shaped/inventory_proxy');
   event.remove({output: 'toms_storage:inventory_interface'});
   event.custom({
     "type": "minecraft:crafting_shaped",
@@ -558,7 +558,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "toms_storage:inventory_interface"
     }
-  });
+  }).id('cocc:crafting_shaped/inventory_interface');
   event.remove({output: 'toms_storage:wireless_terminal'});
   event.custom({
     "type": "create:sequenced_assembly",
@@ -641,7 +641,7 @@ ServerEvents.recipes(event => {
       }
     ],
     "loops": 1
-  })
+  }).id('cocc:sequenced_assembly/wireless_terminal');
   event.remove({output: 'toms_storage:adv_wireless_terminal'});
   event.custom({
     "type": "create:sequenced_assembly",
@@ -724,7 +724,7 @@ ServerEvents.recipes(event => {
       }
     ],
     "loops": 1
-  })
+  }).id('cocc:sequenced_assembly/adv_wireless_terminal');
   
   event.custom({
     "type": "create:pressing",
@@ -738,7 +738,7 @@ ServerEvents.recipes(event => {
         "id": "kubejs:netherite_sheet"
       }
     ]
-  });
+  }).id('cocc:pressing/netherite_sheet');
 
   event.remove({output: "oritech:item_pipe"});
   event.custom({
@@ -759,7 +759,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "oritech:item_pipe"
     }
-  })
+  }).id('cocc:crafting_shaped/item_pipe');
 
   event.custom({
     "type": "create:filling",
@@ -778,7 +778,7 @@ ServerEvents.recipes(event => {
         "id": "minecraft:dripstone_block"
       }
     ]
-  });
+  }).id('cocc:filling/dripstone_block');
   event.custom({
     "type": "create:filling",
     "ingredients": [
@@ -796,7 +796,7 @@ ServerEvents.recipes(event => {
         "id": "minecraft:tuff"
       }
     ]
-  });
+  }).id('cocc:filling/tuff');
   event.custom({
     "type": "minecraft:campfire_cooking",
     "ingredient": {
@@ -818,9 +818,7 @@ ServerEvents.recipes(event => {
     },
     "experience": 0.1,
     "cookingtime": 50
-  });
-
-  event.remove({output: "computercraft:computer_normal"});
+  }).id('cocc:blasting/limestone');
   event.custom({
     "type": "minecraft:crafting_shaped",
     "pattern": [
@@ -842,7 +840,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "computercraft:computer_normal"
     }
-  });
+  }).id('cocc:crafting_shaped/computercraft_computer_normal');
 
   event.remove({output: "computercraft:computer_advanced"});
   event.custom({
@@ -866,7 +864,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "computercraft:computer_advanced"
     }
-  });
+  }).id('cocc:crafting_shaped/computercraft_computer_advanced');
 
   event.remove({output: 'computercraft:pocket_computer_normal'});
   event.custom({
@@ -950,7 +948,7 @@ ServerEvents.recipes(event => {
       }
     ],
     "loops": 1
-  });
+  }).id('cocc:sequenced_assembly/pocket_computer_normal');
 
   event.remove({output: 'computercraft:pocket_computer_advanced'});
   event.custom({
@@ -1034,7 +1032,7 @@ ServerEvents.recipes(event => {
       }
     ],
     "loops": 1
-  });
+  }).id('cocc:sequenced_assembly/pocket_computer_advanced');
 
   event.remove({output: "computercraft:speaker"});
   event.custom({
@@ -1050,7 +1048,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "computercraft:speaker"
     }
-  });
+  }).id('cocc:crafting_shapeless/speaker');
 
   event.remove({output: "computercraft:cable"});
   event.custom({
@@ -1099,7 +1097,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "computercraft:wired_modem"
     }
-  });
+  }).id('cocc:crafting_shapeless/wired_modem');
   event.custom({
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
@@ -1110,7 +1108,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "computercraft:wired_modem_full"
     }
-  });
+  }).id('cocc:crafting_shapeless/wired_modem_full');
 
   event.remove({output: "computercraft:redstone_relay"});
   event.custom({
@@ -1129,7 +1127,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "computercraft:redstone_relay"
     }
-  });
+  }).id('cocc:crafting_shapeless/redstone_relay');
 
   event.remove({output: "computercraft:monitor_normal"});
   event.custom({
@@ -1148,7 +1146,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "computercraft:monitor_normal"
     }
-  });
+  }).id('cocc:crafting_shapeless/monitor_normal');
 
   event.remove({output: "computercraft:monitor_advanced"});
   event.custom({
@@ -1167,7 +1165,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "computercraft:monitor_advanced"
     }
-  });
+  }).id('cocc:crafting_shapeless/monitor_advanced');
 
   event.remove({output: "computercraft:printer"});
   event.custom({
@@ -1186,7 +1184,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "computercraft:printer"
     }
-  });
+  }).id('cocc:crafting_shapeless/printer');
 
   event.remove({output: "computercraft:disk_drive"});
   event.custom({
@@ -1205,7 +1203,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "computercraft:disk_drive"
     }
-  });
+  }).id('cocc:crafting_shapeless/disk_drive');
 
   // REPLACE OUTPUT HERE
   event.remove({output: "computercraft:disk"});
@@ -1219,7 +1217,7 @@ ServerEvents.recipes(event => {
       "count": 1,
       "id": "computercraft:disk"
     }
-  });
+  }).id('cocc:impostor_shapeless/disk/black');;
   event.custom({
     "type": "computercraft:impostor_shapeless",
     "category": "redstone",
@@ -1230,7 +1228,7 @@ ServerEvents.recipes(event => {
       "count": 1,
       "id": "computercraft:disk"
     }
-  });
+  }).id('cocc:impostor_shapeless/disk/red');;
 
   event.custom({
     "type": "computercraft:impostor_shapeless",
@@ -1242,7 +1240,7 @@ ServerEvents.recipes(event => {
       "count": 1,
       "id": "computercraft:disk"
     }
-  });
+  }).id('cocc:impostor_shapeless/disk/green');
 
   event.custom({
     "type": "computercraft:impostor_shapeless",
@@ -1254,7 +1252,7 @@ ServerEvents.recipes(event => {
       "count": 1,
       "id": "computercraft:disk"
     }
-  });
+  }).id('cocc:impostor_shapeless/disk/brown');
 
   event.custom({
     "type": "computercraft:impostor_shapeless",
@@ -1266,7 +1264,7 @@ ServerEvents.recipes(event => {
       "count": 1,
       "id": "computercraft:disk"
     }
-  });
+  }).id('cocc:impostor_shapeless/disk/blue');
 
   event.custom({
     "type": "computercraft:impostor_shapeless",
@@ -1278,7 +1276,7 @@ ServerEvents.recipes(event => {
       "count": 1,
       "id": "computercraft:disk"
     }
-  });
+  }).id('cocc:impostor_shapeless/disk/purple');
 
   event.custom({
     "type": "computercraft:impostor_shapeless",
@@ -1290,7 +1288,7 @@ ServerEvents.recipes(event => {
       "count": 1,
       "id": "computercraft:disk"
     }
-  });
+  }).id('cocc:impostor_shapeless/disk/cyan');
 
   event.custom({
     "type": "computercraft:impostor_shapeless",
@@ -1302,7 +1300,7 @@ ServerEvents.recipes(event => {
       "count": 1,
       "id": "computercraft:disk"
     }
-  });
+  }).id('cocc:impostor_shapeless/disk/light_gray');
 
   event.custom({
     "type": "computercraft:impostor_shapeless",
@@ -1314,7 +1312,7 @@ ServerEvents.recipes(event => {
       "count": 1,
       "id": "computercraft:disk"
     }
-  });
+  }).id('cocc:impostor_shapeless/disk/gray');
 
   event.custom({
     "type": "computercraft:impostor_shapeless",
@@ -1326,7 +1324,7 @@ ServerEvents.recipes(event => {
       "count": 1,
       "id": "computercraft:disk"
     }
-  });
+  }).id('cocc:impostor_shapeless/disk/pink');
 
   event.custom({
     "type": "computercraft:impostor_shapeless",
@@ -1338,7 +1336,7 @@ ServerEvents.recipes(event => {
       "count": 1,
       "id": "computercraft:disk"
     }
-  });
+  }).id('cocc:impostor_shapeless/disk/lime');
 
   event.custom({
     "type": "computercraft:impostor_shapeless",
@@ -1350,7 +1348,7 @@ ServerEvents.recipes(event => {
       "count": 1,
       "id": "computercraft:disk"
     }
-  });
+  }).id('cocc:impostor_shapeless/disk/yellow');
 
   event.custom({
     "type": "computercraft:impostor_shapeless",
@@ -1362,7 +1360,7 @@ ServerEvents.recipes(event => {
       "count": 1,
       "id": "computercraft:disk"
     }
-  });
+  }).id('cocc:impostor_shapeless/disk/light_blue');
 
   event.custom({
     "type": "computercraft:impostor_shapeless",
@@ -1374,7 +1372,7 @@ ServerEvents.recipes(event => {
       "count": 1,
       "id": "computercraft:disk"
     }
-  });
+  }).id('cocc:impostor_shapeless/disk/magenta');
 
   event.custom({
     "type": "computercraft:impostor_shapeless",
@@ -1386,7 +1384,7 @@ ServerEvents.recipes(event => {
       "count": 1,
       "id": "computercraft:disk"
     }
-  });
+  }).id('cocc:impostor_shapeless/disk/orange');
 
   event.custom({
     "type": "computercraft:impostor_shapeless",
@@ -1398,7 +1396,7 @@ ServerEvents.recipes(event => {
       "count": 1,
       "id": "computercraft:disk"
     }
-  });
+  }).id('cocc:impostor_shapeless/disk/white');
 
   
   event.remove({output: "computercraft:wireless_modem_normal"});
@@ -1466,7 +1464,7 @@ ServerEvents.recipes(event => {
       }
     ],
     "loops": 2
-  });
+  }).id('cocc:sequenced_assembly/wireless_modem_normal');
 
   event.remove({output: "computercraft:wireless_modem_advanced"});
   event.custom({
@@ -1533,7 +1531,7 @@ ServerEvents.recipes(event => {
       }
     ],
     "loops": 2
-  });
+  }).id('cocc:sequenced_assembly/wireless_modem_advanced');
 
   event.remove({ output: "create_connected:control_chip"});
   event.custom({
@@ -1648,7 +1646,7 @@ ServerEvents.recipes(event => {
     "transitional_item": {
       "id": "create_connected:incomplete_control_chip"
     }
-  });
+  }).id('cocc:sequenced_assembly/control_chip');
 
   event.custom({
     "type": "create:item_application",
@@ -1665,7 +1663,7 @@ ServerEvents.recipes(event => {
         "id": "create:refined_radiance_casing"
       }
     ]
-  });
+  }).id('cocc:item_application/refined_radiance_casing');
 
   event.custom({
     "type": "create:item_application",
@@ -1682,13 +1680,13 @@ ServerEvents.recipes(event => {
         "id": "create:shadow_steel_casing"
       }
     ]
-  });
+  }).id('cocc:item_application/shadow_steel_casing');
 
   event.remove({output: "alexscaves:nuclear_siren"});
-  event.shaped('alexscaves:nuclear_siren', ['ABA', 'ACA', ' D '], { A: 'create:iron_sheet', B: 'create:electron_tube', C: 'minecraft:iron_bars', D: 'create_new_age:reactor_casing' });
+  event.shaped('alexscaves:nuclear_siren', ['ABA', 'ACA', ' D '], { A: 'create:iron_sheet', B: 'create:electron_tube', C: 'minecraft:iron_bars', D: 'create_new_age:reactor_casing' }).id('cocc:shaped/nuclear_siren');
 
   event.remove({output: "alexscaves:siren_light"});
-  event.shaped('alexscaves:siren_light', ['AAA', 'ABA', 'CDC'], { A: 'minecraft:glass', B: 'alexscaves:radon_bottle', C: 'create_new_age:reactor_casing', D: 'create:electron_tube' });
+  event.shaped('alexscaves:siren_light', ['AAA', 'ABA', 'CDC'], { A: 'minecraft:glass', B: 'alexscaves:radon_bottle', C: 'create_new_age:reactor_casing', D: 'create:electron_tube' }).id('cocc:shaped/siren_light');
 
   event.custom({
     "type": "create:filling",
@@ -1707,7 +1705,7 @@ ServerEvents.recipes(event => {
         "id": "minecraft:calcite"
       }
     ]
-  })
+  }).id('cocc:filling/calcite');
   event.remove({output: "createcasing:chorium_ingot"});
   event.custom({
     "type": "create:sequenced_assembly",
@@ -1778,6 +1776,41 @@ ServerEvents.recipes(event => {
             "item": "createcasing:processing_chorium"
           },
           {
+            "item": "oritech:enderic_compound"
+          }
+        ],
+        "results": [
+          {
+            "id": "createcasing:processing_chorium"
+          }
+        ]
+      },
+      {
+        "type": "create:filling",
+        "ingredients": [
+          {
+            "item": "createcasing:processing_chorium"
+          },
+          {
+            "type": "neoforge:single",
+            "fluid": "slag:molten_lapis",
+            "amount": 100
+          }
+        ],
+        "results": [
+          {
+            "id": "createcasing:processing_chorium"
+          }
+        ]
+      },
+      
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "createcasing:processing_chorium"
+          },
+          {
             "item": "confluence:falling_star"
           }
         ],
@@ -1808,7 +1841,7 @@ ServerEvents.recipes(event => {
       }
     ],
     "loops": 4
-  })
+  }).id('cocc:sequenced_assembly/chromatic_compound');
   
   event.remove({output: "create_new_age:blank_circuit"});
   event.custom({
@@ -1926,7 +1959,7 @@ ServerEvents.recipes(event => {
         "id": "create:cut_deepslate"
       }
     ]
-  });
+  }).id('cocc:pressing/cut_deepslate');
 
   event.custom({
     "type": "minecraft:crafting_shaped",
@@ -1942,7 +1975,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "minecraft:amethyst_block"
     }
-  });
+  }).id('cocc:crafting_shaped/amethyst_block');
 
   event.remove({output: "toms_storage:paint_kit"});
   event.custom({
@@ -1965,7 +1998,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "toms_storage:paint_kit"
     }
-  });
+  }).id('cocc:crafting_shaped/paint_kit');
 
   event.custom({
     "type": "create:sequenced_assembly",
@@ -2056,7 +2089,7 @@ ServerEvents.recipes(event => {
       "count": 2
     },
     "accept_mirrored": true
-  });
+  }).id('cocc:mechanical_crafting/uranium_rod');
 
   event.remove({output: "oritech:electrum_ingot"});
   event.remove({id: "oritech:electrum_blockblock"});
@@ -2077,7 +2110,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "oritech:electrum_ingot"
     }
-  });
+  }).id('cocc:crafting_shaped/electrum_ingot');
   event.custom({
     "type": "oritech:foundry",
     "ingredients": [
@@ -2128,7 +2161,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "create_new_age:reactor_glass"
     }
-  });
+  }).id('cocc:crafting_shapeless/reactor_glass');
 
   event.remove({output: "create:rope_pulley"});
   event.custom({
@@ -2152,7 +2185,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "create:rope_pulley"
     }
-  });
+  }).id('cocc:crafting_shaped/rope_pulley');
 
   event.remove({output: "create_new_age:generator_coil"});
   event.custom({
@@ -2181,7 +2214,7 @@ ServerEvents.recipes(event => {
       "count": 2
     },
     "accept_mirrored": true
-  });
+  }).id('cocc:mechanical_crafting/generator_coil');
 
   event.remove({output: "oritech:clay_catalyst_beads"});
   event.remove({id: "oritech:assembler/claybeads"})
@@ -2199,7 +2232,7 @@ ServerEvents.recipes(event => {
       "id": "oritech:clay_catalyst_beads",
       "count": 7
     }
-  });
+  }).id('cocc:crafting_shapeless/clay_catalyst_beads');
   event.custom({
     "type": "oritech:assembler",
     "ingredients": [
@@ -2223,7 +2256,7 @@ ServerEvents.recipes(event => {
       }
     ],
     "time": 5
-  });
+  }).id('cocc:assembler/clay_catalyst_beads');
 
   event.remove({output: "alexscaves:scarlet_neodymium_ingot"});
   event.custom({
@@ -2242,7 +2275,7 @@ ServerEvents.recipes(event => {
       }
     ],
     "heat_requirement": "heated"
-  });
+  }).id('cocc:mixing/scarlet_neodymium_ingot');
 
   event.remove({output: "alexscaves:azure_neodymium_ingot"});
   event.custom({
@@ -2261,7 +2294,7 @@ ServerEvents.recipes(event => {
       }
     ],
     "heat_requirement": "heated"
-  });
+  }).id('cocc:mixing/azure_neodymium_ingot');
   
   event.remove({ id: "oritech:assembler/enderlens"});
   event.custom({
@@ -2287,12 +2320,12 @@ ServerEvents.recipes(event => {
       }
     ],
     "time": 144
-  });
+  }).id('cocc:assembler/enderic_lens');
 
-  event.shaped('oritech:electrum_block', ['AAA', 'AAA', 'AAA'], { A: 'oritech:electrum_ingot' });
-  event.shapeless('9x oritech:electrum_ingot', ['oritech:electrum_block']);
+  event.shaped('oritech:electrum_block', ['AAA', 'AAA', 'AAA'], { A: 'oritech:electrum_ingot' }).id('cocc:shaped/electrum_block');
+  event.shapeless('9x oritech:electrum_ingot', ['oritech:electrum_block']).id('cocc:shapeless/electrum_ingot_from_block');
 
-  event.smelting('confluence:lens', 'minecraft:glass_pane').xp(0.1).cookingTime(200);
+  event.smelting('confluence:lens', 'minecraft:glass_pane').xp(0.1).cookingTime(200).id('cocc:smelting/lens');
   event.custom({
     "type": "create:sequenced_assembly",
     "ingredient": {
@@ -2363,9 +2396,9 @@ ServerEvents.recipes(event => {
       "count": 50,
       "id": "terra_guns:high_velocity_bullet"
     }
-  })
+  }).id('cocc:heavy_work_bench/high_velocity_bullet');
 
-  event.shaped('confluence:cog', ['AAA', 'ABA', 'AAA'], { A: 'create:brass_nugget', B: 'create:andesite_alloy' })
+  event.shaped('confluence:cog', ['AAA', 'ABA', 'AAA'], { A: 'create:brass_nugget', B: 'create:andesite_alloy' }).id('cocc:shaped/cog');
 
   event.remove({output: "create:precision_mechanism"});
   event.custom({
@@ -2463,7 +2496,7 @@ ServerEvents.recipes(event => {
     "transitional_item": {
       "id": "create:incomplete_precision_mechanism"
     }
-  })
+  }).id('cocc:sequenced_assembly/precision_mechanism');
 
   event.custom({
     "type": "create:sequenced_assembly",
@@ -2591,7 +2624,7 @@ ServerEvents.recipes(event => {
       "id": "create_new_age:magnetite_block",
       "count": 1
     }
-  })
+  }).id('cocc:crafting_shaped/magnetite_block');
   
   event.custom({
     "type": "create:filling",
@@ -2610,7 +2643,7 @@ ServerEvents.recipes(event => {
         "id": "alexscaves:ferrouslime_ball"
       }
     ]
-  })
+  }).id('cocc:filling/ferrouslime_ball');
 
   event.remove({output: "confluence:space_gun"});
   event.custom({
@@ -2640,7 +2673,7 @@ ServerEvents.recipes(event => {
       "count": 1,
       "id": "confluence:space_gun"
     }
-  });
+  }).id('cocc:heavy_work_bench/space_gun');
   
   event.remove({output: "oritech:iron_plating_block"});
   event.custom({
@@ -2665,7 +2698,7 @@ ServerEvents.recipes(event => {
       "id": "oritech:iron_plating_block",
       "count": 5
     }
-  });
+  }).id('cocc:crafting_shaped/iron_plating_block');
 
   event.remove({output: "oritech:machine_plating_block"});
   event.custom({
@@ -2769,7 +2802,7 @@ ServerEvents.recipes(event => {
       }
     ],
     "time": 500
-  })
+  }).id('cocc:particle_collision/enderic_compound');
   event.custom({
     "type": "create:mixing",
     "ingredients": [
@@ -2855,7 +2888,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "alexscaves:drain"
     }
-  });
+  }).id('cocc:crafting_shaped/drain');
 
   event.custom({
     "type": "minecraft:crafting_shaped",
@@ -2875,7 +2908,7 @@ ServerEvents.recipes(event => {
       "id": "confluence:instantaneous_explosion_tnt",
       "count": 2
     }
-  })
+  }).id('cocc:crafting_shaped/instantaneous_explosion_tnt');
 
   event.custom({
     "type": "minecraft:smelting",
@@ -2888,7 +2921,7 @@ ServerEvents.recipes(event => {
     },
     "experience": 0.5,
     "cookingtime": 120
-  })
+  }).id('cocc:smelting/redstone_block_from_depth_charge');
 
   event.custom({
     "type": "slag:alloying",
@@ -2906,13 +2939,13 @@ ServerEvents.recipes(event => {
       "amount": 16,
       "id": "slag:molten_brass"
     }
-  })
+  }).id('cocc:alloying/molten_brass');
 
   event.remove({output: "oritech:pulverizer_block"});
-  event.shaped('oritech:pulverizer_block', ['AAA', 'ABA', 'CDC'], { A: 'create:cogwheel', B: 'create:millstone', C: 'oritech:motor', D: '#oritech:plating' });
+  event.shaped('oritech:pulverizer_block', ['AAA', 'ABA', 'CDC'], { A: 'create:cogwheel', B: 'create:millstone', C: 'oritech:motor', D: '#oritech:plating' }).id('cocc:shaped/pulverizer_block');
 
   event.remove({output: "waystones:warp_stone"});
-  event.shaped('waystones:warp_stone', [' E ', 'O F', ' P '], { F: 'slag:dynamic_part[slag:material_type="slag:flint",slag:part_type="slag:plate"]', E: 'minecraft:ender_eye', O: 'slag:dynamic_part[slag:material_type="slag:obsidian",slag:part_type="slag:plate"]', P: 'minecraft:ender_pearl' });
+  event.shaped('waystones:warp_stone', [' E ', 'O F', ' P '], { F: 'slag:dynamic_part[slag:material_type="slag:flint",slag:part_type="slag:plate"]', E: 'minecraft:ender_eye', O: 'slag:dynamic_part[slag:material_type="slag:obsidian",slag:part_type="slag:plate"]', P: 'minecraft:ender_pearl' }).id('cocc:shaped/warp_stone');
 
   event.remove({output: "oritech:machine_core_1"});
   event.custom({
@@ -2930,7 +2963,7 @@ ServerEvents.recipes(event => {
         "id": "oritech:machine_core_1"
       }
     ]
-  });
+  }).id('cocc:item_application/machine_core_1');
 
   event.remove({output: "oritech:machine_core_2"});
   event.custom({
@@ -2948,7 +2981,7 @@ ServerEvents.recipes(event => {
         "id": "oritech:machine_core_2"
       }
     ]
-  });
+  }).id('cocc:item_application/machine_core_2');
 
   event.remove({output: "oritech:machine_core_3"});
   event.custom({
@@ -2966,7 +2999,7 @@ ServerEvents.recipes(event => {
         "id": "oritech:machine_core_3"
       }
     ]
-  });
+  }).id('cocc:item_application/machine_core_3');
 
   event.remove({output: "oritech:machine_core_4"});
   event.custom({
@@ -2984,7 +3017,7 @@ ServerEvents.recipes(event => {
         "id": "oritech:machine_core_4"
       }
     ]
-  });
+  }).id('cocc:item_application/machine_core_4');
 
   event.remove({output: "oritech:machine_core_5"});
   event.custom({
@@ -3002,7 +3035,7 @@ ServerEvents.recipes(event => {
         "id": "oritech:machine_core_5"
       }
     ]
-  });
+  }).id('cocc:item_application/machine_core_5');
 
   event.remove({output: "oritech:machine_core_6"})
   event.custom({
@@ -3054,7 +3087,7 @@ ServerEvents.recipes(event => {
       }
     ],
     "loops": 1
-  })
+  }).id('cocc:sequenced_assembly/machine_core_6');
 
   event.remove({output: "oritech:machine_core_7"});
   event.custom({
@@ -3122,15 +3155,15 @@ ServerEvents.recipes(event => {
       }
     ],
     "loops": 2
-  });
+  }).id('cocc:sequenced_assembly/machine_core_7');
 
   event.remove({output: "create:brass_hand"});
-  event.shaped('create:brass_hand', [' A ', 'AAA', ' B '], { A: 'create:brass_ingot', B: 'createdeco:andesite_sheet' });
+  event.shaped('create:brass_hand', [' A ', 'AAA', ' B '], { A: 'create:brass_ingot', B: 'createdeco:andesite_sheet' }).id('cocc:shaped/brass_hand');
 
-  event.shaped('kubejs:andesite_clip', ['A A', 'AAA', ' B '], { A: 'create:andesite_alloy', B: 'slag:dynamic_part[slag:part_type="slag:plate",slag:material_type="slag:andesite_alloy"]' });
+  event.shaped('kubejs:andesite_clip', ['A A', 'AAA', ' B '], { A: 'create:andesite_alloy', B: 'slag:dynamic_part[slag:part_type="slag:plate",slag:material_type="slag:andesite_alloy"]' }).id('cocc:shaped/andesite_clip');
   
   event.remove({output: "create:mechanical_arm"});
-  event.shaped('create:mechanical_arm', ['ABC', 'BA ', 'DEF'], { A: 'oritech:carbon_fibre_strands', B: 'createcasing:brass_shaft', C: 'kubejs:andesite_clip', D: 'create:precision_mechanism', E: 'create:brass_casing', F: 'petrolsparts:coaxial_gear' });
+  event.shaped('create:mechanical_arm', ['ABC', 'BA ', 'DEF'], { A: 'oritech:carbon_fibre_strands', B: 'createcasing:brass_shaft', C: 'kubejs:andesite_clip', D: 'create:precision_mechanism', E: 'create:brass_casing', F: 'petrolsparts:coaxial_gear' }).id('cocc:shaped/mechanical_arm');
 
   event.custom({
     "type": "slag:double_smelting",
@@ -3149,7 +3182,7 @@ ServerEvents.recipes(event => {
   });
 
   event.remove({id: "createcasing:cutting/brass_ingot"});
-  event.shaped('8x createcasing:brass_shaft', ['A', 'A'], { A: 'create:brass_ingot' })
+  event.shaped('8x createcasing:brass_shaft', ['A', 'A'], { A: 'create:brass_ingot' }).id('cocc:shaped/brass_shaft');
 
     event.custom({
     "type": "confluence:heavy_work_bench",
@@ -3173,7 +3206,7 @@ ServerEvents.recipes(event => {
       "count": 1,
       "id": "confluence:encumbering_stone"
     }
-  });
+  }).id('cocc:heavy_work_bench/encumbering_stone');
   event.custom({
     "type": "create:mechanical_crafting",
     "category": "misc",
@@ -3196,10 +3229,10 @@ ServerEvents.recipes(event => {
       "id": "confluence:encumbering_stone"
     },
     "accept_mirrored": true
-  });
+  }).id('cocc:mechanical_crafting/encumbering_stone');
 
   event.remove({output: "create:whisk"});
-  event.shaped('create:whisk', ['BBB', 'BCB', ' A '], { A: 'createdeco:andesite_sheet', B: 'create:iron_sheet', C: '#cocc:all_iron_nuggets_similar' });
+  event.shaped('create:whisk', ['BBB', 'BCB', ' A '], { A: 'createdeco:andesite_sheet', B: 'create:iron_sheet', C: '#cocc:all_iron_nuggets_similar' }).id('cocc:shaped/whisk');
   
   event.remove({output: "drones:drill"});
   event.custom({
@@ -3217,7 +3250,7 @@ ServerEvents.recipes(event => {
       "id": "drones:drill",
       "count": 1
     }
-  });
+  }).id('cocc:crafting_shapeless/drones_drill');
 
   event.remove({output: "drones:controller"});
   event.custom({
@@ -3241,9 +3274,9 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "drones:controller"
     }
-  });
+  }).id('cocc:crafting_shaped/drones_controller');
 
-  event.shaped('kubejs:drill', [' A ', 'ABA', ' S '], { A: 'create:andesite_alloy', B: '#c:ingots/iron', S: 'createdeco:andesite_sheet' });
+  event.shaped('kubejs:drill', [' A ', 'ABA', ' S '], { A: 'create:andesite_alloy', B: '#c:ingots/iron', S: 'createdeco:andesite_sheet' }).id('cocc:shaped/kubejs_drill');
   
   event.remove({output: 'create:mechanical_drill'});
   event.remove({output: 'createcasing:brass_mechanical_drill'});
@@ -3266,7 +3299,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "create:mechanical_drill"
     }
-  })
+  }).id('cocc:crafting_shapeless/mechanical_drill');
   event.custom({
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
@@ -3280,7 +3313,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "createcasing:brass_mechanical_drill"
     }
-  })
+  }).id('cocc:crafting_shapeless/brass_mechanical_drill');
   event.custom({
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
@@ -3294,7 +3327,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "createcasing:copper_mechanical_drill"
     }
-  })
+  }).id('cocc:crafting_shapeless/copper_mechanical_drill');
   event.custom({
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
@@ -3308,7 +3341,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "createcasing:railway_mechanical_drill"
     }
-  })
+  }).id('cocc:crafting_shapeless/railway_mechanical_drill');
   event.custom({
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
@@ -3322,7 +3355,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "createcasing:shadow_steel_mechanical_drill"
     }
-  })
+  }).id('cocc:crafting_shapeless/shadow_steel_mechanical_drill');
   event.custom({
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
@@ -3336,7 +3369,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "createcasing:refined_radiance_mechanical_drill"
     }
-  })
+  }).id('cocc:crafting_shapeless/refined_radiance_mechanical_drill');
   event.custom({
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
@@ -3350,7 +3383,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "createcasing:industrial_iron_mechanical_drill"
     }
-  })
+  }).id('cocc:crafting_shapeless/industrial_iron_mechanical_drill');
   event.custom({
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
@@ -3364,7 +3397,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "createcasing:weathered_iron_mechanical_drill"
     }
-  })
+  }).id('cocc:crafting_shapeless/weathered_iron_mechanical_drill');
   
   event.remove({output: "drones:wood_rotor"});
   event.custom({
@@ -3384,7 +3417,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "drones:wood_rotor"
     }
-  })
+  }).id('cocc:crafting_shapeless/wood_rotor');
 
   event.remove({output: "drones:iron_rotor"})
   event.custom({
@@ -3404,7 +3437,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "drones:iron_rotor"
     }
-  })
+  }).id('cocc:crafting_shapeless/iron_rotor');
 
   event.remove({output: "drones:frame"});
   event.custom({
@@ -3426,7 +3459,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "drones:frame"
     }
-  });
+  }).id('cocc:crafting_shaped/drones_frame');
 
   event.remove({output: "drones:ion_thruster"});
   event.custom({
@@ -3441,7 +3474,7 @@ ServerEvents.recipes(event => {
       "id": "drones:ion_thruster",
       "count": 2
     }
-  })
+  }).id('cocc:crafting_shapeless/ion_thruster');
 
   event.remove({output: "belts:belt"});
   event.custom({
@@ -3519,7 +3552,7 @@ ServerEvents.recipes(event => {
       "id": "belts:chute",
       "count": 2
     }
-  })
+  }).id('cocc:crafting_shaped/belts_chute');
 
   event.custom({
     "type": "slag:table_casting",
@@ -3534,8 +3567,8 @@ ServerEvents.recipes(event => {
   });
 
   event.remove({output: "oritech:plastic_sheet"});
-  event.smelting('kubejs:plastic_ingot', 'oritech:polymer_resin').xp(0.1).cookingTime(50);
-  event.blasting('kubejs:plastic_ingot', 'oritech:polymer_resin').xp(0.1).cookingTime(50);
+  event.smelting('kubejs:plastic_ingot', 'oritech:polymer_resin').xp(0.1).cookingTime(50).id('cocc:smelting/plastic_ingot');
+  event.blasting('kubejs:plastic_ingot', 'oritech:polymer_resin').xp(0.1).cookingTime(50).id('cocc:blasting/plastic_ingot');
   event.custom({
     "type": "create:pressing",
     "ingredients": [
@@ -3548,7 +3581,7 @@ ServerEvents.recipes(event => {
         "id": "oritech:plastic_sheet"
       }
     ]
-  });
+  }).id('cocc:pressing/plastic_sheet');
   event.remove({id: "oritech:centrifuge/fluid/plasticbio"});
   event.remove({id: "oritech:centrifuge/fluid/plasticbiobetter"});
   event.remove({id: "oritech:centrifuge/fluid/plasticoil"});
@@ -3614,8 +3647,8 @@ ServerEvents.recipes(event => {
     "time": 120
   });
   
-  event.shaped('9x kubejs:plastic_ingot', ['A'], { A: 'oritech:plastic_block' });
-  event.shaped('oritech:plastic_block', ['AAA', 'AAA', 'AAA'], { A: 'kubejs:plastic_ingot' });
+  event.shaped('9x kubejs:plastic_ingot', ['A'], { A: 'oritech:plastic_block' }).id('cocc:shaped/plastic_ingot_9x');
+  event.shaped('oritech:plastic_block', ['AAA', 'AAA', 'AAA'], { A: 'kubejs:plastic_ingot' }).id('cocc:shaped/plastic_block');
   
   event.remove({id: "oritech:particle/overcharged_crystal"});
   event.custom({
@@ -3635,6 +3668,29 @@ ServerEvents.recipes(event => {
       }
     ],
     "time": 5000
+  }).id('cocc:particle_collision/uncharged_crystal');
+  event.custom({
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      " A ",
+      "CBC",
+      "CBC"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:amethyst_block"
+      },
+      "B": {
+        "item": "oritech:advanced_battery"
+      },
+      "C": {
+        "item": "oritech:superconductor"
+      }
+    },
+    "result": {
+      "id": "kubejs:uncharged_crystal"/*,
+      "count": 3*/
+    }
   });
 
   event.custom({
@@ -3649,19 +3705,19 @@ ServerEvents.recipes(event => {
         "id": "confluence:copper_coin"
       }
     ]
-  });
-  event.shaped('4x confluence:copper_coin', ['A'], { A: 'createdeco:copper_coinstack' });
-  event.shaped('createdeco:copper_coinstack', ['AA', 'AA'], { A: 'confluence:copper_coin' });
+  }).id('cocc:pressing/copper_coin');
+  event.shaped('4x confluence:copper_coin', ['A'], { A: 'createdeco:copper_coinstack' }).id('cocc:shaped/copper_coin_4x');
+  event.shaped('createdeco:copper_coinstack', ['AA', 'AA'], { A: 'confluence:copper_coin' }).id('cocc:shaped/copper_coinstack');
 
-  event.shaped('kubejs:cpu', ['AAA'], { A: 'oritech:processing_unit' });
-  event.shapeless('kubejs:datacard', ['computercraft:disk', 'create_new_age:blank_circuit']);
+  event.shaped('kubejs:cpu', ['AAA'], { A: 'oritech:processing_unit' }).id('cocc:shaped/cpu');
+  event.shapeless('kubejs:datacard', ['computercraft:disk', 'create_new_age:blank_circuit']).id('cocc:shapeless/datacard');
 
-  event.shaped('kubejs:normal_display', ['AAA', 'BC ', 'AAA'], { A: 'create:andesite_alloy', B: 'kubejs:gpu', C: 'kubejs:bnwscreen' });
-  event.shaped('kubejs:specialized_display', ['AAA', 'BC ', 'AAA'], { A: '#c:plates/plastic', B: 'kubejs:gpu', C: 'kubejs:rgbscreen' });
-  event.shaped('kubejs:smart_display', ['AAA', 'BCD', 'AAA'], { A: 'create:brass_ingot', B: 'kubejs:gpu', C: 'kubejs:rgbscreen', D: 'create:electron_tube' });
+  event.shaped('kubejs:normal_display', ['AAA', 'BC ', 'AAA'], { A: 'create:andesite_alloy', B: 'kubejs:gpu', C: 'kubejs:bnwscreen' }).id('cocc:shaped/normal_display');
+  event.shaped('kubejs:specialized_display', ['AAA', 'BC ', 'AAA'], { A: '#c:plates/plastic', B: 'kubejs:gpu', C: 'kubejs:rgbscreen' }).id('cocc:shaped/specialized_display');
+  event.shaped('kubejs:smart_display', ['AAA', 'BCD', 'AAA'], { A: 'create:brass_ingot', B: 'kubejs:gpu', C: 'kubejs:rgbscreen', D: 'create:electron_tube' }).id('cocc:shaped/smart_display');
   
-  event.shaped('kubejs:bnwscreen', [' A', 'BA', ' A'], { A: '#c:glass_panes', B: 'minecraft:redstone' });
-  event.shaped('kubejs:rgbscreen', ['AGB', 'CGD', ' GE'], { A: 'create:electron_tube', B: 'minecraft:red_dye', C: 'minecraft:redstone', D: 'minecraft:green_dye', E: 'minecraft:blue_dye', G: '#c:glass_panes' });
+  event.shaped('kubejs:bnwscreen', [' A', 'BA', ' A'], { A: '#c:glass_panes', B: 'minecraft:redstone' }).id('cocc:shaped/bnwscreen');
+  event.shaped('kubejs:rgbscreen', ['AGB', 'CGD', ' GE'], { A: 'create:electron_tube', B: 'minecraft:red_dye', C: 'minecraft:redstone', D: 'minecraft:green_dye', E: 'minecraft:blue_dye', G: '#c:glass_panes' }).id('cocc:shaped/rgbscreen');
 
   event.custom({
     "type": "create:sequenced_assembly",
@@ -3669,14 +3725,14 @@ ServerEvents.recipes(event => {
       "item": "create_connected:control_chip"
     },
     "transitional_item": {
-      "id": "create_connected:incomplete_control_chip"
+      "id": "kubejs:incomplete_chip"
     },
     "sequence": [
       {
         "type": "create:deploying",
         "ingredients": [
           {
-            "item": "create_connected:incomplete_control_chip"
+            "item": "kubejs:incomplete_chip"
           },
           {
             "tag": 'c:ingots/rose_gold'
@@ -3684,7 +3740,7 @@ ServerEvents.recipes(event => {
         ],
         "results": [
           {
-            "id": "create_connected:incomplete_control_chip"
+            "id": "kubejs:incomplete_chip"
           }
         ]
       },
@@ -3692,7 +3748,7 @@ ServerEvents.recipes(event => {
         "type": "create:deploying",
         "ingredients": [
           {
-            "item": "create_connected:incomplete_control_chip"
+            "item": "kubejs:incomplete_chip"
           },
           {
             "item": "oritech:carbon_fibre_strands"
@@ -3700,7 +3756,7 @@ ServerEvents.recipes(event => {
         ],
         "results": [
           {
-            "id": "create_connected:incomplete_control_chip"
+            "id": "kubejs:incomplete_chip"
           }
         ]
       },
@@ -3708,7 +3764,7 @@ ServerEvents.recipes(event => {
         "type": "create:deploying",
         "ingredients": [
           {
-            "item": "create_connected:incomplete_control_chip"
+            "item": "kubejs:incomplete_chip"
           },
           {
             "tag": "c:plates/plastic"
@@ -3716,7 +3772,7 @@ ServerEvents.recipes(event => {
         ],
         "results": [
           {
-            "id": "create_connected:incomplete_control_chip"
+            "id": "kubejs:incomplete_chip"
           }
         ]
       },
@@ -3724,12 +3780,12 @@ ServerEvents.recipes(event => {
         "type": "create:pressing",
         "ingredients": [
           {
-            "item": "create_connected:incomplete_control_chip"
+            "item": "kubejs:incomplete_chip"
           }
         ],
         "results": [
           {
-            "id": "create_connected:incomplete_control_chip"
+            "id": "kubejs:incomplete_chip"
           }
         ]
       }
@@ -3764,7 +3820,7 @@ ServerEvents.recipes(event => {
       }
     ],
     "time": 96
-  });
+  }).id('cocc:assembler/gpu');
 
   // Add recipie for confluence:spike
 /*

@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "id": "cocc:crafting_shaped/extractinator",
   "pattern": [
     "12",
     "34",
