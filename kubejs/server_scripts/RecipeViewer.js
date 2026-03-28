@@ -8,4 +8,7 @@ RecipeViewerEvents.addInformation('item', event => {
 	event.add('confluence:star_petals', [
 		'Can be obtain from confluence:stellar_blossom_seed on cloud blocks.'
 	]);
+	event.add('alexscaves:radon_bottle', [
+		"Can be obtain by appplying a Glass Bottle on a Geothermal Vent in Acid."
+	])
 })

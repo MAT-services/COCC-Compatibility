@@ -3822,8 +3822,110 @@ ServerEvents.recipes(event => {
     "time": 96
   }).id('cocc:assembler/gpu');
 
-  // Add recipie for confluence:spike
-/*
+  event.recipes.create.mixing(Fluid.of('oritech:still_sulfuric_acid'), [Fluid.of('alexscaves:acid'), 'alexscaves:sulfur_dust']).id('cocc:mixing/still_sulphuric_acid');
+
+  event.custom({
+    "type": "oritech:centrifuge_fluid",
+    "fluidInput": {
+      "amount": 500,
+      "fluid": "oritech:still_sulfuric_acid"
+    },
+    "fluidOutputs": [
+      {
+        "amount": 500,
+        "fluid": "alexscaves:acid"
+      }
+    ],
+    "results": [
+      {
+        "count": 1,
+        "id": "alexscaves:sulfur_dust"
+      }
+    ],
+    "time": 150
+  }).id('cocc:centrifuge_fluid/acid-sulfur_dust');
+
+  event.remove({output: "slag:melter"})
+  event.shaped('slag:melter', ['AAA', 'BCB', 'ADA'], { A: 'slag:deep_alloy', B: 'slag:rose_gold_ingot', C: 'slag:drain', D: 'minecraft:netherrack' }).id('cocc:shaped/melter');
+  
+  event.custom({
+    "type": "create:filling",
+    "ingredients": [
+      {
+        "item": "minecraft:pointed_dripstone"
+      },
+      {
+        "type": "neoforge:single",
+        "fluid": "slag:molten_netherite",
+        "amount": 104
+      }
+    ],
+    "results": [
+      {
+        "id": "confluence:spike"
+      }
+    ]
+  }).id('cocc:spouting/spike');
+
+  event.remove({output: "alexscaves:polymer_plate"});
+  event.shapeless('2x alexscaves:polymer_plate', [["oritech:polymer_resin","oritech:raw_biopolymer","alexscaves:toxic_paste"], 'alexscaves:radon_bottle', 'alexscaves:sulfur_dust', 'slag:dynamic_part[slag:material_type="slag:iron",slag:part_type="slag:plate"]']).id('cocc:shapeless/polymer_plate');
+
+  event.custom({
+    "type": "create:emptying",
+    "ingredients": [
+      {
+        "item": "confluence:cream_soda"
+      }
+    ],
+    "results": [
+      {
+        "id": "minecraft:glass_bottle"
+      },
+      {
+        "amount": 250,
+        "id": "alexscaves:purple_soda"
+      }
+    ]
+  }).id('cocc:emptying/cream_soda');
+  event.custom({
+    "type": "create:emptying",
+    "ingredients": [
+      {
+        "item": "alexscaves:purple_soda_bottle"
+      }
+    ],
+    "results": [
+      {
+        "id": "minecraft:glass_bottle"
+      },
+      {
+        "amount": 250,
+        "id": "alexscaves:purple_soda"
+      }
+    ]
+  }).id('cocc:emptying/soda_bottle');
+
+  event.custom({
+    "type": "create:filling",
+    "ingredients": [
+      {
+        "item": "minecraft:glass_bottle"
+      },
+      {
+        "type": "neoforge:single",
+        "fluid": "alexscaves:purple_soda",
+        "amount": 250
+      }
+    ],
+    "results": [
+      {
+        "id": "alexscaves:purple_soda_bottle"
+      }
+    ]
+  }).id('cocc:filling/purple_soda_bottle');
+
+  event.shapeless('alexscaves:geothermal_vent', ['create:fluid_pipe', 'minecraft:tuff']).id('cocc:shapeless/geothermal_vent');
+  /*
   event.remove({output: ""});
   event.custom();
 */
