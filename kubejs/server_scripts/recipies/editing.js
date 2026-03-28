@@ -819,6 +819,7 @@ ServerEvents.recipes(event => {
     "experience": 0.1,
     "cookingtime": 50
   }).id('cocc:blasting/limestone');
+  event.remove({output: "computercraft:computer_normal"});
   event.custom({
     "type": "minecraft:crafting_shaped",
     "pattern": [

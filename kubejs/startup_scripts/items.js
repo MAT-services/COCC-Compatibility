@@ -45,7 +45,7 @@ StartupEvents.registry('item', event => {
     .maxStackSize(64)
 
   event.create('gpu')
-    .displayName('Graphic Card')
+    .displayName('Graphic Unit')
     .maxStackSize(64)
 
   event.create('cpu')
