@@ -3931,13 +3931,13 @@ ServerEvents.recipes(event => {
   event.recipes.create.mechanical_crafting('immersive_aircraft:propeller', [
       "   A ",
       "AA A ",
-      "   B   ",
+      "  B  ",
       " A AA",
       " A   "
   ], {
     A: 'slag:dynamic_part[slag:material_type="slag:iron",slag:part_type="slag:plate"]',
     B: 'create:propeller'
-  }).id("cocc:mechanical_crafting/aircraft_propeller")
+  }).id("cocc:mechanical_crafting/aircraft_propeller");
   /*
   event.remove({output: ""});
   event.custom();
