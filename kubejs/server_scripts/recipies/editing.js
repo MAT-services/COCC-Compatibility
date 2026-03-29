@@ -3926,6 +3926,30 @@ ServerEvents.recipes(event => {
   }).id('cocc:filling/purple_soda_bottle');
 
   event.shapeless('alexscaves:geothermal_vent', ['create:fluid_pipe', 'minecraft:tuff']).id('cocc:shapeless/geothermal_vent');
+
+  event.custom({
+    "type": "create:mechanical_crafting",
+    "category": "misc",
+    "key": {
+      "A": {
+        "item": 'slag:dynamic_part[slag:material_type="slag:iron",slag:part_type="slag:plate"]'
+      },
+      "B": {
+        "item": "create:propeller"
+      }
+    },
+    "pattern": [
+      "   A ",
+      "AA A ",
+      "   B   ",
+      " A AA",
+      " A   "
+    ],
+    "result": {
+      "id": "immersive_aircraft:propeller"
+    },
+    "accept_mirrored": true
+  }).id('shadoukube:immersive_aircraft-propeller');
   /*
   event.remove({output: ""});
   event.custom();
