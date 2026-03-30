@@ -1052,22 +1052,23 @@ ServerEvents.recipes(event => {
 
   event.remove({output: "computercraft:cable"});
   event.custom({
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-      "#R#"
-    ],
-    "key": {
-      "#": {
-        "item": "oritech:nickel_nugget"
+    "type": "create:filling",
+    "ingredients": [
+      {
+        "item": "kubejs:cable"
       },
-      "R": {
-        "item": "create_new_age:copper_wire"
+      {
+        "type": "neoforge:single",
+        "fluid": "slag:molten_redstone",
+        "amount": 10
       }
-    },
-    "result": {
-      "id": "computercraft:cable"
-    }
-  }).id("cocc:shaped/computercraft_cable"); // TO MODIFY
+    ],
+    "results": [
+      {
+        "id": "computercraft:cable"
+      }
+    ]
+  }).id("cocc:shaped/computercraft_cable");
 
   event.remove({output: "computercraft:wired_modem_full"});
   event.remove({output: "computercraft:wired_modem"});
