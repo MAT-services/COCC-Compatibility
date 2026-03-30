@@ -445,22 +445,21 @@ ServerEvents.recipes(event => {
   }).id('cocc:crafting_shapeless/trim');
   event.remove({output: 'toms_storage:inventory_cable'});
   event.custom({
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-      "#V#"
-    ],
-    "key": {
-      "#": {
-        "item": "create:brass_nugget"
+    "type": "create:deploying",
+    "ingredients": [
+      {
+        "item": "kubejs:cable"
       },
-      "V": {
-        "item": "minecraft:barrel"
+      {
+        "item": "create:crafter_slot_cover"
       }
-    },
-    "result": {
-      "id": "toms_storage:inventory_cable"
-    }
-  }).id('cocc:crafting_shaped/inventory_cable');
+    ],
+    "results": [
+      {
+        "id": "toms_storage:inventory_cable"
+      }
+    ]
+  }).id('cocc:deploying/inventory_cable'); 
   event.remove({output: 'toms_storage:basic_inventory_hopper'});
   event.custom({
     "type": "minecraft:crafting_shapeless",
@@ -1053,22 +1052,22 @@ ServerEvents.recipes(event => {
 
   event.remove({output: "computercraft:cable"});
   event.custom({
-	"type": "minecraft:crafting_shaped",
-	"pattern": [
-		"#R#"
-	],
-	"key": {
-		"#": {
-			"item": "oritech:nickel_nugget"
-		},
-		"R": {
-			"item": "create_new_age:copper_wire"
-		}
-	},
-	"result": {
-		"id": "computercraft:cable"
-	}
-});
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "#R#"
+    ],
+    "key": {
+      "#": {
+        "item": "oritech:nickel_nugget"
+      },
+      "R": {
+        "item": "create_new_age:copper_wire"
+      }
+    },
+    "result": {
+      "id": "computercraft:cable"
+    }
+  }).id("cocc:shaped/computercraft_cable"); // TO MODIFY
 
   event.remove({output: "computercraft:wired_modem_full"});
   event.remove({output: "computercraft:wired_modem"});
@@ -1087,7 +1086,7 @@ ServerEvents.recipes(event => {
         "id": "computercraft:wired_modem_full"
       }
     ]
-  });
+  }).id('cocc:crafting_shapeless/wired_modem');
   event.custom({
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
@@ -1098,7 +1097,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "computercraft:wired_modem"
     }
-  }).id('cocc:crafting_shapeless/wired_modem');
+  }).id('cocc:crafting_shapeless/wired_modem_alt');
   event.custom({
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
@@ -1109,7 +1108,7 @@ ServerEvents.recipes(event => {
     "result": {
       "id": "computercraft:wired_modem_full"
     }
-  }).id('cocc:crafting_shapeless/wired_modem_full');
+  }).id('cocc:crafting_shapeless/wired_modem_full_alt');
 
   event.remove({output: "computercraft:redstone_relay"});
   event.custom({
@@ -3957,7 +3956,10 @@ ServerEvents.recipes(event => {
   
   event.remove({output: "immersive_aircraft:industrial_gears"});
   event.shapeless("immersive_aircraft:industrial_gears", ["kubejs:copper_cog", "#cocc:all_iron_cogs_similar", "minecraft:lever"]).id('cocc:shapeless/industrial_gears');
+  
+  event.shaped('kubejs:cable', [' A ', 'A A', ' A '], { A: 'kubejs:rubber' }).id('cocc:shaped/cable');
   // Use atomic forge to create graphite.
+  // TO MODIFY - TAG REMINDER
 
   /*
   event.remove({output: ""});

@@ -94,5 +94,12 @@ StartupEvents.registry('item', event => {
     .displayName('Lead Cog')
     .maxStackSize(64)    
   
+  event.create('rubber')
+    .displayName('Rubber Paste')
+    .maxStackSize(64)
+
+  event.create('cable')
+    .displayName('Empty Cable')
+    .maxStackSize(64)
 })
 
