@@ -3869,7 +3869,7 @@ ServerEvents.recipes(event => {
   }).id('cocc:spouting/spike');
 
   event.remove({output: "alexscaves:polymer_plate"});
-  event.shapeless('2x alexscaves:polymer_plate', [["oritech:polymer_resin","oritech:raw_biopolymer","alexscaves:toxic_paste"], 'alexscaves:radon_bottle', 'alexscaves:sulfur_dust', 'slag:dynamic_part[slag:material_type="slag:iron",slag:part_type="slag:plate"]']).id('cocc:shapeless/polymer_plate');
+  event.shapeless('2x alexscaves:polymer_plate', ["#cocc:resin_like", 'alexscaves:radon_bottle', 'alexscaves:sulfur_dust', 'slag:dynamic_part[slag:material_type="slag:iron",slag:part_type="slag:plate"]']).id('cocc:shapeless/polymer_plate');
 
   event.custom({
     "type": "create:emptying",
@@ -3959,8 +3959,28 @@ ServerEvents.recipes(event => {
   event.shapeless("immersive_aircraft:industrial_gears", ["kubejs:copper_cog", "#cocc:all_iron_cogs_similar", "minecraft:lever"]).id('cocc:shapeless/industrial_gears');
   
   event.shaped('kubejs:cable', [' A ', 'A A', ' A '], { A: 'kubejs:rubber' }).id('cocc:shaped/cable');
+  
+  event.custom({
+    "type": "oritech:centrifuge_fluid",
+    "fluidInput": {
+      "amount": 200,
+      "fluid": "oritech:still_sulfuric_acid"
+    },
+    "fluidOutputs": [],
+    "ingredients": [
+      {
+        "tag": "#cocc:resin_like"
+      }
+    ],
+    "results": [
+      {
+        "count": 1,
+        "id": "kubejs:rubber"
+      }
+    ],
+    "time": 120
+  });
   // Use atomic forge to create graphite.
-  // TO MODIFY - TAG REMINDER
 
   /*
   event.remove({output: ""});
