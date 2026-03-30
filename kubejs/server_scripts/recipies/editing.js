@@ -3951,9 +3951,9 @@ ServerEvents.recipes(event => {
     B: 'kubejs:brass_propeller'
   }).id("cocc:mechanical_crafting/aircraft_enhanced_propeller");
 
-  event.shaped('kubejs:iron_cog', ['AAA', 'ABA', 'AAA'], { A: 'c:nuggets/iron', B: 'create:andesite_alloy' }).id('cocc:shaped/iron_cog');
-  event.shaped('kubejs:lead_cog', ['AAA', 'ABA', 'AAA'], { A: 'c:nuggets/lead', B: 'create:andesite_alloy' }).id('cocc:shaped/lead_cog');
-  event.shaped('kubejs:copper_cog', ['AAA', 'ABA', 'AAA'], { A: 'c:nuggets/copper', B: 'create:andesite_alloy' }).id('cocc:shaped/copper_cog');
+  event.shaped('kubejs:iron_cog', ['AAA', 'ABA', 'AAA'], { A: '#c:nuggets/iron', B: 'create:andesite_alloy' }).id('cocc:shaped/iron_cog');
+  event.shaped('kubejs:lead_cog', ['AAA', 'ABA', 'AAA'], { A: '#c:nuggets/lead', B: 'create:andesite_alloy' }).id('cocc:shaped/lead_cog');
+  event.shaped('kubejs:copper_cog', ['AAA', 'ABA', 'AAA'], { A: '#c:nuggets/copper', B: 'create:andesite_alloy' }).id('cocc:shaped/copper_cog');
   
   event.remove({output: "immersive_aircraft:industrial_gears"});
   event.shapeless("immersive_aircraft:industrial_gears", ["kubejs:copper_cog", "#cocc:all_iron_cogs_similar", "minecraft:lever"]).id('cocc:shapeless/industrial_gears');
