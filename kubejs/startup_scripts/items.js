@@ -81,5 +81,18 @@ StartupEvents.registry('item', event => {
   event.create('brass_propeller')
     .displayName('Brass Propeller')
     .maxStackSize(64)
+
+  event.create('iron_cog')
+    .displayName('Iron Cog')
+    .maxStackSize(64)
+
+  event.create('copper_cog')
+    .displayName('Copper Cog')
+    .maxStackSize(64)  
+
+  event.create('lead_cog')
+    .displayName('Lead Cog')
+    .maxStackSize(64)    
+  
 })
 
