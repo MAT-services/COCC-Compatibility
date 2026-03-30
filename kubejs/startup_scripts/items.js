@@ -77,5 +77,9 @@ StartupEvents.registry('item', event => {
   event.create('incomplete_chip', 'create:sequenced_assembly')
     .displayName('Incomplete Unit')
     .maxStackSize(1)
+
+  event.create('brass_propeller')
+    .displayName('Brass Propeller')
+    .maxStackSize(64)
 })
 

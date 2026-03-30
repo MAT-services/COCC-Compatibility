@@ -3938,6 +3938,20 @@ ServerEvents.recipes(event => {
     A: 'slag:dynamic_part[slag:material_type="slag:iron",slag:part_type="slag:plate"]',
     B: 'create:propeller'
   }).id("cocc:mechanical_crafting/aircraft_propeller");
+
+  event.remove({output: "immersive_aircraft:enhanced_propeller"});
+  event.recipes.create.mechanical_crafting('immersive_aircraft:enhanced_propeller', [
+      "   A ",
+      "AA A ",
+      "  B  ",
+      " A AA",
+      " A   "
+  ], {
+    A: 'slag:dynamic_part[slag:material_type="slag:brass",slag:part_type="slag:plate"]',
+    B: 'kubejs:brass_propeller'
+  }).id("cocc:mechanical_crafting/aircraft_enhanced_propeller");
+
+  
   /*
   event.remove({output: ""});
   event.custom();
