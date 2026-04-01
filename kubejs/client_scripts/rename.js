@@ -34,4 +34,8 @@ ClientEvents.lang('en_us', event => {
    event.renameItem('drones:controller', 'Drone Assembly Terminal')
    event.renameItem('drones:ion_thruster', 'Drone Ion Thruster')
    event.renameItem('belts:chute', 'Conveyor Funnel')
+   event.renameItem('cyberspace:graphene_coated_iron_ingot', 'Graphene Ingot')
+   event.renameItem('cyberspace:graphene', 'Graphene Plate')
+   event.renameItem('cyberspace:graphite_blend', 'Graphene Dust')
+   event.renameItem('cyberspace:terminal_block', "CyberSpace Terminal")
 });

@@ -3458,7 +3458,8 @@ ServerEvents.recipes(event => {
       }
     },
     "result": {
-      "id": "drones:frame"
+      "id": "drones:frame",
+      "count": 6
     }
   }).id('cocc:crafting_shaped/drones_frame');
 
@@ -3831,6 +3832,7 @@ ServerEvents.recipes(event => {
       "amount": 500,
       "fluid": "oritech:still_sulfuric_acid"
     },
+    "ingredients": [{ "item": "oritech:small_uranium_dust"}], 
     "fluidOutputs": [
       {
         "amount": 500,
@@ -3966,12 +3968,8 @@ ServerEvents.recipes(event => {
       "amount": 200,
       "fluid": "oritech:still_sulfuric_acid"
     },
+    "ingredients": [{ "item": "kubejs:plastic_ingot"}], 
     "fluidOutputs": [],
-    "ingredients": [
-      {
-        "tag": "#cocc:resin_like"
-      }
-    ],
     "results": [
       {
         "count": 1,
@@ -3980,8 +3978,199 @@ ServerEvents.recipes(event => {
     ],
     "time": 120
   });
-  // Use atomic forge to create graphite.
 
+  event.shaped('kubejs:brass_propeller', [' A ', 'ABA', ' A '], { A: 'create:brass_sheet', B: 'create:brass_ingot' }).id('cocc:shaped/brass_propeller');
+  
+  event.remove({output: "cyberspace:machine_casing_block"});
+  event.custom({
+    "type": "create:sequenced_assembly",
+    "ingredient": {
+      "tag": "c:stripped_woods"
+    },
+    "transitional_item": {
+      "id": "create_new_age:incomplete_reactor_casing"
+    },
+    "sequence": [
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "create_new_age:incomplete_reactor_casing"
+          },
+          {
+            "item": "cyberspace:synthetic_capsule"
+          }
+        ],
+        "results": [
+          {
+            "id": "create_new_age:incomplete_reactor_casing"
+          }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "create_new_age:incomplete_reactor_casing"
+          },
+          {
+            "item": "cyberspace:quantum_core"
+          }
+        ],
+        "results": [
+          {
+            "id": "create_new_age:incomplete_reactor_casing"
+          }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "create_new_age:incomplete_reactor_casing"
+          },
+          {
+            "item": "cyberspace:graphene_coated_iron_ingot"
+          }
+        ],
+        "results": [
+          {
+            "id": "create_new_age:incomplete_reactor_casing"
+          }
+        ]
+      }
+    ],
+    "results": [
+      {
+        "id": "cyberspace:machine_casing_block"
+      }
+    ],
+    "loops": 1
+  }).id('cocc:sequenced/machine_casing_block');
+  
+  event.remove({output: "cyberspace:graphite_fiber"});
+  event.remove({output: "cyberspace:graphite_blend"});
+  event.custom({
+    "type": "oritech:atomic_forge",
+    "ingredients": [
+      {
+        "item": "oritech:coal_dust"
+      },
+      {
+        "item": "oritech:adamant_dust"
+      },
+      {
+        "item": "oritech:adamant_dust"
+      }
+    ],
+    "results": [
+      {
+        "count": 1,
+        "id": "cyberspace:graphite_blend"
+      }
+    ],
+    "time": 5
+  })
+  event.remove({output: "cyberspace:graphene_coated_iron_ingot"});
+  event.smelting('cyberspace:graphene_coated_iron_ingot', 'cyberspace:graphite_blend').xp(0.1).cookingTime(200).id('cocc:smelting/graphene_coated_iron_ingot');
+  event.blasting('cyberspace:graphene_coated_iron_ingot', 'cyberspace:graphite_blend').xp(0.1).cookingTime(200).id('cocc:blasting/graphene_coated_iron_ingot');
+  event.remove({output: "cyberspace:graphene"});
+  event.custom({
+    "type": "create:pressing",
+    "ingredients": [
+      {
+        "item": "cyberspace:graphene_coated_iron_ingot"
+      }
+    ],
+    "results": [
+      {
+        "id": "cyberspace:graphene"
+      }
+    ]
+  }).id('cocc:pressing/graphene');
+
+  event.remove({output: "cyberspace:synthetic_capsule"})
+  event.custom({
+    "type": "create:sequenced_assembly",
+    "ingredient": {
+      "item": "kubejs:rubber"
+    },
+    "transitional_item": {
+      "id": "create_new_age:incomplete_fuel"
+    },
+    "sequence": [
+      {
+        "type": "create:pressing",
+        "ingredients": [
+          {
+            "item": "create_new_age:incomplete_fuel"
+          }
+        ],
+        "results": [
+          {
+            "id": "create_new_age:incomplete_fuel"
+          }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "create_new_age:incomplete_fuel"
+          },
+          {
+            "item": "cyberspace:graphene"
+          }
+        ],
+        "results": [
+          {
+            "id": "create_new_age:incomplete_fuel"
+          }
+        ]
+      },
+      {
+        "type": "create:pressing",
+        "ingredients": [
+          {
+            "item": "create_new_age:incomplete_fuel"
+          }
+        ],
+        "results": [
+          {
+            "id": "create_new_age:incomplete_fuel"
+          }
+        ]
+      }
+    ],
+    "results": [
+      {
+        "id": "cyberspace:synthetic_capsule",
+        "chance": 1
+      }
+    ],
+    "loops": 1
+  }).id('cocc:sequenced_assembly/synthetic_capsule');
+
+  event.remove({output: "custommachinery:configuration_card"});
+
+  event.shaped('oritech:steel_ingot', ['AA', 'BB'], { A: 'confluence:lead_ingot', B: '#minecraft:coals' }).id('cocc:crafting/steel_ingot-var');
+  event.custom({
+    "type": "create:mixing",
+    "ingredients": [
+      {
+        "item": "oritech:coal_dust"
+      },
+      {
+        "item": "confluence:lead_ingot"
+      }
+    ],
+    "results": [
+      {
+        "id": "confluence:steel_ingot"
+      }
+    ],
+    "heat_requirement": "heated"
+  }).id('cocc:mixing/steel_ingot-var');
   /*
   event.remove({output: ""});
   event.custom();
