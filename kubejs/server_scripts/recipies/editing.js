@@ -1,26 +1,28 @@
 ServerEvents.recipes(event => {
   event.remove({ output: 'create_new_age:basic_motor' })
   event.shaped('create_new_age:basic_motor', [
-    '###',
+    '#R#',
     'ABC',
-    '###'
+    '#R#'
   ], {
     A: 'oritech:motor',
     B: 'create:industrial_iron_block',
     C: 'create:shaft',
-    '#': '#cocc:all_iron_nuggets_similar'
+    '#': '#cocc:all_iron_nuggets_similar',
+    R: '#c:nuggets/rose_gold'
   }).id('cocc:shaped/basic_motor')
 
   event.remove({ output: 'create_new_age:advanced_motor' })
   event.shaped('create_new_age:advanced_motor', [
-    '###',
+    '#R#',
     'ABC',
-    '###'
+    '#R#'
   ], {
     A: 'kubejs:overcharged_motor',
     B: 'create:rotation_speed_controller',
     C: 'create:shaft',
-    '#': 'create:brass_nugget'
+    '#': 'create:brass_nugget',
+    R: '#c:nuggets/rose_gold'
   }).id('cocc:shaped/advanced_motor')
 
   event.shaped('kubejs:overcharged_motor', [
@@ -32,6 +34,30 @@ ServerEvents.recipes(event => {
     '#': 'kubejs:overcharged_steel',
     B: 'oritech:magnetic_coil'
   }).id('cocc:shaped/overcharged_motor')
+  event.custom({
+    "type": "oritech:assembler",
+    "ingredients": [
+      {
+        "tag": "c:ingots/nickel"
+      },
+      {
+        "item": "kubejs:overcharged_steel"
+      },
+      {
+        "item": "oritech:magnetic_coil"
+      },
+      {
+        "item": "oritech:magnetic_coil"
+      }
+    ],
+    "results": [
+      {
+        "count": 1,
+        "id": "kubejs:overcharged_motor"
+      }
+    ],
+    "time": 96
+  }).id('cocc:assembler/overcharged_motor');
 
   event.recipes.create.mechanical_crafting('confluence:hellforge', [
     'NNNL',
@@ -3847,9 +3873,6 @@ ServerEvents.recipes(event => {
     ],
     "time": 150
   }).id('cocc:centrifuge_fluid/acid-sulfur_dust');
-
-  event.remove({output: "slag:melter"})
-  event.shaped('slag:melter', ['AAA', 'BCB', 'ADA'], { A: 'slag:deep_alloy', B: 'slag:rose_gold_ingot', C: 'slag:drain', D: 'minecraft:netherrack' }).id('cocc:shaped/melter');
   
   event.custom({
     "type": "create:filling",
@@ -4166,12 +4189,87 @@ ServerEvents.recipes(event => {
     ],
     "results": [
       {
-        "id": "confluence:steel_ingot"
+        "id": "oritech:steel_ingot"
       }
     ],
     "heat_requirement": "heated"
   }).id('cocc:mixing/steel_ingot-var');
-  /*
+  event.custom({
+    "type": "oritech:foundry",
+    "ingredients": [
+      {
+        "tag": "c:ingots/lead"
+      },
+      {
+        "tag": "c:dusts/coal"
+      }
+    ],
+    "results": [
+      {
+        "count": 1,
+        "id": "oritech:steel_ingot"
+      }
+    ],
+    "time": 39
+  })
+
+  event.remove({output: "slag:brick_forge"});
+  event.shaped('slag:brick_forge', ['ABA', 'BCB', 'ADA'], { A: 'minecraft:mud_bricks', B: 'minecraft:birch_log', C: 'minecraft:blast_furnace', D: 'minecraft:netherrack' }).id('cocc:shaped/brick_forge');
+  
+  
+  event.custom({
+    "type": "create:pressing",
+    "ingredients": [
+      {
+        "item": "slag:rose_gold_ingot"
+      }
+    ],
+    "results": [
+      {
+        "id": "kubejs:rose_gold_sheet"
+      }
+    ]
+  }).id('cocc:pressing/rose_gold_sheet');
+
+  event.remove({output: "create_new_age:reinforced_motor"});
+  event.custom({
+    "type": "create:mechanical_crafting",
+    "category": "misc",
+    "key": {
+      "A": {
+        "item": "minecraft:diamond"
+      },
+      "B": {
+        "item": "create_new_age:overcharged_diamond"
+      },
+      "C": {
+        "item": "kubejs:rose_gold_sheet"
+      },
+      "D": {
+        "item": "create:iron_sheet"
+      },
+      "E": {
+        "item": "kubejs:overcharged_motor"
+      },
+      "F": {
+        "item": "create:shaft"
+      },
+      "X": {
+        "item": "create:industrial_iron_block"
+      }
+    },
+    "pattern": [
+      "ABCDA",
+      "BXEFF",
+      "ABCDA"
+    ],
+    "result": {
+      "id": "create_new_age:reinforced_motor"
+    },
+    "accept_mirrored": true
+  }).id('cocc:mechanical_crafting/reinforced_motor');
+
+/*
   event.remove({output: ""});
   event.custom();
 */

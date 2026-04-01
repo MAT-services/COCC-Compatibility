@@ -103,5 +103,9 @@ StartupEvents.registry('item', event => {
   event.create('cable')
     .displayName('Empty Cable')
     .maxStackSize(64)
+
+  event.create('rose_gold_sheet')
+    .displayName('Rose Gold Sheet')
+    .maxStackSize(64)
 })
 
