@@ -65,13 +65,15 @@ StartupEvents.registry('item', event => {
   event.create('smart_display')
     .displayName('Smart Display')
     .maxStackSize(64)
+  event.create('holophisic_display')
+    .displayName("HoloPhisic Display")
 
   event.create('bnwscreen')
     .displayName('B&W Screen')
     .maxStackSize(64)
 
   event.create('rgbscreen')
-    .displayName('Color Screen')
+    .displayName('RGB Screen')
     .maxStackSize(64)
 
   event.create('incomplete_chip', 'create:sequenced_assembly')
