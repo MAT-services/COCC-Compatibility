@@ -107,5 +107,13 @@ StartupEvents.registry('item', event => {
   event.create('rose_gold_sheet')
     .displayName('Rose Gold Sheet')
     .maxStackSize(64)
+
+  event.create('sculkcite_gem')
+    .displayName('Sculkcite Gem')
+    .maxStackSize(64)
+  
+  event.create('sculkcite_shard')
+    .displayName('Sculkcite Shard')
+    .maxStackSize(64)
 })
 
