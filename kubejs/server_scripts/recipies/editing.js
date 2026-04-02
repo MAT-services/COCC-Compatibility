@@ -188,7 +188,7 @@ ServerEvents.recipes(event => {
     ]
   }).id('cocc:haunting/confluence_granite');
   
-  event.remove({ id: 'oritech:atomicforge/reinfdeepslate' });/////////////////////////
+  event.remove({ id: 'oritech:atomicforge/reinfdeepslate' });
   event.custom({
     "type": "create:sequenced_assembly",
     "ingredient": {
