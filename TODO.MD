@@ -1,7 +1,8 @@
 # Mods
-To add:
-- FTB Quests
-- Questify
+To add: Nothing
+
+# Advancements
+Learn and create.
 
 # Recipies
 - Add linked to sculkcite. 

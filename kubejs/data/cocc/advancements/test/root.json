@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:planks",
+            "data": 2
+        },
+        "title": "A Root",
+        "description": "The root of this tree.",
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "criteria": {
+        "Criteria_Name": {
+            "trigger": "minecraft:bred_animals",
+            "conditions": {
+                "parent": {
+                    "type": "minecraft:cow"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "recipes": ["minecraft:stone_pickaxe","minecraft:enchanting_table"],
+        "loot": ["minecraft:entities/enderman", "minecraft:chests/simple_dungeon"],
+        "experience": 20,
+        "commands": [
+            "/say @s has completed this advancement"
+        ]
+    }
+}

@@ -20,3 +20,7 @@ BlockEvents.rightClicked(event => {
     }
   }
 })
+
+PlayerEvents.loggedIn(event => {
+  event.player.awardAdvancement("cocc:root")
+})

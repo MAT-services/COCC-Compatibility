@@ -215,7 +215,7 @@ ServerEvents.recipes(event => {
         ]
       },
       {
-        "type": "create:spouting",
+        "type": "create:filling",
         "ingredients": [
           {
             "item": "kubejs:incomplete_stone"
