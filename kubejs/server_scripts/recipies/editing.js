@@ -188,8 +188,96 @@ ServerEvents.recipes(event => {
     ]
   }).id('cocc:haunting/confluence_granite');
   
-  event.remove({ id: 'oritech:atomicforge/reinfdeepslate' })
-  event.remove({ id: 'oritech:particle/heavy_core' })
+  event.remove({ id: 'oritech:atomicforge/reinfdeepslate' });/////////////////////////
+  event.custom({
+    "type": "create:sequenced_assembly",
+    "ingredient": {
+      "item": "minecraft:deepslate"
+    },
+    "transitional_item": {
+      "id": "kubejs:incomplete_stone"
+    },
+    "sequence": [
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "kubejs:incomplete_stone"
+          },
+          {
+            "item": "kubejs:sculkcite_gem"
+          }
+        ],
+        "results": [
+          {
+            "id": "kubejs:incomplete_stone"
+          }
+        ]
+      },
+      {
+        "type": "create:spouting",
+        "ingredients": [
+          {
+            "item": "kubejs:incomplete_stone"
+          },
+          {
+            "type": "neoforge:single",
+            "fluid": "slag:molten_obsidian",
+            "amount": 250
+          }
+        ],
+        "results": [
+          {
+            "id": "kubejs:incomplete_stone"
+          }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "kubejs:incomplete_stone"
+          },
+          {
+            "item": "minecraft:sculk_vein"
+          }
+        ],
+        "results": [
+          {
+            "id": "kubejs:incomplete_stone"
+          }
+        ]
+      },
+      {
+        "type": "create:pressing",
+        "ingredients": [
+          {
+            "item": "kubejs:incomplete_stone"
+          }
+        ],
+        "processingTime": 200,
+        "results": [
+          {
+            "id": "kubejs:incomplete_stone"
+          }
+        ]
+      }
+    ],
+    "results": [
+      {
+        "id": "minecraft:reinforced_deepslate",
+        "chance": 0.9
+      },
+      {
+        "id": "minecraft:deepslate"
+      },
+      {
+        "id": "minecraft:sculk"
+      }
+    ],
+    "loops": 10
+  }).id('shadoukube:reinforced_deepslate');
+  event.remove({ id: 'oritech:particle/heavy_core' });
 
   event.custom({
     "type": "minecraft:smelting",

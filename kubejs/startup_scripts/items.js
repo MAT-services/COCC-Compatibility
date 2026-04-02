@@ -115,5 +115,9 @@ StartupEvents.registry('item', event => {
   event.create('sculkcite_shard')
     .displayName('Sculkcite Shard')
     .maxStackSize(64)
+  
+  event.create('incomplete_component', 'create:sequenced_assembly')
+    .displayName('Incomplete Component')
+    .maxStackSize(64)
 })
 
