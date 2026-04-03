@@ -6,4 +6,5 @@ StartupEvents.registry('block', event => {
     .resistance(8)
     .requiresTool(false)
     .mapColor('metal')
+    event.create("custommachinery:electric_sander", "custommachinery:custom_machine")
 })

@@ -8,11 +8,8 @@
     "running": {
       "custommachinery:ambient_sound": {
         "sound": "minecraft:block.furnace.fire_crackle"
-      },
-      "custommachinery:block": "minecraft:furnace#facing=north,lit=true",
-      "custommachinery:light": 15
-    },
-    "custommachinery:block": "minecraft:stonecutter"
+      }
+    }
   },
   "components": [
     {
