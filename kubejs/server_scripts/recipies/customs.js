@@ -28,5 +28,5 @@ ServerEvents.recipes(event => {
                 amount: 1
             }
         ]
-    }).id('cocc:custom_machine/polished_rose_quartz')
+    }).id('cocc:custom_machine/polished_rose_quartz');
 })
