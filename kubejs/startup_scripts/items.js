@@ -19,10 +19,6 @@ StartupEvents.registry('item', event => {
   event.create('incomplete_circuit', 'create:sequenced_assembly')
     .displayName('Incomplete Circuit')
     .maxStackSize(64)
-
-  event.create('uranium_tube')
-    .displayName('Uranium Tube')
-    .maxStackSize(64)
   
   event.create('andesite_clip')
     .displayName('Andesite Clip')

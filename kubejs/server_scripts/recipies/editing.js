@@ -279,23 +279,6 @@ ServerEvents.recipes(event => {
   }).id('shadoukube:reinforced_deepslate');
   event.remove({ id: 'oritech:particle/heavy_core' });
 
-  event.custom({
-    "type": "minecraft:smelting",
-    "ingredient": [
-      {
-        "item": "oritech:raw_uranium"
-      },
-      {
-        "item": "create:crushed_raw_uranium"
-      }
-    ],
-    "result": {
-      "id": "alexscaves:uranium"
-    },
-    "experience": 0.2,
-    "cookingtime": 250
-  }).id('cocc:smelting/uranium');
-
   event.remove({ output: 'oritech:processing_unit' })
   event.remove({ id: "oritech:assembler/processingunit"})
   event.custom({
@@ -401,85 +384,6 @@ ServerEvents.recipes(event => {
     "time": 96
   }).id('cocc:assembler/processing_unit');
 
-  event.custom({
-    "type": "create_new_age:energising",
-    "energy_needed": 500,
-    "ingredients": [
-      {
-        "item": "alexscaves:galena"
-      }
-    ],
-    "results": [
-      {
-        "id": "alexscaves:energized_galena_neutral"
-      }
-    ]
-  }).id('cocc:energising/energized_galena_neutral');
-  event.custom({
-    "type": "create:sequenced_assembly",
-    "ingredient": {
-      "item": "minecraft:cobbled_deepslate"
-    },
-    "transitional_item": {
-      "id": "kubejs:incomplete_stone"
-    },
-    "sequence": [
-      {
-        "type": "create:deploying",
-        "ingredients": [
-          {
-            "item": "kubejs:incomplete_stone"
-          },
-          {
-            "item": "oritech:steel_dust"
-          }
-        ],
-        "results": [
-          {
-            "id": "kubejs:incomplete_stone"
-          }
-        ]
-      },
-      {
-        "type": "create:filling",
-        "ingredients": [
-          {
-             "item": "kubejs:incomplete_stone"
-           },
-           {
-            "type": "neoforge:single",
-            "amount": 72,
-            "fluid": "slag:molten_iron"
-          }
-        ],
-        "results": [
-          {
-            "id": "kubejs:incomplete_stone"
-          }
-        ]
-      },
-      {
-        "type": "create:pressing",
-        "ingredients": [
-          {
-            "item": "kubejs:incomplete_stone"
-          }
-        ],
-        "results": [
-          {
-            "id": "kubejs:incomplete_stone"
-          }
-        ]
-      }
-    ],
-    "results": [
-      {
-        "id": "alexscaves:galena",
-        "chance": 1
-      }
-    ],
-    "loops": 5
-  }).id('cocc:sequenced_assembly/galena');
   event.remove({ output: 'toms_storage:inventory_connector'});
   event.custom({
 	"type": "minecraft:crafting_shapeless",
@@ -910,29 +814,7 @@ ServerEvents.recipes(event => {
       }
     ]
   }).id('cocc:filling/tuff');
-  event.custom({
-    "type": "minecraft:campfire_cooking",
-    "ingredient": {
-      "item": "create:limestone"
-    },
-    "result": {
-      "id": "alexscaves:limestone"
-    },
-    "experience": 0.1,
-    "cookingtime": 50
-  });
-  event.custom({
-    "type": "minecraft:blasting",
-    "ingredient": {
-      "item": "create:limestone"
-    },
-    "result": {
-      "id": "alexscaves:limestone"
-    },
-    "experience": 0.1,
-    "cookingtime": 50
-  }).id('cocc:blasting/limestone');
-  event.remove({output: "computercraft:computer_normal"});
+
   event.custom({
     "type": "minecraft:crafting_shaped",
     "pattern": [
@@ -1797,12 +1679,6 @@ ServerEvents.recipes(event => {
     ]
   }).id('cocc:item_application/shadow_steel_casing');
 
-  event.remove({output: "alexscaves:nuclear_siren"});
-  event.shaped('alexscaves:nuclear_siren', ['ABA', 'ACA', ' D '], { A: 'create:iron_sheet', B: 'create:electron_tube', C: 'minecraft:iron_bars', D: 'create_new_age:reactor_casing' }).id('cocc:shaped/nuclear_siren');
-
-  event.remove({output: "alexscaves:siren_light"});
-  event.shaped('alexscaves:siren_light', ['AAA', 'ABA', 'CDC'], { A: 'minecraft:glass', B: 'alexscaves:radon_bottle', C: 'create_new_age:reactor_casing', D: 'create:electron_tube' }).id('cocc:shaped/siren_light');
-
   event.custom({
     "type": "create:filling",
     "ingredients": [
@@ -2115,97 +1991,6 @@ ServerEvents.recipes(event => {
     }
   }).id('cocc:crafting_shaped/paint_kit');
 
-  event.custom({
-    "type": "create:sequenced_assembly",
-    "ingredient": {
-      "item": "alexscaves:uranium"
-    },
-    "transitional_item": {
-      "id": "create_new_age:incomplete_fuel"
-    },
-    "sequence": [
-      {
-        "type": "create:pressing",
-        "ingredients": [
-          {
-            "item": "create_new_age:incomplete_fuel"
-          }
-        ],
-        "results": [
-          {
-            "id": "create_new_age:incomplete_fuel"
-          }
-        ]
-      },
-      {
-        "type": "create:deploying",
-        "ingredients": [
-          {
-            "item": "create_new_age:incomplete_fuel"
-          },
-          {
-            "item": "create:iron_sheet"
-          }
-        ],
-        "results": [
-          {
-            "id": "create_new_age:incomplete_fuel"
-          }
-        ]
-      },
-      {
-        "type": "create:pressing",
-        "ingredients": [
-          {
-            "item": "create_new_age:incomplete_fuel"
-          }
-        ],
-        "results": [
-          {
-            "id": "create_new_age:incomplete_fuel"
-          }
-        ]
-      }
-    ],
-    "results": [
-      {
-        "id": "kubejs:uranium_tube",
-        "chance": 1
-      }
-    ],
-    "loops": 1
-  })
-  event.remove({output: 'alexscaves:uranium_rod'})
-  event.custom({
-    "type": "create:mechanical_crafting",
-    "category": "misc",
-    "key": {
-      "R": {
-        "item": "create_new_age:reactor_casing"
-      },
-      "S": {
-        "item": "create:golden_sheet"
-      },
-      "G": {
-        "item": "create_new_age:reactor_glass"
-      },
-      "T": {
-        "item": "kubejs:uranium_tube"
-      }
-    },
-    "pattern": [
-      "RSSSR",
-      " GTG ",
-      " GTG ",
-      "RSSSR"
-    ],
-    "result": {
-      "id": "alexscaves:uranium_rod",
-      "count": 2
-    },
-    "accept_mirrored": true
-  }).id('cocc:mechanical_crafting/uranium_rod');
-
   event.remove({output: "oritech:electrum_ingot"});
   event.remove({id: "oritech:electrum_blockblock"});
   event.custom({
@@ -2373,44 +2158,6 @@ ServerEvents.recipes(event => {
     "time": 5
   }).id('cocc:assembler/clay_catalyst_beads');
 
-  event.remove({output: "alexscaves:scarlet_neodymium_ingot"});
-  event.custom({
-    "type": "create:mixing",
-    "ingredients": [
-      {
-        "item": "minecraft:iron_ingot"
-      },
-      {
-        "item": "alexscaves:raw_scarlet_neodymium"
-      }
-    ],
-    "results": [
-      {
-        "id": "alexscaves:scarlet_neodymium_ingot"
-      }
-    ],
-    "heat_requirement": "heated"
-  }).id('cocc:mixing/scarlet_neodymium_ingot');
-
-  event.remove({output: "alexscaves:azure_neodymium_ingot"});
-  event.custom({
-    "type": "create:mixing",
-    "ingredients": [
-      {
-        "item": "minecraft:iron_ingot"
-      },
-      {
-        "item": "alexscaves:raw_azure_neodymium"
-      }
-    ],
-    "results": [
-      {
-        "id": "alexscaves:azure_neodymium_ingot"
-      }
-    ],
-    "heat_requirement": "heated"
-  }).id('cocc:mixing/azure_neodymium_ingot');
-  
   event.remove({ id: "oritech:assembler/enderlens"});
   event.custom({
     "type": "oritech:assembler",
@@ -2724,42 +2471,6 @@ ServerEvents.recipes(event => {
     "loops": 1
   })
 
-  event.custom({
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-      "##",
-      "##"
-    ],
-    "key": {
-      "#": {
-        "item": "alexscaves:ferrouslime_ball"
-      }
-    },
-    "result": {
-      "id": "create_new_age:magnetite_block",
-      "count": 1
-    }
-  }).id('cocc:crafting_shaped/magnetite_block');
-  
-  event.custom({
-    "type": "create:filling",
-    "ingredients": [
-      {
-        "item": "minecraft:slime_ball"
-      },
-      {
-        "type": "neoforge:single",
-        "fluid": "slag:molten_iron",
-        "amount": 500
-      }
-    ],
-    "results": [
-      {
-        "id": "alexscaves:ferrouslime_ball"
-      }
-    ]
-  }).id('cocc:filling/ferrouslime_ball');
-
   event.remove({output: "confluence:space_gun"});
   event.custom({
     "type": "confluence:heavy_work_bench",
@@ -2984,59 +2695,6 @@ ServerEvents.recipes(event => {
     },
     "accept_mirrored": true
   }); 
-
-  event.remove({output: "alexscaves:drain"});
-  event.custom({
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-      "A",
-      "B"
-    ],
-    "key": {
-      "A": {
-        "item": "minecraft:iron_bars"
-      },
-      "B": {
-        "item": "alexscaves:scrap_metal_plate"
-      }
-    },
-    "result": {
-      "id": "alexscaves:drain"
-    }
-  }).id('cocc:crafting_shaped/drain');
-
-  event.custom({
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-      "C",
-      "T"
-    ],
-    "key": {
-      "C": {
-        "item": "alexscaves:depth_charge"
-      },
-      "T": {
-        "item": "minecraft:tnt"
-      }
-    },
-    "result": {
-      "id": "confluence:instantaneous_explosion_tnt",
-      "count": 2
-    }
-  }).id('cocc:crafting_shaped/instantaneous_explosion_tnt');
-
-  event.custom({
-    "type": "minecraft:smelting",
-    "category": "misc",
-    "ingredient": {
-      "item": "alexscaves:depth_charge"
-    },
-    "result": {
-      "id": "minecraft:redstone_block"
-    },
-    "experience": 0.5,
-    "cookingtime": 120
-  }).id('cocc:smelting/redstone_block_from_depth_charge');
 
   event.custom({
     "type": "slag:alloying",
@@ -3938,30 +3596,6 @@ ServerEvents.recipes(event => {
     "time": 96
   }).id('cocc:assembler/gpu');
 
-  event.recipes.create.mixing(Fluid.of('oritech:still_sulfuric_acid'), [Fluid.of('alexscaves:acid'), 'alexscaves:sulfur_dust']).id('cocc:mixing/still_sulphuric_acid');
-
-  event.custom({
-    "type": "oritech:centrifuge_fluid",
-    "fluidInput": {
-      "amount": 500,
-      "fluid": "oritech:still_sulfuric_acid"
-    },
-    "ingredients": [{ "item": "oritech:small_uranium_dust"}], 
-    "fluidOutputs": [
-      {
-        "amount": 500,
-        "fluid": "alexscaves:acid"
-      }
-    ],
-    "results": [
-      {
-        "count": 1,
-        "id": "alexscaves:sulfur_dust"
-      }
-    ],
-    "time": 150
-  }).id('cocc:centrifuge_fluid/acid-sulfur_dust');
-  
   event.custom({
     "type": "create:filling",
     "ingredients": [
@@ -3980,66 +3614,7 @@ ServerEvents.recipes(event => {
       }
     ]
   }).id('cocc:spouting/spike');
-
-  event.remove({output: "alexscaves:polymer_plate"});
-  event.shapeless('2x alexscaves:polymer_plate', ["#cocc:resin_like", 'alexscaves:radon_bottle', 'alexscaves:sulfur_dust', 'slag:dynamic_part[slag:material_type="slag:iron",slag:part_type="slag:plate"]']).id('cocc:shapeless/polymer_plate');
-
-  event.custom({
-    "type": "create:emptying",
-    "ingredients": [
-      {
-        "item": "confluence:cream_soda"
-      }
-    ],
-    "results": [
-      {
-        "id": "minecraft:glass_bottle"
-      },
-      {
-        "amount": 250,
-        "id": "alexscaves:purple_soda"
-      }
-    ]
-  }).id('cocc:emptying/cream_soda');
-  event.custom({
-    "type": "create:emptying",
-    "ingredients": [
-      {
-        "item": "alexscaves:purple_soda_bottle"
-      }
-    ],
-    "results": [
-      {
-        "id": "minecraft:glass_bottle"
-      },
-      {
-        "amount": 250,
-        "id": "alexscaves:purple_soda"
-      }
-    ]
-  }).id('cocc:emptying/soda_bottle');
-
-  event.custom({
-    "type": "create:filling",
-    "ingredients": [
-      {
-        "item": "minecraft:glass_bottle"
-      },
-      {
-        "type": "neoforge:single",
-        "fluid": "alexscaves:purple_soda",
-        "amount": 250
-      }
-    ],
-    "results": [
-      {
-        "id": "alexscaves:purple_soda_bottle"
-      }
-    ]
-  }).id('cocc:filling/purple_soda_bottle');
-
-  event.shapeless('alexscaves:geothermal_vent', ['create:fluid_pipe', 'minecraft:tuff']).id('cocc:shapeless/geothermal_vent');
-
+  
   event.remove({output: "immersive_aircraft:propeller"});
   event.recipes.create.mechanical_crafting('immersive_aircraft:propeller', [
       "   A ",

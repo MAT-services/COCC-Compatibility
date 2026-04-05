@@ -18,26 +18,11 @@ ServerEvents.tags('block', event => {
     "oritech:machine_frame_block",
     "oritech:machine_extender",
     "oritech:capacitor_addon_extender",
-    "alexscaves:hologram_projector",
-    "alexscaves:magnetic_light",
     "oritech:creative_storage_block",
     "oritech:large_storage_block",
     "oritech:small_storage_block",
     "oritech:creative_tank_block",
-    "oritech:small_tank_block",
-    "alexscaves:magnetic_activator"
-  ])
-
-  event.add('alexscaves:ferromagnetic_blocks', [
-    "confluence:iron_bricks_slab",
-    "confluence:iron_bricks_stairs",
-    "confluence:iron_bricks",
-    "confluence:chiseled_iron_bricks",
-    "confluence:iron_crate",
-    "create:industrial_iron_block",
-    "create:weathered_iron_block",
-    "create:industrial_iron_window",
-    "create:weathered_iron_window"
+    "oritech:small_tank_block"
   ])
 
   event.add('drones:mining_tools', [
@@ -72,27 +57,12 @@ ServerEvents.tags('block', event => {
 
 ServerEvents.tags('item', event => {
 
-  event.add('alexscaves:nuclear_furnace_rods', [
-    "create_new_age:nuclear_fuel",
-    "oritech:small_uranium_pellet",
-    "oritech:uranium_pellet",
-    "oritech:small_plutonium_pellet",
-    "oritech:plutonium_pellet",
-    "kubejs:uranium_tube"
-  ]);
-
   event.add('create_new_age:nuclear/fuel', [
     "create_new_age:nuclear_fuel",
     "oritech:small_uranium_pellet",
     "oritech:uranium_pellet",
     "oritech:small_plutonium_pellet",
-    "oritech:plutonium_pellet",
-    "kubejs:uranium_tube"
-  ])
-
-  event.add('create_new_age:nuclear/energy_28800', [
-    "create_new_age:nuclear_fuel",
-    "kubejs:uranium_tube"
+    "oritech:plutonium_pellet"
   ])
   event.add('create_new_age:nuclear/energy_39800', [
     "oritech:uranium_pellet"
