@@ -12,7 +12,7 @@ Learn and create.
 
 # Custom Machinery
 - See if machine recipies works without "id" fields. (I do not think but that's a possibility.)
-- Finish the design of the Electric Sander and see if that's possible to delete `"custommachinery:block": "minecraft:furnace#facing=north,lit=true"` from the running field without errors.
+- Place the Electric Sander in the place specified in the documentation: https://frinn.gitbook.io/custom-machinery-1.21/creating-custom-machines/machine-appearance/block-appearance
 - Create more machines: 
     - Automatic Extractinator
 
