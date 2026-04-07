@@ -129,4 +129,4 @@ json models are pretty much this
     "layer0": "(modID):(Texture Path)"
   }
 }
-then you got your custom mold :3```
+then you got your custom mold :3``` PS: This is a conversation copied from Luna HUB Discord server.
