@@ -276,7 +276,7 @@ ServerEvents.recipes(event => {
       }
     ],
     "loops": 10
-  }).id('shadoukube:reinforced_deepslate');
+  }).id('shadoukube:reinforced_deepslate'); // modify it to use deep alloys.
   event.remove({ id: 'oritech:particle/heavy_core' });
 
   event.remove({ output: 'oritech:processing_unit' })
