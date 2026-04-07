@@ -16,6 +16,8 @@ Learn and create.
 - Create more machines: 
     - Automatic Extractinator
 
+# Files
+- Delete ~/kubejs/assets/confluence/lang 
 # Items
 - Modify modular parts to work better with Slag n' Embers runtime: Doc-conversation ```{
   "defense": 6.5,
