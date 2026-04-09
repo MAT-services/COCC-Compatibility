@@ -16,11 +16,9 @@ ClientEvents.lang('en_us', event => {
    event.renameItem('oritech:fluid_pipe','Silicon Fluid Pipe');
    event.renameItem('oritech:steam_engine_block','Steam Dripper');
    event.renameItem('minecraft:vault','Trial Vault');
-   event.renameItem('alexscaves:limestone','Dryed Limestone');
    event.renameItem('toms_storage:wireless_terminal','Wireless Inventory Terminal');
    event.renameItem('toms_storage:adv_wireless_terminal', 'Advanced Wireless Inventory Terminal');
    event.renameItem('createcasing:processing_chorium', 'Processing Chromatic Compound')
-   event.renameItem('alexscaves:drain', 'Large Drain')
    event.renameItem('toms_storage:inventory_proxy', 'Inventory Access Chain')
    event.renameItem('create_new_age:nuclear_fuel', 'Thorium Tube')
    event.renameItem('create_new_age:incomplete_fuel', 'Incomplete Tube')

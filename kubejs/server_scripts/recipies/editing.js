@@ -276,8 +276,8 @@ ServerEvents.recipes(event => {
       }
     ],
     "loops": 10
-  }).id('shadoukube:reinforced_deepslate'); // Modify it to use deep alloys.
-  event.remove({ id: 'oritech:particle/heavy_core' }); // Create that use deep alloys.
+  }).id('shadoukube:reinforced_deepslate');
+  event.remove({ id: 'oritech:particle/heavy_core' });
 
   event.remove({ output: 'oritech:processing_unit' })
   event.remove({ id: "oritech:assembler/processingunit"})
@@ -815,6 +815,7 @@ ServerEvents.recipes(event => {
     ]
   }).id('cocc:filling/tuff');
 
+  event.remove({id: "computercraft:computer_normal"})
   event.custom({
     "type": "minecraft:crafting_shaped",
     "pattern": [

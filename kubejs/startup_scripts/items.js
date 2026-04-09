@@ -115,5 +115,9 @@ StartupEvents.registry('item', event => {
   event.create('incomplete_component', 'create:sequenced_assembly')
     .displayName('Incomplete Component')
     .maxStackSize(64)
+
+  event.create('lead_sheet')
+    .displayName('Lead Sheet')
+    .maxStackSize(64)
 })
 
