@@ -3933,6 +3933,51 @@ ServerEvents.recipes(event => {
     "accept_mirrored": true
   }).id('cocc:mechanical_crafting/reinforced_motor');
 
+  event.custom({
+    "type": "create:pressing",
+    "ingredients": [
+      {
+        "item": "confluence:lead_ingot"
+      }
+    ],
+    "results": [
+      {
+        "id": "kubejs:lead_sheet"
+      }
+    ]
+  }).id('cocc:pressing/lead_sheet');
+
+  event.remove({id: "create:crafting/kinetics/item_vault"});
+  event.shaped('create:item_vault', ['A', 'B', 'A'], { A: 'kubejs:lead_sheet', B: 'minecraft:barrel' }).id('cocc:shaped/item_vault');
+
+  event.remove({id: "create:haunting/blackstone"});
+  event.custom({
+    "type": "create:haunting",
+    "ingredients": [
+      {
+        "item": "minecraft:cobblestone"
+      }
+    ],
+    "results": [
+      {
+        "id": "minecraft:deepslate"
+      }
+    ]
+  }).id('cocc:haunting/deepslate');
+  event.custom({
+    "type": "create:haunting",
+    "ingredients": [
+      {
+        "item": "minecraft:cobbled_deepslate"
+      }
+    ],
+    "results": [
+      {
+        "id": "minecraft:blackstone"
+      }
+    ]
+  }).id('cocc:haunting/blackstone');
+
 /*
   event.remove({output: ""});
   event.custom();
