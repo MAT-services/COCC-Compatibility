@@ -1,0 +1,26 @@
+{
+  "defense": 8.0,
+  "durability": 2048.0,
+  "enchantability": 15.0,
+  "fireproof": true,
+  "id": "slag:steel",
+  "knockback_resistance": 0.1,
+  "molten_fluid": "kubejs:molten_steel",
+  "repair_ingredient": {
+    "tag": "c:ingots/steel"
+  },
+  "palette": [
+    "0xc1c1c1",
+    "0x959595",
+    "0x5b5b5b",
+    "0x303030",
+    "0x1c1b1b",
+    "0x0000"
+    ],
+  "sharpness": 7.0,
+  "sort_order": 70,
+  "speed": 9.0,
+  "texture": "metal",
+  "tier": 6.0,
+  "toughness": 3.0
+}

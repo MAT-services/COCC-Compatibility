@@ -276,7 +276,7 @@ ServerEvents.recipes(event => {
       }
     ],
     "loops": 10
-  }).id('shadoukube:reinforced_deepslate'); // Modify it to use deep alloys.
+  }).id('cocc:reinforced_deepslate'); // Modify it to use deep alloys.
   event.remove({ id: 'oritech:particle/heavy_core' }); // Create that use deep alloys.
 
   event.remove({ output: 'oritech:processing_unit' })
@@ -1084,7 +1084,7 @@ ServerEvents.recipes(event => {
         "id": "computercraft:wired_modem_full"
       }
     ]
-  }).id('cocc:crafting_shapeless/wired_modem');
+  }).id('cocc:item_application/wired_modem');
   event.custom({
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
@@ -3978,6 +3978,110 @@ ServerEvents.recipes(event => {
     ]
   }).id('cocc:haunting/blackstone');
 
+  event.custom({
+    "type": "create:item_application",
+    "ingredients": [
+      {
+        "tag": 'minecraft:dirt'
+      },
+      {
+        "item": "confluence:grass_seed"
+      }
+    ],
+    "results": [
+      {
+        "id": "minecraft:grass_block"
+      }
+    ]
+  }).id('cocc:item_application/grass_block');
+  event.custom({
+    "type": "create:item_application",
+    "ingredients": [
+      {
+        "item": 'minecraft:mud'
+      },
+      {
+        "item": "confluence:jungle_grass_seed"
+      }
+    ],
+    "results": [
+      {
+        "id": "confluence:jungle_grass_block"
+      }
+    ]
+  }).id('cocc:item_application/jungle_grass_block');
+  event.custom({
+    "type": "create:item_application",
+    "ingredients": [
+      {
+        "item": 'minecraft:mud'
+      },
+      {
+        "item": "confluence:mushroom_grass_seed"
+      }
+    ],
+    "results": [
+      {
+        "id": "confluence:mushroom_grass_block"
+      }
+    ]
+  }).id('cocc:item_application/mushroom_grass_block');
+  event.custom({
+    "type": "create:item_application",
+    "ingredients": [
+      {
+        "item": 'confluence:ash_block'
+      },
+      {
+        "item": "confluence:ash_grass_seed"
+      }
+    ],
+    "results": [
+      {
+        "id": "confluence:ash_grass_block"
+      }
+    ]
+  }).id('cocc:item_application/ash_grass_block');
+
+  event.custom({
+    "type": "create:pressing",
+    "ingredients": [
+      {
+        "item": "confluence:jungle_grass_block"
+      }
+    ],
+    "results": [
+      {
+        "id": "confluence:jungle_path"
+      }
+    ]
+  }).id('cocc:pressing/jungle_path');
+  event.custom({
+    "type": "create:pressing",
+    "ingredients": [
+      {
+        "item": "confluence:mushroom_grass_block"
+      }
+    ],
+    "results": [
+      {
+        "id": "confluence:mushroom_path"
+      }
+    ]
+  }).id('cocc:pressing/mushroom_path');
+  event.custom({
+    "type": "create:pressing",
+    "ingredients": [
+      {
+        "item": "confluence:ash_grass_block"
+      }
+    ],
+    "results": [
+      {
+        "id": "confluence:ash_path"
+      }
+    ]
+  }).id('cocc:pressing/ash_path');
 /*
   event.remove({output: ""});
   event.custom();

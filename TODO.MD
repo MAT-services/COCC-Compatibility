@@ -1,3 +1,5 @@
+# Textures
+- Remade the textures of the items pipes.
 # Mods
 To add: Nothing
 
@@ -16,6 +18,7 @@ Learn and create.
 - Place the Electric Sander in the place specified in the documentation: https://frinn.gitbook.io/custom-machinery-1.21/creating-custom-machines/machine-appearance/block-appearance
 - Create more machines: 
     - Automatic Extractinator
+    - Automatic Molder
 
 # Files
 - Delete ~/kubejs/assets/confluence/lang 
