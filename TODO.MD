@@ -20,7 +20,7 @@ Learn and create.
 # Files
 - Delete ~/kubejs/assets/confluence/lang 
 # Items
-- Modify modular parts to work better with Slag n' Embers runtime: Doc-conversation ```{
+- Modify modular parts to work better with Slag n' Embers runtime: Doc-conversation data/ (Mod ID) /slag/materials/ (Material Name) .json ```{
   "defense": 6.5,
   "durability": 1536.0,
   "enchantability": 19.0,
