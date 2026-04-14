@@ -8,8 +8,9 @@ To add:
 Learn and create.
 
 # Recipies
+> [!CAUTION]
+> Add molds recipies with deployers ! WORKS BUT NEED ATTENTION FOR OTHER RECIPIES ! .
 - Add the workshop of the tinker for the recipie of the assembler and add the workshop recipies to the assembler.
-- Add molds recipies with deployers ! WORKS BUT NEED ATTENTION FOR OTHER RECIPIES ! .
 - Add linked to sculkcite. 
 - Change the spawner to use the heavy core.
 - See if Oritech Sools can be used in crafts.
