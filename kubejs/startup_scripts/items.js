@@ -23,10 +23,6 @@ StartupEvents.registry('item', event => {
   event.create('andesite_clip')
     .displayName('Andesite Clip')
     .maxStackSize(64)
-
-  event.create('steel_plate') // To replace with SnE runtime
-    .displayName('Steel Plate')
-    .maxStackSize(64)
     
   event.create('drill')
     .displayName('Drill')

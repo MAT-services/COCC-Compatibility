@@ -52,21 +52,30 @@ ServerEvents.recipes(event => {
       }
     },
     "result": {
-      "id": "kubejs:steel_plate",
-      "count": 1
+      "components": {
+        "slag:material_type": "slag:steel",
+        "slag:part_type": "slag:plate"
+      },
+      "id": "slag:dynamic_part"
     }
   }).id('cocc:crafting_shaped/steel_plate');
-  event.custom({
-    "type": "slag:melting",
-    "ingredient": {
-        "item": "kubejs:steel_plate" 
-    },
-    "ingredients": [],
-    "result": [
-        {
-        "amount": 144,
-        "id": "kubejs:molten_steel" 
-        }
-    ]
+    event.custom({
+        "type": "slag:melting",
+        "ingredients": [
+            {
+            "components": {
+                "slag:material_type": "slag:steel",
+                "slag:part_type": "slag:plate"
+            },
+            "count": 1,
+            "id": "slag:dynamic_part"
+            }
+        ],
+        "result": [
+            {
+            "amount": 144,
+            "id": "kubejs:molten_steel"
+            }
+        ]
     }).id('cocc:melting/molten_steel_from_plate');
 })

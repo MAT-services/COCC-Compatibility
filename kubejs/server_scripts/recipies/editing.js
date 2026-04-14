@@ -3314,9 +3314,13 @@ ServerEvents.recipes(event => {
       "id": "kubejs:molten_steel"
     },
     "result": {
-      "id": "kubejs:steel_plate"
+      "components": {
+        "slag:material_type": "slag:steel",
+        "slag:part_type": "slag:plate"
+      },
+      "id": "slag:dynamic_part"
     }
-  });
+  }).id("cocc:table_casting/steel_plate");
 
   event.remove({output: "oritech:plastic_sheet"});
   event.smelting('kubejs:plastic_ingot', 'oritech:polymer_resin').xp(0.1).cookingTime(50).id('cocc:smelting/plastic_ingot');
@@ -3959,7 +3963,7 @@ ServerEvents.recipes(event => {
     "type": "create:item_application",
     "ingredients": [
       {
-        "tag": 'minecraft:dirt'
+        "item": 'minecraft:dirt'
       },
       {
         "item": "confluence:grass_seed"
@@ -4059,6 +4063,35 @@ ServerEvents.recipes(event => {
       }
     ]
   }).id('cocc:pressing/ash_path');
+
+  event.custom({
+    "type": "oritech:refinery",
+    "fluidInput": {
+      "amount": 16,
+      "fluid": "slag:molten_rose_gold"
+    },
+    "fluidOutputs": [
+      {
+        "amount": 8,
+        "fluid": "slag:molten_copper"
+      },
+      {
+        "amount": 8,
+        "fluid": "slag:molten_gold"
+      }
+    ],
+    "results": [],
+    "time": 5
+  }).id("cocc:refining/rose_gold");
+
+  event.remove({output: "create:transmitter"});
+  event.shapeless('create:transmitter', ['minecraft:redstone', 'oritech:magnetic_coil']).id('cocc:shapeless/transmitter');
+
+  event.remove({output: "gnkinetics:magnet_gear"});
+  event.shapeless('gnkinetics:magnet_gear', ['create:shaft', 'oritech:magnetic_coil']).id('cocc:shapeless/magnet_gear');
+
+  event.remove({output: "gnkinetics:large_magnet_gear"});
+  event.shapeless('gnkinetics:large_magnet_gear', ['create:shaft', 'oritech:magnetic_coil', 'oritech:magnetic_coil']).id('cocc:shapeless/large_magnet_gear');
 /*
   event.remove({output: ""});
   event.custom();
