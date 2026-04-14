@@ -3252,20 +3252,17 @@ ServerEvents.recipes(event => {
   }).id('cocc:crafting_shapeless/ion_thruster');
 
   event.remove({output: "belts:belt"});
-  event.custom({
-    "type": "create:sequenced_assembly",
-    "ingredient": {
-      "item": "create:belt_connector"
-    },
-    "transitional_item": {
-      "id": "oritech:motor"
-    },
-    "sequence": [
-      {
+  event.recipes.create.sequenced_assembly(
+    [
+      CreateItem.of('belts:belt')
+    ],
+    'create:belt_connector', 
+    [
+      event.custom({
         "type": "create:deploying",
         "ingredients": [
           {
-            "item": "oritech:motor"
+            "item": "kubejs:incomplete_component"
           },
           {
             "item": "oritech:motor"
@@ -3273,35 +3270,15 @@ ServerEvents.recipes(event => {
         ],
         "results": [
           {
-            "id": "oritech:motor"
+            "id": "kubejs:incomplete_component"
           }
         ]
-      },
-      {
-        "type": "create:deploying",
-        "ingredients": [
-          {
-            "item": "oritech:motor"
-          },
-          {
-            "item": "kubejs:steel_plate"
-          }
-        ],
-        "results": [
-          {
-            "id": "oritech:motor"
-          }
-        ]
-      }
-    ],
-    "results": [
-      {
-        "id": "belts:belt",
-        "chance": 1
-      }
-    ],
-    "loops": 1
-  })
+      }),
+      event.recipes.create.deploying('kubejs:incomplete_component', ['kubejs:incomplete_component', 'slag:dynamic_part[slag:material_type="slag:steel",slag:part_type="slag:plate"]',])
+    ]
+  )
+  .transitionalItem('kubejs:incomplete_component')
+  .loops(1)
 
   event.remove({output: "belts:chute"});
   event.custom({
