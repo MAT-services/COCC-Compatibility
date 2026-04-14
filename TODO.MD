@@ -8,6 +8,7 @@ To add:
 Learn and create.
 
 # Recipies
+- Add molds recipiez with deployers.
 - Add linked to sculkcite. 
 - Change the spawner to use the heavy core.
 - See if Oritech Sools can be used in crafts.
