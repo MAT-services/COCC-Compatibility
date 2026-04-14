@@ -10,7 +10,7 @@ Learn and create.
 # Recipies
 
 > [!CAUTION] 
-- Add molds recipies with deployers ! WORKS BUT NEED ATTENTION FOR OTHER RECIPIES ! .
+> Add molds recipies with deployers ! WORKS BUT NEED ATTENTION FOR OTHER RECIPIES ! .
 
 
 - Add the workshop of the tinker for the recipie of the assembler and add the workshop recipies to the assembler.
