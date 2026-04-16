@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
             {
                 type: "custommachinery:energy",
                 mode: "input",
-                amount: 1000
+                amount: 100
             },
             {
                 type: "custommachinery:item",

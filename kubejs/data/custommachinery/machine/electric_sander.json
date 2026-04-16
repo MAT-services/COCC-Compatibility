@@ -24,8 +24,7 @@
         "FRONT": "INPUT",
         "RIGHT": "INPUT",
         "BACK": "INPUT",
-        "LEFT": "INPUT",
-        "input": true
+        "LEFT": "INPUT"
       },
       "id": "input",
       "mode": "input"
@@ -33,7 +32,6 @@
     {
       "type": "custommachinery:item",
       "config": {
-        "output": true,
         "TOP": "OUTPUT",
         "BOTTOM": "OUTPUT",
         "FRONT": "OUTPUT",

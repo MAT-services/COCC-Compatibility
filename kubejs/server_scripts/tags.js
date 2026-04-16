@@ -80,6 +80,9 @@ ServerEvents.tags('item', event => {
   event.add('c:potions/bottle', [
     "minecraft:glass_bottle"
   ])
+
+  event.remove('c:wires/copper', 'unify:copper_wire')
+  event.remove('c:wires', 'unify:copper_wire')
 })
 
 ServerEvents.tags('fluid', event => {
