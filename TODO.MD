@@ -22,7 +22,7 @@ Learn and create.
 - Check to update recipies that are previously deleted due to Alex Caves crashes.
 
 # Custom Machinery
-- See if machine recipies works without "id" fields. (I do not think but that's a possibility.)
+- Disable Auto input and auto output on machines.
 - Place the Electric Sander in the place specified in the documentation: https://frinn.gitbook.io/custom-machinery-1.21/creating-custom-machines/machine-appearance/block-appearance
 - Create more machines: 
     - Automatic Extractinator
