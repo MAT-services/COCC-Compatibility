@@ -13,7 +13,7 @@ Learn and create.
 > [!CAUTION] 
 > Add molds recipies with deployers ! WORKS BUT UNSTABLE. NEED ATTENTION FOR OTHER RECIPIES ! .
 
-
+- Delete Oritech Colision particle recipie for the Echo Shard.
 - Add the workshop of the tinker for the recipie of the assembler and add the workshop recipies to the assembler.
 - Add linked to sculkcite. 
 - Change the spawner to use the heavy core.
