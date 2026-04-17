@@ -3,7 +3,7 @@
 - Remade the textures of the items pipes.
 # Mods
 To add: 
-   - Create: processing 
+   - Nothing
 
 # Advancements
 Learn and create.
@@ -13,6 +13,7 @@ Learn and create.
 > [!CAUTION] 
 > Add molds recipies with deployers ! WORKS BUT UNSTABLE. NEED ATTENTION FOR OTHER RECIPIES ! .
 
+- Replace the bassin recipie to use deep alloys and the melter recipie sheme to look like a bassin.
 - Delete Oritech Colision particle recipie for the Echo Shard.
 - Add the workshop of the tinker for the recipie of the assembler and add the workshop recipies to the assembler.
 - Add linked to sculkcite. 
