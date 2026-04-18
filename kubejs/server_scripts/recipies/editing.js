@@ -761,22 +761,48 @@ ServerEvents.recipes(event => {
   event.custom({
     "type": "minecraft:crafting_shaped",
     "pattern": [
-      "###",
-      " N ",
-      "###"
+      "#",
+      "N",
+      "#"
     ],
     "key": {
       "#": {
-        "tag": "minecraft:planks"
+        "tag": "kubejs:lead_sheet"
       },
       "N": {
         "item": "belts:belt"
       }
     },
     "result": {
-      "id": "oritech:item_pipe"
+      "id": "oritech:item_pipe",
+      "count": 2
     }
   }).id('cocc:crafting_shaped/item_pipe');
+
+  event.remove({output: "oritech:transparent_item_pipe"});
+  event.custom({
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      " # ",
+      "GNG",
+      " # "
+    ],
+    "key": {
+      "#": {
+        "item": "kubejs:lead_sheet"
+      },
+      "N": {
+        "item": "belts:belt"
+      },
+      "G": {
+        "tag": 'c:glass_panes/colorless'
+      }
+    },
+    "result": {
+      "id": "oritech:transparent_item_pipe",
+      "count": 2
+    }
+  }).id('cocc:crafting_shaped/transparent_item_pipe');
 
   event.custom({
     "type": "create:filling",
@@ -4092,6 +4118,194 @@ ServerEvents.recipes(event => {
 
   event.remove({output: "gnkinetics:large_magnet_gear"});
   event.shapeless('gnkinetics:large_magnet_gear', ['create:shaft', 'oritech:magnetic_coil', 'oritech:magnetic_coil']).id('cocc:shapeless/large_magnet_gear');
+
+  event.remove({id: "create_processing:resonance_mixing/end_stone_bricks_from_end_stone"});
+  event.remove({id: "create_processing:magnetic_pressing/magnetic/basic/compass_from_lodestone"});
+  event.remove({id: "create_processing:resonance_mixing/echo_shard_from_amethyst"});
+  event.remove({id: "create_processing:hot_pressing/superheated/bonus/flint_from_gravel"});
+  event.remove({id: "create_processing:withering/clay_ball_from_slime_ball"});
+  event.remove({id: "create_processing:withering/mycelium_from_grass_block"});
+  event.remove({id: "create_processing:petrifying/stone_from_mycelium"});
+  event.remove({id: "create_processing:petrifying/cobblestone_from_grass_block"});
+  event.remove({id: "create_processing:petrifying/cobblestone_from_vine"});
+  event.remove({id: "create_processing:petrifying/stone_from_dirt"});
+  event.remove({id: "create_processing:petrifying/stone_from_clay_ball"});
+  event.remove({id: "create_processing:petrifying/cobblestone_from_podzol"});
+  event.remove({id: "create_processing:enderfying/dragon_breath_from_potion"});
+  event.remove({id: "create_processing:enderfying/ghast_tear_from_blue_ice"});
+  event.remove({id: "almostunified:createdeco"});
+
+  event.remove({id: "create:crafting/kinetics/mechanical_crafter"});
+  event.shaped('3x create:mechanical_crafter', ['A', 'B', 'C'], { A: 'minecraft:crafter', B: 'create:brass_casing', C: 'confluence:heavy_work_bench' }).id('cocc:shaped/mechanical_crafter');
+
+  event.remove({output: "immersive_machinery:iron_drill"});
+  event.custom({
+    "type": "create:mechanical_crafting",
+    "category": "misc",
+    "key": {
+      "B": {
+        "item": "minecraft:iron_block"
+      },
+      "H": {
+        "item": "confluence:hellstone_block"
+      },
+      "P": {
+        "item": "dndecor:industrial_plating_block"
+      },
+      "D": {
+        "item": "kubejs:drill"
+      }
+    },
+    "pattern": [
+      "  B  ",
+      " BHB ",
+      "BPDPB"
+    ],
+    "result": {
+      "id": "immersive_machinery:iron_drill"
+    },
+    "accept_mirrored": true
+  }).id('cocc:mechanical_shaped/giant_iron_drill');
+
+  event.remove({output: "immersive_machinery:diamond_drill"});
+  event.custom({
+    "type": "create:sequenced_assembly",
+    "ingredient": {
+      "item": "immersive_machinery:iron_drill"
+    },
+    "transitional_item": {
+      "id": "kubejs:incomplete_component"
+    },
+    "sequence": [
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "kubejs:incomplete_component"
+          },
+          {
+            "item": "create_new_age:overcharged_diamond"
+          }
+        ],
+        "results": [
+          {
+            "id": "kubejs:incomplete_component"
+          }
+        ]
+      },
+      {
+        "type": "create:filling",
+        "ingredients": [
+          {
+            "item": "kubejs:incomplete_component"
+          },
+          {
+            "fluid": "slag:molten_diamond",
+            "amount": 3240,
+            "type": "neoforge:single"
+          }
+        ],
+        "results": [
+          {
+            "id": "kubejs:incomplete_component"
+          }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "kubejs:incomplete_component"
+          },
+          {
+            "item": "create_new_age:overcharged_diamond"
+          }
+        ],
+        "results": [
+          {
+            "id": "kubejs:incomplete_component"
+          }
+        ]
+      }
+    ],
+    "results": [
+      {
+        "id": "immersive_machinery:diamond_drill",
+        "chance": 1
+      }
+    ],
+    "loops": 1
+  }).id('cocc:mechanical_shaped/giant_diamond_drill');
+
+  event.remove({output: "immersive_machinery:netherite_drill"});
+  event.custom({
+    "type": "create:sequenced_assembly",
+    "ingredient": {
+      "item": "immersive_machinery:diamond_drill"
+    },
+    "transitional_item": {
+      "id": "kubejs:incomplete_component"
+    },
+    "sequence": [
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "kubejs:incomplete_component"
+          },
+          {
+            "item": "oritech:overcharged_crystal"
+          }
+        ],
+        "results": [
+          {
+            "id": "kubejs:incomplete_component"
+          }
+        ]
+      },
+      {
+        "type": "create:filling",
+        "ingredients": [
+          {
+            "item": "kubejs:incomplete_component"
+          },
+          {
+            "fluid": "slag:molten_netherite",
+            "amount": 3240,
+            "type": "neoforge:single"
+          }
+        ],
+        "results": [
+          {
+            "id": "kubejs:incomplete_component"
+          }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "kubejs:incomplete_component"
+          },
+          {
+            "item": "oritech:overcharged_crystal"
+          }
+        ],
+        "results": [
+          {
+            "id": "kubejs:incomplete_component"
+          }
+        ]
+      }
+    ],
+    "results": [
+      {
+        "id": "immersive_machinery:netherite_drill",
+        "chance": 1
+      }
+    ],
+    "loops": 1
+  }).id('cocc:mechanical_shaped/giant_hell_drill');
 /*
   event.remove({output: ""});
   event.custom();

@@ -7,5 +7,11 @@ RecipeViewerEvents.addInformation('item', event => {
 	]);
 	event.add('confluence:star_petals', [
 		'Can be obtain from confluence:stellar_blossom_seed on cloud blocks.'
-	])
+	]);
+	event.add('create:refined_radiance', [
+		'Can be obtain by throwing a Chromatic Compound in a beaon beam.'
+	]);
+	event.add('create:shadow_steel', [
+		'Can be obtain by throwing a Chromatic Compound in the void.'
+	]);
 })

@@ -21,6 +21,7 @@ BlockEvents.rightClicked(event => {
   }
 })
 
+// FOR TESTING
 PlayerEvents.loggedIn(event => {
   event.player.awardAdvancement("cocc:root")
 })
