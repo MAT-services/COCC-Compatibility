@@ -1,0 +1,563 @@
+{
+  "values": {
+    "#c:gravels": [
+      {
+        "entries": [
+          {
+            "item": "minecraft:raw_copper",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "confluence:raw_tin",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "minecraft:raw_iron",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "minecraft:raw_gold",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "confluence:raw_lead",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "confluence:raw_silver",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "confluence:raw_tungsten",
+            "max_count": 2,
+            "weight": 39192
+          }
+        ]
+      },
+      {
+        "entries": [
+          {
+            "item": "minecraft:flint"
+          },
+          {
+            "weight": 9
+          }
+        ]
+      }
+    ],
+    "#confluence:desert_fossil": [
+      {
+        "entries": [
+          {
+            "item": "confluence:amethyst",
+            "max_count": 2,
+            "weight": 3333
+          },
+          {
+            "item": "confluence:sapphire",
+            "max_count": 2,
+            "weight": 3333
+          },
+          {
+            "item": "confluence:topaz",
+            "max_count": 2,
+            "weight": 3333
+          },
+          {
+            "item": "confluence:amber",
+            "max_count": 2,
+            "weight": 9598
+          },
+          {
+            "item": "confluence:ruby",
+            "max_count": 2,
+            "weight": 3333
+          },
+          {
+            "item": "confluence:jade",
+            "max_count": 2,
+            "weight": 3333
+          },
+          {
+            "item": "minecraft:diamond",
+            "max_count": 2,
+            "weight": 3333
+          },
+          {
+            "item": "minecraft:raw_copper",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "confluence:raw_tin",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "minecraft:raw_iron",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "minecraft:raw_gold",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "confluence:raw_lead",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "confluence:raw_silver",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "confluence:raw_tungsten",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "confluence:raw_platinum",
+            "max_count": 2,
+            "weight": 39192
+          }
+        ]
+      },
+      {
+        "entries": [
+          {
+            "item": "confluence:sturdy_fossil"
+          },
+          {
+            "weight": 9
+          }
+        ]
+      }
+    ],
+    "#confluence:extract_honey_block": [
+      {
+        "entries": [
+          {
+            "item": "minecraft:honey_block"
+          }
+        ]
+      }
+    ],
+    "#confluence:extract_moss": [
+      {
+        "entries": [
+          {
+            "item": "confluence:green_moss"
+          },
+          {
+            "item": "confluence:brown_moss"
+          },
+          {
+            "item": "confluence:red_moss"
+          },
+          {
+            "item": "confluence:blue_moss"
+          },
+          {
+            "item": "confluence:purple_moss"
+          }
+        ]
+      }
+    ],
+    "#confluence:extract_sand": [
+      {
+        "entries": [
+          {
+            "item": "minecraft:sand"
+          }
+        ]
+      }
+    ],
+    "#confluence:junk": [
+      {
+        "entries": [
+          {
+            "item": "confluence:snail",
+            "weight": 1667
+          },
+          {
+            "item": "confluence:apprentice_bait",
+            "weight": 7500
+          },
+          {
+            "item": "confluence:worm",
+            "weight": 5560
+          },
+          {
+            "item": "confluence:snail",
+            "weight": 2780
+          }
+        ]
+      }
+    ],
+    "#confluence:marine_gravel": [
+      {
+        "entries": [
+          {
+            "item": "confluence:amethyst",
+            "max_count": 2,
+            "weight": 3333
+          },
+          {
+            "item": "confluence:sapphire",
+            "max_count": 2,
+            "weight": 3333
+          },
+          {
+            "item": "confluence:topaz",
+            "max_count": 2,
+            "weight": 3333
+          },
+          {
+            "item": "confluence:amber",
+            "max_count": 2,
+            "weight": 9598
+          },
+          {
+            "item": "confluence:ruby",
+            "max_count": 2,
+            "weight": 3333
+          },
+          {
+            "item": "confluence:jade",
+            "max_count": 2,
+            "weight": 3333
+          },
+          {
+            "item": "minecraft:diamond",
+            "max_count": 2,
+            "weight": 3333
+          },
+          {
+            "item": "minecraft:raw_copper",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "confluence:raw_tin",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "minecraft:raw_iron",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "minecraft:raw_gold",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "confluence:raw_lead",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "confluence:raw_silver",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "confluence:raw_tungsten",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "confluence:raw_platinum",
+            "max_count": 2,
+            "weight": 39192
+          }
+        ]
+      },
+      {
+        "entries": [
+          {
+            "item": "minecraft:prismarine_shard"
+          },
+          {
+            "weight": 19
+          }
+        ]
+      },
+      {
+        "entries": [
+          {
+            "item": "minecraft:prismarine_crystals"
+          },
+          {
+            "weight": 19
+          }
+        ]
+      },
+      {
+        "entries": [
+          {
+            "item": "minecraft:nautilus_shell"
+          },
+          {
+            "weight": 19
+          }
+        ]
+      },
+      {
+        "entries": [
+          {
+            "item": "minecraft:sniffer_egg"
+          },
+          {
+            "weight": 99
+          }
+        ]
+      },
+      {
+        "entries": [
+          {
+            "item": "confluence:heim"
+          },
+          {
+            "weight": 9
+          }
+        ]
+      }
+    ],
+    "#confluence:poo": [
+      {
+        "entries": [
+          {
+            "item": "minecraft:dirt",
+            "weight": 97
+          },
+          {
+            "item": "confluence:grass_seed"
+          },
+          {
+            "item": "confluence:mushroom_grass_seed"
+          },
+          {
+            "item": "confluence:jungle_grass_seed"
+          }
+        ]
+      }
+    ],
+    "#confluence:silt_block": [
+      {
+        "entries": [
+          {
+            "item": "confluence:amethyst",
+            "max_count": 2,
+            "weight": 3333
+          },
+          {
+            "item": "confluence:sapphire",
+            "max_count": 2,
+            "weight": 3333
+          },
+          {
+            "item": "confluence:topaz",
+            "max_count": 2,
+            "weight": 3333
+          },
+          {
+            "item": "confluence:amber",
+            "max_count": 2,
+            "weight": 9598
+          },
+          {
+            "item": "confluence:ruby",
+            "max_count": 2,
+            "weight": 3333
+          },
+          {
+            "item": "confluence:jade",
+            "max_count": 2,
+            "weight": 3333
+          },
+          {
+            "item": "minecraft:diamond",
+            "max_count": 2,
+            "weight": 3333
+          },
+          {
+            "item": "minecraft:raw_copper",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "confluence:raw_tin",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "minecraft:raw_iron",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "minecraft:raw_gold",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "confluence:raw_lead",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "confluence:raw_silver",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "confluence:raw_tungsten",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "confluence:raw_platinum",
+            "max_count": 2,
+            "weight": 39192
+          }
+        ]
+      },
+      {
+        "entries": [
+          {
+            "item": "minecraft:raw_copper",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "confluence:raw_tin",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "minecraft:raw_iron",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "minecraft:raw_gold",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "confluence:raw_lead",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "confluence:raw_platinum",
+            "max_count": 2,
+            "weight": 39192
+          }
+        ]
+      }
+    ],
+    "#confluence:slush": [
+      {
+        "entries": [
+          {
+            "item": "confluence:amethyst",
+            "max_count": 2,
+            "weight": 3333
+          },
+          {
+            "item": "confluence:sapphire",
+            "max_count": 2,
+            "weight": 3333
+          },
+          {
+            "item": "confluence:topaz",
+            "max_count": 2,
+            "weight": 3333
+          },
+          {
+            "item": "confluence:amber",
+            "max_count": 2,
+            "weight": 9598
+          },
+          {
+            "item": "confluence:ruby",
+            "max_count": 2,
+            "weight": 3333
+          },
+          {
+            "item": "confluence:jade",
+            "max_count": 2,
+            "weight": 3333
+          },
+          {
+            "item": "minecraft:diamond",
+            "max_count": 2,
+            "weight": 3333
+          },
+          {
+            "item": "minecraft:raw_copper",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "confluence:raw_tin",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "minecraft:raw_iron",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "minecraft:raw_gold",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "confluence:raw_lead",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "confluence:raw_silver",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "confluence:raw_tungsten",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "confluence:raw_platinum",
+            "max_count": 2,
+            "weight": 39192
+          }
+        ]
+      },
+      {
+        "entries": [
+          {
+            "item": "minecraft:snowball"
+          },
+          {
+            "weight": 9
+          }
+        ]
+      }
+    ]
+  }
+}
