@@ -8,10 +8,7 @@ To add:
 Learn and create.
 
 # Recipies
-
-> [!CAUTION] 
-> Add molds recipies with deployers ! WORKS BUT UNSTABLE. NEED ATTENTION FOR OTHER RECIPIES ! .
-
+- Try to see if it's possible to add a better JEI integration to slag:dynamic parts.
 - Replace the bassin recipie to use deep alloys and the melter recipie sheme to look like a bassin.
 - Delete Oritech Colision particle recipie for the Echo Shard.
 - Add the workshop of the tinker for the recipie of the assembler and add the workshop recipies to the assembler.
