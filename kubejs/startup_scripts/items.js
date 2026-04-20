@@ -115,5 +115,21 @@ StartupEvents.registry('item', event => {
   event.create('lead_sheet')
     .displayName('Lead Sheet')
     .maxStackSize(64)
+
+  event.create('seat_control_part')
+    .displayName('Seat Control Part')
+    .maxStackSize(1)
+  
+  event.create('tunnel_digger_adapter_part')
+    .displayName('Tunnel Digger Adapter')
+    .maxStackSize(1)
+
+  event.create('chains_and_storage_part')
+    .displayName('Tunel Digger Chains and Storage Part')
+    .maxStackSize(1)
+  
+  event.create('tunnel_digger_fuel_part')
+    .displayName('Tunnel Digger Fuel Manager')
+    .maxStackSize(1)
 })
 

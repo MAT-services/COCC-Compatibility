@@ -8,7 +8,6 @@ To add:
 Learn and create.
 
 # Recipies
-- SEE IF THE EXTRACTINATOR NO LONGER MAKE COINS !
 - Add the tunnel digger recipie.
 - Try to see if it's possible to add a better JEI integration to slag:dynamic parts.
 - Replace the bassin recipie to use deep alloys and the melter recipie sheme to look like a bassin.

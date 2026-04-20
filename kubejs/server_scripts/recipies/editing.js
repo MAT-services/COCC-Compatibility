@@ -4306,6 +4306,114 @@ ServerEvents.recipes(event => {
     ],
     "loops": 1
   }).id('cocc:mechanical_shaped/giant_hell_drill');
+
+  event.shaped('kubejs:chains_and_storage_part', ['ABA', 'CDD', 'ABA'], { A: 'create:shaft', B: 'dndecor:belt_connector', C: 'gnkinetics:cogstone', D: 'create:item_vault' }).id('cocc:shaped/chains_and_storage_part');
+  event.shaped('kubejs:tunnel_digger_fuel_part', ['A  ', 'BCD'], { A: 'create:fluid_pipe', B: ['oritech:steel_block', 'oritech:biosteel_block'], C: 'create_new_age:basic_motor', D: 'oritech:basic_generator_block' }).id('cocc:shaped/tunnel_digger_fuel_part');
+  event.shaped('kubejs:tunnel_digger_adapter_part', [' A ', 'BCC', 'D  '], { A: 'dndecor:dark_metal_cogwheel', B: 'dndecor:large_dark_metal_cogwheel', C: 'create:industrial_iron_block', D: 'gnkinetics:cogstone' }).id('cocc:shaped/tunnel_digger_adapter_part');
+  event.shaped('kubejs:seat_control_part', [' A', 'BC'], { A: 'toms_storage:storage_terminal', B: 'create:black_seat', C: 'create:controls' }).id('cocc:shaped/seat_control_part');
+
+  event.remove({ output: "immersive_machinery:tunnel_digger"});
+  event.custom({
+    "type": "create:sequenced_assembly",
+    "ingredient": {
+      "item": "kubejs:chains_and_storage_part"
+    },
+    "transitional_item": {
+      "id": "kubejs:incomplete_component"
+    },
+    "sequence": [
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "kubejs:incomplete_component"
+          },
+          {
+            "item": "kubejs:tunnel_digger_fuel_part"
+          }
+        ],
+        "results": [
+          {
+            "id": "kubejs:incomplete_component"
+          }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "kubejs:incomplete_component"
+          },
+          {
+            "item": "kubejs:tunnel_digger_adapter_part"
+          }
+        ],
+        "results": [
+          {
+            "id": "kubejs:incomplete_component"
+          }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "kubejs:incomplete_component"
+          },
+          {
+            "item": "immersive_machinery:iron_drill"
+          }
+        ],
+        "results": [
+          {
+            "id": "kubejs:incomplete_component"
+          }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "kubejs:incomplete_component"
+          },
+          {
+            "item": "kubejs:seat_control_part"
+          }
+        ],
+        "results": [
+          {
+            "id": "kubejs:incomplete_component"
+          }
+        ]
+      },
+      {
+        "type": "create:deploying",
+        "ingredients": [
+          {
+            "item": "kubejs:incomplete_component"
+          },
+          {
+            "item": "oritech:industrial_paint"
+          }
+        ],
+        "results": [
+          {
+            "id": "kubejs:incomplete_component"
+          }
+        ]
+      }
+    ],
+    "results": [
+      {
+        "id": "immersive_machinery:tunnel_digger",
+        "chance": 1
+      }
+    ],
+    "loops": 1
+  }).id('cocc:sequenced_assembly/tunnel_digger');
+
+  //event.remove({output: "oritech:item_filter_block"});
+
 /*
   event.remove({output: ""});
   event.custom();
