@@ -16,7 +16,8 @@ ServerEvents.recipes(event => {
         { type: "chestplates", item: "chestplate", i: 1},
         { type: "pickaxe_heads", item: "pickaxe_head", i: 1},
         { type: "leggings", item: "leggings", i: 1},
-        { type: "shovel_heads", item: "shovel_head", i: 1}
+        { type: "shovel_heads", item: "shovel_head", i: 1},
+        { type: "dusts", item: "dusts", i: 0}
     ]
 
     molds.forEach(mold => {

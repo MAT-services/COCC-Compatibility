@@ -4412,6 +4412,27 @@ ServerEvents.recipes(event => {
     "loops": 1
   }).id('cocc:sequenced_assembly/tunnel_digger');
 
+  event.custom({
+    "type": "create_processing:enderfying",
+    "ingredients": [
+      {
+        "item": "minecraft:obsidian"
+      }
+    ],
+    "results": [
+      {
+        "id": "minecraft:crying_obsidian"
+      }
+    ]
+  })
+
+  event.recipes.create.mixing(
+    Fluid.of('kubejs:molten_steel', 72), 
+    [
+      Fluid.of('slag:molten_iron', 72), 
+      'oritech:coal_dust'
+    ]
+  )
   //event.remove({output: "oritech:item_filter_block"});
 
 /*

@@ -36,4 +36,5 @@ ClientEvents.lang('en_us', event => {
    event.renameItem('cyberspace:graphene', 'Graphene Plate')
    event.renameItem('cyberspace:graphite_blend', 'Graphene Dust')
    event.renameItem('cyberspace:terminal_block', "CyberSpace Terminal")
+   event.renameItem('confluence:gold_dust', "Gold Broaddust")
 });

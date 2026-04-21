@@ -78,4 +78,17 @@ ServerEvents.recipes(event => {
             }
         ]
     }).id('cocc:melting/molten_steel_from_plate');
+
+    event.custom({
+        "type": "slag:table_casting",
+        "cast": "slag:cast/dusts",
+        "ingredient": {
+            "amount": 72,
+            "id": "slag:molten_iron"
+        },
+        "result": {
+            "count": 1,
+            "id": "oritech:iron_dust"
+        }
+    }).id('cocc:table_casting/iron_dust');
 })
