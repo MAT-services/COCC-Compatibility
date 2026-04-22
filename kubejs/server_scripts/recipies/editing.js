@@ -4433,6 +4433,10 @@ ServerEvents.recipes(event => {
       'oritech:coal_dust'
     ]
   )
+
+  event.remove({output: "rechiseled:chisel"});
+  event.shapeless('confluence:dynamite', ['minecraft:tnt']).id('cocc:item/dynamite');
+  event.shapeless('minecraft:tnt', ['confluence:dynamite']).id('cocc:item/tnt');
   //event.remove({output: "oritech:item_filter_block"});
 
 /*

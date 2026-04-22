@@ -1,0 +1,13 @@
+{
+  "type": "rechiseled:chiseling",
+  "entries": [
+    {
+      "block": "minecraft:sandstone",
+      "slab": "minecraft:sandstone_slab",
+      "slab_worth": 0.5,
+      "stairs": "minecraft:sandstone_stairs"
+    },
+    "confluence:hardened_sand_block"
+  ],
+  "overwrite": false
+}

@@ -1,6 +1,10 @@
 // Visit the wiki for more info - https://kubejs.com/
 console.info('Hello, World! (Loaded server example script)')
 
+ServerEvents.recipes(event => {
+  event.remove({ id: /create:.*biomeswevegone/ })
+})
+
 BlockEvents.rightClicked(event => {
   const player = event.player
   const item = event.item

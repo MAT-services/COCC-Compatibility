@@ -17,3 +17,25 @@ StartupEvents.modifyCreativeTab('oritech:machine_group', event => {
 StartupEvents.modifyCreativeTab('createdeco:props_tab', event => {
 	event.remove('createdeco:copper_coin');
 })
+
+StartupEvents.modifyCreativeTab('chipped:main', event => {
+	event.remove('chipped:chisel'),
+	event.remove('chipped:saw'),
+	event.remove('chipped:multimeter'),
+	event.remove('chipped:needles'),
+	event.remove('chipped:alchemy_book'),
+	event.remove('chipped:watering_can'),
+	event.remove('chipped:tinkering_table'),
+	event.remove('chipped:alchemy_bench'),
+	event.remove('chipped:mason_table'),
+	event.remove('chipped:loom_table'),
+	event.remove('chipped:glassblower'),
+	event.remove('chipped:botanist_workbench');
+	event.remove('chipped:carpenters_table')
+})
+
+StartupEvents.modifyCreativeTab("belts:group", event => {
+    event.remove('belts:belt')
+    event.remove('belts:conveyor_support')
+    event.remove('belts:chute')
+});

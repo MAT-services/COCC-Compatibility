@@ -9,7 +9,10 @@
       "custommachinery:ambient_sound": {
         "sound": "minecraft:block.furnace.fire_crackle"
       }
-    }
+    },
+    "custommachinery:block": "custommachinery:machine/electric_sander",
+    "custommachinery:mining_level": "minecraft:needs_stone_tool",
+    "custommachinery:requires_tool": false
   },
   "components": [
     {
@@ -91,5 +94,10 @@
         "color": "dark_gray"
       }
     }
-  ]
+  ],
+  "tooltips": {
+    "text": {
+      "translate": "WORK IN PROGRESS"
+    }
+  }
 }

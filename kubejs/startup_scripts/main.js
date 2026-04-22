@@ -15,9 +15,29 @@ StartupEvents.modifyCreativeTab('oritech:machine_group', event => {
     event.addAfter('belts:conveyor_support', 'belts:chute')
 })
 StartupEvents.modifyCreativeTab('oritech:machine_group', event => {
-    event.removeDisplay('oritech:transparent_item_pipe')
-	event.removeDisplay('belts:belt')
-    event.removeDisplay('belts:conveyor_support')
+    event.addAfter('belts:belt')
+    event.addAfter('belts:conveyor_support')
+    event.addAfter('belts:chute')
 })
+
+let top = [
+    "custommachinery:machine_creator",
+	"custommachinery:box_creator",
+	"custommachinery:structure_creator",
+	"custommachinery:configuration_card",
+	"custommachinery:electric_sander"
+]
+top.forEach((op) => {
+    StartupEvents.modifyCreativeTab('minecraft:op_blocks', event => {
+        event.addAfter('computercraft:computer_command', op)
+        event.addAfter('computercraft:computer_command', op)
+        event.addAfter('computercraft:computer_command', op)
+        event.addAfter('computercraft:computer_command', op)
+    })
+    StartupEvents.modifyCreativeTab("custommachinery:custom_machine", event => {
+        event.remove(op)
+    });
+})
+
 
 Platform.mods.kubejs.name = 'Confluence Of Creation'
