@@ -29,4 +29,3 @@ Learn and create.
 - Nothing.
 # Items
 - Change the palm, baobab, pine and willow woods names.
-- Rename confluence:granite_column intro "Dark Granite Colmun" and confluence:granite into "Dark Granite"

@@ -4435,9 +4435,13 @@ ServerEvents.recipes(event => {
   )
 
   event.remove({output: "rechiseled:chisel"});
+  event.shaped('rechiseled:chisel', [' A', 'B '], { A: 'createdeco:industrial_iron_sheet', B: 'minecraft:stick' }).id('cocc:shaped/chisel');
+
   event.shapeless('confluence:dynamite', ['minecraft:tnt']).id('cocc:item/dynamite');
   event.shapeless('minecraft:tnt', ['confluence:dynamite']).id('cocc:item/tnt');
-  //event.remove({output: "oritech:item_filter_block"});
+
+  event.remove({output: "oritech:item_filter_block"});
+  event.shapeless('oritech:item_filter_block', ['create:filter', '#oritech:plating']).id('cocc:shaped/item_filter_block');
 
 /*
   event.remove({output: ""});
