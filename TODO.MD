@@ -3,7 +3,8 @@
 # Mods
 To add: 
    - Nothing
-
+# TAGS
+- Modify chipped barrels tags to contraptions considere it as barrels.
 # Advancements
 Learn and create.
 
