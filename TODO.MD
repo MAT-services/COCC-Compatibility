@@ -1,5 +1,6 @@
 # Textures
 - Remade the textures of the items pipes.
+- Create the textures for other fluids.
 # Mods
 To add: 
    - Nothing
@@ -25,6 +26,8 @@ Learn and create.
 - Create more machines: 
     - Automatic Extractinator
     - Automatic Molder
+    - NPC Automatic Shops
+    - Dropper (Ex: beacon -> act like becon beam, black hole -> act like the void, water bucket -> act like water)
 
 # Files
 - Nothing.

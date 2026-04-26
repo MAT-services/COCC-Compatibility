@@ -39,4 +39,5 @@ ClientEvents.lang('en_us', event => {
    event.renameItem('confluence:gold_dust', "Gold Broaddust")
    event.renameItem('confluence:granite_column', "Dark Granite Colmun")
    event.renameItem('confluence:granite', 'Dark Granite')
+   event.renameItem('confluence:fertilizer', "Super Fertilizer")
 });
