@@ -14,4 +14,5 @@ The goal of CoC is to get the better player experience possible with Minecraft m
 - Malcolmriley unused: https://github.com/malcolmriley/unused-textures
 - Create Aircrafts: https://modrinth.com/resourcepack/create-immersive-aircrafts
 - Musics: Stereonyx https://youtube.com/@stereonyx 
+- Material textures: Uniful https://modrinth.com/mod/uniful
 - Edits: MAT Services
