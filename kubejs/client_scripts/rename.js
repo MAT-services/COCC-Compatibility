@@ -320,8 +320,6 @@ ClientEvents.lang('en_us', event => {
    event.renameItem('biomeswevegone:pine_trapdoor', "Pale Pine Trapdoor")
    event.renameItem('biomeswevegone:pine_door', "Pale Pine Door")
    event.renameItem('biomeswevegone:pine_hanging_sign', "Pale Pine Hanging Sign")
-   event.renameItem('biomeswevegone:ripe_pine_leaves', "Ripe Pale Pine Leaves")
-   event.renameItem('biomeswevegone:flowering_pine_leaves', "Flowering Pale Pine Leaves")
    event.renameItem('biomeswevegone:pine_boat', "Pale Pine Boat")
    event.renameItem('biomeswevegone:pine_chest_boat', "Pale Pine Chest Boat")
 });

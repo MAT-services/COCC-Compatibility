@@ -83,6 +83,20 @@ ServerEvents.tags('item', event => {
 
   event.remove('c:wires/copper', 'unify:copper_wire')
   event.remove('c:wires', 'unify:copper_wire')
+
+  event.add('plates', [
+    "kubejs:rose_gold_sheet",
+    "kubejs:lead_sheet",
+    "oritech:plastic_sheet",
+    "create_new_age:overcharged_iron_sheet",
+    "create_new_age:overcharged_golden_sheet",
+    "kubejs:netherite_sheet"
+  ])
+  event.add('c:plates/rose_gold', "kubejs:rose_gold_sheet")
+  event.add('c:plates/lead', "kubejs:lead_sheet")
+  event.add('c:plates/netherite', 'kubejs:netherite_sheet')
+  event.add('c:plates/overcharged_iron', "create_new_age:overcharged_iron_sheet")
+  event.add('c:plates/overcharged_gold', "create_new_age:overcharged_golden_sheet")
 })
 
 ServerEvents.tags('fluid', event => {
