@@ -39,5 +39,21 @@ top.forEach((op) => {
     });
 })
 
+let vaults = [
+    "create_bs:wooden_item_vault",
+	"create_bs:copper_item_vault",
+	"create_bs:iron_item_vault",
+	"create_bs:emerald_item_vault",
+	"create_bs:gold_item_vault",
+    "create_bs:crystal_item_vault",
+    "create_bs:diamond_item_vault",
+    "create_bs:obsidian_item_vault",
+    "create_bs:netherite_item_vault"
+]
+vaults.forEach((vault) => {
+    StartupEvents.modifyCreativeTab('create:base', event => {
+        event.addAfter('create:creative_crate', vault)
+    })
+})
 
 Platform.mods.kubejs.name = 'Confluence Of Creation'
