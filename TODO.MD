@@ -33,4 +33,4 @@ Learn and create.
 # Files
 - Nothing.
 # Items
-- Change the palm, baobab, pine and willow woods names.
+- Change the pine wood names.
