@@ -100,22 +100,24 @@ ServerEvents.tags('item', event => {
 })
 
 ServerEvents.tags('fluid', event => {
-  event.add('confluence:fishing_able', [
-    'slag:molten_brass',
-    'slag:molten_zinc',
-    'kubejs:molten_steel'
-  ])
   event.add('c:molten_brass', 'slag:molten_brass')
   event.add('c:molten_zinc', 'slag:molten_zinc')
   event.add('c:molten_steel', 'kubejs:molten_steel')
-  event.add('slag:hot_fluids', [
-    'slag:molten_brass',
+  let hot_fluids = [
+    "slag:molten_brass",
     'slag:molten_zinc',
-    'kubejs:molten_steel'
-  ])
-  event.add('minecraft:lava', [
-    'slag:molten_brass',
-    'slag:molten_zinc',
-    'kubejs:molten_steel'
-  ])
+    'kubejs:molten_steel',
+    "kubejs:platinum"
+  ];
+  hot_fluids.forEach((hot_fluid) => {
+    event.add('confluence:fishing_able', [
+      hot_fluid
+    ])
+    event.add('slag:hot_fluids', [
+      hot_fluid
+    ])
+    event.add('minecraft:lava', [
+      hot_fluid
+    ])
+  })
 })
