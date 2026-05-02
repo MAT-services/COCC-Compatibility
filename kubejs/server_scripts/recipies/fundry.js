@@ -91,4 +91,92 @@ ServerEvents.recipes(event => {
             "id": "oritech:iron_dust"
         }
     }).id('cocc:table_casting/iron_dust');
+
+    event.custom({
+        "type": "slag:melting",
+        "ingredients": [
+            {
+            "id": "oritech:quartz_dust"
+            }
+        ],
+        "result": [
+            {
+            "amount": 72,
+            "id": "slag:molten_quartz"
+            }
+        ]
+    })
+
+    event.custom({
+        "type": "slag:table_casting",
+        "cast": "slag:cast/gems",
+        "ingredient": {
+            "amount": 72,
+            "id": "slag:molten_iron"
+        },
+        "result": {
+            "count": 1,
+            "id": "oritech:iron_gem"
+        }
+    }).id('cocc:table_casting/iron_gem');
+    event.custom({
+        "type": "slag:table_casting",
+        "cast": "slag:cast/gems",
+        "ingredient": {
+            "amount": 72,
+            "id": "slag:molten_copper"
+        },
+        "result": {
+            "count": 1,
+            "id": "oritech:copper_gem"
+        }
+    }).id('cocc:table_casting/copper_gem');
+    event.custom({
+        "type": "slag:table_casting",
+        "cast": "slag:cast/gems",
+        "ingredient": {
+            "amount": 72,
+            "id": "slag:molten_gold"
+        },
+        "result": {
+            "count": 1,
+            "id": "oritech:gold_gem"
+        }
+    }).id('cocc:table_casting/gold_gem');/*
+    event.custom({
+        "type": "slag:table_casting",
+        "cast": "slag:cast/gems",
+        "ingredient": {
+            "amount": 72,
+            "id": "slag:molten_iron"
+        },
+        "result": {
+            "count": 1,
+            "id": "oritech:nickel_gem"
+        }
+    }).id('cocc:table_casting/iron_dust');
+    event.custom({
+        "type": "slag:table_casting",
+        "cast": "slag:cast/gems",
+        "ingredient": {
+            "amount": 72,
+            "id": "slag:molten_iron"
+        },
+        "result": {
+            "count": 1,
+            "id": "oritech:platinum_gem"
+        }
+    }).id('cocc:table_casting/iron_dust');
+    event.custom({
+        "type": "slag:table_casting",
+        "cast": "slag:cast/gems",
+        "ingredient": {
+            "amount": 72,
+            "id": "slag:molten_iron"
+        },
+        "result": {
+            "count": 1,
+            "id": "oritech:uranium_gem"
+        }
+    }).id('cocc:table_casting/iron_dust');*/
 })

@@ -4443,6 +4443,26 @@ ServerEvents.recipes(event => {
   event.remove({output: "oritech:item_filter_block"});
   event.shapeless('oritech:item_filter_block', ['create:filter', '#oritech:plating']).id('cocc:shaped/item_filter_block');
 
+  event.remove({id: "create:splashing/crushed_raw_gold"});
+  event.custom({
+    "type": "create:splashing",
+    "ingredients": [
+      {
+        "item": "create:crushed_raw_gold"
+      }
+    ],
+    "results": [
+      {
+        "id": "minecraft:gold_nugget",
+        "count": 9
+      },
+      {
+        "id": "oritech:quartz_dust",
+        "chance": 0.5
+      }
+    ]
+  }).id('cocc:splashing/gold_nugget');
+
 /*
   event.remove({output: ""});
   event.custom();
