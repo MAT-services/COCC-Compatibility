@@ -33,7 +33,7 @@ ClientEvents.lang('en_us', event => {
    event.renameItem('drones:ion_thruster', 'Drone Ion Thruster')
    event.renameItem('belts:chute', 'Conveyor Funnel')
    event.renameItem('cyberspace:graphene_coated_iron_ingot', 'Graphene Ingot')
-   event.renameItem('cyberspace:graphene', 'Graphene Plate')
+   event.renameItem('cyberspace:graphene_mesh', 'Graphene Plate')
    event.renameItem('cyberspace:graphite_blend', 'Graphene Dust')
    event.renameItem('cyberspace:terminal_block', "CyberSpace Terminal")
    event.renameItem('confluence:gold_dust', "Gold Broaddust")

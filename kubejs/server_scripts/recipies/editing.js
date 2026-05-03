@@ -3675,7 +3675,7 @@ ServerEvents.recipes(event => {
 
   event.shaped('kubejs:brass_propeller', [' A ', 'ABA', ' A '], { A: 'create:brass_sheet', B: 'create:brass_ingot' }).id('cocc:shaped/brass_propeller');
   
-  event.remove({output: "cyberspace:machine_casing_block"});
+  event.remove({output: "cyberspace:virtual_machine_casing"});
   event.custom({
     "type": "create:sequenced_assembly",
     "ingredient": {
@@ -3736,7 +3736,7 @@ ServerEvents.recipes(event => {
     ],
     "results": [
       {
-        "id": "cyberspace:machine_casing_block"
+        "id": "cyberspace:virtual_machine_casing"
       }
     ],
     "loops": 1
@@ -3768,7 +3768,7 @@ ServerEvents.recipes(event => {
   event.remove({output: "cyberspace:graphene_coated_iron_ingot"});
   event.smelting('cyberspace:graphene_coated_iron_ingot', 'cyberspace:graphite_blend').xp(0.1).cookingTime(200).id('cocc:smelting/graphene_coated_iron_ingot');
   event.blasting('cyberspace:graphene_coated_iron_ingot', 'cyberspace:graphite_blend').xp(0.1).cookingTime(200).id('cocc:blasting/graphene_coated_iron_ingot');
-  event.remove({output: "cyberspace:graphene"});
+  event.remove({output: "cyberspace:graphene_mesh"});
   event.custom({
     "type": "create:pressing",
     "ingredients": [
@@ -3778,7 +3778,7 @@ ServerEvents.recipes(event => {
     ],
     "results": [
       {
-        "id": "cyberspace:graphene"
+        "id": "cyberspace:graphene_mesh"
       }
     ]
   }).id('cocc:pressing/graphene');
@@ -3813,7 +3813,7 @@ ServerEvents.recipes(event => {
             "item": "create_new_age:incomplete_fuel"
           },
           {
-            "item": "cyberspace:graphene"
+            "item": "cyberspace:graphene_mesh"
           }
         ],
         "results": [
