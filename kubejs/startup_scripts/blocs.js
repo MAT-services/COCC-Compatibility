@@ -6,5 +6,7 @@ StartupEvents.registry('block', event => {
     .resistance(8)
     .requiresTool(false)
     .mapColor('metal')
-    event.create("custommachinery:electric_sander", "custommachinery:custom_machine")
+  event.create("kuebjs:electric_sander", "custommachinery:custom_machine").machine("custommachinery:electric_sander")
+  event.create("kubejs:adamantite_melter", "custommachinery:custom_machine").machine("custommachinery:adamantite_melter")
+  event.create("kubejs:titanium_melter", "custommachinery:custom_machine").machine("custommachinery:titanium_melter")
 })

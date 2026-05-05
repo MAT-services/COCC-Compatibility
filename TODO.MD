@@ -33,4 +33,5 @@ Learn and create.
 # Files
 - Nothing.
 # Items
-- Nothing.
+- Create uses for Cobalt Obsidian.
+- Create seeds for all RU nylium types.

@@ -131,5 +131,9 @@ StartupEvents.registry('item', event => {
   event.create('tunnel_digger_fuel_part')
     .displayName('Tunnel Digger Fuel Manager')
     .maxStackSize(1)
+
+  event.create('cobalt_seed')
+    .displayName('Cobalt Seed')
+    .maxStackSize(64)
 })
 
