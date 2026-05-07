@@ -16,17 +16,16 @@ Learn and create.
 - Delete Oritech Colision particle recipie for the Echo Shard.
 - Add the workshop of the tinker for the recipie of the assembler and add the workshop recipies to the assembler.
 - Add linked to sculkcite. 
-- Change the spawner to use the heavy core.
+- Change the spawner recipe to use the heavy core.
 - See if Oritech Sools can be used in crafts.
-- Add Heavy Core recipie (It will need A LOT of molten steel).
-- Check to update recipies that are previously deleted due to Alex Caves crashes.
+- Add Heavy Core recipie (It will need A LOT of molten steel and else).
+- Check if Alex Caves do not breaks the game now. (Check to update recipies that are previously deleted due to Alex Caves crashes.)
 
 # Custom Machinery
-- Disable Auto input and auto output on machines.
-- Place the Electric Sander in the place specified in the documentation: https://frinn.gitbook.io/custom-machinery-1.21/creating-custom-machines/machine-appearance/block-appearance
+- Learn the documentation: https://frinn.gitbook.io/custom-machinery-1.21/creating-custom-machines/machine-appearance/block-appearance
+- Finish the Hardmode Melters
 - Create more machines: 
     - Automatic Extractinator
-    - Automatic Molder
     - NPC Automatic Shops
     - Dropper (Ex: beacon -> act like becon beam, black hole -> act like the void, water bucket -> act like water)
 
