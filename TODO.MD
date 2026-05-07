@@ -1,3 +1,6 @@
+# Blocks
+- Add the torium node block.
+- Add the deepslate thorium ore.
 # Textures
 - Replace materials textures by Uniful textures. 
 - Remade the textures of the items pipes.
