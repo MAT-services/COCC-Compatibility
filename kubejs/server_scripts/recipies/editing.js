@@ -4453,8 +4453,8 @@ ServerEvents.recipes(event => {
   event.remove({output: "rechiseled:chisel"});
   event.shaped('rechiseled:chisel', [' A', 'B '], { A: 'createdeco:industrial_iron_sheet', B: 'minecraft:stick' }).id('cocc:shaped/chisel');
 
-  event.shapeless('confluence:dynamite', ['minecraft:tnt']).id('cocc:item/dynamite');
-  event.shapeless('minecraft:tnt', ['confluence:dynamite']).id('cocc:item/tnt');
+  event.shapeless('confluence:dynamite', ['minecraft:tnt']).id('cocc:item/dynamite'); //Replace them by mechanical crafting / workbench crafting. 
+  event.shapeless('minecraft:tnt', ['confluence:dynamite']).id('cocc:item/tnt');      // (See if workbench crafting automatcly create mechanical crafting.)
 
   event.remove({output: "oritech:item_filter_block"});
   event.shapeless('oritech:item_filter_block', ['create:filter', '#oritech:plating']).id('cocc:shaped/item_filter_block');
@@ -4473,14 +4473,9 @@ ServerEvents.recipes(event => {
         "count": 9
       },
       {
-        "id": "oritech:quartz_dust",
+        "id": "oritech:quartz_dust", //Replace by "small quartz dust".
         "chance": 0.5
       }
     ]
   }).id('cocc:splashing/gold_nugget');
-
-/*
-  event.remove({output: ""});
-  event.custom();
-*/
 })
