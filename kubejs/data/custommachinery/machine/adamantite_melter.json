@@ -4,7 +4,6 @@
       "translate": "Adamantite Melter"
     }
   },
-  "catalysts": ["custommachinery:adamantite_melter", "custommachinery:titanium_melter"],
   "appearance": {
     "running": {
       "custommachinery:ambient_sound": {
@@ -52,6 +51,16 @@
     },
     {
       "type": "custommachinery:item",
+      "id": "input1",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "input2",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item_fuel",
       "config": {
         "TOP": "INPUT",
         "BOTTOM": "INPUT",
@@ -61,16 +70,6 @@
         "LEFT": "INPUT"
       },
       "id": "fuel",
-      "mode": "none"
-    },
-    {
-      "type": "custommachinery:item",
-      "id": "input1",
-      "mode": "input"
-    },
-    {
-      "type": "custommachinery:item",
-      "id": "input2",
       "mode": "input"
     }
   ],
@@ -140,5 +139,9 @@
         "color": "dark_gray"
       }
     }
+  ],
+  "catalysts": [
+    "custommachinery:adamantite_melter",
+    "custommachinery:titanium_melter"
   ]
 }

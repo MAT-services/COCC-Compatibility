@@ -4056,12 +4056,12 @@ ServerEvents.recipes(event => {
         "item": 'minecraft:blackstone'
       },
       {
-        "item": "regions_unexplored:cobalt_nylium"
+        "item": "kubejs:cobalt_seed"
       }
     ],
     "results": [
       {
-        "id": "confluence:ash_grass_block"
+        "id": "regions_unexplored:cobalt_nylium"
       }
     ]
   }).id('cocc:item_application/cobalt_grass_block');
@@ -4478,4 +4478,6 @@ ServerEvents.recipes(event => {
       }
     ]
   }).id('cocc:splashing/gold_nugget');
+  
+  event.remove({id: "create_processing:cold_pressing/chilling/honey_bottle_from_honey_block"});
 })

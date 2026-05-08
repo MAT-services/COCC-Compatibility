@@ -27,7 +27,7 @@ Learn and create.
 
 # Custom Machinery
 - Learn the documentation: https://frinn.gitbook.io/custom-machinery-1.21/creating-custom-machines/machine-appearance/block-appearance
-- Finish the Hardmode Melters
+- Finish the Hardmode Melters (See if it's possible to automatly translate the recipes from the melter to the hardmode melters.)
 - Create more machines: 
     - Automatic Extractinator
     - NPC Automatic Shops
