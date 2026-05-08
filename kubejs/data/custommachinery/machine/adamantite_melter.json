@@ -4,6 +4,7 @@
       "translate": "Adamantite Melter"
     }
   },
+  "catalysts": ["custommachinery:adamantite_melter", "custommachinery:titanium_melter"],
   "appearance": {
     "running": {
       "custommachinery:ambient_sound": {

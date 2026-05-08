@@ -103,11 +103,14 @@ ServerEvents.tags('fluid', event => {
   event.add('c:molten_brass', 'slag:molten_brass')
   event.add('c:molten_zinc', 'slag:molten_zinc')
   event.add('c:molten_steel', 'kubejs:molten_steel')
+  event.add('c:molten_platinum', "kubejs:molten_platinum" )
+  event.add('c:molten_lead', "kubejs:molten_lead" )
   let hot_fluids = [
     "slag:molten_brass",
     'slag:molten_zinc',
     'kubejs:molten_steel',
-    "kubejs:platinum"
+    "kubejs:molten_platinum",
+    "kubejs:molten_lead"
   ];
   hot_fluids.forEach((hot_fluid) => {
     event.add('confluence:fishing_able', [
