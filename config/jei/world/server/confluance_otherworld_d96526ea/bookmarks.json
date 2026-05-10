@@ -1,5 +1,0 @@
-[
-  {"version":2},
-  {"ingredient":{"id":"confluence:regeneration_potion"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"minecraft:obsidian"},"type":"item_stack","bookmarkType":"INGREDIENT"}
-]

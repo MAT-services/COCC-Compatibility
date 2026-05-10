@@ -1,8 +1,0 @@
-[
-  {"version":1},
-  {"ingredient":{"id":"minecraft:oak_door"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"minecraft:oak_planks"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"minecraft:oak_stairs"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"minecraft:stripped_oak_log"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"minecraft:stripped_oak_wood"},"type":"item_stack","bookmarkType":"INGREDIENT"}
-]

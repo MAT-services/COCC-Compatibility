@@ -1,5 +1,0 @@
-[
-  {"version":2},
-  {"recipe":"create:crafting/appliances/tree_fertilizer","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
-  {"recipe":"confluence:alchemy_table/fertilizer","recipeType":"confluence:alchemy_table","bookmarkType":"RECIPE"}
-]

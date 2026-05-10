@@ -1,9 +1,0 @@
-[
-  {"version":2},
-  {"recipe":"create_bs:crafting/wooden_item_vault","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
-  {"recipe":"create_bs:crafting/copper_item_vault","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
-  {"recipe":"cocc:crafting_shapeless/trim","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
-  {"recipe":"create_bs:crafting/iron_item_vault","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
-  {"recipe":"cocc:crafting_shaped/inventory_interface","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
-  {"recipe":"create_processing:speed_pressing/fast/materials/pointed_dripstone_from_dripstone_block","recipeType":"create_processing:speed_pressing","bookmarkType":"RECIPE"}
-]
