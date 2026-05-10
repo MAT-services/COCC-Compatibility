@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
+            .carousel img {
+                position: absolute;
+                opacity: 0;
+                transition: opacity 2s;
+                margin: 0;
+                height: 100vh;
+                width: 100%;
+                object-fit: cover;
+                display: block;
+            }
+
+            .carousel img.active {
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="carousel">
+            <img src="images/img1.png" class="active">
+            <img src="images/img2.png">
+            <img src="images/img3.png">
+        </div>
+    </body>
+    <foot>
+        <script>
+            const imgs = document.querySelectorAll(".carousel img");
+            let i = 0;
+
+            setInterval(() => {
+                imgs[i].classList.remove("active");
+                i = (i + 1) % imgs.length;
+                imgs[i].classList.add("active");
+            }, 10000);
+        </script>
+    </foot>
+</html>

@@ -1,0 +1,9 @@
+[
+  {"version":2},
+  {"recipe":"confluence:sawmill/pearl_planks","recipeType":"confluence:sawmill","bookmarkType":"RECIPE"},
+  {"recipe":"confluence:sawmill/loom","recipeType":"confluence:sawmill","bookmarkType":"RECIPE"},
+  {"recipe":"confluence:sawmill/keg","recipeType":"confluence:sawmill","bookmarkType":"RECIPE"},
+  {"recipe":"confluence:heavy_work_bench/sawmill","recipeType":"confluence:heavy_work_bench","bookmarkType":"RECIPE"},
+  {"recipe":"create:crafting/kinetics/mechanical_saw","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"recipe":"confluence:stonecutter_from_lead_and_iron","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"}
+]

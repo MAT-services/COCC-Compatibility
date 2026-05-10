@@ -1,0 +1,13 @@
+[
+  {"version":2},
+  {"recipe":"alexscaves:raygun","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"ingredient":{"id":"minecraft:grass_block"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"recipe":"create:crimsite_from_stone_types_crimsite_stonecutting","recipeType":"minecraft:stonecutting","bookmarkType":"RECIPE"},
+  {"recipe":"oritech:crafting/solar","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"recipe":"cocc:sequenced_assembly/chromatic_compound","recipeType":"create:sequenced_assembly","bookmarkType":"RECIPE"},
+  {"recipe":"alexscaves:remote_detonator","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"recipe":"cocc:sequenced_assembly/precision_mechanism","recipeType":"create:sequenced_assembly","bookmarkType":"RECIPE"},
+  {"recipe":"createdeco:pressing/coins/gold_coin","recipeType":"create:pressing","bookmarkType":"RECIPE"},
+  {"recipe":"shadoukube:reinforced_deepslate","recipeType":"create:sequenced_assembly","bookmarkType":"RECIPE"},
+  {"recipe":"alexscaves:holocoder","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"}
+]

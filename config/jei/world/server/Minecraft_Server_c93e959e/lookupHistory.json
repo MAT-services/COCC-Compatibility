@@ -1,0 +1,5 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"computercraft:monitor_normal"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:spruce_planks"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

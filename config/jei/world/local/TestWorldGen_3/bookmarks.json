@@ -1,0 +1,10 @@
+[
+  {"version":2},
+  {"recipe":"confluence:heavy_work_bench/boulder_bread","recipeType":"confluence:heavy_work_bench","bookmarkType":"RECIPE"},
+  {"recipe":"confluence:sky_mill/cloud_block","recipeType":"confluence:sky_mill","bookmarkType":"RECIPE"},
+  {"recipe":"confluence:smelting/pure_glass","recipeType":"minecraft:smelting","bookmarkType":"RECIPE"},
+  {"recipe":"biomeswevegone:foragers_table","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"recipe":"oritech:platinum_nugget","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"recipe":"create_processing:cold_pressing/chilling/honey_bottle_from_honey_block","recipeType":"create_processing:cold_pressing","bookmarkType":"RECIPE"},
+  {"recipe":"cocc:item_application/cobalt_grass_block","recipeType":"create:item_application","bookmarkType":"RECIPE"}
+]

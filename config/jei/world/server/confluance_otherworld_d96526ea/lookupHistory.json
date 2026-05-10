@@ -1,0 +1,20 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"confluence:hellforge"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"terra_entity:enchanted_boomerang"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"confluence:hellstone_ingot"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:smithing_table"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:diamond_pickaxe"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:netherite_upgrade_smithing_template"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:netherite_pickaxe"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:netherite_ingot"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"confluence:tissue_sample"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"confluence:bloody_spine"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"confluence:crimson_helmet"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"confluence:crimson_chestplate"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"confluence:crimson_leggings"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"confluence:crimson_boots"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"confluence:crimtane_ingot"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"confluence:volcano"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"oritech:adamant_ingot"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

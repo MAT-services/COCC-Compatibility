@@ -1,0 +1,21 @@
+[
+  {"version":2},
+  {"recipe":"confluence:item_transmutation/raw_tungsten_from_ingot","recipeType":"confluence:item_transmutation","bookmarkType":"RECIPE"},
+  {"ingredient":{"id":"oritech:machine_capacitor_addon"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:diamond_block"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"recipe":{"registryName":"terra_entity:npc_trade/merchant/gold_dust","ingredient":{"ingredient":{"id":"confluence:gold_dust"},"type":"item_stack"},"ingredient_role":"OUTPUT"},"recipeType":"terra_entity:npc_trade","bookmarkType":"RECIPE"},
+  {"recipe":"oritech:iron_dust","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"recipe":"oritech:copper_dust","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"recipe":"oritech:gold_dust","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"recipe":"oritech:crushing/compat/create/quartz","recipeType":"create:crushing","bookmarkType":"RECIPE"},
+  {"ingredient":{"id":"minecraft:rotten_flesh"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"recipe":"cocc:crafting_shapeless/basic_inventory_hopper","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"ingredient":{"id":"create:fluid_tank"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"recipe":"regions_unexplored:ash","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"recipe":"oritech:crafting/magnet","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"ingredient":{"id":"create:crushed_raw_nickel"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"recipe":"confluence:baobab_table","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"recipe":"oritech:splashing/compat/create/platinumclump","recipeType":"create:fan_washing","bookmarkType":"RECIPE"},
+  {"recipe":"create:splashing/crushed_raw_tungsten","recipeType":"create:fan_washing","bookmarkType":"RECIPE"},
+  {"recipe":"cyberspace:bounding_acid_recipe","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"}
+]

@@ -1,0 +1,14 @@
+[
+  {"version":2},
+  {"recipe":"create_processing:purifying/sand_from_soul_sand","recipeType":"create_processing:fan_purifying","bookmarkType":"RECIPE"},
+  {"recipe":"immersive_aircraft:sturdy_pipes","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"recipe":"slag:crafting/modular_item","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"recipe":"regions_unexplored:raw_redstone_block","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"recipe":"create:splashing/crushed_raw_lead","recipeType":"create:fan_washing","bookmarkType":"RECIPE"},
+  {"recipe":"regions_unexplored:redstone_from_blasting_redstone_bulb","recipeType":"minecraft:blasting","bookmarkType":"RECIPE"},
+  {"recipe":"petrolsparts:crafting/brass_depot","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"recipe":"oritech:crafting/exojetpack","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"recipe":"oritech:crafting/exoboostedelytraalt","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"recipe":"oritech:crafting/exoboostedelytra","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"},
+  {"recipe":"oritech:crafting/boostedelytra","recipeType":"minecraft:crafting","bookmarkType":"RECIPE"}
+]
