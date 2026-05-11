@@ -111,9 +111,9 @@
   color:#FFF;
   display:flex;
   font-family:MinecraftRegular,sans-serif;
-  justify-content:center;
+  justify-content:right;
   padding-bottom:12px;
-  text-align:center;
+  text-align:left;
   text-decoration:none;
   transition:0s;
   user-select:none;
@@ -158,5 +158,37 @@
 }
 
 .button-normal:active {
+  position: relative;
+}
+
+.button-essential {
+  color: #fff;
+  font-family: "MinecraftRegular", sans-serif;
+  box-shadow: inset 1.5px 1.5px 0 #505252,
+      inset -1.5px -1.5px 0 #2E2E2E;
+  background: #3B3B3B;
+  background-color: #3B3B3B;
+  border: 1.5px solid var(--btn-normal-border-color);
+  display: flex;
+  justify-content: right;
+  align-items: left;
+  text-align: left;
+  text-decoration: none;
+  user-select: none;
+  transition: 0s;
+}
+
+.button-essential:hover {
+  color: var(--btn-normal-text-hover-color);
+  font-family: "MinecraftRegular", sans-serif;
+  box-shadow: inset 1.5px 1.5px 0
+          var(--btn-normal-inner-border-lt-hover-color),
+      inset -1.5px -1.5px 0 var(--btn-normal-inner-border-br-hover-color);
+  background: var(--btn-normal-inner-hover-color);
+  background-color: var(--btn-normal-inner-hover-color);
+  border: 1.5px solid var(--btn-normal-border-hover-color);
+}
+
+.button-essential:active {
   position: relative;
 }
