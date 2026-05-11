@@ -147,6 +147,11 @@
 }
 
 .button-normal:hover {
+  border: 1.5px solid #FFF;
+}
+
+.button-normal:active {
+  position: relative;
   color: var(--btn-normal-text-hover-color);
   font-family: "MinecraftRegular", sans-serif;
   box-shadow: inset 1.5px 1.5px 0
@@ -155,10 +160,6 @@
   background: var(--btn-normal-inner-hover-color);
   background-color: var(--btn-normal-inner-hover-color);
   border: 1.5px solid var(--btn-normal-border-hover-color);
-}
-
-.button-normal:active {
-  position: relative;
 }
 
 .button-essential {
