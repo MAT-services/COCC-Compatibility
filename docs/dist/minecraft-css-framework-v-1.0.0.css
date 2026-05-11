@@ -441,7 +441,7 @@ a:hover{
 .navbar-nav a:hover{
   text-decoration:underline;
 }
-@import "/src/dist/_main.all.css";
+@import "/COCC-Compatibility/src/dist/_main.all.css";
 
 @import "../base/_reset.css";
 @import "../base/_typography.css";
