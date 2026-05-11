@@ -1,36 +1,36 @@
 /*==================  base  ==================*/
 
-@import '../base/_reset.css';
-@import '../base/_typography.css';
-@import '../base/_colors.css';
-@import '../base/_variables.css';
-@import '../base/_fonts.css';
+@import '../base/reset.css';
+@import '../base/typography.css';
+@import '../base/colors.css';
+@import '../base/variables.css';
+@import '../base/fonts.css';
 
 /*==================  components  ==================*/
 
-@import '../components/_buttons.css';
-@import '../components/_cards.css';
-@import '../components/_forms.css';
-@import '../components/_modals.css';
-@import '../components/_navigation.css';
+@import '../components/buttons.css';
+@import '../components/cards.css';
+@import '../components/forms.css';
+@import '../components/modals.css';
+@import '../components/navigation.css';
 
 /*==================  icons  ==================*/
 
-@import '../icons/_icons.css';
+@import '../icons/icons.css';
 
 /*==================  layout  ==================*/
 
-@import '../layout/_container.css';
-@import '../layout/_grid.css';
+@import '../layout/container.css';
+@import '../layout/grid.css';
 
 /*==================  themes  ==================*/
 
-@import '../themes/_dark.css';
-@import '../themes/_light.css';
+@import '../themes/dark.css';
+@import '../themes/light.css';
 
 /*==================  utilities  ==================*/
 
-@import '../utilities/_colors.css';
-@import '../utilities/_spacing.css';
-@import '../utilities/_text.css';
-@import '../utilities/_visibility.css';
+@import '../utilities/colors.css';
+@import '../utilities/spacing.css';
+@import '../utilities/text.css';
+@import '../utilities/visibility.css';
