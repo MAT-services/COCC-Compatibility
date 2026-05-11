@@ -9,7 +9,6 @@
 To add: 
    - Nothing
 # TAGS
-- CHECK IF WE TAKE FIRE WHEN WE GO ON NEW MOLTEN FLUIDS !!!
 - Modify chipped barrels tags to contraptions considere it as barrels.
 # Advancements
 Learn and create.
