@@ -91,7 +91,7 @@
 }
 
 .button-tertiary:hover {
-  border:1.5px solid #FFF;
+  background-color: var(--btn-tertiary-inner-hover-color);
 }
 
 .button-tertiary:active {
@@ -120,7 +120,7 @@
 }
 
 .button-tertiary-essential:hover{
-  background-color:var(--btn-tertiary-inner-hover-color);
+  border:1.5px solid #FFF;
 }
 
 .button-tertiary-essential:active{
