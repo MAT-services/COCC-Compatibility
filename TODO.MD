@@ -34,7 +34,7 @@ Learn and create.
     - Dropper (Ex: beacon -> act like becon beam, black hole [! MAKE THE BLACK HOLE REMOVABLE / OBTAINABLE ! (Potentially broke it when a beacon is placed under it.)] -> act like the void, water bucket -> act like water, corrupted wash -> corrupt items)
 
 # Files
-- Nothing.
+- Create the web places.
 # Items
 - Create uses for Cobalt Obsidian. (Obtain cobalt nugets from the chlorophilite extractinator ?)
 - Create seeds for all RU nylium types.
