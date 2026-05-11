@@ -31,10 +31,10 @@ Learn and create.
 - Create more machines: 
     - Automatic Extractinator
     - NPC Automatic Shops
-    - Dropper (Ex: beacon -> act like becon beam, black hole -> act like the void, water bucket -> act like water)
+    - Dropper (Ex: beacon -> act like becon beam, black hole [! MAKE THE BLACK HOLE REMOVABLE / OBTAINABLE ! (Potentially broke it when a beacon is placed under it.)] -> act like the void, water bucket -> act like water, corrupted wash -> corrupt items)
 
 # Files
 - Nothing.
 # Items
-- Create uses for Cobalt Obsidian.
+- Create uses for Cobalt Obsidian. (Obtain cobalt nugets from the chlorophilite extractinator ?)
 - Create seeds for all RU nylium types.
