@@ -1,5 +1,5 @@
 # COCC-Compatibility
-<img width="1024" height="119" alt="model" src="https://github.com/user-attachments/assets/06d9ae39-571f-4c37-a074-82470db3c772" />
+<img width="1024" height="119" alt="model" src="https://raw.githubusercontent.com/MAT-services/COCC-Compatibility/refs/heads/main/config/fancymenu/assets/title.png" />
 
 ## About this modpack
 Confluence of Creation is a Minecraft Modpack based on Create and Confluence: Otherworld mods. His name was chosen because it represents an intersection enter a lot of creation and aventure mods, it represents a CONFLUENCE... 
