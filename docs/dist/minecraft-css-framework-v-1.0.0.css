@@ -282,7 +282,7 @@ a:hover{
 }
 
 .button-tertiary-essential:hover{
-  background-color:var(--btn-tertiary-inner-hover-color);
+  border:1.5px solid #FFF;
 }
 
 .button-tertiary-essential:active{
@@ -297,7 +297,7 @@ a:hover{
   background-color:var(--btn-normal-inner-color);
   border:1.5px solid var(--btn-normal-border-color);
   box-shadow:inset 1.5px 1.5px 0 var(--btn-normal-inner-border-lt-color), inset -1.5px -1.5px 0 var(--btn-normal-inner-border-br-color);
-  color:var(--btn-normal-text-color);
+  color:#FFF;
   display:flex;
   justify-content:center;
   text-align:center;
