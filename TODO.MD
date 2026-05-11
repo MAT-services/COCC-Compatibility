@@ -1,7 +1,9 @@
+# GUIs
+- Add a GUI for packs. (Textures, data, shaders...)
 # Blocks
-- Add the torium node block.
+- Add the torium node.
 - Add the deepslate thorium ore.
-- Create some molten (fluxite ?) textures.
+- Create some molten (fluxite ?) fluids.
 # Textures
 - Replace materials textures by Uniful textures. 
 - Remade the textures of the items pipes.
