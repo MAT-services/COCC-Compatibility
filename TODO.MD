@@ -1,4 +1,5 @@
 # GUIs
+- Modify Web Places GUI to do not crash the game with the error `No web connection`.
 - Add a GUI for packs. (Textures, data, shaders...)
 # Blocks
 - Add the torium node.
@@ -17,6 +18,7 @@ To add:
 Learn and create.
 
 # Recipies
+- ADD PLATINUM FUNDRY RECIPES !
 - Try to see if it's possible to add a better JEI integration to slag:dynamic parts.
 - Replace the bassin recipie to use deep alloys and the melter recipie sheme to look like a bassin.
 - Delete Oritech Colision particle recipie for the Echo Shard.
