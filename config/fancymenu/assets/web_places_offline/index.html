@@ -5,7 +5,89 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../gui/dist/minecraft-css-framework-v-1.0.0.css">
     </head>
-    <body>
-        <div class="check"></div>
+    <body class="text-secondary">
+        <nav class="navbar">
+            <div class="navbar-brand" onclick="fancymenu.actions.execute('opengui', 'title_screen');"><button class="button button-secondary no-margin">Return to Menu</button></div>
+            <ul class="navbar-nav"></ul>
+        </nav>
+        <div class="check">
+            <br><br><br><br><br>
+            <center>Verifying your connection...</center>
+        </div>
+        <div class="error">
+            <br><br><br><br><br>
+            <center>
+                <div style="text-align: left; align-items: left; align-content: left;">
+                    Ooups... <br>
+                    <div class="notConnected">
+                        It looks like your computer is not connected to our server. :(
+                    </div>
+                    <div class="unknownError">
+                        An unknown error occured... Potentially try leater.
+                    </div>
+                </div>
+            </center>
+        </div>
     </body>
+    <foot>
+        <style id="statusShow">
+            .error {
+                display: none;
+            }
+            .check {
+                display: unset;
+            }
+            .notConnected {
+                display: none;
+            }
+            .unknownError {
+                display: none;
+            }
+        </style>
+        <script>
+            const checkOnlineStatus = async () => {
+                try {
+                    const online = await fetch('https://mat-services.freeddns.org/COCC-Compatibility');
+                    return online.status >= 200 && online.status < 300;
+                } catch (err) {
+                    return false;
+                }
+            };
+            const lineStatus = await checkOnlineStatus();
+            if (online.status===404) {
+                document.getElementById("statusShow").textContent = `
+                    .error {
+                        display: unset;
+                    }
+                    .check {
+                        display: none;
+                    }
+                    .notConnected {
+                        display: unset;
+                    }
+                    .unknownError {
+                        display: none;
+                    }
+                `;
+            } else (lineStatus===true) {
+                window.location.href = "https://mat-services.freeddns.org/COCC-Compatibility";
+            };
+            if (online.status != 404) {
+                document.getElementById("statusShow").textContent = `
+                    .error {
+                        display: unset;
+                    }
+                    .check {
+                        display: none;
+                    }
+                    .notConnected {
+                        display: none;
+                    }
+                    .unknownError {
+                        display: unset;
+                    }
+                `;
+            };
+        </script>
+    </foot>
 </html>
