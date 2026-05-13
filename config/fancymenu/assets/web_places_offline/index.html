@@ -23,7 +23,8 @@
                         It looks like your computer is not connected to our server. :(
                     </div>
                     <div class="unknownError">
-                        An unknown error occured... Potentially try leater.
+                        An unknown error occured... Potentially try leater.<br>
+                        ErrorCode: <div id="error"></div>
                     </div>
                 </div>
             </center>
@@ -69,7 +70,8 @@
                         display: none;
                     }
                 `;
-            } else (lineStatus===true) {
+            }; 
+            if (lineStatus===true) {
                 window.location.href = "https://mat-services.freeddns.org/COCC-Compatibility";
             };
             if (online.status != 404) {
