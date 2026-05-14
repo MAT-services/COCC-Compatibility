@@ -12,6 +12,7 @@
                 color: #fff;
             }
         </style>
+        <script>window.location.href = "https://mat-services.github.io/COCC-Compatibility";</script>
     </head>
     <body class="text-secondary">
         <nav class="navbar">
@@ -20,7 +21,7 @@
         </nav>
         <div class="check">
             <br><br><br><br><br>
-            <center>Verifying your connection...</center>
+            <center>Verifying your connection... MAAAAAAAAAAAAAAAAAAAAAAAAAAA</center>
         </div>
         <div class="error">
             <br><br><br><br><br>
@@ -88,8 +89,21 @@
             function checkConnection() {
                 const img = new Image();
                 img.onload = () => {
-                    window.location.href =
-                        "https://mat-services.github.io/COCC-Compatibility";
+                    window.location.href = "https://mat-services.github.io/COCC-Compatibility";
+                    document.getElementById("statusShow").textContent = `
+                        .error {
+                            display: unset;
+                        }
+                        .check {
+                            display: none;
+                        }
+                        .notConnected {
+                            display: none;
+                        }
+                        .unknownError {
+                            display: unset;
+                        }
+                    `;
                 };
                 img.onerror = () => {
                     document.getElementById("statusShow").textContent = `
@@ -112,6 +126,7 @@
                     + Date.now();
             }
             checkConnection();
+            console.log('Page_Loaded')
             </script>
     </foot>
 </html>

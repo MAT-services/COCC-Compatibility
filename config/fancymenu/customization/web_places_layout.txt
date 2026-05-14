@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = web_places
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1778526999369
+  last_edited_time = 1778756121730
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:6ac27942-94a0-4283-9e51-c01f1f4a998e-1778526879345] = [groups:][instances:]
+  [loading_requirement_container_meta:394579bc-c2cd-483d-a257-2a3a809843c1-1778756046691] = [groups:][instances:]
 }
 
 menu_background {
@@ -75,7 +75,7 @@ menu_background {
   instance_identifier = ec0d00a6-5396-41ee-a4ae-c9fcb079443d-1778526879346
   background_type = browser
   show_background = true
-  url = https://mat-services.freeddns.org/COCC-Compatibility/
+  url = file:///config/fancymenu/assets/web_places_offline/home.html
   consume_mouse_clicks = true
   consume_mouse_scrolls = true
   consume_keyboard_presses = true
