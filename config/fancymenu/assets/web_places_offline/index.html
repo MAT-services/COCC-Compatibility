@@ -4,6 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../gui/dist/minecraft-css-framework-v-1.0.0.css">
+        <style>
+            .no-margin {
+                margin: 0;
+            }
+            .text-secondary {
+                color: #fff;
+            }
+        </style>
     </head>
     <body class="text-secondary">
         <nav class="navbar">
@@ -45,17 +53,18 @@
                 display: none;
             }
         </style>
-        <script>
+        <!--<script>
             const checkOnlineStatus = async () => {
                 try {
-                    const online = await fetch('https://mat-services.freeddns.org/COCC-Compatibility');
+                    const online = await fetch('https://mat-services.github.io/COCC-Compatibility');
                     return online.status >= 200 && online.status < 300;
                 } catch (err) {
                     return false;
                 }
             };
-            const lineStatus = await checkOnlineStatus();
-            if (online.status===404) {
+            const lineStatus = checkOnlineStatus();
+            console.log(lineStatus)
+            if (lineStatus===false) {
                 document.getElementById("statusShow").textContent = `
                     .error {
                         display: unset;
@@ -70,26 +79,43 @@
                         display: none;
                     }
                 `;
+<<<<<<< Updated upstream
             }; 
+=======
+            };
+>>>>>>> Stashed changes
             if (lineStatus===true) {
                 window.location.href = "https://mat-services.freeddns.org/COCC-Compatibility";
             };
-            if (online.status != 404) {
-                document.getElementById("statusShow").textContent = `
-                    .error {
-                        display: unset;
-                    }
-                    .check {
-                        display: none;
-                    }
-                    .notConnected {
-                        display: none;
-                    }
-                    .unknownError {
-                        display: unset;
-                    }
-                `;
-            };
-        </script>
+        </script>-->
+        <script>
+            function checkConnection() {
+                const img = new Image();
+                img.onload = () => {
+                    window.location.href =
+                        "https://mat-services.github.io/COCC-Compatibility";
+                };
+                img.onerror = () => {
+                    document.getElementById("statusShow").textContent = `
+                        .error {
+                            display: unset;
+                        }
+                        .check {
+                            display: none;
+                        }
+                        .notConnected {
+                            display: unset;
+                        }
+                        .unknownError {
+                            display: none;
+                        }
+                    `;
+                };
+                img.src =
+                    "https://mat-services.github.io/ping.png?t="
+                    + Date.now();
+            }
+            checkConnection();
+            </script>
     </foot>
 </html>
