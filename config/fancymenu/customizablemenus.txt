@@ -63,3 +63,15 @@ net.minecraft.client.gui.screens.options.MouseSettingsScreen {
 gg.essential.gui.friends.SocialMenu {
 }
 
+net.minecraft.client.gui.screens.PauseScreen {
+}
+
+net.minecraft.client.gui.screens.ConfirmLinkScreen {
+}
+
+net.minecraft.client.gui.screens.WinScreen {
+}
+
+net.minecraft.client.gui.screens.LevelLoadingScreen {
+}
+
