@@ -322,4 +322,6 @@ ClientEvents.lang('en_us', event => {
    event.renameItem('biomeswevegone:pine_hanging_sign', "Pale Pine Hanging Sign")
    event.renameItem('biomeswevegone:pine_boat', "Pale Pine Boat")
    event.renameItem('biomeswevegone:pine_chest_boat', "Pale Pine Chest Boat")
+
+   event.add('fluid.minecraft.water', 'Eau Ultra Pure')
 });
