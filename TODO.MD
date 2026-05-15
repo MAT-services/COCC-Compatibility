@@ -19,6 +19,7 @@ Learn and create.
 
 # Recipies
 - ADD PLATINUM FUNDRY RECIPES !
+- Make uses for wires blocks. (Like resistances. See GregTech.)
 - Try to see if it's possible to add a better JEI integration to slag:dynamic parts.
 - Replace the bassin recipie to use deep alloys and the melter recipie sheme to look like a bassin.
 - Delete Oritech Colision particle recipie for the Echo Shard.
