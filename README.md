@@ -14,7 +14,8 @@ The goal of CoC is to get the better player experience possible with Minecraft m
 - Tom's Simple Storage X create: https://modrinth.com/resourcepack/toms-create-storage
 - Malcolmriley unused: https://github.com/malcolmriley/unused-textures
 - Create Aircrafts: https://modrinth.com/resourcepack/create-immersive-aircrafts
+- Pipez: Lopy's Create Style Pipez
 - Musics: Stereonyx https://youtube.com/@stereonyx 
 - Material textures: Uniful https://modrinth.com/mod/uniful
-- InGame buttons: Essentials UI
+- InGame buttons: Essentials UI https://www.curseforge.com/minecraft/texture-packs/create-pipez
 - Edits, GUI elements, fancymenu contents (and some else): MAT Services
