@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
         "titanium_melter"
     ]
     hardmode_melters.forEach(hardmode_melter => {
-        /* // DO NOT WRKS
+        /* // DO NOT WORKS
         event.forEachRecipe({type: 'slag:melting'}, recipe => {
             let inputs = recipe.getIngredients().map(i => {
                 return { item: i.getItems()[0].id, amount: 1 }

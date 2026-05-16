@@ -767,7 +767,7 @@ ServerEvents.recipes(event => {
     ],
     "key": {
       "#": {
-        "tag": "kubejs:lead_sheet"
+        "item": "kubejs:lead_sheet"
       },
       "N": {
         "item": "belts:belt"
@@ -4480,4 +4480,7 @@ ServerEvents.recipes(event => {
   }).id('cocc:splashing/gold_nugget');
   
   event.remove({id: "create_processing:cold_pressing/chilling/honey_bottle_from_honey_block"});
+
+  event.remove({ mod: "pipez" });
+  event.remove({ mod: "modular_machinery_reborn" });
 })
