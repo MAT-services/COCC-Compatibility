@@ -75,3 +75,21 @@ net.minecraft.client.gui.screens.WinScreen {
 net.minecraft.client.gui.screens.LevelLoadingScreen {
 }
 
+net.neoforged.neoforge.client.gui.ConfigurationScreen {
+}
+
+net.neoforged.neoforge.client.gui.ConfigurationScreen$ConfigurationSectionScreen {
+}
+
+net.minecraft.client.gui.screens.GenericMessageScreen {
+}
+
+net.minecraft.client.gui.screens.ProgressScreen {
+}
+
+net.minecraft.client.gui.screens.ConnectScreen {
+}
+
+net.minecraft.client.gui.screens.ReceivingLevelScreen {
+}
+
