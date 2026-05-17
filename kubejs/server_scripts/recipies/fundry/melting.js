@@ -3,10 +3,10 @@ ServerEvents.recipes(event => {
     let melters = [
         {recipe: "adamantite_melter", type: "cm"},
         {recipe: "titanium_melter", type: "cm"},
-        {recpie: "melting", type: "slag"}
+        {recipe: "melting", type: "slag"}
     ]
     let materials = [
-
+        {id: "iron", pkg: "minecraft"}
     ]
     let materialTypes = [
         "ingot",
@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
         "gem"
     ]
     melters.forEach(melter => {
-        if (melter.type===cm) {
+        if (melter.type==="cm") {
             materials.forEach(material => {
                 event.custom({
                     type: "custommachinery:custom_machine",
@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
                             mode: "input",
                             id: "input1",
                             ingredient: {
-                                item: `${material}_ingot`
+                                item: `${material.pkg}:${material.id}_ingot`
                             },
                             amount: 1
                         },
@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
                             },
                         }
                     ]
-                }).id(`cocc:${melter}_melter/molten_iron`);
+                }).id(`cocc:${melter.recipe}/molten_${material.id}`);
             })
         }
     });

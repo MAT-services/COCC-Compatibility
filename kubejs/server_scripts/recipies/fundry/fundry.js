@@ -13,6 +13,19 @@ ServerEvents.recipes(event => {
     ]
     }).id('cocc:melting/molten_steel');
     event.custom({
+    "type": "slag:melting",
+    "ingredient": {
+        "tag": "c:ingots/platinum" 
+    },
+    "ingredients": [],
+    "result": [
+        {
+        "amount": 72,
+        "id": "kubejs:molten_platinum" 
+        }
+    ]
+    }).id('cocc:melting/molten_steel');
+    event.custom({
         "type": "slag:table_casting",
         "cast": "slag:cast/ingots",
         "ingredient": {
