@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
         {recipe: "melting", type: "slag"}
     ]
     let materials = [
-        {id: "iron", pkg: "minecraft"}
+        {id: "iron", ingot: "minecraft:iron_ingot"}
     ]
     let materialTypes = [
         "ingot",
@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
                             mode: "input",
                             id: "input1",
                             ingredient: {
-                                item: `${material.pkg}:${material.id}_ingot`
+                                item: `${material.ingot}`
                             },
                             amount: 1
                         },
@@ -41,13 +41,16 @@ ServerEvents.recipes(event => {
                             "mode": "output",
                             "id": "output1",
                             "ingredient": {
-                                "fluid": `slag:molten_${material}`,
+                                "fluid": `slag:molten_${material.id}`,
                                 "amount": 72
                             },
                         }
                     ]
-                }).id(`cocc:${melter.recipe}/molten_${material.id}`);
+                }).id(`cocc:${melter.recipe}/molten_${material.ingot}`);
             })
+        }
+        if (melter.type==="slag") {
+            ///SNE recipe
         }
     });
 })
