@@ -1,4 +1,4 @@
-// A TESTER
+// TO TRY
 ServerEvents.recipes(event => {
     let melters = [
         {recipe: "adamantite_melter", type: "cm"},
@@ -6,8 +6,8 @@ ServerEvents.recipes(event => {
         {recipe: "melting", type: "slag"}
     ]
     let materials = [
-        {id: "iron", level: 0, ingot: "minecraft:iron_ingot", block: "minecraft:iron_block", fluid: "slag:molten_iron"},
-        {id: "steel", level: 0, ingot: "oritech:steel_ingot", block: "oritech:steel_block", fluid: "kubejs:molten_steel"}
+        {id: "iron", level: 0, ingot: "minecraft:iron_ingot", block: "minecraft:iron_block", fluid: "slag:molten_iron", nugget: "minecraft:iron_nugget"},
+        {id: "steel", level: 0, ingot: "oritech:steel_ingot", block: "oritech:steel_block", fluid: "kubejs:molten_steel", nugget: "create:copper_nugget"}
     ]
     let materialTypes = [
         {id: "ingot", coef: 72, cast: "table"},
@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
                                 "mode": "output",
                                 "id": "output1",
                                 "ingredient": {
-                                    "fluid": `${material.fluid}`,
+                                    "fluid": material.fluid,
                                     "amount": materialType.coef
                                 }
                             }
@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
                         "result": [
                             {
                             "amount": materialType.coef,
-                            "id": `${material.fluid}` 
+                            "id": material.fluid
                             }
                         ]
                     }).id(`cocc:${melter.recipe}/molten_${material.id}-from-${materialType.id}`);
@@ -74,11 +74,11 @@ ServerEvents.recipes(event => {
                     "type": "slag:basin_casting",
                     "ingredient": {
                         "amount": materialType.coef,
-                        "id": `${material.fluid}`
+                        "id": material.fluid
                     },
                     "result": {
                         "count": 1,
-                        "id": `${material.block}`
+                        "id": material.block
                     }
                 }).id(`cocc:basin_casting/${material.id}`);
             }
@@ -89,11 +89,11 @@ ServerEvents.recipes(event => {
                     "cast": `slag:cast/${materialType.id}s`,
                     "ingredient": {
                         "amount": materialType.coef,
-                        "id": `${material.fluid}`
+                        "id": material.fluid
                     },
                     "result": {
                         "count": 1,
-                        "id": `${material.block}`
+                        "id": material[materialType.id]
                     }
                 }).id(`cocc:table_casting/${material.id}_${materialType.id}`);
             }
