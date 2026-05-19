@@ -1,0 +1,104 @@
+// TO TRY
+ServerEvents.recipes(event => {
+    let melters = [
+        {recipe: "adamantite_melter", type: "cm"},
+        {recipe: "titanium_melter", type: "cm"},
+        {recipe: "melting", type: "slag"}
+    ]
+    let materials = [
+        {id: "iron", level: 0, fluid: "slag:molten_iron", ingot: "minecraft:iron_ingot", block: "minecraft:iron_block", nugget: "minecraft:iron_nugget", dust: "oritech:iron_dust", gem: "oritech:iron_gem"},
+        {id: "steel", level: 0, fluid: "kubejs:molten_steel", ingot: "oritech:steel_ingot", block: "oritech:steel_block", nugget: empty, dust: "oritech:steel_dust", gem: empty}
+    ]
+    let itemTypes = [
+        {id: "ingot", coef: 72, cast: "table"},
+        {id: "block", coef: 648, cast: "basin"},
+        {id: "nugget", coef: 8, cast: "table"},
+        {id: "dust", coef: 72, cast: "table"},
+        //{id: "small_dust", coef: 8, cast: "table"},
+        {id: "gem", coef: 80, cast: "table"}
+    ]
+
+    materials.forEach(material => {
+        itemTypes.forEach(itemType => {
+            if (material[itemType.id]!=empty) {
+                melters.forEach(melter => {
+                    if (melter.type==="cm") {if (material.level < 2) {
+                        event.custom({
+                            type: "custommachinery:custom_machine",
+                            machine: `custommachinery:${melter.recipe}`,
+                            time: 100,
+                            requirements: [
+                                {
+                                    type: "custommachinery:item",
+                                    mode: "input",
+                                    id: "input1",
+                                    ingredient: {
+                                        tag: `c:${itemType.id}s/${material.id}`
+                                    },
+                                    amount: 1
+                                },
+                                {
+                                    type: "custommachinery:fuel",
+                                    amount: 1
+                                },
+                                {
+                                    "type": "custommachinery:fluid",
+                                    "mode": "output",
+                                    "id": "output1",
+                                    "ingredient": {
+                                        "fluid": material.fluid,
+                                        "amount": itemType.coef
+                                    }
+                                }
+                            ]
+                        }).id(`cocc:${melter.recipe}/molten_${material.id}-from-${itemType.id}`);
+                    }}
+                    if (melter.type==="slag") {if (material.level < 1) {
+                        event.custom({
+                            "type": `slag:${melter.recipe}`,
+                            "ingredient": {
+                                "tag": `c:${itemType.id}s/${material.id}` 
+                            },
+                            "result": [
+                                {
+                                "amount": itemType.coef,
+                                "id": material.fluid
+                                }
+                            ]
+                        }).id(`cocc:${melter.recipe}/molten_${material.id}-from-${itemType.id}`);
+                    }}
+                });
+
+                // Bassin Casting
+                if (itemType.cast==="basin") {
+                    event.custom({
+                        "type": "slag:basin_casting",
+                        "ingredient": {
+                            "amount": itemType.coef,
+                            "id": material.fluid
+                        },
+                        "result": {
+                            "count": 1,
+                            "id": material.block
+                        }
+                    }).id(`cocc:basin_casting/${material.id}`);
+                }
+                // Table Casting
+                if (itemType.cast==="table") {
+                    event.custom({
+                        "type": "slag:table_casting",
+                        "cast": `slag:cast/${itemType.id}s`,
+                        "ingredient": {
+                            "amount": itemType.coef,
+                            "id": material.fluid
+                        },
+                        "result": {
+                            "count": 1,
+                            "id": material[itemType.id]
+                        }
+                    }).id(`cocc:table_casting/${material.id}_${itemType.id}`);
+                }
+            }
+        })
+    });
+})
