@@ -18,6 +18,11 @@ To add:
 Learn and create.
 
 # Recipies
+- Change the items pipes to: 
+ABC
+A Conveyor Belt
+B material item vault 
+C Special item.
 - ADD PLATINUM FUNDRY RECIPES !
 - Make uses for wires blocks. (Like resistances. See GregTech.)
 - Try to see if it's possible to add a better JEI integration to slag:dynamic parts.
@@ -41,5 +46,6 @@ Learn and create.
 # Files
 - Create the web places.
 # Items
+- Rename the pipez pipes to advanced pipes.
 - Create uses for Cobalt Obsidian. (Obtain cobalt nugets from the chlorophilite extractinator ?)
 - Create seeds for all RU nylium types.
