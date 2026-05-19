@@ -1,5 +1,5 @@
 # GUIs
-- Modify Web Places GUI to do not crash the game with the error `No web connection`.
+- Replace all essentials-added buttons with CoC buttons and replace the terra advancements button.
 - Add a GUI for packs. (Textures, data, shaders...)
 # Blocks
 - Add the torium node.
