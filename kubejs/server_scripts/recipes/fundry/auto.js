@@ -1,4 +1,3 @@
-// TO TRY
 ServerEvents.recipes(event => {
     let melters = [
         {recipe: "adamantite_melter", type: "cm"},
@@ -6,15 +5,15 @@ ServerEvents.recipes(event => {
         {recipe: "melting", type: "slag"}
     ]
     let materials = [
-        {id: "iron", level: 0, fluid: "slag:molten_iron", ingot: "minecraft:iron_ingot", block: "minecraft:iron_block", nugget: "minecraft:iron_nugget", dust: "oritech:iron_dust", gem: "oritech:iron_gem"},
-        {id: "gold", level: 0, fluid: "slag:molten_gold", ingot: "minecraft:iron_ingot", block: "minecraft:gold_block", nugget: "minecraft:gold_nugget", dust: "oritech:gold_dust", gem: "oritech:gold_gem"},
-        {id: "copper", level: 0, fluid: "slag:molten_copper", ingot: "minecraft:iron_ingot", block: "minecraft:copper_block", nugget: "create:copper_nugget", dust: "oritech:copper_dust", gem: "oritech:copper_gem"},
-        {id: "steel", level: 0, fluid: "kubejs:molten_steel", ingot: "oritech:steel_ingot", block: "oritech:steel_block", nugget: empty, dust: "oritech:steel_dust", gem: empty},
-        {id: "platinum", level: 0, fluid: "kubejs:molten_platinum", ingot: "confluence:platinum_ingot", block: "confluence:platinum_block", nugget: "confluence:platinum_nugget", dust: "oritech:platinum_dust", gem: empty}
+        {id: "iron", level: 0, fluid: "slag:molten_iron", ingot: "minecraft:iron_ingot", storage_block: "minecraft:iron_block", nugget: "minecraft:iron_nugget", dust: "oritech:iron_dust", gem: "oritech:iron_gem"},
+        {id: "gold", level: 0, fluid: "slag:molten_gold", ingot: "minecraft:iron_ingot", storage_block: "minecraft:gold_block", nugget: "minecraft:gold_nugget", dust: "oritech:gold_dust", gem: "oritech:gold_gem"},
+        {id: "copper", level: 0, fluid: "slag:molten_copper", ingot: "minecraft:iron_ingot", storage_block: "minecraft:copper_block", nugget: "create:copper_nugget", dust: "oritech:copper_dust", gem: "oritech:copper_gem"},
+        {id: "steel", level: 0, fluid: "kubejs:molten_steel", ingot: "oritech:steel_ingot", storage_block: "oritech:steel_block", nugget: "empty", dust: "oritech:steel_dust", gem: "empty"},
+        {id: "platinum", level: 0, fluid: "kubejs:molten_platinum", ingot: "confluence:platinum_ingot", storage_block: "confluence:platinum_block", nugget: "confluence:platinum_nugget", dust: "oritech:platinum_dust", gem: "empty"}
     ]
     let itemTypes = [
         {id: "ingot", coef: 72, cast: "table", type: "implant"},
-        {id: "block", coef: 648, cast: "basin", type: "implant"},
+        {id: "storage_block", coef: 648, cast: "basin", type: "implant"},
         {id: "nugget", coef: 8, cast: "table", type: "implant"},
         {id: "dust", coef: 72, cast: "table", type: "implant"},
         //{id: "small_dust", coef: 8, cast: "table", type: "implant"},
@@ -23,7 +22,7 @@ ServerEvents.recipes(event => {
 
     materials.forEach(material => {
         itemTypes.forEach(itemType => {
-            if (material[itemType.id]!=empty) {
+            if (material[itemType.id]!="empty") {
                 melters.forEach(melter => {
                     if (melter.type==="cm") {if (material.level < 2) {
                         event.custom({
@@ -62,6 +61,7 @@ ServerEvents.recipes(event => {
                             "ingredient": {
                                 "tag": `c:${itemType.id}s/${material.id}` 
                             },
+                            "ingredients": [],
                             "result": [
                                 {
                                 "amount": itemType.coef,
@@ -82,7 +82,7 @@ ServerEvents.recipes(event => {
                         },
                         "result": {
                             "count": 1,
-                            "id": material.block
+                            "id": material.storage_block
                         }
                     }).id(`cocc:basin_casting/${material.id}`);
                 }

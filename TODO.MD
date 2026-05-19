@@ -18,6 +18,7 @@ To add:
 Learn and create.
 
 # Recipies
+- Change the Dangersense potion to use lumiere shards and make lumiere shards renewable.
 - Change the items pipes to: 
 ABC
 A Conveyor Belt
