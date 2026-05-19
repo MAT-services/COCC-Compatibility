@@ -7,15 +7,18 @@ ServerEvents.recipes(event => {
     ]
     let materials = [
         {id: "iron", level: 0, fluid: "slag:molten_iron", ingot: "minecraft:iron_ingot", block: "minecraft:iron_block", nugget: "minecraft:iron_nugget", dust: "oritech:iron_dust", gem: "oritech:iron_gem"},
-        {id: "steel", level: 0, fluid: "kubejs:molten_steel", ingot: "oritech:steel_ingot", block: "oritech:steel_block", nugget: empty, dust: "oritech:steel_dust", gem: empty}
+        {id: "gold", level: 0, fluid: "slag:molten_gold", ingot: "minecraft:iron_ingot", block: "minecraft:gold_block", nugget: "minecraft:gold_nugget", dust: "oritech:gold_dust", gem: "oritech:gold_gem"},
+        {id: "copper", level: 0, fluid: "slag:molten_copper", ingot: "minecraft:iron_ingot", block: "minecraft:copper_block", nugget: "create:copper_nugget", dust: "oritech:copper_dust", gem: "oritech:copper_gem"},
+        {id: "steel", level: 0, fluid: "kubejs:molten_steel", ingot: "oritech:steel_ingot", block: "oritech:steel_block", nugget: empty, dust: "oritech:steel_dust", gem: empty},
+        {id: "platinum", level: 0, fluid: "kubejs:molten_platinum", ingot: "confluence:platinum_ingot", block: "confluence:platinum_block", nugget: "confluence:platinum_nugget", dust: "oritech:platinum_dust", gem: empty}
     ]
     let itemTypes = [
-        {id: "ingot", coef: 72, cast: "table"},
-        {id: "block", coef: 648, cast: "basin"},
-        {id: "nugget", coef: 8, cast: "table"},
-        {id: "dust", coef: 72, cast: "table"},
-        //{id: "small_dust", coef: 8, cast: "table"},
-        {id: "gem", coef: 80, cast: "table"}
+        {id: "ingot", coef: 72, cast: "table", type: "implant"},
+        {id: "block", coef: 648, cast: "basin", type: "implant"},
+        {id: "nugget", coef: 8, cast: "table", type: "implant"},
+        {id: "dust", coef: 72, cast: "table", type: "implant"},
+        //{id: "small_dust", coef: 8, cast: "table", type: "implant"},
+        {id: "gem", coef: 80, cast: "table", type: "implant"}
     ]
 
     materials.forEach(material => {
