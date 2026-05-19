@@ -6,15 +6,16 @@ ServerEvents.recipes(event => {
         {recipe: "melting", type: "slag"}
     ]
     let materials = [
-        {id: "iron", level: 0, ingot: "minecraft:iron_ingot", fluid: "slag:molten_iron"}
+        {id: "iron", level: 0, ingot: "minecraft:iron_ingot", block: "minecraft:iron_block", fluid: "slag:molten_iron"},
+        {id: "steel", level: 0, ingot: "oritech:steel_ingot", block: "oritech:steel_block", fluid: "kubejs:molten_steel"}
     ]
     let materialTypes = [
-        {id: "ingot", coef: 72},
-        {id: "block", coef: 648},
-        {id: "nugget", coef: 8},
-        {id: "dust", coef: 72},
-        {id: "small_dust", coef: 8},
-        {id: "gem", coef: 80}
+        {id: "ingot", coef: 72, cast: "table"},
+        {id: "block", coef: 648, cast: "basin"},
+        {id: "nugget", coef: 8, cast: "table"},
+        {id: "dust", coef: 72, cast: "table"},
+        //{id: "small_dust", coef: 8, cast: "table"},
+        {id: "gem", coef: 80, cast: "table"}
     ]
 
     materials.forEach(material => {
@@ -66,8 +67,36 @@ ServerEvents.recipes(event => {
                     }).id(`cocc:${melter.recipe}/molten_${material.id}-from-${materialType.id}`);
                 }}
             });
+
+            // Bassin Casting
+            if (materialType.cast==="basin") {
+                event.custom({
+                    "type": "slag:basin_casting",
+                    "ingredient": {
+                        "amount": materialType.coef,
+                        "id": `${material.fluid}`
+                    },
+                    "result": {
+                        "count": 1,
+                        "id": `${material.block}`
+                    }
+                }).id(`cocc:basin_casting/${material.id}`);
+            }
+            // Table Casting
+            if (materialType.cast==="table") {
+                event.custom({
+                    "type": "slag:table_casting",
+                    "cast": `slag:cast/${materialType.id}s`,
+                    "ingredient": {
+                        "amount": materialType.coef,
+                        "id": `${material.fluid}`
+                    },
+                    "result": {
+                        "count": 1,
+                        "id": `${material.block}`
+                    }
+                }).id(`cocc:table_casting/${material.id}_${materialType.id}`);
+            }
         })
-        
-        // OTHERS
     });
 })
