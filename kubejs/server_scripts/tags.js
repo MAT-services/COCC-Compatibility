@@ -97,6 +97,14 @@ ServerEvents.tags('item', event => {
   event.add('c:plates/netherite', 'kubejs:netherite_sheet')
   event.add('c:plates/overcharged_iron', "create_new_age:overcharged_iron_sheet")
   event.add('c:plates/overcharged_gold', "create_new_age:overcharged_golden_sheet")
+
+  event.add('c:gems/uranite', "oritech:uranium_gem")
+  event.add('c:gems/gold', "oritech:gold_gem")
+  event.add('c:gems/copper', "oritech:copper_gem")
+  event.add('c:gems/iron', "oritech:iron_gem")
+  event.add('c:gems/platinum', "oritech:platinum_gem")
+  event.add('c:gems/nickel', "oritech:nickel_gem")
+  event.add('c:gems/sculkcite', "kubejs:sculkcite_gem")
 })
 
 ServerEvents.tags('fluid', event => {
