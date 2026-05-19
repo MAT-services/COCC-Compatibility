@@ -47,5 +47,5 @@ C Special item.
 - Create the web places.
 # Items
 - Rename the pipez pipes to advanced pipes.
-- Create uses for Cobalt Obsidian. (Obtain cobalt nugets from the chlorophilite extractinator ?)
+- Create uses for Cobalt Obsidian. (Obtain cobalt nuggets from the chlorophilite extractinator ?)
 - Create seeds for all RU nylium types.
