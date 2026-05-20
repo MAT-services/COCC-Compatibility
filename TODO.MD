@@ -45,6 +45,7 @@ C Special item.
     - Dropper (Ex: beacon -> act like becon beam, black hole [! MAKE THE BLACK HOLE REMOVABLE / OBTAINABLE ! (Potentially broke it when a beacon is placed under it.)] -> act like the void, water bucket -> act like water, corrupted wash -> corrupt items)
 
 # Files
+- Delete the dual files in slideshows images.
 - Create the web places.
 # Items
 - Rename the pipez pipes to advanced pipes.
