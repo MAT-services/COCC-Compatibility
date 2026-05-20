@@ -102,7 +102,22 @@ ServerEvents.recipes(event => {
                             }
                         }).id(`cocc:table_casting/${material.id}_${itemType.id}`);
                     }; if (itemType.type==="DSE") {
-
+                        event.custom({
+                            "type": "slag:table_casting",
+                            "cast": `slag:cast/${itemType.id}s`,
+                            "ingredient": {
+                                "amount": itemType.coef,
+                                "id": material.fluid
+                            },
+                            "result": {
+                                "count": 1,
+                                "id": "slag:dynamic_part",
+                                "components": {
+                                    "slag:material_type": `slag:${material.id}`,
+                                    "slag:part_type": `slag:${itemType.id}`
+                                }
+                            }
+                        })
                     }
                 }
             }
