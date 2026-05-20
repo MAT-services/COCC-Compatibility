@@ -24,52 +24,110 @@ ServerEvents.recipes(event => {
         itemTypes.forEach(itemType => {
             if (material[itemType.id]!="empty") {
                 melters.forEach(melter => {
-                    if (melter.type==="cm") {if (material.level < 3) {
-                        event.custom({
-                            type: "custommachinery:custom_machine",
-                            machine: `custommachinery:${melter.recipe}`,
-                            time: 100,
-                            requirements: [
-                                {
-                                    type: "custommachinery:item",
-                                    mode: "input",
-                                    id: "input1",
-                                    ingredient: {
-                                        tag: `c:${itemType.id}s/${material.id}`
+                    if (itemType.type==="VI") {
+                        if (melter.type==="cm") {if (material.level < 3) {
+                            event.custom({
+                                type: "custommachinery:custom_machine",
+                                machine: `custommachinery:${melter.recipe}`,
+                                time: 100,
+                                requirements: [
+                                    {
+                                        type: "custommachinery:item",
+                                        mode: "input",
+                                        id: "input1",
+                                        ingredient: {
+                                            tag: `c:${itemType.id}s/${material.id}`
+                                        },
+                                        amount: 1
                                     },
-                                    amount: 1
-                                },
-                                {
-                                    type: "custommachinery:fuel",
-                                    amount: 1
-                                },
-                                {
-                                    "type": "custommachinery:fluid",
-                                    "mode": "output",
-                                    "id": "output1",
-                                    "ingredient": {
-                                        "fluid": material.fluid,
-                                        "amount": itemType.coef
+                                    {
+                                        type: "custommachinery:fuel",
+                                        amount: 1
+                                    },
+                                    {
+                                        "type": "custommachinery:fluid",
+                                        "mode": "output",
+                                        "id": "output1",
+                                        "ingredient": {
+                                            "fluid": material.fluid,
+                                            "amount": itemType.coef
+                                        }
                                     }
-                                }
-                            ]
-                        }).id(`cocc:${melter.recipe}/molten_${material.id}-from-${itemType.id}`);
-                    }}
-                    if (melter.type==="slag") {if (material.level < 1) {
-                        event.custom({
-                            "type": `slag:${melter.recipe}`,
-                            "ingredient": {
-                                "tag": `c:${itemType.id}s/${material.id}` 
-                            },
-                            "ingredients": [],
-                            "result": [
-                                {
-                                "amount": itemType.coef,
-                                "id": material.fluid
-                                }
-                            ]
-                        }).id(`cocc:${melter.recipe}/molten_${material.id}-from-${itemType.id}`);
-                    }}
+                                ]
+                            }).id(`cocc:${melter.recipe}/molten_${material.id}-from-${itemType.id}`);
+                        }}
+                        if (melter.type==="slag") {if (material.level < 1) {
+                            event.custom({
+                                "type": `slag:${melter.recipe}`,
+                                "ingredient": {
+                                    "tag": `c:${itemType.id}s/${material.id}` 
+                                },
+                                "ingredients": [],
+                                "result": [
+                                    {
+                                    "amount": itemType.coef,
+                                    "id": material.fluid
+                                    }
+                                ]
+                            }).id(`cocc:${melter.recipe}/molten_${material.id}-from-${itemType.id}`);
+                        }}
+                    }
+                    if (itemType.type==="DSE") {
+                        if (melter.type==="cm") {if (material.level < 3) {
+                            event.custom({
+                                type: "custommachinery:custom_machine",
+                                machine: `custommachinery:${melter.recipe}`,
+                                time: 100,
+                                requirements: [
+                                    {
+                                        type: "custommachinery:item",
+                                        mode: "input",
+                                        id: "input1",
+                                        ingredient: {
+                                            item: `slag:dynamic_part`,
+                                            "components": {
+                                                "slag:material_type": `slag:${material.id}`,
+                                                "slag:part_type": `slag:${itemType.id}`
+                                            }
+                                        },
+                                        amount: 1
+                                    },
+                                    {
+                                        type: "custommachinery:fuel",
+                                        amount: 1
+                                    },
+                                    {
+                                        "type": "custommachinery:fluid",
+                                        "mode": "output",
+                                        "id": "output1",
+                                        "ingredient": {
+                                            "fluid": material.fluid,
+                                            "amount": itemType.coef
+                                        }
+                                    }
+                                ]
+                            }).id(`cocc:${melter.recipe}/molten_${material.id}-from-${itemType.id}`);
+                        }}
+                        if (melter.type==="slag") {if (material.level < 1) {
+                            event.custom({
+                                "type": `slag:${melter.recipe}`,
+                                "ingredient": {
+                                    "item": `slag:dynamic_part`,
+                                    "components": {
+                                        "slag:material_type": `slag:${material.id}`,
+                                        "slag:part_type": `slag:${itemType.id}`
+                                    }
+                                },
+                                "ingredients": [],
+                                "result": [
+                                    {
+                                    "amount": itemType.coef,
+                                    "id": material.fluid
+                                    }
+                                ]
+                            }).id(`cocc:${melter.recipe}/molten_${material.id}-from-${itemType.id}`);
+                        }}
+                    }
                 });
 
                 // Bassin Casting
