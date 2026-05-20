@@ -20,10 +20,10 @@ Learn and create.
 # Recipies
 - Change the Dangersense potion to use lumiere shards and make lumiere shards renewable.
 - Change the items pipes to: 
-ABC
-A Conveyor Belt
-B material item vault 
-C Special item.
+    ABC
+    A Conveyor Belt
+    B material item vault 
+    C Special item.
 - ADD PLATINUM FUNDRY RECIPES !
 - Make uses for wires blocks. (Like resistances. See GregTech.)
 - Try to see if it's possible to add a better JEI integration to slag:dynamic parts.
