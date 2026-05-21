@@ -44,6 +44,9 @@ Learn and create.
     - NPC Automatic Shops
     - Dropper (Ex: beacon -> act like becon beam, black hole [! MAKE THE BLACK HOLE REMOVABLE / OBTAINABLE ! (Potentially broke it when a beacon is placed under it.)] -> act like the void, water bucket -> act like water, corrupted wash -> corrupt items)
 
+# Modular Machinery Reborn
+- CHECK THE DOCS: https://wikis.degrassi.es/docs
+
 # Files
 - Delete the dual files in slideshows images.
 - Create the web places.
