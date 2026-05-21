@@ -23,6 +23,12 @@ ServerEvents.recipes(event => {
     materials.forEach(material => {
         itemTypes.forEach(itemType => {
             if (material[itemType.id]!="empty") {
+                function getItem(ingredient) {
+                    if (itemType.type==="IV") {
+                        
+                    }
+                }
+
                 melters.forEach(melter => {
                     if (itemType.type==="VI") {
                         if (melter.type==="cm") {if (material.level < 3) {
