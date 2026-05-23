@@ -18,6 +18,7 @@ To add:
 Learn and create.
 
 # Recipies
+- Make living items reproductable with puryfing recipes.
 - Change the Dangersense potion to use lumiere shards and make lumiere shards renewable.
 - Change the items pipes to: 
     ABC
