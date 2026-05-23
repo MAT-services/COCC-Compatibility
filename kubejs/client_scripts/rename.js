@@ -333,4 +333,10 @@ ClientEvents.lang('en_us', event => {
    event.renameItem('galosphere:palladium_dust', "Silver Dust")
    event.renameItem('galosphere:raw_palladium', "Raw Silver")
    event.renameItem('galosphere:palladium_panel', "Silver Pannel")
+   event.renameItem('galosphere:raw_palladium_block', "Raw Silver Block")
+   event.renameItem('galosphere:palladium_tiles', "Silver Tiles")
+   event.renameItem('galosphere:palladium_tiles_stairs', "Silver Tilse Stairs")
+   event.renameItem('galosphere:palladium_tiles_slab', "Silver Tiles Slab")
+   event.renameItem('galosphere:palladium_panel_stairs', "Silver Panel Stairs")
+   event.renameItem('galosphere:palladium_panel_slab', "Silver Panel Slab")
 });
