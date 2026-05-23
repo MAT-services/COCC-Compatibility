@@ -322,4 +322,15 @@ ClientEvents.lang('en_us', event => {
    event.renameItem('biomeswevegone:pine_hanging_sign', "Pale Pine Hanging Sign")
    event.renameItem('biomeswevegone:pine_boat', "Pale Pine Boat")
    event.renameItem('biomeswevegone:pine_chest_boat', "Pale Pine Chest Boat")
+
+   event.renameItem('galosphere:palladium_ingot', "Silver Ingot")
+   event.renameItem('galosphere:palladium_bomb', "Silver Bomb")
+   event.renameItem('galosphere:palladium_lattice', "Silver Lattice")
+   event.renameItem('galosphere:palladium_nugget', "Silver Nugget")
+   event.renameItem('galosphere:palladium_block', "Silver Block")
+   event.renameItem('galosphere:palladium_ore', "Silver Ore")
+   event.renameItem('galosphere:deepslate_palladium_ore', "Deepslate Silver Ore")
+   event.renameItem('galosphere:palladium_dust', "Silver Dust")
+   event.renameItem('galosphere:raw_palladium', "Raw Silver")
+   event.renameItem('galosphere:palladium_panel', "Silver Pannel")
 });

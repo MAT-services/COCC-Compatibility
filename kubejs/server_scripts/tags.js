@@ -105,6 +105,24 @@ ServerEvents.tags('item', event => {
   event.add('c:gems/platinum', "oritech:platinum_gem")
   event.add('c:gems/nickel', "oritech:nickel_gem")
   event.add('c:gems/sculkcite', "kubejs:sculkcite_gem")
+
+  // Galosphere Paladium to Silver
+  event.remove('c:ingots/palladium', 'galosphere:palladium_ingot')
+  event.add('c:ingots/silver', 'galosphere:palladium_ingot')
+  event.remove('c:nuggets/palladium', 'galosphere:palladium_nugget')
+  event.add('c:nuggets/silver', 'galosphere:palladium_nugget')
+  event.remove('c:storage_blocks/silver', 'galosphere:palladium_block')
+  event.add('c:storage_blocks/silver', 'galosphere:palladium_block')
+  event.remove('c:raw_materials/palladium', 'galosphere:raw_palladium')
+  event.add('c:raw_materials/silver', 'galosphere:raw_palladium')
+  /*event.remove('', "")
+  event.add('', "")
+  event.remove('', "")
+  event.add('', "")
+  event.remove('', "")
+  event.add('', "")
+  event.remove('', "")
+  event.add('', "")*/
 })
 
 ServerEvents.tags('fluid', event => {

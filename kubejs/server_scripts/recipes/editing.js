@@ -4483,4 +4483,23 @@ ServerEvents.recipes(event => {
 
   event.remove({ mod: "pipez" });
   event.remove({ mod: "modular_machinery_reborn" });
+
+  event.remove({id: "galosphere:palladium_bomb"});
+  event.shaped('2x galosphere:palladium_bomb', [' A ', 'ABA', ' A '], { A: '#c:ingots/silver', B: 'minecraft:gunpowder' }).id('cocc:edit/silver_bomb');
+  event.remove({id: "galosphere:palladium_lattice"});
+  event.shaped('16x galosphere:palladium_lattice', ['AAA', 'AAA'], { A: '#c:ingots/silver' }).id('cocc:edit/silver_lattice');
+  event.remove({id: "galosphere:pink_salt_lamp"});
+  event.shaped('galosphere:pink_salt_lamp', ['A', 'B'], { A: 'galosphere:pink_salt_cluster', B: '#c:ingots/silver' }).id('cocc:edit/pink_salt_lamp');
+  event.remove({id: "galosphere:combustion_table"});
+  event.shaped('galosphere:combustion_table', ['AA', 'BB', 'BB'], { A: '#c:ingots/silver', B: '#minecraft:planks' }).id('cocc:edit/combustion_table');
+  event.remove({id: "galosphere:chandelier"});
+  event.shaped('galosphere:chandelier', ['ABA', 'CCC'], { A: 'minecraft:chain', B: '#minecraft:coals', C: '#c:ingots/silver' }).id('cocc:edit/chandelier');
+  event.remove({id: "galosphere:weapon_rack"});
+  event.shaped('galosphere:weapon_rack', ['AAA'], { A: '#c:ingots/silver' }).id('cocc:edit/weapon_rack');
+  event.remove({id: "galosphere:soul_chandelier"});
+  event.shaped('galosphere:soul_chandelier', ['ABA', 'CCC'], { A: 'minecraft:chain', B: ["minecraft:soul_sand", "minecraft:soul_soil"], C: '#c:ingots/silver' }).id('cocc:edit/soul_chandelier');
+  event.remove({id: "galosphere:spectre_flare"});
+  event.shaped('galosphere:spectre_flare', ['A', 'B'], { A: 'galosphere:bottle_of_spectre', B: '#c:ingots/silver' }).id('cocc:edit/spectre_flare');
+  event.remove({id: "galosphere:palladium_dust"});
+
 })
