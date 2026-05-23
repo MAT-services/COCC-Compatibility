@@ -1,0 +1,166 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "overworld"
+	group: "5016404715A21AEE"
+	id: "541B1DF9835E7C90"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "79BCA64092196380"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: {
+					id: "minecraft:grass_block"
+				}
+				id: "24AC834F6E404825"
+				type: "dimension"
+			}]
+			x: -10.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["79BCA64092196380"]
+			id: "07820CDA70755D47"
+			tasks: [{
+				id: "3AA54D3D70F28A19"
+				item: { count: 1, id: "minecraft:oak_log" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["07820CDA70755D47"]
+			id: "4BE465879AD062B3"
+			tasks: [{
+				advancement: "minecraft:story/mine_stone"
+				criterion: ""
+				icon: {
+					id: "minecraft:wooden_pickaxe"
+				}
+				id: "234E5F0F2B1C4BAE"
+				type: "advancement"
+			}]
+			x: -6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4BE465879AD062B3"]
+			id: "073C40FA7C75C783"
+			min_required_dependencies: 1
+			tasks: [{
+				advancement: "minecraft:story/upgrade_tools"
+				criterion: ""
+				icon: {
+					id: "minecraft:stone_pickaxe"
+				}
+				id: "4035350261B2A15D"
+				type: "advancement"
+			}]
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0820F64AE33989AC"]
+			id: "575A0A80C21BFD70"
+			tasks: [{
+				entity: "minecraft:zombie"
+				icon: {
+					id: "minecraft:iron_sword"
+				}
+				id: "1377AE99FC4BF870"
+				type: "kill"
+				value: 100L
+			}]
+			x: -6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["79BCA64092196380"]
+			id: "0820F64AE33989AC"
+			tasks: [{
+				advancement: "minecraft:adventure/kill_a_mob"
+				criterion: ""
+				icon: {
+					id: "minecraft:wooden_sword"
+				}
+				id: "5436E95689FF9E13"
+				type: "advancement"
+			}]
+			x: -8.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["575A0A80C21BFD70"]
+			id: "029A2C22F9CDF0FC"
+			tasks: [{
+				advancement: "confluence:achievements/you_can_do_it"
+				criterion: ""
+				icon: {
+					id: "confluence:falling_star"
+				}
+				id: "4C8F3EE360529435"
+				type: "advancement"
+			}]
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["79BCA64092196380"]
+			id: "10A2692AC88DF683"
+			tasks: [{
+				icon: {
+					id: "minecraft:cherry_fence_gate"
+				}
+				id: "09F07F4F659330C0"
+				stat: "minecraft:walk_one_cm"
+				type: "stat"
+				value: 100
+			}]
+			x: -8.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["10A2692AC88DF683"]
+			id: "4EED8D86C30D64CC"
+			tasks: [{
+				icon: {
+					components: {
+						"!ftbquests:icon": { }
+						"ftbquests:entity_face": "minecraft:villager"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "1C03C350BA7BCF83"
+				structure: "#minecraft:village"
+				type: "structure"
+			}]
+			x: -6.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["073C40FA7C75C783"]
+			id: "54FD011CF882F4F0"
+			tasks: [{
+				id: "306347675FAE0844"
+				item: { count: 1, id: "minecraft:iron_ingot" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["54FD011CF882F4F0"]
+			id: "7712A7BC56D12194"
+			tasks: [{
+				id: "1EA436086585C02F"
+				item: { count: 1, id: "create:andesite_alloy" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+	]
+}

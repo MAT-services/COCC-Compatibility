@@ -1,0 +1,10 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_end"
+	group: "5016404715A21AEE"
+	id: "1F129B286F2389BC"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+}
