@@ -339,4 +339,8 @@ ClientEvents.lang('en_us', event => {
    event.renameItem('galosphere:palladium_tiles_slab', "Silver Tiles Slab")
    event.renameItem('galosphere:palladium_panel_stairs', "Silver Panel Stairs")
    event.renameItem('galosphere:palladium_panel_slab', "Silver Panel Slab")
+
+   event.renameItem('pipez:item_pipe', "Adavnced Item Pipe")
+   event.renameItem('pipez:fluid_pipe', "Advanced Fluid Pipe")
+   event.renameItem('pipez:energy_pipe', "Advanced Energy Pipe")
 });

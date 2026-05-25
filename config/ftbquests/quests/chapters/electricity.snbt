@@ -1,12 +1,12 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "the_end"
-	group: "5016404715A21AEE"
+	filename: "electricity"
+	group: "7A366ADBC3F8FFFB"
 	icon: {
-		id: "minecraft:end_stone"
+		id: "create_new_age:generator_coil"
 	}
-	id: "1F129B286F2389BC"
+	id: "000469C142C76426"
 	order_index: 2
 	quest_links: [ ]
 	quests: [ ]

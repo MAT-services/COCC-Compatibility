@@ -3,6 +3,9 @@
 	default_quest_shape: ""
 	filename: "overworld"
 	group: "5016404715A21AEE"
+	icon: {
+		id: "regions_unexplored:alpha_grass_block"
+	}
 	id: "541B1DF9835E7C90"
 	order_index: 0
 	quest_links: [ ]
@@ -47,22 +50,6 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["4BE465879AD062B3"]
-			id: "073C40FA7C75C783"
-			min_required_dependencies: 1
-			tasks: [{
-				advancement: "minecraft:story/upgrade_tools"
-				criterion: ""
-				icon: {
-					id: "minecraft:stone_pickaxe"
-				}
-				id: "4035350261B2A15D"
-				type: "advancement"
-			}]
-			x: -4.5d
-			y: -2.5d
-		}
-		{
 			dependencies: ["0820F64AE33989AC"]
 			id: "575A0A80C21BFD70"
 			tasks: [{
@@ -75,7 +62,7 @@
 				value: 100L
 			}]
 			x: -6.5d
-			y: -0.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["79BCA64092196380"]
@@ -105,7 +92,7 @@
 				type: "advancement"
 			}]
 			x: -4.5d
-			y: -0.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["79BCA64092196380"]
@@ -141,7 +128,7 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["073C40FA7C75C783"]
+			dependencies: ["4C27CEB02E1A0C7D"]
 			id: "54FD011CF882F4F0"
 			tasks: [{
 				id: "306347675FAE0844"
@@ -161,6 +148,114 @@
 			}]
 			x: -1.5d
 			y: -1.5d
+		}
+		{
+			dependencies: ["10A2692AC88DF683"]
+			id: "7ABD5B1D26E0D7A4"
+			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "confluence:textures/achievement/and_good_riddance.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "4AF067396F942F12"
+				structure: "confluence:living_tree"
+				type: "structure"
+			}]
+			x: -6.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7ABD5B1D26E0D7A4"]
+			id: "3FA9D490072DAEE8"
+			tasks: [{
+				advancement: "paraglider:paraglider"
+				criterion: ""
+				icon: {
+					id: "paraglider:paraglider"
+				}
+				id: "0CCB0FBC77FF742C"
+				type: "advancement"
+			}]
+			x: -4.5d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"4EED8D86C30D64CC"
+				"3FA9D490072DAEE8"
+			]
+			id: "50142A0C07CDD28B"
+			tasks: [{
+				icon: {
+					id: "confluence:cloud_bread"
+				}
+				id: "6BCE40B9B861793C"
+				structure: "confluence:sky_village"
+				type: "structure"
+			}]
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["029A2C22F9CDF0FC"]
+			id: "465412297F8080ED"
+			tasks: [{
+				advancement: "confluence:achievements/bloodbath"
+				criterion: ""
+				id: "13EA90F2BDA155D6"
+				type: "advancement"
+			}]
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["54FD011CF882F4F0"]
+			id: "0E8FD6ECBFA17B45"
+			tasks: [{
+				advancement: "confluence:achievements/hold_on_tight"
+				criterion: ""
+				icon: {
+					id: "confluence:grappling_hook"
+				}
+				id: "57B3257AAE147D41"
+				type: "advancement"
+			}]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4BE465879AD062B3"]
+			id: "4C27CEB02E1A0C7D"
+			tasks: [{
+				advancement: "confluence:achievements/ooo_shinny"
+				criterion: ""
+				icon: {
+					components: {
+						"ftbquests:icon": "confluence:textures/achievement/ooo_shinny.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "3ABF3911C015A2F4"
+				type: "advancement"
+			}]
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"4BE465879AD062B3"
+				"0820F64AE33989AC"
+			]
+			id: "2AF9FAF410079C53"
+			tasks: [{
+				id: "4F2F6975D5047F9D"
+				item: { count: 1, id: "confluence:life_crystal" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -0.5d
 		}
 	]
 }

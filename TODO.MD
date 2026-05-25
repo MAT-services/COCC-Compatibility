@@ -52,8 +52,8 @@ Learn and create.
 - Delete the dual files in slideshows images.
 - Create the web places.
 # Items
-- CHANGE THE GALOSPHERE PALADIUM !!!
-- Change Eucaliptus names.
 - Rename the pipez pipes to advanced pipes.
 - Create uses for Cobalt Obsidian. (Obtain cobalt nuggets from the chlorophilite extractinator ?)
 - Create seeds for all RU nylium types.
+
+See if en_us.snbt in FTBQuests config folder can be exploited.

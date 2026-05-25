@@ -1,0 +1,13 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "simple_mechanization"
+	group: "7A366ADBC3F8FFFB"
+	icon: {
+		id: "petrolsparts:coaxial_gear"
+	}
+	id: "4567731EADB5B919"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+}

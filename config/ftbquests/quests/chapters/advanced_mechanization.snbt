@@ -1,12 +1,12 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "the_nether"
-	group: "5016404715A21AEE"
+	filename: "advanced_mechanization"
+	group: "7A366ADBC3F8FFFB"
 	icon: {
-		id: "regions_unexplored:brimsprout_nylium"
+		id: "gnkinetics:large_brass_gear"
 	}
-	id: "4057FA3AF99E98E1"
+	id: "178F5F6ABDE80DDA"
 	order_index: 1
 	quest_links: [ ]
 	quests: [ ]
