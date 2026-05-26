@@ -9,5 +9,14 @@
 	id: "4057FA3AF99E98E1"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		dependencies: ["5ABF185A18DF56C1"]
+		id: "2D7AF9CE0E4A3CC9"
+		tasks: [{
+			id: "4F37F841809268B2"
+			type: "checkmark"
+		}]
+		x: -0.5d
+		y: -0.5d
+	}]
 }

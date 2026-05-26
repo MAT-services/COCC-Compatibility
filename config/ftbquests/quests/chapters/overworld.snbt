@@ -196,7 +196,7 @@
 				type: "structure"
 			}]
 			x: -2.5d
-			y: -4.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["029A2C22F9CDF0FC"]
@@ -256,6 +256,112 @@
 			}]
 			x: -4.5d
 			y: -0.5d
+		}
+		{
+			dependencies: ["4EED8D86C30D64CC"]
+			id: "6B3EF8D33A393ABB"
+			tasks: [{
+				advancement: "minecraft:adventure/trade"
+				criterion: ""
+				icon: {
+					id: "confluence:emerald_coin"
+				}
+				id: "3790BF6BA08615D7"
+				type: "advancement"
+			}]
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"2E1C33FAFFBB3B52"
+				"54FD011CF882F4F0"
+			]
+			icon: {
+				id: "slag:molten_obsidian_bucket"
+			}
+			id: "507D32AB3A7EFAAD"
+			tasks: [{
+				id: "2D2055B793349524"
+				item: { count: 1, id: "minecraft:obsidian" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["10A2692AC88DF683"]
+			id: "2E1C33FAFFBB3B52"
+			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "oritech:textures/gui/augment/portal.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "44E9B510243E7B3E"
+				structure: "#minecraft:ruined_portal"
+				type: "structure"
+			}]
+			x: -3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2E1C33FAFFBB3B52"]
+			id: "45A750191665CA09"
+			tasks: [{
+				icon: {
+					id: "confluence:dungeon_compass"
+				}
+				id: "527EB4FFE1E776C9"
+				structure: "confluence:dungeon_altar"
+				type: "structure"
+			}]
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["507D32AB3A7EFAAD"]
+			id: "5ABF185A18DF56C1"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				icon: {
+					components: {
+						"ftbquests:icon": "minecraft:block/nether_portal"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "3DF00D1B93AF9B20"
+				type: "dimension"
+			}]
+			x: -0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["45A750191665CA09"]
+			dependency_requirement: "one_completed"
+			id: "4B1535F1138F43F8"
+			tasks: [
+				{
+					biome: "#confluence:the_corruption"
+					icon: {
+						id: "confluence:vile_mushroom"
+					}
+					id: "7A3B1D8ABFF73857"
+					optional_task: true
+					type: "biome"
+				}
+				{
+					biome: "#confluence:the_crimson"
+					icon: {
+						id: "confluence:vicious_mushroom"
+					}
+					id: "347542C1B3E8EAC2"
+					type: "biome"
+				}
+			]
+			x: -0.5d
+			y: -6.5d
 		}
 	]
 }

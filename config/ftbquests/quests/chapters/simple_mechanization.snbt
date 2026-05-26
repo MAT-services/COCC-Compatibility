@@ -9,5 +9,64 @@
 	id: "4567731EADB5B919"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["7712A7BC56D12194"]
+			id: "09938A9C984A816B"
+			tasks: [{
+				id: "69D431A1236C977C"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["09938A9C984A816B"]
+			id: "2CBEE86266A05B95"
+			tasks: [{
+				id: "6CF1808B5F8DBC81"
+				item: { count: 1, id: "create:shaft" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["09938A9C984A816B"]
+			id: "3D6526032F1E6FC0"
+			tasks: [{
+				id: "21F7EF76778FBE4A"
+				item: { count: 1, id: "create:depot" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2CBEE86266A05B95"]
+			id: "615E68609CAD83C2"
+			tasks: [{
+				id: "5A3DD5931CD11590"
+				item: { count: 1, id: "create:belt_connector" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"6B3EF8D33A393ABB"
+				"3D6526032F1E6FC0"
+				"615E68609CAD83C2"
+			]
+			id: "0DE2F3D6A768D0C4"
+			tasks: [{
+				id: "1772AF71CDCFAD78"
+				item: { count: 1, id: "trading_floor:trading_depot" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+	]
 }
