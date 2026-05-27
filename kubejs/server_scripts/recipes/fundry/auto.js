@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
         itemTypes.forEach(itemType => {
             if (material[itemType.id]!="empty") {
                 function getItem(ingredient) {
-                    if (itemType.type==="IV") {
+                    if (ingredient.type==="IV") {
                         
                     }
                 }
