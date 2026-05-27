@@ -9,15 +9,21 @@ ServerEvents.recipes(event => {
         {id: "gold", level: 0, fluid: "slag:molten_gold", ingot: "minecraft:gold_ingot", storage_block: "minecraft:gold_block", nugget: "minecraft:gold_nugget", dust: "oritech:gold_dust", gem: "oritech:gold_gem"},
         {id: "copper", level: 0, fluid: "slag:molten_copper", ingot: "minecraft:copper_ingot", storage_block: "minecraft:copper_block", nugget: "create:copper_nugget", dust: "oritech:copper_dust", gem: "oritech:copper_gem"},
         {id: "steel", level: 0, fluid: "kubejs:molten_steel", ingot: "oritech:steel_ingot", storage_block: "oritech:steel_block", nugget: "empty", dust: "oritech:steel_dust", gem: "empty"},
-        {id: "platinum", level: 0, fluid: "kubejs:molten_platinum", ingot: "confluence:platinum_ingot", storage_block: "confluence:platinum_block", nugget: "confluence:platinum_nugget", dust: "oritech:platinum_dust", gem: "empty"}
+        {id: "platinum", level: 0, fluid: "kubejs:molten_platinum", ingot: "confluence:platinum_ingot", storage_block: "confluence:platinum_block", nugget: "confluence:platinum_nugget", dust: "oritech:platinum_dust", gem: "empty"},
+        {id: "diamond", level: 0, fluid: "slag:molten_diamond", ingot: "empty", storage_block: "minecraft:diamond_block", nugget: "empty", dust: "empty", gem: "minecraft:diamond"},
+        {id: "emerauld", level: 0, fluid: "slag:molten_emerauld", ingot: "empty", storage_block: "minecraft:emerauld_block", nugget: "empty", dust: "empty", gem: "minecraft:emerauld"},
+        {id: "tin", level: 0, fluid: "empty", ingot: "confluence:tin_ingot", storage_block: "confluence:tin_block", nugget: "confluence:tin_nugget", dust: "empty", gem: "empty"}
     ]
     let itemTypes = [ // Vanilla Implant / Dynamic Slag'n Embers
+        // Vanilla Implant
         {id: "ingot", coef: 72, cast: "table", type: "VI"},
         {id: "storage_block", coef: 648, cast: "basin", type: "VI"},
         {id: "nugget", coef: 8, cast: "table", type: "VI"},
         {id: "dust", coef: 72, cast: "table", type: "VI"},
         //{id: "small_dust", coef: 8, cast: "table", type: "VI"},
-        {id: "gem", coef: 80, cast: "table", type: "VI"}
+        {id: "gem", coef: 72 /* I'm not sure if that's a good idea... */, cast: "table", type: "VI"},
+        // Dynamic SnE (Never tested, to test.)
+        {id: "plate", coef: 144, cast: "table", type: "DSE"}
     ]
 
     materials.forEach(material => {
