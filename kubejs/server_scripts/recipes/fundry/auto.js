@@ -1,3 +1,5 @@
+// Also add ways to automatically melt raw materials.
+// Test the DnE recipes generation.
 ServerEvents.recipes(event => {
     let melters = [
         {recipe: "adamantite_melter", type: "cm"},
@@ -12,7 +14,9 @@ ServerEvents.recipes(event => {
         {id: "platinum", level: 0, fluid: "kubejs:molten_platinum", ingot: "confluence:platinum_ingot", storage_block: "confluence:platinum_block", nugget: "confluence:platinum_nugget", dust: "oritech:platinum_dust", gem: "empty"},
         {id: "diamond", level: 0, fluid: "slag:molten_diamond", ingot: "empty", storage_block: "minecraft:diamond_block", nugget: "empty", dust: "empty", gem: "minecraft:diamond"},
         {id: "emerauld", level: 0, fluid: "slag:molten_emerauld", ingot: "empty", storage_block: "minecraft:emerauld_block", nugget: "empty", dust: "empty", gem: "minecraft:emerauld"},
-        {id: "tin", level: 0, fluid: "empty", ingot: "confluence:tin_ingot", storage_block: "confluence:tin_block", nugget: "confluence:tin_nugget", dust: "empty", gem: "empty"}
+        {id: "tin", level: 0, fluid: "empty", ingot: "confluence:tin_ingot", storage_block: "confluence:tin_block", nugget: "confluence:tin_nugget", dust: "empty", gem: "empty"},
+        {id: "lead"},
+        {id: "thorium"}
     ]
     let itemTypes = [ // Vanilla Implant / Dynamic Slag'n Embers
         // Vanilla Implant
