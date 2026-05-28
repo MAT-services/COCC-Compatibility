@@ -26,7 +26,20 @@ ServerEvents.recipes(event => {
         {id: "dust", coef: 72, cast: "table", type: "VI"},
         //{id: "small_dust", coef: 8, cast: "table", type: "VI"},
         {id: "gem", coef: 72 /* I'm not sure if that's a good idea... */, cast: "table", type: "VI"},
-        {id: "plate", coef: 144, cast: "table", type: "DSE"}
+        {id: "plate", coef: 144, cast: "table", type: "DSE"},
+        // Vanilla Implant
+        {id: "ingot", coef: 72, cast: "table", type: "VI", nt: "rafined"},
+        {id: "storage_block", coef: 648, cast: "basin", type: "VI", nt: "rafined"},
+        {id: "nugget", coef: 8, cast: "table", type: "VI", nt: "rafined"},
+        {id: "dust", coef: 72, cast: "table", type: "VI", nt: "rafined"},
+        //{id: "small_dust", coef: 8, cast: "table", type: "VI", nt: "rafined"},
+        {id: "gem", coef: 72 /* I'm not sure if that's a good idea... */, cast: "table", type: "VI", nt:"rafined"},
+        /** Raw Materials
+         * {id: }
+         * {id: }
+         */
+        // Dynamic SnE (Never tested, to test.)
+        {id: "plate", coef: 144, cast: "table", type: "DSE", nt: "rafined"}
     ]
 
     materials.forEach(material => {
