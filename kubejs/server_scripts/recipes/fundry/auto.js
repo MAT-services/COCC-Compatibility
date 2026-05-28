@@ -15,8 +15,8 @@ ServerEvents.recipes(event => {
         {id: "diamond", level: 0, fluid: "slag:molten_diamond", ingot: "empty", storage_block: "minecraft:diamond_block", nugget: "empty", dust: "empty", gem: "minecraft:diamond"},
         {id: "emerauld", level: 0, fluid: "slag:molten_emerauld", ingot: "empty", storage_block: "minecraft:emerauld_block", nugget: "empty", dust: "empty", gem: "minecraft:emerauld"},
         {id: "tin", level: 0, fluid: "empty", ingot: "confluence:tin_ingot", storage_block: "confluence:tin_block", nugget: "confluence:tin_nugget", dust: "empty", gem: "empty"},
-        {id: "lead"},
-        {id: "thorium"}
+        {id: "lead", level: 0, fluid: "kubejs:molten_lead", ingot: "confluence:lead_ingot", storage_block: "confluence:lead_block", nugget: "confluence:lead_nugget", gem: "empty"},
+        {id: "thorium", level: 0, fluid: "kubejs:molten_thorium", ingot: "empty", storage_block: "empty", nugget: "empty", gem: "empty"}
     ]
     let itemTypes = [ // Vanilla Implant / Dynamic Slag'n Embers
         // Vanilla Implant
