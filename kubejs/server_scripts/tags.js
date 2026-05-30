@@ -53,6 +53,8 @@ ServerEvents.tags('block', event => {
   event.add('drones:arrow_launcher', [
     "#cocc:dart_trap"
   ])
+
+  event.add('slag:melter_heater', '#create:passive_boiler_heaters')
 })
 
 ServerEvents.tags('item', event => {

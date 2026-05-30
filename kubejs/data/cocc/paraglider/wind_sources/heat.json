@@ -1,0 +1,10 @@
+{
+  "conditions": {
+    "tag": [
+      "slag:melter_heater"
+    ],
+    "properties": {
+      "lit": "true"
+    }
+  }
+}
