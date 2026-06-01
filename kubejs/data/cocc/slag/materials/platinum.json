@@ -3,13 +3,13 @@
   "durability": 2048.0,
   "enchantability": 15.0,
   "fireproof": true,
-  "id": "slag:steel",
+  "id": "slag:platinum",
   "knockback_resistance": 0.1,
-  "molten_fluid": "kubejs:molten_steel",
+  "molten_fluid": "kubejs:molten_platinum",
   "repair_ingredient": {
-    "tag": "c:ingots/steel"
+    "tag": "c:ingots/platinum"
   },
-  "palette": [
+  "palette": [ // Edit the palete.
     "0xc1c1c1",
     "0x959595",
     "0x5b5b5b",
@@ -17,7 +17,7 @@
     "0x1c1b1b",
     "0x0000"
   ],
-  "sharpness": 7.0, // Apply the values of Iron exept the durability, use the one of netherite.
+  "sharpness": 7.0, // Think to give the values of platinum.
   "sort_order": 70,
   "speed": 9.0,
   "texture": "metal",
