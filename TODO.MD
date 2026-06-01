@@ -55,5 +55,6 @@ Learn and create.
 - Rename the pipez pipes to advanced pipes.
 - Create uses for Cobalt Obsidian. (Obtain cobalt nuggets from the chlorophilite extractinator ?)
 - Create seeds for all RU nylium types.
+- Create seeds for all RU grass types.
 
 See if en_us.snbt in FTBQuests config folder can be exploited.
