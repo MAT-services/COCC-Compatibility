@@ -1,6 +1,6 @@
 // Also add ways to automatically melt raw materials.
 // Test the DnE recipes generation doesn't work correctly.
-// CHECK THE LINE 43 OF CUSTOM.JS TO UNDERSTAND WHAT GO WRONG WITH DSE !!!!!
+// Ok, so, the test works with SNE melter... Now, we need to do the same with CM.
 
 ServerEvents.recipes(event => {
     let melters = [
