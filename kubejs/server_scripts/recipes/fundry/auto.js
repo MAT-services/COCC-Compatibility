@@ -38,43 +38,45 @@ ServerEvents.recipes(event => {
     materials.forEach(material => {
         itemTypes.forEach(itemType => {
             function getItem(from) { // Potentially add `"count": 1` if the SNE recipes do not work.
-                    if (itemType.type==="VI") {
-                        if (from==="output") {return {id: material[itemType.id]}};
-                        if (["input", "custom"].includes(from)) {return {tag: `c:${itemType.id}s/${material.id}`}};
-                    }
-                    if (itemType.type==="DSE") {
-                        if (from!="custom") {
-                            return {
-                                "id": "slag:dynamic_part",
-                                "components": {
-                                    "slag:material_type": `slag:${material.id}`,
-                                    "slag:part_type": `slag:${itemType.id}`
-                                }
+                if (itemType.type==="VI") {
+                    if (from==="output") {return {id: material[itemType.id]}};
+                    if (["input", "custom"].includes(from)) {return {tag: `c:${itemType.id}s/${material.id}`}};
+                }
+                if (itemType.type==="DSE") {
+                    if (from!="custom") {
+                        return {
+                            "id": "slag:dynamic_part",
+                            "components": {
+                                "slag:material_type": `slag:${material.id}`,
+                                "slag:part_type": `slag:${itemType.id}`
+                            },
+                            "count": 1
+                        }
+                    };
+                    if (from==="custom") {
+                        return {
+                            item: `slag:dynamic_part`,
+                            "components": {
+                                "slag:material_type": `slag:${material.id}`,
+                                "slag:part_type": `slag:${itemType.id}`
                             }
                         };
-                        if (from==="custom") {
-                            return {
-                                item: `slag:dynamic_part`,
-                                "components": {
-                                    "slag:material_type": `slag:${material.id}`,
-                                    "slag:part_type": `slag:${itemType.id}`
-                                }
-                        };
                     }
-                }}
+                }
+            }
             if (material[itemType.id]!="empty" && material.fluid!="empty") {
                 melters.forEach(melter => {
                     if (melter.type==="cm") {if (material.level < 3) {
                         event.custom({
                             type: "custommachinery:custom_machine",
-                             machine: `custommachinery:${melter.recipe}`,
+                            machine: `custommachinery:${melter.recipe}`,
                             time: 100,
                             requirements: [
                                 {
                                     type: "custommachinery:item",
                                     mode: "input",
                                     id: "input1",
-                                    ingredient: getItem("custom"),
+                                    ingredient: getItem("custom"), // Potentially try with `ingredients: [getItems("custom")]` instead of `ingredient: getItem("custom")`.
                                     amount: 1
                                 },
                                 {
@@ -96,10 +98,10 @@ ServerEvents.recipes(event => {
                     if (melter.type==="slag") {if (material.level < 1) {
                         event.custom({
                             "type": `slag:${melter.recipe}`,
-                            "ingredient": {
-                                "tag": `c:${itemType.id}s/${material.id}` 
-                            },
-                            "ingredients": [],
+                            //"ingredient": getItem("input"), // Doesn't work for DSE.
+                            "ingredients": [
+                                getItem("output") // To try with VI, Normally work with DSE.
+                            ],
                             "result": [
                                 {
                                     "amount": itemType.coef,

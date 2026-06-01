@@ -22,6 +22,9 @@ ServerEvents.recipes(event => {
         "id": "slag:dynamic_part"
         }
     }).id('cocc:crafting_shaped/steel_plate');
+
+    /*////////// This little script is here for testing only. Delete it when `auto.js` is working correctly.
+
     event.custom({
         "type": "slag:melting",
         "ingredients": [
@@ -41,6 +44,8 @@ ServerEvents.recipes(event => {
             }
         ]
     }).id('cocc:melting/molten_steel_from_plate');
+
+    /////////*/
 
     event.custom({
         "type": "slag:melting",
