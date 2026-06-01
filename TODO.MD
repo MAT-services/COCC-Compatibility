@@ -18,6 +18,7 @@ To add:
 Learn and create.
 
 # Recipies
+- Finish the auto.js script. (When finished, delete the 26-48 section in custom.js.)
 - Make living items reproductable with puryfing recipes.
 - Change the Dangersense potion to use lumiere shards and make lumiere shards renewable.
 - Change the items pipes to: 
@@ -25,7 +26,6 @@ Learn and create.
     A Conveyor Belt
     B material item vault 
     C Special item.
-- ADD PLATINUM FUNDRY RECIPES !
 - Make uses for wires blocks. (Like resistances. See GregTech.)
 - Try to see if it's possible to add a better JEI integration to slag:dynamic parts.
 - Replace the bassin recipie to use deep alloys and the melter recipie sheme to look like a bassin.
