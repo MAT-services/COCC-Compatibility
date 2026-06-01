@@ -20,13 +20,6 @@ ServerEvents.recipes(event => {
         {id: "thorium", level: 0, fluid: "kubejs:molten_thorium", ingot: "empty", storage_block: "empty", nugget: "empty", dust: "empty", gem: "empty"}
     ]
     let itemTypes = [ // Vanilla Implant / Dynamic Slag'n Embers
-        {id: "ingot", coef: 72, cast: "table", type: "VI"},
-        {id: "storage_block", coef: 648, cast: "basin", type: "VI"},
-        {id: "nugget", coef: 8, cast: "table", type: "VI"},
-        {id: "dust", coef: 72, cast: "table", type: "VI"},
-        //{id: "small_dust", coef: 8, cast: "table", type: "VI"},
-        {id: "gem", coef: 72 /* I'm not sure if that's a good idea... */, cast: "table", type: "VI"},
-        {id: "plate", coef: 144, cast: "table", type: "DSE"},
         // Vanilla Implant
         {id: "ingot", coef: 72, cast: "table", type: "VI", nt: "rafined"},
         {id: "storage_block", coef: 648, cast: "basin", type: "VI", nt: "rafined"},
