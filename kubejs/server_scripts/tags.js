@@ -55,6 +55,8 @@ ServerEvents.tags('block', event => {
   ])
 
   event.add('slag:melter_heater', '#create:passive_boiler_heaters')
+
+  event.add('terra_entity:house_table', '#c:player_workstations/crafting_tables')
 })
 
 ServerEvents.tags('item', event => {
