@@ -1,6 +1,8 @@
 // Also add ways to automatically melt raw materials.
 // Test the DnE recipes generation doesn't work correctly.
 // Ok, so, the test works with SNE melter... Now, we need to do the same with CM.
+// Add corresponding recipes to crafting shaped too.
+//  Potentially place the variables in another file... If possible.
 
 ServerEvents.recipes(event => {
     let melters = [
@@ -17,7 +19,12 @@ ServerEvents.recipes(event => {
         {id: "diamond", level: 0, fluid: "slag:molten_diamond", ingot: "empty", storage_block: "minecraft:diamond_block", nugget: "empty", dust: "empty", gem: "minecraft:diamond"},
         {id: "emerald", level: 0, fluid: "slag:molten_emerald", ingot: "empty", storage_block: "minecraft:emerald_block", nugget: "empty", dust: "empty", gem: "minecraft:emerald"},
         {id: "lead", level: 0, fluid: "kubejs:molten_lead", ingot: "confluence:lead_ingot", storage_block: "confluence:lead_block", nugget: "confluence:lead_nugget", dust: "empty", gem: "empty"},
-        {id: "thorium", level: 0, fluid: "kubejs:molten_thorium", ingot: "empty", storage_block: "empty", nugget: "empty", dust: "empty", gem: "empty"}
+        {id: "thorium", level: 0, fluid: "kubejs:molten_thorium", ingot: "empty", storage_block: "empty", nugget: "empty", dust: "empty", gem: "empty"},
+        {id: "netherite", level: 0, fluid: "slag:molten_netherite", ingot: "minecraft:netherite_ingot", storage_block: "minecraft:netherite_block", nuget: "empty", dust: "empty", gem: "empty"},
+        {id: "tin", level: 0, fluid: "empty", ingot: "confluence:tin_ingot", storage_block: "confluence:tin_block", nuget: "confluence:tin_nuget", dust: "empty", gem: "empty"},
+        {id: "uranium", level: 1, fluid: null, },
+        {id: "silver"},
+        {id: "nickel"}
     ]
     let itemTypes = [ // Vanilla Implant / Dynamic Slag'n Embers
         // Vanilla Implant
@@ -28,8 +35,8 @@ ServerEvents.recipes(event => {
         //{id: "small_dust", coef: 8, cast: "table", type: "VI", nt: "rafined"},
         {id: "gem", coef: 72 /* I'm not sure if that's a good idea... */, cast: "table", type: "VI", nt:"rafined"},
         /** Raw Materials
-         * {id: }
-         * {id: }
+         * {id: },
+         * {id: },
          */
         // Dynamic SnE (Never tested, to test.)
         {id: "plate", coef: 144, cast: "table", type: "DSE", nt: "rafined"}
@@ -98,9 +105,8 @@ ServerEvents.recipes(event => {
                     if (melter.type==="slag") {if (material.level < 1) {
                         event.custom({
                             "type": `slag:${melter.recipe}`,
-                            //"ingredient": getItem("input"), // Doesn't work for DSE.
                             "ingredients": [
-                                getItem("output") // To try with VI, Normally work with DSE.
+                                getItem("output")
                             ],
                             "result": [
                                 {
