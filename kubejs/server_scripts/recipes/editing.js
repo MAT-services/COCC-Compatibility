@@ -3332,6 +3332,7 @@ ServerEvents.recipes(event => {
     }
   }).id('cocc:crafting_shaped/belts_chute');
 
+  /*
   event.custom({
     "type": "slag:table_casting",
     "cast": "slag:cast/plates",
@@ -3347,6 +3348,7 @@ ServerEvents.recipes(event => {
       "id": "slag:dynamic_part"
     }
   }).id("cocc:table_casting/steel_plate");
+  */
 
   event.remove({output: "oritech:plastic_sheet"});
   event.smelting('kubejs:plastic_ingot', 'oritech:polymer_resin').xp(0.1).cookingTime(50).id('cocc:smelting/plastic_ingot');

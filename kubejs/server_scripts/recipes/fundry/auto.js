@@ -4,6 +4,19 @@
 // Add corresponding recipes to crafting shaped too.
 //  Potentially place the variables in another file... If possible.
 
+// Check if doing 
+/**
+ *  {  
+        "type": "neoforge:components",  
+        "items": "examplemod:example_item",  
+        "components": {  
+            // Add component information here  
+        },  
+        "strict": true  
+    }
+ */
+// is possible.
+
 ServerEvents.recipes(event => {
     let melters = [
         {recipe: "adamantite_melter", type: "cm"},
@@ -11,17 +24,18 @@ ServerEvents.recipes(event => {
         {recipe: "melting", type: "slag"}
     ]
     let materials = [
-        {id: "iron", level: 0, fluid: "slag:molten_iron", ingot: "minecraft:iron_ingot", storage_block: "minecraft:iron_block", nugget: "minecraft:iron_nugget", dust: "oritech:iron_dust", gem: "oritech:iron_gem"},
-        {id: "gold", level: 0, fluid: "slag:molten_gold", ingot: "minecraft:gold_ingot", storage_block: "minecraft:gold_block", nugget: "minecraft:gold_nugget", dust: "oritech:gold_dust", gem: "oritech:gold_gem"},
-        {id: "copper", level: 0, fluid: "slag:molten_copper", ingot: "minecraft:copper_ingot", storage_block: "minecraft:copper_block", nugget: "create:copper_nugget", dust: "oritech:copper_dust", gem: "oritech:copper_gem"},
-        {id: "steel", level: 0, fluid: "kubejs:molten_steel", ingot: "oritech:steel_ingot", storage_block: "oritech:steel_block", nugget: "empty", dust: "oritech:steel_dust", gem: "empty"},
-        {id: "platinum", level: 0, fluid: "kubejs:molten_platinum", ingot: "confluence:platinum_ingot", storage_block: "confluence:platinum_block", nugget: "confluence:platinum_nugget", dust: "oritech:platinum_dust", gem: "empty"},
-        {id: "diamond", level: 0, fluid: "slag:molten_diamond", ingot: "empty", storage_block: "minecraft:diamond_block", nugget: "empty", dust: "empty", gem: "minecraft:diamond"},
-        {id: "emerald", level: 0, fluid: "slag:molten_emerald", ingot: "empty", storage_block: "minecraft:emerald_block", nugget: "empty", dust: "empty", gem: "minecraft:emerald"},
-        {id: "lead", level: 0, fluid: "kubejs:molten_lead", ingot: "confluence:lead_ingot", storage_block: "confluence:lead_block", nugget: "confluence:lead_nugget", dust: "empty", gem: "empty"},
-        {id: "thorium", level: 0, fluid: "kubejs:molten_thorium", ingot: "empty", storage_block: "empty", nugget: "empty", dust: "empty", gem: "empty"},
-        {id: "netherite", level: 0, fluid: "slag:molten_netherite", ingot: "minecraft:netherite_ingot", storage_block: "minecraft:netherite_block", nugget: "createdeco:netherite_nugget", dust: "empty", gem: "empty"},
-        {id: "tin", level: 0, fluid: "empty", ingot: "confluence:tin_ingot", storage_block: "confluence:tin_block", nugget: "confluence:tin_nuget", dust: "empty", gem: "empty"}
+        {id: "iron", level: 0, fluid: "slag:molten_iron", ingot: "minecraft:iron_ingot", storage_block: "minecraft:iron_block", nugget: "minecraft:iron_nugget", dust: "oritech:iron_dust", gem: "oritech:iron_gem", DSE:true},
+        {id: "gold", level: 0, fluid: "slag:molten_gold", ingot: "minecraft:gold_ingot", storage_block: "minecraft:gold_block", nugget: "minecraft:gold_nugget", dust: "oritech:gold_dust", gem: "oritech:gold_gem", DSE:true},
+        {id: "copper", level: 0, fluid: "slag:molten_copper", ingot: "minecraft:copper_ingot", storage_block: "minecraft:copper_block", nugget: "create:copper_nugget", dust: "oritech:copper_dust", gem: "oritech:copper_gem", DSE:true},
+        {id: "steel", level: 0, fluid: "kubejs:molten_steel", ingot: "oritech:steel_ingot", storage_block: "oritech:steel_block", dust: "oritech:steel_dust", DSE:true},
+        {id: "platinum", level: 0, fluid: "kubejs:molten_platinum", ingot: "confluence:platinum_ingot", storage_block: "confluence:platinum_block", nugget: "confluence:platinum_nugget", dust: "oritech:platinum_dust", gem: "oritech:platinum_gem"},
+        {id: "diamond", level: 0, fluid: "slag:molten_diamond", storage_block: "minecraft:diamond_block", gem: "minecraft:diamond", DSE:true}, 
+        {id: "emerald", level: 0, fluid: "slag:molten_emerald", storage_block: "minecraft:emerald_block", gem: "minecraft:emerald", DSE:true},
+        {id: "lead", level: 0, fluid: "kubejs:molten_lead", ingot: "confluence:lead_ingot", storage_block: "confluence:lead_block", nugget: "confluence:lead_nugget", DSE:true},
+        {id: "thorium", level: 0, fluid: "kubejs:molten_thorium", ingot: null, storage_block: null, nugget: null, dust: null, gem: null},
+        {id: "netherite", level: 0, fluid: "slag:molten_netherite", ingot: "minecraft:netherite_ingot", storage_block: "minecraft:netherite_block", nugget: "createdeco:netherite_nugget", DSE:true},
+        {id: "tin", level: 0, fluid: null, ingot: "confluence:tin_ingot", storage_block: "confluence:tin_block", nugget: "confluence:tin_nuget"},
+        {id: "rose_gold", level: 0, fluid: "slag:molten_rose_gold", ingot: "slag:rose_gold_ingot", nugget: "slag:rose_gold_nugget", DSE:true}
         //{id: "uranium", level: 1, fluid: null, },
         //{id: "silver"},
         //{id: "nickel"}
@@ -38,13 +52,13 @@ ServerEvents.recipes(event => {
          * {id: },
          * {id: },
          */
-        // Dynamic SnE (Never tested, to test.)
+        // Dynamic SnE (To test.)
         {id: "plate", coef: 144, cast: "table", type: "DSE", nt: "rafined"}
     ]
 
     materials.forEach(material => {
         itemTypes.forEach(itemType => {
-            function getItem(from) { // Potentially add `"count": 1` if the SNE recipes do not work.
+            function getItem(from) { 
                 if (itemType.type==="VI") {
                     if (from==="output") {return {id: material[itemType.id]}};
                     if (["input", "custom"].includes(from)) {return {tag: `c:${itemType.id}s/${material.id}`}};
@@ -58,7 +72,7 @@ ServerEvents.recipes(event => {
                                 "slag:part_type": `slag:${itemType.id}`
                             },
                             "count": 1
-                        }
+                        };
                     };
                     if (from==="custom") {
                         return {
@@ -71,7 +85,7 @@ ServerEvents.recipes(event => {
                     }
                 }
             }
-            if (material[itemType.id]!="empty" && material.fluid!="empty") {
+            if (material[itemType.id]!=null && material.fluid!=null) {
                 melters.forEach(melter => {
                     if (melter.type==="cm") {if (material.level < 3) {
                         event.custom({
@@ -83,7 +97,7 @@ ServerEvents.recipes(event => {
                                     type: "custommachinery:item",
                                     mode: "input",
                                     id: "input1",
-                                    ingredient: getItem("custom"), // Potentially try with `ingredients: [getItems("custom")]` instead of `ingredient: getItem("custom")`.
+                                    ingredient: getItem("custom"),
                                     amount: 1
                                 },
                                 {
@@ -118,7 +132,7 @@ ServerEvents.recipes(event => {
                     }}
                 })
                 // Bassin Casting
-                if (itemType.cast==="basin" && material.storage_block != "empty") {
+                if (itemType.cast==="basin" && material.storage_block != null) {
                     event.custom({
                         "type": "slag:basin_casting",
                         "ingredient": {
@@ -132,7 +146,7 @@ ServerEvents.recipes(event => {
                     }).id(`cocc:basin_casting/${material.id}`);
                 }
                 // Table Casting
-                if (itemType.cast==="table" && material[itemType.id] != "empty") {
+                if (itemType.cast==="table" && (material[itemType.id] != null || (itemType.type==="DSE" && material.DSE===true))) /* DOESN'T WORK !!!*/{
                     event.custom({
                         "type": "slag:table_casting",
                         "cast": `slag:cast/${itemType.id}s`,
