@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
         ]
     }).id('cocc:melting/molten_steel_from_plate');
 
-    /////////*/
+    */
 
     event.custom({
         "type": "slag:melting",

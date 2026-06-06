@@ -20,11 +20,11 @@ ServerEvents.recipes(event => {
         {id: "emerald", level: 0, fluid: "slag:molten_emerald", ingot: "empty", storage_block: "minecraft:emerald_block", nugget: "empty", dust: "empty", gem: "minecraft:emerald"},
         {id: "lead", level: 0, fluid: "kubejs:molten_lead", ingot: "confluence:lead_ingot", storage_block: "confluence:lead_block", nugget: "confluence:lead_nugget", dust: "empty", gem: "empty"},
         {id: "thorium", level: 0, fluid: "kubejs:molten_thorium", ingot: "empty", storage_block: "empty", nugget: "empty", dust: "empty", gem: "empty"},
-        {id: "netherite", level: 0, fluid: "slag:molten_netherite", ingot: "minecraft:netherite_ingot", storage_block: "minecraft:netherite_block", nuget: "empty", dust: "empty", gem: "empty"},
-        {id: "tin", level: 0, fluid: "empty", ingot: "confluence:tin_ingot", storage_block: "confluence:tin_block", nuget: "confluence:tin_nuget", dust: "empty", gem: "empty"},
-        {id: "uranium", level: 1, fluid: null, },
-        {id: "silver"},
-        {id: "nickel"}
+        {id: "netherite", level: 0, fluid: "slag:molten_netherite", ingot: "minecraft:netherite_ingot", storage_block: "minecraft:netherite_block", nugget: "createdeco:netherite_nugget", dust: "empty", gem: "empty"},
+        {id: "tin", level: 0, fluid: "empty", ingot: "confluence:tin_ingot", storage_block: "confluence:tin_block", nugget: "confluence:tin_nuget", dust: "empty", gem: "empty"}
+        //{id: "uranium", level: 1, fluid: null, },
+        //{id: "silver"},
+        //{id: "nickel"}
     ]
     let itemTypes = [ // Vanilla Implant / Dynamic Slag'n Embers
         // Vanilla Implant
