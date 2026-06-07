@@ -37,8 +37,8 @@ ServerEvents.recipes(event => {
         {id: "tin", level: 0, fluid: null, ingot: "confluence:tin_ingot", storage_block: "confluence:tin_block", nugget: "confluence:tin_nuget"},
         {id: "rose_gold", level: 0, fluid: "slag:molten_rose_gold", ingot: "slag:rose_gold_ingot", nugget: "slag:rose_gold_nugget", DSE:true}
         //{id: "uranium", level: 1, fluid: null, },
-        //{id: "silver"},
-        //{id: "nickel"}
+        //{id: "silver", level: 0, fluid: null, },
+        //{id: "nickel", level: 0, fluid: null, }
     ]
     let itemTypes = [ // Vanilla Implant / Dynamic Slag'n Embers
         // Vanilla Implant
@@ -85,12 +85,14 @@ ServerEvents.recipes(event => {
                         };
                     };
                     if (from==="custom") {
-                        return {
-                            item: `slag:dynamic_part`,
+                        return {  
+                            "type": "neoforge:components",  
+                            "items": "slag:dynamic_part",  
                             "components": {
                                 "slag:material_type": `slag:${material.id}`,
                                 "slag:part_type": `slag:${itemType.id}`
-                            }
+                            },  
+                            "strict": false
                         };
                     }
                 }
