@@ -64,6 +64,16 @@ ServerEvents.recipes(event => {
                     if (["input", "custom"].includes(from)) {return {tag: `c:${itemType.id}s/${material.id}`}};
                 }
                 if (itemType.type==="DSE") {
+                    if (from==="output") { 
+                        return {
+                            "count": 1,
+                            "id": "slag:dynamic_part",
+                            "components": {
+                                "slag:material_type": `slag:${material.id}`,
+                                "slag:part_type": `slag:${itemType.id}`
+                            }
+                        };
+                    };
                     if (from!="custom") {
                         return {
                             "id": "slag:dynamic_part",
@@ -85,7 +95,7 @@ ServerEvents.recipes(event => {
                     }
                 }
             }
-            if (material[itemType.id]!=null && material.fluid!=null) {
+            if ((material[itemType.id]!=null || (itemType.type==="DSE" && material.DSE===true)) && material.fluid!=null) {
                 melters.forEach(melter => {
                     if (melter.type==="cm") {if (material.level < 3) {
                         event.custom({
