@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
         {id: "tin", level: 0, fluid: "kubejs:molten_tin", ingot: "confluence:tin_ingot", storage_block: "confluence:tin_block", nugget: "confluence:tin_nugget" /*re: "confluence:raw_material_tin"*/},
         {id: "rose_gold", level: 0, fluid: "slag:molten_rose_gold", ingot: "slag:rose_gold_ingot", nugget: "slag:rose_gold_nugget", DSE:true},
         //{id: "uranium", level: 1, fluid: null, },
-        //{id: "silver", level: 0, fluid: "kubejs:molten_silver", ingot: "confluence:silver_ingot", storage_block: "confluence:silver_block", nugget:"confluence:silver_nugget"},
+        {id: "silver", level: 0, fluid: "kubejs:molten_silver", ingot: "confluence:silver_ingot", storage_block: "confluence:silver_block", nugget:"confluence:silver_nugget"},
         {id: "nickel", level: 0, fluid: "kubejs:molten_nickel", ingot: "oritech:nickel_ingot", storage_block: "oritech:nickel_block", nugget: "oritech:nickel_nugget", dust: "oritech:nickel_dust", gem: "oritech:nickel_gem" /*re: "oritech:raw_material_nickel"*/}
     ]
     let itemTypes = [ // Vanilla Implant / Dynamic Slag'n Embers
@@ -49,9 +49,19 @@ ServerEvents.recipes(event => {
         //{id: "small_dust", coef: 8, cast: "table", type: "VI"},
         {id: "gem", coef: 72 /* I'm not sure if that's a good idea... */, cast: "table", type: "VI", nt:"rafined"},
         // Raw Materials
-        //{id: "ore", coef: 96, cast: "raw_material", type: "VI"},
+        {id: "raw_material", coef: 96, cast: "ore", type: "VI"},
         // Dynamic SnE (To test.)
-        {id: "plate", coef: 144, cast: "table", type: "DSE"}
+        {id: "plate", coef: 144, cast: "table", type: "DSE"},
+        {id: "shovel_head", coef: 72, cast: "table", type: "DSE"},
+        {id: "pickaxe_head", coef: 216, cast: "table", type: "DSE"},
+        {id: "axe_head", coef: 216, cast: "table", type: "DSE"},
+        {id: "hoe_head", coef: 144, cast: "table", type: "DSE"}, 
+        {id: "sword_blade", coef: 144, cast: "table", type: "DSE"},
+        {id: "guard", coef: 72, cast: "table", type: "DSE"},
+        {id: "helmet", coef: 216, type: "DSE"},
+        {id: "chestplate", coef: 432, type: "DSE"},
+        {id: "leggings", coef: 72, type: "DSE"},
+        {id: "boots", coef: 72, type: "DSE"}
     ]
 
     materials.forEach(material => {
@@ -62,8 +72,6 @@ ServerEvents.recipes(event => {
                         return {id: material[itemType.id]}
                     } else if (["inputTag", "custom"].includes(from)) {
                         return {tag: `c:${itemType.id}s/${material.id}`}
-                    } else {
-                        return undefined;
                     }
                 }
                 if (itemType.type==="DSE") {
@@ -95,12 +103,10 @@ ServerEvents.recipes(event => {
                             },  
                             "strict": false
                         };
-                    } else {
-                        return undefined;
                     }
                 }
             }
-            if ((material[itemType.id]!=null || itemType.id==="ore" || (itemType.type==="DSE" && material.DSE===true)) && material.fluid!=null) {
+            if (((material[itemType.id]!=null || itemType.cast==="ore") || (itemType.type==="DSE" && material.DSE===true)) && material.fluid!=null) {
                 melters.forEach(melter => {
                     if (melter.type==="cm") {if (material.level < 3) {
                         event.custom({

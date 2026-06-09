@@ -9,12 +9,12 @@
   "repair_ingredient": {
     "tag": "c:ingots/lead"
   },
-  "palette": [ // Change the palete to the one of lead.
-    "0xc1c1c1",
-    "0x959595",
-    "0x5b5b5b",
-    "0x303030",
-    "0x1c1b1b",
+  "palette": [
+    "0x62748c",
+    "0x4f626f",
+    "0x3a4359",
+    "0x313848",
+    "0x252531",
     "0x0000"
   ],
   "sharpness": 7.0, // Apply the values of lead.
