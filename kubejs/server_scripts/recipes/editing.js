@@ -3332,24 +3332,6 @@ ServerEvents.recipes(event => {
     }
   }).id('cocc:crafting_shaped/belts_chute');
 
-  /*
-  event.custom({
-    "type": "slag:table_casting",
-    "cast": "slag:cast/plates",
-    "ingredient": {
-      "amount": 72,
-      "id": "kubejs:molten_steel"
-    },
-    "result": {
-      "components": {
-        "slag:material_type": "slag:steel",
-        "slag:part_type": "slag:plate"
-      },
-      "id": "slag:dynamic_part"
-    }
-  }).id("cocc:table_casting/steel_plate");
-  */
-
   event.remove({output: "oritech:plastic_sheet"});
   event.smelting('kubejs:plastic_ingot', 'oritech:polymer_resin').xp(0.1).cookingTime(50).id('cocc:smelting/plastic_ingot');
   event.blasting('kubejs:plastic_ingot', 'oritech:polymer_resin').xp(0.1).cookingTime(50).id('cocc:blasting/plastic_ingot');
@@ -4504,4 +4486,6 @@ ServerEvents.recipes(event => {
   event.shaped('galosphere:spectre_flare', ['A', 'B'], { A: 'galosphere:bottle_of_spectre', B: '#c:ingots/silver' }).id('cocc:edit/spectre_flare');
   event.remove({id: "galosphere:palladium_dust"});
 
+  event.remove({output: "create:basin"});
+  event.shaped('create:basin', ['A A', 'AAA'], { A: 'slag:deep_alloy' }).id('kubejs:shaped/simple_basin');
 })

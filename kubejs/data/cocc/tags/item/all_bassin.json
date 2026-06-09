@@ -1,6 +1,7 @@
 {
   "values": [
     "create:basin",
+    "slag:basin",
     "minecraft:cauldron"
   ]
 }

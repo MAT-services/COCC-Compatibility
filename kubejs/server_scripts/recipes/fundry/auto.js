@@ -31,37 +31,40 @@ ServerEvents.recipes(event => {
         {id: "platinum", level: 0, fluid: "kubejs:molten_platinum", ingot: "confluence:platinum_ingot", storage_block: "confluence:platinum_block", nugget: "confluence:platinum_nugget", dust: "oritech:platinum_dust", gem: "oritech:platinum_gem"},
         {id: "diamond", level: 0, fluid: "slag:molten_diamond", storage_block: "minecraft:diamond_block", gem: "minecraft:diamond", DSE:true}, 
         {id: "emerald", level: 0, fluid: "slag:molten_emerald", storage_block: "minecraft:emerald_block", gem: "minecraft:emerald", DSE:true},
-        {id: "lead", level: 0, fluid: "kubejs:molten_lead", ingot: "confluence:lead_ingot", storage_block: "confluence:lead_block", nugget: "confluence:lead_nugget", DSE:true},
+        {id: "lead", level: 0, fluid: "kubejs:molten_lead", ingot: "confluence:lead_ingot", storage_block: "confluence:lead_block", nugget: "confluence:lead_nugget", /*re: "confluence:raw_material_lead",*/ DSE:true},
         {id: "thorium", level: 0, fluid: "kubejs:molten_thorium", ingot: null, storage_block: null, nugget: null, dust: null, gem: null},
         {id: "netherite", level: 0, fluid: "slag:molten_netherite", ingot: "minecraft:netherite_ingot", storage_block: "minecraft:netherite_block", nugget: "createdeco:netherite_nugget", DSE:true},
-        {id: "tin", level: 0, fluid: null, ingot: "confluence:tin_ingot", storage_block: "confluence:tin_block", nugget: "confluence:tin_nuget"},
-        {id: "rose_gold", level: 0, fluid: "slag:molten_rose_gold", ingot: "slag:rose_gold_ingot", nugget: "slag:rose_gold_nugget", DSE:true}
+        {id: "tin", level: 0, fluid: "kubejs:molten_tin", ingot: "confluence:tin_ingot", storage_block: "confluence:tin_block", nugget: "confluence:tin_nugget" /*re: "confluence:raw_material_tin"*/},
+        {id: "rose_gold", level: 0, fluid: "slag:molten_rose_gold", ingot: "slag:rose_gold_ingot", nugget: "slag:rose_gold_nugget", DSE:true},
         //{id: "uranium", level: 1, fluid: null, },
-        //{id: "silver", level: 0, fluid: null, },
-        //{id: "nickel", level: 0, fluid: null, }
+        //{id: "silver", level: 0, fluid: "kubejs:molten_silver", ingot: "confluence:silver_ingot", storage_block: "confluence:silver_block", nugget:"confluence:silver_nugget"},
+        {id: "nickel", level: 0, fluid: "kubejs:molten_nickel", ingot: "oritech:nickel_ingot", storage_block: "oritech:nickel_block", nugget: "oritech:nickel_nugget", dust: "oritech:nickel_dust", gem: "oritech:nickel_gem" /*re: "oritech:raw_material_nickel"*/}
     ]
     let itemTypes = [ // Vanilla Implant / Dynamic Slag'n Embers
         // Vanilla Implant
-        {id: "ingot", coef: 72, cast: "table", type: "VI", nt: "rafined"},
-        {id: "storage_block", coef: 648, cast: "basin", type: "VI", nt: "rafined"},
-        {id: "nugget", coef: 8, cast: "table", type: "VI", nt: "rafined"},
-        {id: "dust", coef: 72, cast: "table", type: "VI", nt: "rafined"},
-        //{id: "small_dust", coef: 8, cast: "table", type: "VI", nt: "rafined"},
+        {id: "ingot", coef: 72, cast: "table", type: "VI"},
+        {id: "storage_block", coef: 648, cast: "basin", type: "VI"},
+        {id: "nugget", coef: 8, cast: "table", type: "VI"},
+        {id: "dust", coef: 72, cast: "table", type: "VI"},
+        //{id: "small_dust", coef: 8, cast: "table", type: "VI"},
         {id: "gem", coef: 72 /* I'm not sure if that's a good idea... */, cast: "table", type: "VI", nt:"rafined"},
-        /** Raw Materials
-         * {id: },
-         * {id: },
-         */
+        // Raw Materials
+        //{id: "ore", coef: 96, cast: "raw_material", type: "VI"},
         // Dynamic SnE (To test.)
-        {id: "plate", coef: 144, cast: "table", type: "DSE", nt: "rafined"}
+        {id: "plate", coef: 144, cast: "table", type: "DSE"}
     ]
 
     materials.forEach(material => {
         itemTypes.forEach(itemType => {
             function getItem(from) { 
                 if (itemType.type==="VI") {
-                    if (from==="output") {return {id: material[itemType.id]}};
-                    if (["input", "custom"].includes(from)) {return {tag: `c:${itemType.id}s/${material.id}`}};
+                    if (from==="output") {
+                        return {id: material[itemType.id]}
+                    } else if (["inputTag", "custom"].includes(from)) {
+                        return {tag: `c:${itemType.id}s/${material.id}`}
+                    } else {
+                        return undefined;
+                    }
                 }
                 if (itemType.type==="DSE") {
                     if (from==="output") { 
@@ -73,8 +76,7 @@ ServerEvents.recipes(event => {
                                 "slag:part_type": `slag:${itemType.id}`
                             }
                         };
-                    };
-                    if (from!="custom") {
+                    } else if (from==="inputDsE") {
                         return {
                             "id": "slag:dynamic_part",
                             "components": {
@@ -83,8 +85,7 @@ ServerEvents.recipes(event => {
                             },
                             "count": 1
                         };
-                    };
-                    if (from==="custom") {
+                    } else if (from==="custom") {
                         return {  
                             "type": "neoforge:components",  
                             "items": "slag:dynamic_part",  
@@ -94,10 +95,12 @@ ServerEvents.recipes(event => {
                             },  
                             "strict": false
                         };
+                    } else {
+                        return undefined;
                     }
                 }
             }
-            if ((material[itemType.id]!=null || (itemType.type==="DSE" && material.DSE===true)) && material.fluid!=null) {
+            if ((material[itemType.id]!=null || itemType.id==="ore" || (itemType.type==="DSE" && material.DSE===true)) && material.fluid!=null) {
                 melters.forEach(melter => {
                     if (melter.type==="cm") {if (material.level < 3) {
                         event.custom({
@@ -129,18 +132,18 @@ ServerEvents.recipes(event => {
                         }).id(`cocc:${melter.recipe}/molten_${material.id}-from-${itemType.id}`);
                     }}
                     if (melter.type==="slag") {if (material.level < 1) {
-                        event.custom({
+                        let recipe = {
                             "type": `slag:${melter.recipe}`,
-                            "ingredients": [
-                                getItem("output")
-                            ],
                             "result": [
                                 {
                                     "amount": itemType.coef,
                                     "id": material.fluid
                                 }
                             ]
-                        }).id(`cocc:${melter.recipe}/molten_${material.id}-from-${itemType.id}`);
+                        };
+                        if (itemType.type==="VI") {recipe.ingredient = getItem("inputTag"); recipe.ingredients = []}
+                        if (itemType.type==="DSE") recipe.ingredients = [getItem("inputDsE")]
+                        event.custom(recipe).id(`cocc:${melter.recipe}/molten_${material.id}-from-${itemType.id}`);
                     }}
                 })
                 // Bassin Casting
@@ -158,7 +161,7 @@ ServerEvents.recipes(event => {
                     }).id(`cocc:basin_casting/${material.id}`);
                 }
                 // Table Casting
-                if (itemType.cast==="table" && (material[itemType.id] != null || (itemType.type==="DSE" && material.DSE===true))) /* DOESN'T WORK !!!*/{
+                if (itemType.cast==="table" && (material[itemType.id] != null || (itemType.type==="DSE" && material.DSE===true))) {
                     event.custom({
                         "type": "slag:table_casting",
                         "cast": `slag:cast/${itemType.id}s`,
