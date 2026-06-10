@@ -4136,7 +4136,7 @@ ServerEvents.recipes(event => {
   event.remove({id: "almostunified:createdeco"});
 
   event.remove({id: "create:crafting/kinetics/mechanical_crafter"});
-  event.shaped('3x create:mechanical_crafter', ['A', 'B', 'C'], { A: 'minecraft:crafter', B: 'create:brass_casing', C: 'confluence:heavy_work_bench' }).id('cocc:shaped/mechanical_crafter');
+  event.shaped('4x create:mechanical_crafter', ['A', 'B', 'C'], { A: 'minecraft:crafter', B: 'create:brass_casing', C: 'confluence:heavy_work_bench' }).id('cocc:shaped/mechanical_crafter');
 
   event.remove({output: "immersive_machinery:iron_drill"});
   event.custom({
@@ -4488,4 +4488,8 @@ ServerEvents.recipes(event => {
 
   event.remove({output: "create:basin"});
   event.shaped('create:basin', ['A A', 'AAA'], { A: 'slag:deep_alloy' }).id('kubejs:shaped/simple_basin');
+
+  event.shaped('minecraft:crafter', ['AAA', 'ABA', 'CDC'], { A: '#cocc:all_iron_ingot_similar', B: '#c:player_workstations/crafting_tables', C: 'minecraft:redstone', D: 'minecraft:dropper' }).id('cocc:shaped/crafter');
+  event.shaped('confluence:heavy_work_bench', ['A', 'B', 'A'], { A: '#c:player_workstations/crafting_tables', B: '#minecraft:anvil' }).id('cocc:shaped/heavy_work_bench');
+
 })
