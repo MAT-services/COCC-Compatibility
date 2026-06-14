@@ -2963,7 +2963,7 @@ ServerEvents.recipes(event => {
   event.shaped('kubejs:andesite_clip', ['A A', 'AAA', ' B '], { A: 'create:andesite_alloy', B: 'slag:dynamic_part[slag:part_type="slag:plate",slag:material_type="slag:andesite_alloy"]' }).id('cocc:shaped/andesite_clip');
   
   event.remove({output: "create:mechanical_arm"});
-  event.shaped('create:mechanical_arm', ['ABC', 'BA ', 'DEF'], { A: 'oritech:carbon_fibre_strands', B: 'createcasing:brass_shaft', C: 'kubejs:andesite_clip', D: 'create:precision_mechanism', E: 'create:brass_casing', F: 'petrolsparts:coaxial_gear' }).id('cocc:shaped/mechanical_arm');
+  event.shaped('create:mechanical_arm', [' BC', 'B  ', 'DEF'], { B: 'createcasing:brass_shaft', C: 'kubejs:andesite_clip', D: 'create:precision_mechanism', E: 'create:brass_casing', F: 'petrolsparts:coaxial_gear' }).id('cocc:shaped/mechanical_arm');
 
   event.custom({
     "type": "slag:double_smelting",
