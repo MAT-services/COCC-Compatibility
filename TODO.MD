@@ -19,6 +19,7 @@ To add:
 Learn and create.
 
 # Recipies
+- Add chisel recipes to dual recipes.
 - Finish the auto.js script. (When finished, delete the 26-48 section in custom.js.)
 - Make living items reproductable with puryfing recipes.
 - Change the Dangersense potion to use lumiere shards and make lumiere shards renewable.

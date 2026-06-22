@@ -775,7 +775,7 @@ ServerEvents.recipes(event => {
     },
     "result": {
       "id": "oritech:item_pipe",
-      "count": 2
+      "count": 4
     }
   }).id('cocc:crafting_shaped/item_pipe');
 
@@ -800,7 +800,7 @@ ServerEvents.recipes(event => {
     },
     "result": {
       "id": "oritech:transparent_item_pipe",
-      "count": 2
+      "count": 4
     }
   }).id('cocc:crafting_shaped/transparent_item_pipe');
 
@@ -2960,7 +2960,7 @@ ServerEvents.recipes(event => {
   event.remove({output: "create:brass_hand"});
   event.shaped('create:brass_hand', [' A ', 'AAA', ' B '], { A: 'create:brass_ingot', B: 'createdeco:andesite_sheet' }).id('cocc:shaped/brass_hand');
 
-  event.shaped('kubejs:andesite_clip', ['A A', 'AAA', ' B '], { A: 'create:andesite_alloy', B: 'slag:dynamic_part[slag:part_type="slag:plate",slag:material_type="slag:andesite_alloy"]' }).id('cocc:shaped/andesite_clip');
+  event.shaped('kubejs:andesite_clip', ['A A', 'AAA', ' B '], { A: 'create:andesite_alloy', B: 'createdeco:andesite_sheet' }).id('cocc:shaped/andesite_clip');
   
   event.remove({output: "create:mechanical_arm"});
   event.shaped('create:mechanical_arm', [' BC', 'B  ', 'DEF'], { B: 'createcasing:brass_shaft', C: 'kubejs:andesite_clip', D: 'create:precision_mechanism', E: 'create:brass_casing', F: 'petrolsparts:coaxial_gear' }).id('cocc:shaped/mechanical_arm');
@@ -4492,4 +4492,35 @@ ServerEvents.recipes(event => {
   event.shaped('minecraft:crafter', ['AAA', 'ABA', 'CDC'], { A: '#cocc:all_iron_ingot_similar', B: '#c:player_workstations/crafting_tables', C: 'minecraft:redstone', D: 'minecraft:dropper' }).id('cocc:shaped/crafter');
   event.shaped('confluence:heavy_work_bench', ['A', 'B', 'A'], { A: '#c:player_workstations/crafting_tables', B: '#minecraft:anvil' }).id('cocc:shaped/heavy_work_bench');
 
+  let aliumColors = [
+    {c: "purple", i: ""},
+    {c: "white", i: "white_"},
+    {c: "pink", i: "pink_"}
+  ]
+  aliumColors.forEach(color => {
+    event.remove({id: `biomeswevegone:${color.c}_wool_from_allium_petal_block`});
+    event.shapeless(`2x minecraft:${color.c}_wool`, [`biomeswevegone:${color.i}allium_petal_block`, `biomeswevegone:${color.i}allium_petal_block`]).id(`cocc:shapeless/${color.c}_wool_from_allium_petal_block`);
+  });
+
+  event.remove({id: "oritech:crafting/fluidpipe"});
+  event.custom({
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "#",
+      "N",
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "create:copper_sheet"
+      },
+      "N": {
+        "item": "belts:belt"
+      }
+    },
+    "result": {
+      "id": "oritech:fluid_pipe",
+      "count": 2
+    }
+  }).id('cocc:crafting_shaped/fluid_pipe');
 })

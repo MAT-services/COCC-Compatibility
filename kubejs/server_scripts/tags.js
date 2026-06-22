@@ -117,8 +117,8 @@ ServerEvents.tags('item', event => {
   event.add('c:nuggets/silver', 'galosphere:palladium_nugget')
   event.remove('c:storage_blocks/silver', 'galosphere:palladium_block')
   event.add('c:storage_blocks/silver', 'galosphere:palladium_block')
-  event.remove('c:raw_material/palladium', 'galosphere:raw_palladium')
-  event.add('c:raw_material/silver', 'galosphere:raw_palladium')
+  event.remove('c:raw_materials/palladium', 'galosphere:raw_palladium')
+  event.add('c:raw_materials/silver', 'galosphere:raw_palladium')
   /*event.remove('', "")
   event.add('', "")
   event.remove('', "")
@@ -138,6 +138,7 @@ ServerEvents.tags('fluid', event => {
   event.add('c:molten_nickel', "kubejs:molten_nickel")
   event.add('c:molten_tin', "kubejs:molten_tin")
   event.add('c:molten_silver', "kubejs:molten_silver")
+  event.add('c:molten_tungsten', 'kubejs:molten_tungsten')
   let hot_fluids = [
     "slag:molten_brass",
     'slag:molten_zinc',
@@ -145,7 +146,8 @@ ServerEvents.tags('fluid', event => {
     "kubejs:molten_platinum",
     "kubejs:molten_lead",
     "kubejs:molten_tin",
-    "kubejs:molten_silver"
+    "kubejs:molten_silver",
+    'kubejs:molten_tungsten'
   ];
   hot_fluids.forEach((hot_fluid) => {
     event.add('confluence:fishing_able', [

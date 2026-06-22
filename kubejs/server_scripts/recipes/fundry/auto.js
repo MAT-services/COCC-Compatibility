@@ -4,6 +4,8 @@
 // Add corresponding recipes to crafting shaped too.
 //  Potentially place the variables in another file... If possible.
 
+//const { storage } = require("@package/net/minecraft/world/level");
+
 // Check if doing 
 /**
  *  {  
@@ -38,7 +40,8 @@ ServerEvents.recipes(event => {
         {id: "rose_gold", level: 0, fluid: "slag:molten_rose_gold", ingot: "slag:rose_gold_ingot", nugget: "slag:rose_gold_nugget", DSE:true},
         //{id: "uranium", level: 1, fluid: null, },
         {id: "silver", level: 0, fluid: "kubejs:molten_silver", ingot: "confluence:silver_ingot", storage_block: "confluence:silver_block", nugget:"confluence:silver_nugget"},
-        {id: "nickel", level: 0, fluid: "kubejs:molten_nickel", ingot: "oritech:nickel_ingot", storage_block: "oritech:nickel_block", nugget: "oritech:nickel_nugget", dust: "oritech:nickel_dust", gem: "oritech:nickel_gem" /*re: "oritech:raw_material_nickel"*/}
+        {id: "nickel", level: 0, fluid: "kubejs:molten_nickel", ingot: "oritech:nickel_ingot", storage_block: "oritech:nickel_block", nugget: "oritech:nickel_nugget", dust: "oritech:nickel_dust", gem: "oritech:nickel_gem" /*re: "oritech:raw_material_nickel"*/},
+        {id: "tungsten", level: 0, fluid: "kubejs:molten_tungsten", ingot: "confluence:tungsten_ingot", storage_block: "confluence:tungsten_block", nugget: "confluence:tungsten_nugget"}
     ]
     let itemTypes = [ // Vanilla Implant / Dynamic Slag'n Embers
         // Vanilla Implant

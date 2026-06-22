@@ -27,4 +27,8 @@ StartupEvents.registry('fluid', event => {
         .displayName('Molten Silver')
         .stillTexture('kubejs:fluid/molten_silver_still')
         .flowingTexture('kubejs:fluid/molten_silver_flow')
+    event.create('molten_tungsten')
+        .displayName('Molten Tungsten')
+        .stillTexture('kubejs:fluid/molten_tungsten_still')
+        .flowingTexture('kubejs:fluid/molten_tungsten_flow')
 });
