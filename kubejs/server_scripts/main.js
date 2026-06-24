@@ -21,6 +21,14 @@ BlockEvents.rightClicked(event => {
   }
 })
 
+PlayerEvents.tick(event => {
+    let player = event.player
+
+    if (player.isSleeping()) {
+        player.heal(8)
+    }
+})
+
 // FOR TESTING
 PlayerEvents.loggedIn(event => {
   event.player.awardAdvancement("cocc:root")
