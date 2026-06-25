@@ -4,43 +4,113 @@
       {
         "entries": [
           {
-            "item": "minecraft:raw_copper",
+            "item": "create:scorchia",
             "max_count": 2,
             "weight": 39192
           },
           {
-            "item": "confluence:raw_tin",
+            "item": "create:veridium",
             "max_count": 2,
             "weight": 39192
           },
           {
-            "item": "minecraft:raw_iron",
+            "item": "minecraft:tuff",
             "max_count": 2,
             "weight": 39192
           },
           {
-            "item": "minecraft:raw_gold",
+            "item": "create:scoria",
             "max_count": 2,
             "weight": 39192
           },
           {
-            "item": "confluence:raw_lead",
+            "item": "create:ochrum",
             "max_count": 2,
             "weight": 39192
           },
           {
-            "item": "confluence:raw_silver",
+            "item": "create:limestone",
             "max_count": 2,
             "weight": 39192
           },
           {
-            "item": "confluence:raw_tungsten",
+            "item": "create:crimsite",
             "max_count": 2,
             "weight": 39192
           },
           {
-            "item": "oritech:raw_nickel",
+            "item": "create:asurine",
             "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "minecraft:dripstone_block",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "minecraft:calcite",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "minecraft:diorite",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "minecraft:andesite",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "dndecor:dolomite",
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "dndecor:gabbro", //
+            "max_count": 2,
+            "weight": 39192
+          },
+          {
+            "item": "galosphere:allurite_block",
+            "max_count": 1,
+            "weight": 39192
+          },
+          {
+            "item": "galosphere:lumiere_block",
+            "max_count": 1,
+            "weight": 39192
+          },
+          {
+            "item": "galosphere:pink_salt",
+            "max_count": 1,
+            "weight": 39192
+          },
+          {
+            "item": "galosphere:rose_pink_salt",
+            "max_count": 1,
+            "weight": 39192
+          },
+          {
+            "item": "galosphere:pastel_pink_salt",
+            "max_count": 1,
+            "weight": 39192
+          },
+          {
+            "item": "minecraft:amethyst_block",
+            "max_count": 1,
+            "weight": 39192
+          },
+          {
+            "item": "regions_unexplored:chalk",
+            "max_count": 1,
+            "weight": 39192
+          },
+          {
+            "item": "regions_unexplored:argillite",
+            "max_count": 1,
             "weight": 39192
           }
         ]

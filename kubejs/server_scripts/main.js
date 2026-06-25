@@ -25,7 +25,7 @@ PlayerEvents.tick(event => {
     let player = event.player
 
     if (player.isSleeping()) {
-        player.heal(8)
+        player.heal(1)
     }
 })
 
