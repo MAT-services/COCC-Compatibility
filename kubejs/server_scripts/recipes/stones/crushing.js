@@ -93,7 +93,7 @@ ServerEvents.recipes(event => {
                 "id": "confluence:tin_nugget"
             }
         ]
-    }).id('kubejs:crushing/scorchia_recycling');
+    }).id('kubejs:crushing/gabbro_recycling');
 })
 
 /*/
