@@ -61,4 +61,18 @@ ServerEvents.recipes(event => {
             }
         ]
     })
+    event.custom({
+        "type": "slag:melting",
+        "ingredients": [
+            {
+                "id": "oritech:small_platinum_dust"
+            }
+        ],
+        "result": [
+            {
+            "amount": 8,
+            "id": "kubejs:molten_platinum"
+            }
+        ]
+    })
 })

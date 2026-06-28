@@ -13,7 +13,7 @@ ClientEvents.lang('en_us', event => {
    event.renameItem('confluence:chiseled_granite_bricks','Chiseled Dark Granite');
    event.renameItem('confluence:granite_chest','Dark Granite Chest');
    event.renameItem('confluence:granite_tapered_block','Dark Granite Tapered Block');
-   event.renameItem('oritech:fluid_pipe','Silicon Fluid Pipe');
+   event.renameItem('oritech:fluid_pipe','Automatic Fluid Pipe');
    event.renameItem('oritech:steam_engine_block','Steam Dripper');
    event.renameItem('minecraft:vault','Trial Vault');
    event.renameItem('toms_storage:wireless_terminal','Wireless Inventory Terminal');
