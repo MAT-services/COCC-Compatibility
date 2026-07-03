@@ -127,6 +127,12 @@ ServerEvents.tags('item', event => {
   event.add('', "")
   event.remove('', "")
   event.add('', "")*/
+
+  event.add('c:clumps', [
+    "#create:crushed_raw_materials",
+    "create:crushed_raw_tin",
+    "confluence:crushed_raw_tungsten"
+  ])
 })
 
 ServerEvents.tags('fluid', event => {
