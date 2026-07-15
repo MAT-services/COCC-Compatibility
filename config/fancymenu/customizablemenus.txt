@@ -24,9 +24,6 @@ net.minecraft.client.gui.screens.options.OptionsScreen {
 net.caffeinemc.mods.sodium.client.gui.SodiumOptionsGUI {
 }
 
-net.irisshaders.iris.gui.screen.ShaderPackScreen {
-}
-
 net.minecraft.client.gui.screens.options.LanguageSelectScreen {
 }
 

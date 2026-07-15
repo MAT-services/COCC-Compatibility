@@ -1,3 +1,6 @@
+let casings = [
+  '#oritech:plating'
+]
 ServerEvents.tags('block', event => {
   event.add('create:wrench_pickup', [
     "slag:crucible_interface",
@@ -57,6 +60,8 @@ ServerEvents.tags('block', event => {
   event.add('slag:melter_heater', '#create:passive_boiler_heaters')
 
   event.add('terra_entity:house_table', '#c:player_workstations/crafting_tables')
+
+  event.add('create:casing', casings)
 })
 
 ServerEvents.tags('item', event => {
@@ -133,6 +138,8 @@ ServerEvents.tags('item', event => {
     "create:crushed_raw_tin",
     "confluence:crushed_raw_tungsten"
   ])
+
+  event.add('create:casing', casings)
 })
 
 ServerEvents.tags('fluid', event => {

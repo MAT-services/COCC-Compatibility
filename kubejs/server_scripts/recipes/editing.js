@@ -547,7 +547,8 @@ ServerEvents.recipes(event => {
       }
     },
     "result": {
-      "id": "toms_storage:inventory_proxy"
+      "id": "toms_storage:inventory_proxy",
+      "count": 2
     }
   }).id('cocc:crafting_shaped/inventory_proxy');
   event.remove({output: 'toms_storage:inventory_interface'});
@@ -4530,4 +4531,54 @@ ServerEvents.recipes(event => {
 
   event.remove({id: "create_bs:crafting/wooden_item_vault"});
   event.shapeless('create_bs:wooden_item_vault', ['minecraft:barrel']).id('kubejs:wooden_item_vault');
+
+  event.remove({output: "slag:crucible_interface"});
+  event.shaped('slag:crucible_interface', ['AA', 'BB'], { A:'slag:deep_alloy', B: '#c:plates/brass' }).id('cocc:edit/crucible_interface');
+
+  event.remove({output: "fluidlogistics:multi_fluid_access_port"});
+  event.shaped('fluidlogistics:multi_fluid_access_port', [' S ', 'ETE', ' E '], { S:'#c:plates/copper', E: 'create:electron_tube', T: 'fluidlogistics:multi_fluid_tank' }).id('cocc:edit/multi_fluid_access_port');
+
+  event.remove({id: "fluidlogistics:mechanical_crafting/infinite_fluid_tank"});
+
+  event.remove({output: "fluidlogistics:mechanical_fluid_gun"});
+  event.custom({
+    "type": "create:mechanical_crafting",
+    "category": "misc",
+    "key": {
+      "A": {
+        "item": "create:mechanical_arm"
+      },
+      "S": {
+        "item": "create:spout"
+      },
+      "M": {
+        "item": "create:precision_mechanism"
+      },
+      "C": {
+        "item": "create:copper_casing"
+      }
+    },
+    "pattern": [
+      "S",
+      "A",
+      "M",
+      "C"
+    ],
+    "result": {
+      "id": "fluidlogistics:mechanical_fluid_gun"
+    },
+    "accept_mirrored": true
+  }).id('kubejs:mechanical_crafting/mechanical_fluid_gun');
+
+  event.remove({id: "fluidlogistics:multi_fluid_tank"});
+  event.shapeless("fluidlogistics:multi_fluid_tank", ["createcasing:brass_fluid_tank", "create:electron_tube"]).id("kubejs:shapeless/multi_fluid_tank");
+
+  event.recipes.create.mixing([Fluid.of("kubejs:molten_crimtane"), 'terra_curio:brain_of_confusion'], [Fluid.of("kubejs:blood"), 'terra_curio:brain_of_confusion']).id("kubejs:mixing/molten_crimtane");
+  event.recipes.create.mixing([Fluid.of("kubejs:molten_demonite"), 'terra_curio:worm_scarf'], [Fluid.of("kubejs:blood"), 'terra_curio:worm_scarf']).id("kubejs:mixing/molten_demonite");
+
+  //event.recipes.create.emptying([Fluid.of('kubejs:blood')], 'confluence:blood_water').id("kubejs:emptying/blood_water");
+  //event.recipes.create.emptying([Fluid.of('kubejs:blood').amount(50)], 'confluence:blood_clot_powder').id("kubejs:emptying/blood_clot_powder");
+  //event.recipes.create.emptying([Fluid.of('kubejs:blood').amount(150)], 'confluence:bloodstained_powder').id("kubejs:emptying/bloodstained_powder");
+  event.recipes.create.emptying([Fluid.of('kubejs:blood').amount(150)], 'confluence:blood_tear').id("kubejs:emptying/bloodstained_powder");
+  event.recipes.create.emptying([Fluid.of('kubejs:blood').amount(50)], 'confluence:blood_orange').id("kubejs:emptying/bloodstained_powder");
 })

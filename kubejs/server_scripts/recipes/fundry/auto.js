@@ -41,7 +41,9 @@ ServerEvents.recipes(event => {
         //{id: "uranium", level: 1, fluid: null, },
         {id: "silver", level: 0, fluid: "kubejs:molten_silver", ingot: "confluence:silver_ingot", storage_block: "confluence:silver_block", nugget:"confluence:silver_nugget"},
         {id: "nickel", level: 0, fluid: "kubejs:molten_nickel", ingot: "oritech:nickel_ingot", storage_block: "oritech:nickel_block", nugget: "oritech:nickel_nugget", dust: "oritech:nickel_dust", gem: "oritech:nickel_gem" /*re: "oritech:raw_material_nickel"*/},
-        {id: "tungsten", level: 0, fluid: "kubejs:molten_tungsten", ingot: "confluence:tungsten_ingot", storage_block: "confluence:tungsten_block", nugget: "confluence:tungsten_nugget"}
+        {id: "tungsten", level: 0, fluid: "kubejs:molten_tungsten", ingot: "confluence:tungsten_ingot", storage_block: "confluence:tungsten_block", nugget: "confluence:tungsten_nugget"},
+        {id: "demonite", level: 0, fluid: "kubejs:molten_demonite", ingot: "confluence:demonite_ingot", storage_block: "confluence:demonite_block", nugget: "confluence:demonite_nugget"},
+        {id: "crimtane", level: 0, fluid: "kubejs:molten_crimtane", ingot: "confluence:crimtane_ingot", storage_block: "confluence:crimtane_block", nugget: "confluence:crimtane_nugget"}
     ]
     let itemTypes = [ // Vanilla Implant / Dynamic Slag'n Embers
         // Vanilla Implant
