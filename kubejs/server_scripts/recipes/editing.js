@@ -4629,4 +4629,45 @@ ServerEvents.recipes(event => {
       "id": "terra_guns:musket_bullet"
     }
   }).id('cocc:heavy_work_bench/musket_bullet');
+
+  event.remove({id: "create:splashing/crushed_raw_platinum"});
+  event.remove({id: "create:splashing/galosphere/crushed_raw_silver"});
+  event.remove({id: "create:splashing/crushed_raw_tin"});
+  event.custom({
+    "type": "create:splashing",
+    "ingredients": [
+      {
+        "item": "create:crushed_raw_tin"
+      }
+    ],
+    "results": [
+      {
+        "id": "confluence:tin_nugget",
+        "count": 9
+      },
+      {
+        "id": "minecraft:glowstone_dust",
+        "chance": 0.5
+      }
+    ]
+  }).id('kubejs:splashing/crushed_raw_tin');
+  event.remove({id: "create:splashing/crushed_raw_tungsten"});
+  event.custom({
+    "type": "create:splashing",
+    "ingredients": [
+      {
+        "item": "confluence:crushed_raw_tungsten"
+      }
+    ],
+    "results": [
+      {
+        "id": "confluence:tungsten_nugget",
+        "count": 9
+      },
+      {
+        "id": "minecraft:coal",
+        "chance": 0.5
+      }
+    ]
+  }).id('kubejs:splashing/crushed_raw_tungsten');
 })
