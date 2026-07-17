@@ -4579,6 +4579,54 @@ ServerEvents.recipes(event => {
   //event.recipes.create.emptying([Fluid.of('kubejs:blood')], 'confluence:blood_water').id("kubejs:emptying/blood_water");
   //event.recipes.create.emptying([Fluid.of('kubejs:blood').amount(50)], 'confluence:blood_clot_powder').id("kubejs:emptying/blood_clot_powder");
   //event.recipes.create.emptying([Fluid.of('kubejs:blood').amount(150)], 'confluence:bloodstained_powder').id("kubejs:emptying/bloodstained_powder");
-  event.recipes.create.emptying([Fluid.of('kubejs:blood').amount(150)], 'confluence:blood_tear').id("kubejs:emptying/bloodstained_powder");
-  event.recipes.create.emptying([Fluid.of('kubejs:blood').amount(50)], 'confluence:blood_orange').id("kubejs:emptying/bloodstained_powder");
+  event.custom({
+    "type": "create:emptying",
+    "ingredients": [
+      {
+        "item": "confluence:blood_tear"
+      }
+    ],
+    "results": [
+      {
+        "id": "minecraft:glass_bottle"
+      },
+      {
+        "amount": 150,
+        "id": "kubejs:blood"
+      }
+    ]
+  }).id("kubejs:emptying/blood_tear");
+  event.custom({
+    "type": "create:emptying",
+    "ingredients": [
+      {
+        "item": "confluence:blood_orange"
+      }
+    ],
+    "results": [
+      {
+        "id": "minecraft:glass_bottle"
+      },
+      {
+        "amount": 50,
+        "id": "kubejs:blood"
+      }
+    ]
+  }).id("kubejs:emptying/blood_orange");
+
+  event.custom({
+    "type": "confluence:heavy_work_bench",
+    "ingredients": [
+      {
+        "tag": "cocc:all_iron_ingot_similar"
+      },
+      {
+        "item": "minecraft:gunpowder"
+      }
+    ],
+    "result": {
+      "count": 70,
+      "id": "terra_guns:musket_bullet"
+    }
+  }).id('cocc:heavy_work_bench/musket_bullet');
 })

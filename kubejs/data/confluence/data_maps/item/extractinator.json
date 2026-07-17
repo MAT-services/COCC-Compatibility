@@ -112,6 +112,11 @@
             "item": "regions_unexplored:argillite",
             "max_count": 1,
             "weight": 39192
+          },
+          {
+            "item": "minecraft:air",
+            "max_count": 1,
+            "weight": 39192
           }
         ]
       },
