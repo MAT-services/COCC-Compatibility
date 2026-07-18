@@ -140,6 +140,9 @@ ServerEvents.tags('item', event => {
   ])
 
   event.add('create:casing', casings)
+
+  /* event.add('curios:crafting_table', '#c:player_workstations/crafting_tables')
+  event.add('accessories:crafting_table', '#c:player_workstations/crafting_tables') */// Not working.
 })
 
 ServerEvents.tags('fluid', event => {

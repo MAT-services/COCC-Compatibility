@@ -4588,9 +4588,6 @@ ServerEvents.recipes(event => {
     ],
     "results": [
       {
-        "id": "minecraft:glass_bottle"
-      },
-      {
         "amount": 150,
         "id": "kubejs:blood"
       }
@@ -4604,9 +4601,6 @@ ServerEvents.recipes(event => {
       }
     ],
     "results": [
-      {
-        "id": "minecraft:glass_bottle"
-      },
       {
         "amount": 50,
         "id": "kubejs:blood"
@@ -4670,4 +4664,6 @@ ServerEvents.recipes(event => {
       }
     ]
   }).id('kubejs:splashing/crushed_raw_tungsten');
+
+  event.shapeless("minecraft:iron_bars", "additionalbars:crossed_iron_bars").id("additionalbars:crossed_to_iron")
 })

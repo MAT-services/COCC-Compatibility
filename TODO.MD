@@ -15,10 +15,10 @@ To add:
    - Nothing
 # TAGS
 - Modify chipped barrels tags to contraptions considere it as barrels.
-# Advancements
-Learn and create.
-
 # Recipies
+- Add Dye Vat recipes to the mixer (And found something to balance.)
+- Add Cooking pots recipes to the Mixer.
+- See if that's possible to replace the purifing recipe (or else) by the Crystal Ball. (Or found another method because that will probably doesn't work.)
 - Add chisel recipes to dual recipes.
 - Finish the auto.js script. (When finished, delete the 26-48 section in custom.js.)
 - Make living items reproductable with puryfing recipes.
@@ -43,7 +43,8 @@ Learn and create.
 - Learn the documentation: https://frinn.gitbook.io/custom-machinery-1.21/creating-custom-machines/machine-appearance/block-appearance
 - Finish the Hardmode Melters (See if it's possible to automatly translate the recipes from the melter to the hardmode melters.)
 - Create more machines: 
-    - Automatic Extractinator
+    - Automatic Workshop
+    - Automatic Extractinator (Modular Machinery Reborn)
     - NPC Automatic Shops
     - Dropper (Ex: beacon -> act like becon beam, black hole [! MAKE THE BLACK HOLE REMOVABLE / OBTAINABLE ! (Potentially broke it when a beacon is placed under it.)] -> act like the void, water bucket -> act like water, corrupted wash -> corrupt items)
 
