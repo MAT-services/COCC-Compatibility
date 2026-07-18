@@ -6,8 +6,7 @@
 - Add the deepslate thorium ore.
 - Create some molten (fluxite ?) fluids.
 # Textures
-- Add Molten Silver texture.
-- Replace materials textures by Uniful textures. 
+- Replace some materials textures by Uniful textures. 
 - Remade the textures of the items pipes.
 - Create the textures for other fluids.
 # Mods
