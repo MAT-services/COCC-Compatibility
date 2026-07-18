@@ -16,6 +16,21 @@ To add:
 # TAGS
 - Modify chipped barrels tags to contraptions considere it as barrels.
 # Recipies
+- Check if this works: 
+```JS
+ServerEvents.recipes(event => {
+  event.forEachRecipe({ type: "minecraft:smelting" }, recipe => {
+    const input = recipe.getInput();
+    const output = recipe.getOutput();
+    const time = recipe.getCookingTime();
+
+    event.recipes.custommachinery.custom_machine("custommachinery:rogue_furnace", 5)
+      .requireItem(input)
+      .produceItem(output);
+  });
+});
+```
+- EDIT THE CYBERSPACE RECIPES !
 - Add Dye Vat recipes to the mixer (And found something to balance.)
 - Add Cooking pots recipes to the Mixer.
 - See if that's possible to replace the purifing recipe (or else) by the Crystal Ball. (Or found another method because that will probably doesn't work.)
