@@ -29,7 +29,8 @@ ServerEvents.recipes(event => {
   });
 });
 ```
-- EDIT THE CYBERSPACE RECIPES !
+- Permet creating blood by pressing meat
+.- EDIT THE CYBERSPACE RECIPES !
 - Add Dye Vat recipes to the mixer (And found something to balance.)
 - Add Cooking pots recipes to the Mixer.
 - See if that's possible to replace the purifing recipe (or else) by the Crystal Ball. (Or found another method because that will probably doesn't work.)
