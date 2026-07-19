@@ -29,6 +29,7 @@ ServerEvents.recipes(event => {
   });
 });
 ```
+- Make the infinite molten demonite/crimtane needing heat.
 - Permet creating blood by pressing meat
 .- EDIT THE CYBERSPACE RECIPES !
 - Add Dye Vat recipes to the mixer (And found something to balance.)
