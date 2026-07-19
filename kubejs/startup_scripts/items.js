@@ -135,5 +135,8 @@ StartupEvents.registry('item', event => {
   event.create('cobalt_seed')
     .displayName('Cobalt Seed')
     .maxStackSize(64)
+
+  event.create('workshop_mixer_adapter')  
+    .displayName('Workshop Mixer Adapter')  
 })
 
