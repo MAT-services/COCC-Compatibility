@@ -1,0 +1,237 @@
+{
+  "trades": [
+    {
+      "type": "confluence:deferred_money_trade_item",
+      "deferred_result": "confluence:forest_pylon",
+      "lock": {
+        "type": "terra_entity:and_lock",
+        "locks": [
+          {
+            "type": "terra_entity:biome_lock",
+            "tags": [
+              "c:is_forest",
+              "c:is_plains"
+            ]
+          },
+          {
+            "type": "confluence:conditions_lock",
+            "conditions": [
+              {
+                "type": "neoforge:mod_loaded",
+                "modid": "waystones"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "confluence:deferred_money_trade_item",
+      "deferred_result": "confluence:snow_pylon",
+      "lock": {
+        "type": "terra_entity:and_lock",
+        "locks": [
+          {
+            "type": "terra_entity:biome_lock",
+            "tags": [
+              "c:is_snowy",
+              "c:is_icy"
+            ]
+          },
+          {
+            "type": "confluence:conditions_lock",
+            "conditions": [
+              {
+                "type": "neoforge:mod_loaded",
+                "modid": "waystones"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "confluence:deferred_money_trade_item",
+      "deferred_result": "confluence:desert_pylon",
+      "lock": {
+        "type": "terra_entity:and_lock",
+        "locks": [
+          {
+            "type": "terra_entity:biome_lock",
+            "tags": [
+              "c:is_desert",
+              "c:is_badlands"
+            ]
+          },
+          {
+            "type": "confluence:conditions_lock",
+            "conditions": [
+              {
+                "type": "neoforge:mod_loaded",
+                "modid": "waystones"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "confluence:deferred_money_trade_item",
+      "deferred_result": "confluence:cavern_pylon",
+      "lock": {
+        "type": "terra_entity:and_lock",
+        "locks": [
+          {
+            "type": "confluence:position_lock",
+            "y": {
+              "max": 40
+            }
+          },
+          {
+            "type": "confluence:conditions_lock",
+            "conditions": [
+              {
+                "type": "neoforge:mod_loaded",
+                "modid": "waystones"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "confluence:deferred_money_trade_item",
+      "deferred_result": "confluence:ocean_pylon",
+      "lock": {
+        "type": "terra_entity:and_lock",
+        "locks": [
+          {
+            "type": "terra_entity:biome_lock",
+            "tags": [
+              "c:is_ocean"
+            ]
+          },
+          {
+            "type": "confluence:conditions_lock",
+            "conditions": [
+              {
+                "type": "neoforge:mod_loaded",
+                "modid": "waystones"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "confluence:deferred_money_trade_item",
+      "deferred_result": "confluence:jungle_pylon",
+      "lock": {
+        "type": "terra_entity:and_lock",
+        "locks": [
+          {
+            "type": "terra_entity:biome_lock",
+            "tags": [
+              "c:is_jungle"
+            ]
+          },
+          {
+            "type": "confluence:conditions_lock",
+            "conditions": [
+              {
+                "type": "neoforge:mod_loaded",
+                "modid": "waystones"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "confluence:deferred_money_trade_item",
+      "deferred_result": "confluence:hallow_pylon",
+      "lock": {
+        "type": "terra_entity:and_lock",
+        "locks": [
+          {
+            "type": "terra_entity:biome_lock",
+            "tags": [
+              "confluence:the_hallow"
+            ]
+          },
+          {
+            "type": "confluence:conditions_lock",
+            "conditions": [
+              {
+                "type": "neoforge:mod_loaded",
+                "modid": "waystones"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "confluence:deferred_money_trade_item",
+      "deferred_result": "confluence:mushroom_pylon",
+      "lock": {
+        "type": "terra_entity:and_lock",
+        "locks": [
+          {
+            "type": "terra_entity:biome_lock",
+            "values": [
+              "confluence:glowing_mushroom"
+            ]
+          },
+          {
+            "type": "confluence:conditions_lock",
+            "conditions": [
+              {
+                "type": "neoforge:mod_loaded",
+                "modid": "waystones"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "confluence:money_trade_item",
+      "result": {
+        "count": 1,
+        "id": "confluence:dye_vat"
+      }
+    },
+    {
+      "type": "confluence:money_trade_item",
+      "result": {
+        "count": 1,
+        "id": "confluence:silver_dye"
+      }
+    },
+    {
+      "type": "confluence:money_trade_item",
+      "result": {
+        "count": 1,
+        "id": "confluence:brown_dye"
+      }
+    },
+    {
+      "type": "confluence:money_trade_item",
+      "result": {
+        "count": 1,
+        "id": "confluence:team_dye"
+      }
+    },
+    {
+      "type": "confluence:money_trade_item",
+      "result": {
+        "count": 1,
+        "id": "kubejs:dye_filter"
+      }
+    },
+    {
+      "type": "confluence:sell_trade"
+    }
+  ]
+}

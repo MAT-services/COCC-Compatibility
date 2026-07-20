@@ -4490,7 +4490,7 @@ ServerEvents.recipes(event => {
   event.remove({output: "create:basin"});
   event.shaped('create:basin', ['A A', 'AAA'], { A: 'slag:deep_alloy' }).id('kubejs:shaped/simple_basin');
 
-  event.shaped('minecraft:crafter', ['AAA', 'ABA', 'CDC'], { A: '#cocc:all_iron_ingot_similar', B: '#c:player_workstations/crafting_tables', C: 'minecraft:redstone', D: 'minecraft:dropper' }).id('cocc:shaped/crafter');
+  event.shaped('minecraft:crafter', ['AAA', 'ABA', 'CDC'], { A: '#confluence:lead_and_iron', B: '#c:player_workstations/crafting_tables', C: 'minecraft:redstone', D: 'minecraft:dropper' }).id('cocc:shaped/crafter');
   event.shaped('confluence:heavy_work_bench', ['A', 'B', 'A'], { A: '#c:player_workstations/crafting_tables', B: '#minecraft:anvil' }).id('cocc:shaped/heavy_work_bench');
 
   let aliumColors = [
@@ -4573,8 +4573,8 @@ ServerEvents.recipes(event => {
   event.remove({id: "fluidlogistics:multi_fluid_tank"});
   event.shapeless("fluidlogistics:multi_fluid_tank", ["createcasing:brass_fluid_tank", "create:electron_tube"]).id("kubejs:shapeless/multi_fluid_tank");
 
-  event.recipes.create.mixing([Fluid.of("kubejs:molten_crimtane"), 'terra_curio:brain_of_confusion'], [Fluid.of("kubejs:blood"), 'terra_curio:brain_of_confusion']).id("kubejs:mixing/molten_crimtane");
-  event.recipes.create.mixing([Fluid.of("kubejs:molten_demonite"), 'terra_curio:worm_scarf'], [Fluid.of("kubejs:blood"), 'terra_curio:worm_scarf']).id("kubejs:mixing/molten_demonite");
+  event.recipes.create.mixing([Fluid.of("kubejs:molten_crimtane"), 'terra_curio:brain_of_confusion'], [Fluid.of("kubejs:blood"), 'terra_curio:brain_of_confusion']).heated().id("kubejs:mixing/molten_crimtane");
+  event.recipes.create.mixing([Fluid.of("kubejs:molten_demonite"), 'terra_curio:worm_scarf'], [Fluid.of("kubejs:blood"), 'terra_curio:worm_scarf']).heated().id("kubejs:mixing/molten_demonite");
 
   //event.recipes.create.emptying([Fluid.of('kubejs:blood')], 'confluence:blood_water').id("kubejs:emptying/blood_water");
   //event.recipes.create.emptying([Fluid.of('kubejs:blood').amount(50)], 'confluence:blood_clot_powder').id("kubejs:emptying/blood_clot_powder");
@@ -4607,12 +4607,26 @@ ServerEvents.recipes(event => {
       }
     ]
   }).id("kubejs:emptying/blood_orange");
+  event.custom({
+    "type": "create:compacting",
+    "ingredients": [
+      {
+        "tag": 'create_processing:meat'
+      }
+    ],
+    "results": [
+      {
+        "amount": 100,
+        "id": "kubejs:blood"
+      }
+    ]
+  }).id('shadoukube:compacting/beef');
 
   event.custom({
     "type": "confluence:heavy_work_bench",
     "ingredients": [
       {
-        "tag": "cocc:all_iron_ingot_similar"
+        "tag": "confluence:lead_and_iron"
       },
       {
         "item": "minecraft:gunpowder"

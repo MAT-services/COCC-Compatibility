@@ -138,5 +138,8 @@ StartupEvents.registry('item', event => {
 
   event.create('workshop_mixer_adapter')  
     .displayName('Workshop Mixer Adapter')  
+
+  event.create('dye_filter')
+    .displayName('Dye Filter')
 })
 
