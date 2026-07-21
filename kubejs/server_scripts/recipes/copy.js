@@ -7,7 +7,16 @@ ServerEvents.recipes(event => {
 
         event.recipes.create.mixing(output, input)
     }); 
-    
+
+    event.forEachRecipe({ type: "confluence:dye_vat" }, recipe => {
+        const output = [JSON.parse(`${recipe.json}`).result];
+        output.unshift("kubejs:dye_filter");
+
+        const lenght = JSON.parse(`${recipe.json}`).ingredients.lenght;
+        let x = 0;
+        // How do we do "while (x>lenght) {const item = JSON.parse(`${recipe.json}`).ingredients[x]}" in JS ? 
+    })
+    /*
     event.forEachRecipe({ type: "confluence:dye_vat" }, recipe => {
         const input = JSON.parse(`${recipe.json}`).ingredients;
         input.unshift({"item": "kubejs:dye_filter"});
@@ -19,6 +28,6 @@ ServerEvents.recipes(event => {
             "ingredients": input,
             "results": output
         })
-    }); 
+    }); */
 });
 
