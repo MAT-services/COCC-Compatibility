@@ -12,11 +12,11 @@ RecipeViewerEvents.addInformation('item', event => {
 	]);
 	event.add('create:refined_radiance', [
 		'Can be obtain by throwing a Chromatic Compound in a beaon beam.',
-		Item.of("create:chromaic_compound"), "->", Item.of("create:refined_radiance")
+		Item.of("create:chromatic_compound"), "->", Item.of("create:refined_radiance")
 	]);
 	event.add('create:shadow_steel', [
-		'Can be obtain by throwing a Chromatic Compound in the void.'
-		Item.of("create:chromaic_compound"), "->", Item.of("create:shadow_steel")
+		'Can be obtain by throwing a Chromatic Compound in the void.',
+		Item.of("create:chromatic_compound"), "->", Item.of("create:shadow_steel")
 	]);
 })
 
