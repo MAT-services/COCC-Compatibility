@@ -344,4 +344,7 @@ ClientEvents.lang('en_us', event => {
    event.renameItem('pipez:fluid_pipe', "Advanced Fluid Pipe")
    event.renameItem('pipez:energy_pipe', "Advanced Energy Pipe")
    event.renameItem('fluidlogistics:water_containing_copper_casing', "Infinite Water Source")
+   event.renameItem('terra_curio:compass', "Portable Compass")
+
+   event.renameBlock('confluence:honey', "Royal Honey")
 });

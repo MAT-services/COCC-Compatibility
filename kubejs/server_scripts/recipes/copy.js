@@ -17,7 +17,6 @@ ServerEvents.recipes(event => {
         input.push({"item": "kubejs:dye_filter"});
 
         GotJSON.ingredients.forEach(ingredient => {
-            //let count = 1;
             const count = ingredient.count || 1;
             for (let i = 0; i < count; i++) {
                 input.push(ingredient);

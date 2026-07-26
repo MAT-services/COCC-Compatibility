@@ -143,6 +143,13 @@ ServerEvents.tags('item', event => {
 
   /* event.add('curios:crafting_table', '#c:player_workstations/crafting_tables')
   event.add('accessories:crafting_table', '#c:player_workstations/crafting_tables') */// Not working.
+  event.add('accessories:wrist', [
+    "terra_curio:compass",
+    "terra_curio:gps",
+    "terra_curio:pda",
+    "terra_curio:cell_phone"
+  ])
+  event.remove('accessories:wrist', "minecraft:compass")
 })
 
 ServerEvents.tags('fluid', event => {
