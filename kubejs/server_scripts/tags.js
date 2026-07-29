@@ -150,6 +150,10 @@ ServerEvents.tags('item', event => {
     "terra_curio:cell_phone"
   ])
   event.remove('accessories:wrist', "minecraft:compass")
+  event.add("accessories:face", "create:goggles")
+  event.remove("accessories:hat", "create:goggles")
+  event.remove("curios:head", "create:goggles")
+  //event.add('accessories:shulker_box', 'minecraft:crafting_table') //Testing only
 })
 
 ServerEvents.tags('fluid', event => {
@@ -170,7 +174,9 @@ ServerEvents.tags('fluid', event => {
     "kubejs:molten_lead",
     "kubejs:molten_tin",
     "kubejs:molten_silver",
-    'kubejs:molten_tungsten'
+    'kubejs:molten_tungsten',
+    "kubejs:molten_crimtane",
+    "kubejs:molten_demonite"
   ];
   hot_fluids.forEach((hot_fluid) => {
     event.add('confluence:fishing_able', [
