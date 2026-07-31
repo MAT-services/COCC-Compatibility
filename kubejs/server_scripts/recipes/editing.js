@@ -4654,7 +4654,7 @@ ServerEvents.recipes(event => {
         "count": 9
       },
       {
-        "id": "minecraft:glowstone_dust",
+        "id": "minecraft:gunpowder",
         "chance": 0.5
       }
     ]
@@ -4681,4 +4681,7 @@ ServerEvents.recipes(event => {
 
   event.shapeless("minecraft:iron_bars", "additionalbars:crossed_iron_bars").id("additionalbars:crossed_to_iron");
   event.remove({id: "buildersdelight:iron_chisel"});
+
+  event.shaped('create:industrial_iron_block', ['#A#', 'A A', '#A#'], { '#': '#c:stones', 'A': 'minecraft:iron_ingot' }).id('buildersdelight:industrial_1');
+
 })
