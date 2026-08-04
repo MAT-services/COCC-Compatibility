@@ -154,6 +154,19 @@ ServerEvents.tags('item', event => {
   event.remove("accessories:hat", "create:goggles")
   event.remove("curios:head", "create:goggles")
   //event.add('accessories:shulker_box', 'minecraft:crafting_table') //Testing only
+  event.add('accessories:shoes', [
+    "terra_curio:hermes_boots",
+    "terra_curio:rocket_boots",
+    "terra_curio:spectre_boots",
+    "terra_curio:dunerider_boots",
+    "terra_curio:sailfish_boots",
+    "terra_curio:flurry_boots",
+    "terra_curio:flower_boots",
+    "terra_curio:fairy_boots",
+    "terra_curio:lightning_boots",
+    "terra_curio:frostspark_boots",
+    "terra_curio:terraspark_boots"
+  ])
 })
 
 ServerEvents.tags('fluid', event => {

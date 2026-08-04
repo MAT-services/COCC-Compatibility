@@ -58,7 +58,17 @@ To add:
 - Delete the dual files in slideshows images.
 - Create the web places.
 # Items
-- Rename the pipez pipes to advanced pipes.
+- For rarities, try this: 
+```js
+StartupEvents.registry('item', event => {
+  event.create("an_item:ceshi_1").rarity('more_rarities:creative')
+})
+
+ItemEvents.modification(event => {
+  event.modify("minecraft:diamond", item => { item.rarity = "more_rarities:legendary" })
+})
+```
+- Add necessary values to value.json.
 - Create uses for Cobalt Obsidian. (Obtain cobalt nuggets from the chlorophilite extractinator ?)
 - Create seeds for all RU nylium types.
 - Create seeds for all RU grass types.
