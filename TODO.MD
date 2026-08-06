@@ -14,10 +14,11 @@ Configs:
    - Nothing
    
 To add: 
-   - Nothing
+   - Rechiseled: Builder's Delight
 # TAGS
 - Modify chipped barrels tags to contraptions considere it as barrels.
 # Recipies
+- DELETE THE RECIPES FOR BUILDERS DELIGHT: The mod is here now !
 - Change the recipe of Magnum Torches to use the peace candles.
 - EDIT THE CYBERSPACE RECIPES !
 - Add Cooking pots recipes to the Mixer.
