@@ -46,7 +46,6 @@ To add:
 - Learn the documentation: https://frinn.gitbook.io/custom-machinery-1.21/creating-custom-machines/machine-appearance/block-appearance
 - Finish the Hardmode Melters (See if it's possible to automatly translate the recipes from the melter to the hardmode melters.)
 - Create more machines: 
-    - Automatic Workshop
     - Automatic Extractinator (Modular Machinery Reborn)
     - NPC Automatic Shops
     - Dropper (Ex: beacon -> act like becon beam, black hole [! MAKE THE BLACK HOLE REMOVABLE / OBTAINABLE ! (Potentially broke it when a beacon is placed under it.)] -> act like the void, water bucket -> act like water, corrupted wash -> corrupt items)
