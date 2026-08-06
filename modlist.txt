@@ -1,0 +1,266 @@
+
+Underground Rivers
+Apollo
+1.0.3-neof
+orge-21.1
+underground-rivers-1.
+0.3-neoforge-21.1.jar
+
+
+
+
+
+Universal Bone Meal
+Fuzs
+v21.1.0-1.21
+.1-NeoForge
+UniversalBoneMeal-v21.1
+.0-1.21.1-NeoForge.jar
+
+
+
+
+
+Universal Keybinds
+Svenyesyes
+neoforge-1.
+21.1-1.0.0
+justkeybinds-neofor
+ge-1.21.1-1.0.0.jar
+
+
+
+
+
+Vanilla Backport
+ItsBlackgear
+1.1.
+7.10
+VanillaBackport-neofor
+ge-1.21.1-1.1.7.10.jar
+
+
+
+
+
+Vanilla Backport Compat
+Vykket
+2.
+1
+vb-compat-2.
+1-1.21.1.jar
+
+
+
+
+
+Vocal Villagers
+Owehttamy
+1.
+4
+§a§lVocal Villag
+ers §r§71.4.zip
+
+
+
+
+
+Wandering Trader Maps
+lullaby
+v1.0.
+0+mod
+wandering-trader
+-maps-v1.0.0.jar
+
+
+
+
+
+Waterfall Limit
+TiTi
+1.
+0
+waterfall
+-1.0.jar
+
+
+
+
+
+Waystones
+BlayTheNinth
+21.1.34+neof
+orge-1.21.1
+waystones-neoforge-
+1.21.1-21.1.34.jar
+
+
+
+
+
+Waystones Plus
+mariangrynyshynr
+1.6
+.0
+waystonesuipl
+us-1.6.0.jar
+
+
+
+
+
+Welcome Screen
+ElocinDev
+1.0
+.0
+welcomescreen-neofor
+ge-1.0.0-1.21.1.jar
+
+
+
+
+
+WF's Cave Overhaul
+WunderFunct
+1.3.
+3.1
+caveoverhaul-nf-1
+.21.1-1.3.3.1.jar
+
+
+
+
+
+Wild Tool Access
+TrueHorse
+1.21-1.5.2
+-neoforge
+wildtoolaccess-1.21
+-1.5.2-neoforge.jar
+
+
+
+
+
+William Wythers' Overhauled Overworld
+Cristelknight
+2.3
+.4
+wwoo-2.
+3.4.jar
+
+
+
+
+
+Xaero's Maps x Waystones
+alinco8
+2.10.1+1.21
+.1-neoforge
+xmxw-2.10.1+1.21
+.1-neoforge.jar
+
+
+
+
+
+Xaero's Minimap
+thexaero
+neoforge-1.
+21.1-26.1.0
+xaerominimap-neoforg
+e-1.21.1-26.1.0.jar
+
+
+
+
+
+Xaero's World Map
+thexaero
+neoforge-1.2
+1.1-1.40.16
+xaeroworldmap-neoforg
+e-1.21.1-1.40.16.jar
+
+
+
+
+
+YetAnotherConfigLib (YACL)
+isxander
+3.8.2+1.21.
+1-neoforge
+yet_another_config_lib_v3-
+3.8.2+1.21.1-neoforge.jar
+
+
+
+
+
+YUNG's API
+
+Refresh Studios
+1.21.1-NeoF
+orge-5.1.6
+YungsApi-1.21.1-N
+eoForge-5.1.6.jar
+
+
+
+
+
+YUNG's Better Mineshafts
+
+Refresh Studios
+1.21.1-NeoF
+orge-5.1.1
+YungsBetterMineshafts-1.
+21.1-NeoForge-5.1.1.jar
+
+
+
+
+
+YUNG's Better Nether Fortresses
+
+Refresh Studios
+1.21.1-NeoF
+orge-3.1.5
+YungsBetterNetherFortresses
+-1.21.1-NeoForge-3.1.5.jar
+
+
+
+
+
+YUNG's Better Ocean Monuments
+
+Refresh Studios
+1.21.1-NeoF
+orge-4.1.2
+YungsBetterOceanMonuments-
+1.21.1-NeoForge-4.1.2.jar
+
+
+
+
+
+YUNG's Bridges
+
+Refresh Studios
+1.21.1-NeoF
+orge-5.1.1
+YungsBridges-1.21.1
+-NeoForge-5.1.1.jar
+
+
+
+
+
+YUNG's Menu Tweaks
+
+Refresh Studios
+1.21.1-NeoF
+orge-2.1.2
+YungsMenuTweaks-1.21.
+1-NeoForge-2.1.2.jar
