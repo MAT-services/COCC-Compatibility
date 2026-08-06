@@ -67,7 +67,13 @@ RechiseledEvents.chiseling(event => {
         "buildersdelight:industrial_6",
         "buildersdelight:industrial_7",
         "buildersdelight:industrial_8"
-    ]);
+    ]);/*
+    event.add("laboratory", [
+        "buildersdelight:laboratory_1",
+        "buildersdelight:laboratory_2",
+        "buildersdelight:laboratory_3",
+        "buildersdelight:laboratory_4"
+    ])
     let supportedWoodTypes = [
         `acacia`,
         `bamboo`,
@@ -145,5 +151,5 @@ RechiseledEvents.chiseling(event => {
     }) // Do same for the other ones in buildersdelight\chisel\ . PROBLEM WITH SLABS !!!
     let supportedStoneTypes = [
 
-    ]
+    ]*/ // DELETE IF RECHISELED DATA IS WORKING !
 })
