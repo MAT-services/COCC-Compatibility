@@ -6,25 +6,46 @@
       "item": "minecraft:acacia_planks"
     },
     {
-      "item": "buildersdelight:acacia_planks_1"
+      "block": "buildersdelight:acacia_planks_1",
+      "slab": "buildersdelight:acacia_slab_1",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:acacia_stairs_1"
     },
     {
-      "item": "buildersdelight:acacia_planks_2"
+      "block": "buildersdelight:acacia_planks_2",
+      "slab": "buildersdelight:acacia_slab_2",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:acacia_stairs_2"
     },
     {
-      "item": "buildersdelight:acacia_planks_3"
+      "block": "buildersdelight:acacia_planks_3",
+      "slab": "buildersdelight:acacia_slab_3",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:acacia_stairs_3"
     },
     {
-      "item": "buildersdelight:acacia_planks_4"
+      "block": "buildersdelight:acacia_planks_4",
+      "slab": "buildersdelight:acacia_slab_4",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:acacia_stairs_4"
     },
     {
-      "item": "buildersdelight:acacia_planks_5"
+      "block": "buildersdelight:acacia_planks_5",
+      "slab": "buildersdelight:acacia_slab_5",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:acacia_stairs_5"
     },
     {
-      "item": "buildersdelight:acacia_planks_6"
+      "block": "buildersdelight:acacia_planks_6",
+      "slab": "buildersdelight:acacia_slab_6",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:acacia_stairs_6"
     },
     {
-      "item": "buildersdelight:acacia_planks_7"
+      "block": "buildersdelight:acacia_planks_7",
+      "slab": "buildersdelight:acacia_slab_7",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:acacia_stairs_7"
     }
   ]
 }

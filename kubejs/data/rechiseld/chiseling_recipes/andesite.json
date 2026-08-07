@@ -1,33 +1,54 @@
 {
-  "type": "rechiseled:chiseling",
+  "type": "rechiseled:chiseling", /// Who know why, that's not working.
   "overwrite": false,
   "entries": [
     {
-      "item": "minecraft:andesite"
+      "block": "minecraft:andesite"
     },
     {
-      "item": "minecraft:polished_andesite"
+      "block": "minecraft:polished_andesite"
     },
     {
-      "item": "buildersdelight:andesite_1"
+      "block": "buildersdelight:andesite_1",
+      "slab": "buildersdelight:andesite_stairs_1",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:andesite_stairs_1"
     },
     {
-      "item": "buildersdelight:andesite_2"
+      "block": "buildersdelight:andesite_2",
+      "slab": "buildersdelight:andesite_stairs_2",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:andesite_stairs_2"
     },
     {
-      "item": "buildersdelight:andesite_3"
+      "block": "buildersdelight:andesite_3",
+      "slab": "buildersdelight:andesite_stairs_3",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:andesite_stairs_3"
     },
     {
-      "item": "buildersdelight:andesite_4"
+      "block": "buildersdelight:andesite_4",
+      "slab": "buildersdelight:andesite_stairs_4",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:andesite_stairs_4"
     },
     {
-      "item": "buildersdelight:andesite_5"
+      "block": "buildersdelight:andesite_5",
+      "slab": "buildersdelight:andesite_stairs_5",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:andesite_stairs_5"
     },
     {
-      "item": "buildersdelight:andesite_6"
+      "block": "buildersdelight:andesite_6",
+      "slab": "buildersdelight:andesite_stairs_6",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:andesite_stairs_6"
     },
     {
-      "item": "buildersdelight:andesite_7"
+      "block": "buildersdelight:andesite_7",
+      "slab": "buildersdelight:andesite_stairs_7",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:andesite_stairs_7"
     }
   ]
 }

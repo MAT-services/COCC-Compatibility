@@ -3,28 +3,52 @@
   "overwrite": false,
   "entries": [
     {
-      "item": "minecraft:amethyst_block"
+      "block": "buildersdelight:amethyst_block_1",
+      "slab": "buildersdelight:amethyst_slab_1",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:amethyst_stairs_1"
     },
     {
-      "item": "buildersdelight:amethyst_block_1"
+      "block": "buildersdelight:amethyst_block_2",
+      "slab": "buildersdelight:amethyst_slab_2",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:amethyst_stairs_2"
     },
     {
-      "item": "buildersdelight:amethyst_block_2"
+      "block": "buildersdelight:amethyst_block_3",
+      "slab": "buildersdelight:amethyst_slab_3",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:amethyst_stairs_3"
     },
     {
-      "item": "buildersdelight:amethyst_block_3"
+      "block": "buildersdelight:amethyst_block_4",
+      "slab": "buildersdelight:amethyst_slab_4",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:amethyst_stairs_4"
     },
     {
-      "item": "buildersdelight:amethyst_block_4"
+      "block": "buildersdelight:amethyst_block_5",
+      "slab": "buildersdelight:amethyst_slab_5",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:amethyst_stairs_5"
     },
     {
-      "item": "buildersdelight:amethyst_block_5"
+      "block": "buildersdelight:amethyst_block_6",
+      "slab": "buildersdelight:amethyst_slab_6",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:amethyst_stairs_6"
     },
     {
-      "item": "buildersdelight:amethyst_block_6"
+      "block": "buildersdelight:amethyst_block_7",
+      "slab": "buildersdelight:amethyst_slab_7",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:amethyst_stairs_7"
     },
     {
-      "item": "buildersdelight:amethyst_block_7"
+      "block": "minecraft:amethyst_block", /// 8 ref is the original block.
+      "slab": "buildersdelight:amethyst_slab_8",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:amethyst_stairs_8"
     }
   ]
 }

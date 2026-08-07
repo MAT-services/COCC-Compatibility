@@ -2959,9 +2959,9 @@ ServerEvents.recipes(event => {
   }).id('cocc:sequenced_assembly/machine_core_7');
 
   event.remove({output: "create:brass_hand"});
-  event.shaped('create:brass_hand', [' A ', 'AAA', ' B '], { A: 'create:brass_ingot', B: 'createdeco:andesite_sheet' }).id('cocc:shaped/brass_hand');
+  event.shaped('create:brass_hand', [' A ', 'AAA', ' B '], { A: 'create:brass_ingot', B: '#c:plates/andesite_alloy' }).id('cocc:shaped/brass_hand');
 
-  event.shaped('kubejs:andesite_clip', ['A A', 'AAA', ' B '], { A: 'create:andesite_alloy', B: 'createdeco:andesite_sheet' }).id('cocc:shaped/andesite_clip');
+  event.shaped('kubejs:andesite_clip', ['A A', 'AAA', ' B '], { A: 'create:andesite_alloy', B: '#c:plates/andesite_alloy' }).id('cocc:shaped/andesite_clip');
   
   event.remove({output: "create:mechanical_arm"});
   event.shaped('create:mechanical_arm', [' BC', 'B  ', 'DEF'], { B: 'createcasing:brass_shaft', C: 'kubejs:andesite_clip', D: 'create:precision_mechanism', E: 'create:brass_casing', F: 'petrolsparts:coaxial_gear' }).id('cocc:shaped/mechanical_arm');
