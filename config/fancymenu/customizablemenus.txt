@@ -102,3 +102,15 @@ net.minecraft.client.gui.screens.DatapackLoadFailureScreen {
 net.minecraft.client.gui.screens.worldselection.EditWorldScreen {
 }
 
+net.minecraft.client.gui.screens.DisconnectedScreen {
+}
+
+net.minecraft.client.gui.screens.inventory.InventoryScreen {
+}
+
+org.confluence.mod.client.gui.container.ExtraInventoryScreen {
+}
+
+net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen {
+}
+

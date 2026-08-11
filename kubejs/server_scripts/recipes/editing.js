@@ -4684,4 +4684,7 @@ ServerEvents.recipes(event => {
 
   event.shaped('create:industrial_iron_block', ['#A#', 'A A', '#A#'], { '#': '#c:stones', 'A': 'minecraft:iron_ingot' }).id('buildersdelight:industrial_1');
 
+  event.shaped("magnumtorch:diamond_magnum_torch", ["ABA", "CDC", "CDC"], { "A": "minecraft:gold_ingot", "B": "confluence:pink_gel", "C": "#c:gems/diamond", "D": "#minecraft:logs"}).id("magnumtorch:diamond_magnum_torch");
+  event.shaped("magnumtorch:emerald_magnum_torch", ["ABA", "CDC", "CDC"], { "A": "minecraft:gold_ingot", "B": "confluence:pink_gel", "C": "#c:gems/emerald", "D": "#minecraft:logs"}).id("magnumtorch:emerald_magnum_torch");
+  event.shaped("magnumtorch:amethyst_magnum_torch", ["ABA", "CDC", "CDC"], { "A": "minecraft:gold_ingot", "B": "confluence:pink_gel", "C": "#c:gems/amethyst", "D": "#minecraft:logs"}).id("magnumtorch:amethyst_magnum_torch");
 })
