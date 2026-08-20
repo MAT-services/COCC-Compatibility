@@ -1,3 +1,7 @@
+# BOGUES 
+- Sharing recipes do not works with Chat Better.
+# Avancements
+- Just delete FTB after reproducting progression.
 # GUIs
 - Replace all essentials-added buttons with CoC buttons and replace the terra advancements button.
 - Add a GUI for packs. (Textures, data, shaders...)
