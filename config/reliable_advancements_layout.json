@@ -1,0 +1,2782 @@
+{
+  "positions": {
+    "minecraft:story/root": [
+      0,
+      47
+    ],
+    "minecraft:story/mine_stone": [
+      32,
+      47
+    ],
+    "minecraft:story/upgrade_tools": [
+      64,
+      47
+    ],
+    "minecraft:story/smelt_iron": [
+      96,
+      47
+    ],
+    "minecraft:story/lava_bucket": [
+      128,
+      54
+    ],
+    "minecraft:story/obtain_armor": [
+      128,
+      81
+    ],
+    "minecraft:story/iron_tools": [
+      128,
+      13
+    ],
+    "minecraft:story/form_obsidian": [
+      160,
+      54
+    ],
+    "minecraft:story/mine_diamond": [
+      160,
+      13
+    ],
+    "minecraft:story/enchant_item": [
+      192,
+      27
+    ],
+    "minecraft:story/deflect_arrow": [
+      160,
+      81
+    ],
+    "minecraft:story/shiny_gear": [
+      192,
+      0
+    ],
+    "minecraft:story/enter_the_nether": [
+      192,
+      54
+    ],
+    "minecraft:story/cure_zombie_villager": [
+      224,
+      67
+    ],
+    "minecraft:story/follow_ender_eye": [
+      224,
+      40
+    ],
+    "minecraft:story/enter_the_end": [
+      256,
+      40
+    ],
+    "minecraft:adventure/root": [
+      0,
+      560
+    ],
+    "minecraft:adventure/brush_armadillo": [
+      32,
+      27
+    ],
+    "minecraft:adventure/read_power_of_chiseled_bookshelf": [
+      32,
+      594
+    ],
+    "minecraft:adventure/crafters_crafting_crafters": [
+      32,
+      1093
+    ],
+    "minecraft:adventure/minecraft_trials_edition": [
+      32,
+      243
+    ],
+    "minecraft:adventure/spyglass_at_parrot": [
+      32,
+      621
+    ],
+    "galosphere:adventure/light_the_way": [
+      32,
+      877
+    ],
+    "minecraft:adventure/trade": [
+      32,
+      540
+    ],
+    "galosphere:adventure/attached_sterling": [
+      32,
+      513
+    ],
+    "minecraft:adventure/blowback": [
+      64,
+      243
+    ],
+    "galosphere:adventure/find_pink_salt_shrine": [
+      32,
+      378
+    ],
+    "galosphere:adventure/summon_berserker": [
+      64,
+      378
+    ],
+    "minecraft:adventure/salvage_sherd": [
+      32,
+      81
+    ],
+    "minecraft:adventure/lighten_up": [
+      64,
+      324
+    ],
+    "minecraft:adventure/heart_transplanter": [
+      32,
+      310
+    ],
+    "minecraft:adventure/who_needs_rockets": [
+      64,
+      216
+    ],
+    "nova_structures:adventure/find_shrine": [
+      32,
+      567
+    ],
+    "minecraft:adventure/scraping_through": [
+      64,
+      189
+    ],
+    "minecraft:adventure/summon_iron_golem": [
+      64,
+      553
+    ],
+    "minecraft:adventure/sleep_in_bed": [
+      32,
+      1066
+    ],
+    "minecraft:adventure/voluntary_exile": [
+      32,
+      108
+    ],
+    "minecraft:adventure/trade_at_world_height": [
+      64,
+      526
+    ],
+    "nova_structures:adventure/find_tavern": [
+      32,
+      432
+    ],
+    "minecraft:adventure/vertical_trial_chambers": [
+      64,
+      162
+    ],
+    "minecraft:adventure/blooming_horizons": [
+      64,
+      1107
+    ],
+    "galosphere:adventure/watchfly": [
+      64,
+      864
+    ],
+    "minecraft:adventure/luck_potion": [
+      64,
+      297
+    ],
+    "minecraft:adventure/under_lock_and_key": [
+      64,
+      135
+    ],
+    "minecraft:adventure/revaulting": [
+      96,
+      135
+    ],
+    "minecraft:adventure/boss": [
+      64,
+      270
+    ],
+    "minecraft:adventure/honey_block_slide": [
+      32,
+      816
+    ],
+    "nova_structures:root": [
+      32,
+      459
+    ],
+    "minecraft:adventure/lightning_rod_with_villager_no_fire": [
+      32,
+      405
+    ],
+    "nova_structures:adventure/tavern_quest": [
+      64,
+      432
+    ],
+    "galosphere:adventure/eye_for_eye": [
+      96,
+      864
+    ],
+    "minecraft:adventure/avoid_vibration": [
+      32,
+      54
+    ],
+    "galosphere:adventure/find_forgotten_ruins": [
+      32,
+      999
+    ],
+    "minecraft:adventure/kill_a_mob": [
+      32,
+      756
+    ],
+    "galosphere:adventure/edible_air": [
+      64,
+      891
+    ],
+    "minecraft:adventure/kill_all_mobs": [
+      64,
+      783
+    ],
+    "minecraft:adventure/spyglass_at_ghast": [
+      64,
+      621
+    ],
+    "minecraft:adventure/trim_with_any_armor_pattern": [
+      32,
+      648
+    ],
+    "minecraft:adventure/throw_trident": [
+      64,
+      675
+    ],
+    "minecraft:adventure/ol_betsy": [
+      32,
+      945
+    ],
+    "minecraft:adventure/fall_from_world_height": [
+      32,
+      486
+    ],
+    "minecraft:adventure/walk_on_powder_snow_with_leather_boots": [
+      64,
+      1053
+    ],
+    "minecraft:adventure/grates": [
+      64,
+      351
+    ],
+    "galosphere:adventure/saltbound_kill_evoker": [
+      96,
+      378
+    ],
+    "minecraft:adventure/whos_the_pillager_now": [
+      64,
+      972
+    ],
+    "minecraft:adventure/play_jukebox_in_meadows": [
+      64,
+      1026
+    ],
+    "minecraft:adventure/hero_of_the_village": [
+      64,
+      108
+    ],
+    "galosphere:adventure/questful": [
+      64,
+      999
+    ],
+    "minecraft:adventure/craft_decorated_pot_using_only_sherds": [
+      64,
+      81
+    ],
+    "minecraft:adventure/kill_mob_near_sculk_catalyst": [
+      64,
+      756
+    ],
+    "minecraft:adventure/boss_ominous": [
+      96,
+      283
+    ],
+    "minecraft:adventure/kill_all_bosses": [
+      96,
+      256
+    ],
+    "minecraft:adventure/adventuring_time": [
+      64,
+      1080
+    ],
+    "cyberspace:virtual_machine_achievement": [
+      96,
+      1120
+    ],
+    "nova_structures:adventure/find_trident_trial_monument": [
+      96,
+      661
+    ],
+    "minecraft:adventure/trim_with_all_exclusive_armor_patterns": [
+      64,
+      648
+    ],
+    "minecraft:adventure/two_birds_one_arrow": [
+      64,
+      945
+    ],
+    "minecraft:adventure/shoot_arrow": [
+      64,
+      729
+    ],
+    "minecraft:adventure/very_very_frightening": [
+      96,
+      688
+    ],
+    "hopo:minecraft/adventure/locate_mineshaft": [
+      64,
+      810
+    ],
+    "nova_structures:adventure/kill_guardian_boss": [
+      128,
+      661
+    ],
+    "cyberspace:persistence_achievement": [
+      96,
+      1093
+    ],
+    "minecraft:adventure/overoverkill": [
+      128,
+      283
+    ],
+    "minecraft:adventure/bullseye": [
+      96,
+      742
+    ],
+    "nova_structures:adventure/kill_all_minibosses": [
+      96,
+      432
+    ],
+    "minecraft:adventure/totem_of_undying": [
+      64,
+      837
+    ],
+    "deeper_dark:hint": [
+      64,
+      54
+    ],
+    "cyberspace:darknet_visited_achievement": [
+      96,
+      1066
+    ],
+    "galosphere:adventure/opalising": [
+      96,
+      985
+    ],
+    "galosphere:adventure/rebrushing": [
+      96,
+      1012
+    ],
+    "minecraft:adventure/arbalistic": [
+      64,
+      918
+    ],
+    "minecraft:adventure/spyglass_at_dragon": [
+      96,
+      621
+    ],
+    "nova_structures:adventure/find_all_illager_structures": [
+      96,
+      108
+    ],
+    "cyberspace:cyberspace_visited_achievement": [
+      96,
+      1039
+    ],
+    "nova_structures:adventure/find_swamp_village": [
+      128,
+      216
+    ],
+    "minecraft:adventure/sniper_duel": [
+      96,
+      715
+    ],
+    "nova_structures:adventure/find_pillager_outpost": [
+      128,
+      27
+    ],
+    "hopo:minecraft/adventure/all_mineshaft": [
+      96,
+      810
+    ],
+    "nova_structures:adventure/find_illager_mansion": [
+      128,
+      81
+    ],
+    "nova_structures:adventure/find_toxic_lair": [
+      128,
+      54
+    ],
+    "nova_structures:adventure/loot_illager_hideout": [
+      128,
+      189
+    ],
+    "nova_structures:adventure/find_lone_citadel": [
+      128,
+      108
+    ],
+    "nova_structures:adventure/kill_breeze_boss": [
+      160,
+      108
+    ],
+    "nova_structures:adventure/find_illager_manor": [
+      128,
+      162
+    ],
+    "nova_structures:adventure/conquer_miner_outpost": [
+      128,
+      135
+    ],
+    "nova_structures:adventure/find_witch_villa": [
+      128,
+      0
+    ],
+    "nova_structures:adventure/kill_cave_spider_boss": [
+      160,
+      54
+    ],
+    "minecraft:husbandry/root": [
+      0,
+      236
+    ],
+    "minecraft:husbandry/plant_seed": [
+      32,
+      175
+    ],
+    "minecraft:husbandry/allay_deliver_item_to_player": [
+      32,
+      108
+    ],
+    "minecraft:husbandry/fishy_business": [
+      32,
+      243
+    ],
+    "minecraft:husbandry/breed_an_animal": [
+      32,
+      324
+    ],
+    "minecraft:husbandry/ride_a_boat_with_a_goat": [
+      32,
+      0
+    ],
+    "minecraft:husbandry/tame_an_animal": [
+      32,
+      472
+    ],
+    "minecraft:husbandry/remove_wolf_armor": [
+      64,
+      432
+    ],
+    "minecraft:husbandry/uh_oh": [
+      32,
+      81
+    ],
+    "minecraft:husbandry/make_a_sign_glow": [
+      32,
+      378
+    ],
+    "minecraft:husbandry/silk_touch_nest": [
+      32,
+      351
+    ],
+    "minecraft:husbandry/allay_deliver_cake_to_note_block": [
+      64,
+      108
+    ],
+    "minecraft:husbandry/tactical_fishing": [
+      64,
+      243
+    ],
+    "minecraft:husbandry/obtain_sniffer_egg": [
+      32,
+      270
+    ],
+    "minecraft:husbandry/obtain_netherite_hoe": [
+      64,
+      216
+    ],
+    "minecraft:husbandry/balanced_diet": [
+      64,
+      162
+    ],
+    "galosphere:husbandry/attached_sterling_horse": [
+      32,
+      297
+    ],
+    "minecraft:husbandry/safely_harvest_honey": [
+      32,
+      27
+    ],
+    "minecraft:husbandry/repair_wolf_armor": [
+      64,
+      459
+    ],
+    "minecraft:husbandry/place_dried_ghast_in_water": [
+      32,
+      54
+    ],
+    "minecraft:husbandry/bred_all_animals": [
+      64,
+      324
+    ],
+    "galosphere:husbandry/lumiere_compost": [
+      64,
+      189
+    ],
+    "minecraft:husbandry/tadpole_in_a_bucket": [
+      32,
+      405
+    ],
+    "minecraft:husbandry/wax_on": [
+      64,
+      27
+    ],
+    "galosphere:husbandry/coarse_dirt_compost": [
+      64,
+      135
+    ],
+    "minecraft:husbandry/whole_pack": [
+      64,
+      513
+    ],
+    "minecraft:husbandry/complete_catalogue": [
+      64,
+      486
+    ],
+    "minecraft:husbandry/feed_snifflet": [
+      64,
+      270
+    ],
+    "minecraft:husbandry/axolotl_in_a_bucket": [
+      96,
+      243
+    ],
+    "minecraft:husbandry/wax_off": [
+      96,
+      27
+    ],
+    "minecraft:husbandry/kill_axolotl_target": [
+      128,
+      243
+    ],
+    "minecraft:husbandry/leash_all_frog_variants": [
+      64,
+      405
+    ],
+    "minecraft:husbandry/plant_any_sniffer_seed": [
+      96,
+      270
+    ],
+    "abundant_atmosphere:husbandry/leash_frog_end": [
+      96,
+      418
+    ],
+    "minecraft:husbandry/froglights": [
+      96,
+      391
+    ],
+    "minecraft:husbandry/redstone_froglights": [
+      128,
+      391
+    ],
+    "abundant_atmosphere:husbandry/collect_chromatic_froglight": [
+      128,
+      418
+    ],
+    "minecraft:nether/root": [
+      0,
+      168
+    ],
+    "minecraft:nether/find_bastion": [
+      32,
+      337
+    ],
+    "minecraft:nether/fast_travel": [
+      32,
+      195
+    ],
+    "nova_structures:nether/find_piglins": [
+      64,
+      351
+    ],
+    "nova_structures:nether/find_piglin_outpost": [
+      96,
+      378
+    ],
+    "minecraft:nether/obtain_crying_obsidian": [
+      32,
+      0
+    ],
+    "minecraft:nether/ride_strider": [
+      32,
+      162
+    ],
+    "minecraft:nether/return_to_sender": [
+      32,
+      283
+    ],
+    "minecraft:nether/obtain_ancient_debris": [
+      32,
+      229
+    ],
+    "minecraft:nether/netherite_armor": [
+      64,
+      229
+    ],
+    "minecraft:nether/distract_piglin": [
+      32,
+      310
+    ],
+    "minecraft:nether/loot_bastion": [
+      64,
+      324
+    ],
+    "minecraft:nether/find_fortress": [
+      32,
+      74
+    ],
+    "nova_structures:nether/find_hamlet": [
+      96,
+      324
+    ],
+    "nova_structures:nether/find_nether_skeleton": [
+      64,
+      121
+    ],
+    "nova_structures:nether/find_donjon": [
+      96,
+      351
+    ],
+    "nova_structures:nether/find_skeleton_tower": [
+      96,
+      94
+    ],
+    "minecraft:nether/explore_nether": [
+      64,
+      175
+    ],
+    "minecraft:nether/obtain_blaze_rod": [
+      64,
+      27
+    ],
+    "minecraft:nether/charge_respawn_anchor": [
+      64,
+      0
+    ],
+    "minecraft:nether/uneasy_alliance": [
+      64,
+      283
+    ],
+    "nova_structures:nether/find_port": [
+      96,
+      121
+    ],
+    "minecraft:nether/ride_strider_in_overworld_lava": [
+      64,
+      148
+    ],
+    "minecraft:nether/get_wither_skull": [
+      64,
+      67
+    ],
+    "minecraft:nether/obtain_cut_netherite": [
+      64,
+      202
+    ],
+    "minecraft:nether/use_lodestone": [
+      64,
+      256
+    ],
+    "nova_structures:nether/find_keep": [
+      96,
+      148
+    ],
+    "minecraft:nether/brew_potion": [
+      96,
+      27
+    ],
+    "nova_structures:nether/powder_snow_keep": [
+      128,
+      148
+    ],
+    "minecraft:nether/summon_wither": [
+      96,
+      67
+    ],
+    "minecraft:nether/all_potions": [
+      128,
+      27
+    ],
+    "minecraft:nether/create_beacon": [
+      128,
+      67
+    ],
+    "minecraft:nether/all_effects": [
+      160,
+      27
+    ],
+    "minecraft:nether/create_full_beacon": [
+      160,
+      81
+    ],
+    "regions_unexplored:rgbeacon": [
+      160,
+      54
+    ],
+    "minecraft:end/root": [
+      0,
+      81
+    ],
+    "minecraft:end/kill_dragon": [
+      32,
+      81
+    ],
+    "minecraft:end/enter_end_gateway": [
+      64,
+      108
+    ],
+    "nova_structures:end/find_end_lighthouse": [
+      64,
+      0
+    ],
+    "nova_structures:end/find_end_castle": [
+      64,
+      135
+    ],
+    "minecraft:end/dragon_breath": [
+      64,
+      54
+    ],
+    "nova_structures:end/kill_phantom_boss": [
+      96,
+      135
+    ],
+    "nova_structures:end/find_end_ship": [
+      64,
+      162
+    ],
+    "minecraft:end/respawn_dragon": [
+      64,
+      81
+    ],
+    "minecraft:end/dragon_egg": [
+      64,
+      27
+    ],
+    "minecraft:end/find_end_city": [
+      96,
+      108
+    ],
+    "minecraft:end/elytra": [
+      128,
+      121
+    ],
+    "minecraft:end/levitate": [
+      128,
+      94
+    ],
+    "paraglider:root": [
+      0,
+      40
+    ],
+    "paraglider:paraglider": [
+      32,
+      54
+    ],
+    "paraglider:statues_bargain": [
+      32,
+      0
+    ],
+    "paraglider:pray_to_the_goddess": [
+      32,
+      81
+    ],
+    "paraglider:all_vessels": [
+      32,
+      27
+    ],
+    "create:root": [
+      0,
+      67
+    ],
+    "create:andesite_alloy": [
+      32,
+      40
+    ],
+    "create:water_wheel": [
+      64,
+      13
+    ],
+    "create:andesite_casing": [
+      64,
+      67
+    ],
+    "create:windmill": [
+      96,
+      13
+    ],
+    "trading_floor:money_money_money": [
+      32,
+      94
+    ],
+    "create:windmill_maxed": [
+      64,
+      40
+    ],
+    "create:shifting_gears": [
+      128,
+      13
+    ],
+    "create:ejector_maxed": [
+      96,
+      40
+    ],
+    "trading_floor:drop_shipper": [
+      64,
+      94
+    ],
+    "trading_floor:happy_jeff": [
+      96,
+      94
+    ],
+    "create:mechanical_press": [
+      96,
+      67
+    ],
+    "create:pulley_maxed": [
+      128,
+      40
+    ],
+    "create:millstone": [
+      160,
+      13
+    ],
+    "create:encased_fan": [
+      128,
+      67
+    ],
+    "create:fan_processing": [
+      160,
+      67
+    ],
+    "create:super_glue": [
+      192,
+      13
+    ],
+    "create:cart_pickup": [
+      160,
+      40
+    ],
+    "create:saw_processing": [
+      192,
+      67
+    ],
+    "create:compacting": [
+      224,
+      67
+    ],
+    "create:belt": [
+      256,
+      67
+    ],
+    "create:anvil_plough": [
+      192,
+      40
+    ],
+    "create:contraption_actors": [
+      224,
+      13
+    ],
+    "create:portable_storage_interface": [
+      256,
+      13
+    ],
+    "create:funnel": [
+      288,
+      67
+    ],
+    "create:wrench_goggles": [
+      288,
+      13
+    ],
+    "create:chute": [
+      320,
+      67
+    ],
+    "create:stressometer": [
+      320,
+      13
+    ],
+    "create:cuckoo_clock": [
+      352,
+      13
+    ],
+    "create:mechanical_mixer": [
+      352,
+      67
+    ],
+    "create:burner": [
+      384,
+      135
+    ],
+    "create:stressometer_maxed": [
+      384,
+      108
+    ],
+    "create:copper": [
+      416,
+      135
+    ],
+    "create:mechanical_pump_0": [
+      448,
+      162
+    ],
+    "create:lava_wheel_00000": [
+      384,
+      27
+    ],
+    "create:hose_pulley_lava": [
+      448,
+      108
+    ],
+    "create:cardboard": [
+      384,
+      81
+    ],
+    "create:belt_funnel_kiss": [
+      384,
+      54
+    ],
+    "create:packager": [
+      416,
+      81
+    ],
+    "create:glass_pipe": [
+      480,
+      162
+    ],
+    "create:hand_crank_000": [
+      384,
+      0
+    ],
+    "create:steam_engine_maxed": [
+      480,
+      108
+    ],
+    "create:copper_casing": [
+      448,
+      135
+    ],
+    "create:water_supply": [
+      512,
+      162
+    ],
+    "create:spout": [
+      480,
+      135
+    ],
+    "create:stock_ticker": [
+      448,
+      81
+    ],
+    "create:drain": [
+      512,
+      135
+    ],
+    "create:foods": [
+      512,
+      108
+    ],
+    "create:steam_engine": [
+      544,
+      135
+    ],
+    "create:frogport": [
+      480,
+      81
+    ],
+    "create:hose_pulley": [
+      544,
+      162
+    ],
+    "create:table_cloth_shop": [
+      512,
+      81
+    ],
+    "create:chocolate_bucket": [
+      576,
+      162
+    ],
+    "create:steam_whistle": [
+      576,
+      135
+    ],
+    "create:diving_suit_lava": [
+      544,
+      108
+    ],
+    "create:honey_drain": [
+      608,
+      162
+    ],
+    "create:backtank": [
+      608,
+      135
+    ],
+    "create:pipe_organ": [
+      640,
+      175
+    ],
+    "create:factory_gauge": [
+      544,
+      81
+    ],
+    "create:cardboard_armor": [
+      576,
+      81
+    ],
+    "create:cross_streams": [
+      640,
+      148
+    ],
+    "create:cardboard_armor_trim": [
+      608,
+      67
+    ],
+    "create:chained_drain": [
+      640,
+      121
+    ],
+    "create:diving_suit": [
+      640,
+      94
+    ],
+    "create:package_chute_throw": [
+      608,
+      94
+    ],
+    "create:brass": [
+      672,
+      94
+    ],
+    "create:haunted_bell": [
+      704,
+      94
+    ],
+    "create:brass_casing": [
+      704,
+      121
+    ],
+    "create:crusher_maxed_0000": [
+      704,
+      67
+    ],
+    "create:clockwork_bearing": [
+      736,
+      94
+    ],
+    "create:rose_quartz": [
+      736,
+      121
+    ],
+    "create:arm_many_targets": [
+      736,
+      67
+    ],
+    "create:display_link": [
+      768,
+      94
+    ],
+    "create:deployer": [
+      768,
+      121
+    ],
+    "create:precision_mechanism": [
+      800,
+      121
+    ],
+    "create:potato_cannon": [
+      800,
+      94
+    ],
+    "create:potato_cannon_collide": [
+      768,
+      67
+    ],
+    "create:self_deploying": [
+      800,
+      67
+    ],
+    "create:speed_controller": [
+      832,
+      121
+    ],
+    "create:extendo_grip": [
+      832,
+      94
+    ],
+    "create:linked_controller": [
+      864,
+      94
+    ],
+    "create:mechanical_arm": [
+      864,
+      121
+    ],
+    "create:mechanical_crafter": [
+      896,
+      121
+    ],
+    "create:fist_bump": [
+      928,
+      67
+    ],
+    "create:crafter_lazy_000": [
+      928,
+      175
+    ],
+    "create:arm_blaze_burner": [
+      896,
+      94
+    ],
+    "create:crushing_wheel": [
+      928,
+      94
+    ],
+    "create:extendo_grip_dual": [
+      928,
+      148
+    ],
+    "create:musical_arm": [
+      928,
+      121
+    ],
+    "create:sturdy_sheet": [
+      960,
+      94
+    ],
+    "create:track_0": [
+      992,
+      67
+    ],
+    "create:train_whistle": [
+      1024,
+      67
+    ],
+    "create:train_portal": [
+      1056,
+      67
+    ],
+    "create:track_crafting_factory": [
+      992,
+      121
+    ],
+    "create:train_casing_00": [
+      992,
+      94
+    ],
+    "create:long_train": [
+      1024,
+      121
+    ],
+    "create:train": [
+      1024,
+      94
+    ],
+    "create:conductor": [
+      1056,
+      94
+    ],
+    "create:long_travel": [
+      1056,
+      121
+    ],
+    "create:track_signal": [
+      1088,
+      94
+    ],
+    "create:train_crash_backwards": [
+      1120,
+      148
+    ],
+    "create:train_roadkill": [
+      1120,
+      94
+    ],
+    "create:red_signal": [
+      1120,
+      121
+    ],
+    "create:display_board_0": [
+      1120,
+      67
+    ],
+    "create:train_crash": [
+      1120,
+      40
+    ],
+    "minecraft:oritech/root": [
+      0,
+      54
+    ],
+    "minecraft:oritech/generator": [
+      32,
+      54
+    ],
+    "minecraft:oritech/foundry": [
+      64,
+      54
+    ],
+    "minecraft:oritech/assembler": [
+      64,
+      81
+    ],
+    "minecraft:oritech/exo_helmet": [
+      96,
+      0
+    ],
+    "minecraft:oritech/drill": [
+      96,
+      27
+    ],
+    "minecraft:oritech/resource_node": [
+      128,
+      27
+    ],
+    "minecraft:oritech/centrifuge": [
+      96,
+      162
+    ],
+    "minecraft:oritech/pulverizer": [
+      64,
+      27
+    ],
+    "minecraft:oritech/steam_engine": [
+      64,
+      0
+    ],
+    "minecraft:oritech/furnace": [
+      64,
+      108
+    ],
+    "minecraft:oritech/laser": [
+      128,
+      155
+    ],
+    "minecraft:oritech/unholy": [
+      96,
+      135
+    ],
+    "minecraft:oritech/exo_chest": [
+      96,
+      108
+    ],
+    "minecraft:oritech/reactor": [
+      160,
+      168
+    ],
+    "minecraft:oritech/augmenter": [
+      128,
+      128
+    ],
+    "minecraft:oritech/exo_legs": [
+      96,
+      81
+    ],
+    "minecraft:oritech/exo_boots": [
+      96,
+      54
+    ],
+    "minecraft:oritech/plastic": [
+      128,
+      195
+    ],
+    "minecraft:oritech/fluxite": [
+      160,
+      141
+    ],
+    "minecraft:oritech/catalyst": [
+      160,
+      195
+    ],
+    "minecraft:oritech/atomicforge": [
+      192,
+      141
+    ],
+    "minecraft:oritech/promethium": [
+      224,
+      114
+    ],
+    "minecraft:oritech/gold_gem": [
+      224,
+      168
+    ],
+    "minecraft:oritech/ai": [
+      224,
+      141
+    ],
+    "minecraft:oritech/overenchanted": [
+      192,
+      195
+    ],
+    "minecraft:oritech/ultimate_core": [
+      256,
+      114
+    ],
+    "meadow:main/root": [
+      0,
+      67
+    ],
+    "meadow:main/find_meadow": [
+      32,
+      67
+    ],
+    "meadow:main/place_straw_bed": [
+      64,
+      135
+    ],
+    "meadow:main/get_salt": [
+      64,
+      60
+    ],
+    "meadow:main/place_cheese_form": [
+      96,
+      94
+    ],
+    "meadow:main/place_frame": [
+      96,
+      54
+    ],
+    "meadow:main/spyglass_at_buffalo": [
+      96,
+      135
+    ],
+    "meadow:main/wool_collector": [
+      64,
+      0
+    ],
+    "meadow:main/cheese_collector": [
+      128,
+      81
+    ],
+    "meadow:main/fur_armor": [
+      96,
+      0
+    ],
+    "meadow:main/milk_collector": [
+      96,
+      27
+    ],
+    "meadow:main/get_cheese": [
+      128,
+      108
+    ],
+    "meadow:main/get_rennet": [
+      128,
+      54
+    ],
+    "meadow:main/kill_buffalo": [
+      128,
+      135
+    ],
+    "herbalbrews:main/root": [
+      0,
+      74
+    ],
+    "herbalbrews:main/place_stove": [
+      32,
+      27
+    ],
+    "herbalbrews:main/find_tea_blossom": [
+      32,
+      121
+    ],
+    "herbalbrews:main/place_cauldron": [
+      32,
+      67
+    ],
+    "herbalbrews:main/place_tea_kettle": [
+      64,
+      27
+    ],
+    "herbalbrews:main/find_lavender": [
+      64,
+      108
+    ],
+    "herbalbrews:main/get_a_flask": [
+      64,
+      54
+    ],
+    "herbalbrews:main/place_jug": [
+      96,
+      54
+    ],
+    "herbalbrews:main/witching_time": [
+      64,
+      81
+    ],
+    "herbalbrews:main/all_effects": [
+      128,
+      54
+    ],
+    "herbalbrews:main/craft_everything": [
+      96,
+      27
+    ],
+    "herbalbrews:main/let_it_dry": [
+      64,
+      135
+    ],
+    "herbalbrews:main/drink_coffee": [
+      96,
+      0
+    ],
+    "herbalbrews:main/drink_milk_coffee": [
+      128,
+      0
+    ],
+    "herbalbrews:main/let_it_dry_2": [
+      96,
+      135
+    ],
+    "herbalbrews:main/let_it_dry_3": [
+      128,
+      135
+    ],
+    "morevillagers:root": [
+      0,
+      128
+    ],
+    "morevillagers:kill_villager": [
+      32,
+      243
+    ],
+    "morevillagers:first_trade": [
+      32,
+      148
+    ],
+    "morevillagers:first_workstation_get": [
+      32,
+      54
+    ],
+    "morevillagers:buy_map": [
+      64,
+      189
+    ],
+    "morevillagers:buy_xmas_chest": [
+      64,
+      216
+    ],
+    "morevillagers:kill_babyvillager": [
+      64,
+      243
+    ],
+    "morevillagers:master_trade": [
+      64,
+      81
+    ],
+    "morevillagers:first_village": [
+      32,
+      13
+    ],
+    "morevillagers:end_trade": [
+      64,
+      162
+    ],
+    "morevillagers:all_professions_traded": [
+      64,
+      108
+    ],
+    "morevillagers:tame_cat": [
+      64,
+      0
+    ],
+    "morevillagers:nether_trade": [
+      64,
+      135
+    ],
+    "morevillagers:all_workstations_get": [
+      64,
+      54
+    ],
+    "morevillagers:all_villages": [
+      64,
+      27
+    ],
+    "morevillagers:map_bastion": [
+      96,
+      135
+    ],
+    "morevillagers:map_endcity": [
+      96,
+      162
+    ],
+    "biomeswevegone:biomeswevegone/root": [
+      0,
+      148
+    ],
+    "biomeswevegone:biomeswevegone/adventure/root": [
+      32,
+      229
+    ],
+    "biomeswevegone:biomeswevegone/adventure/oh_the_biomes_weve_gone": [
+      64,
+      270
+    ],
+    "biomeswevegone:biomeswevegone/adventure/pale_in_comparison": [
+      64,
+      216
+    ],
+    "biomeswevegone:biomeswevegone/adventure/inside_quicksand": [
+      64,
+      189
+    ],
+    "biomeswevegone:biomeswevegone/adventure/little_house_on_the_prairie": [
+      64,
+      162
+    ],
+    "biomeswevegone:biomeswevegone/husbandry/root": [
+      32,
+      67
+    ],
+    "biomeswevegone:biomeswevegone/husbandry/forager": [
+      64,
+      0
+    ],
+    "biomeswevegone:biomeswevegone/adventure/forgotten_fae": [
+      64,
+      243
+    ],
+    "biomeswevegone:biomeswevegone/adventure/true_traveler": [
+      64,
+      297
+    ],
+    "biomeswevegone:biomeswevegone/adventure/witches_road": [
+      96,
+      216
+    ],
+    "biomeswevegone:biomeswevegone/husbandry/just_like_grandmas": [
+      64,
+      27
+    ],
+    "biomeswevegone:biomeswevegone/husbandry/granny_smith": [
+      64,
+      135
+    ],
+    "biomeswevegone:biomeswevegone/husbandry/johnny_appleseed": [
+      96,
+      135
+    ],
+    "biomeswevegone:biomeswevegone/husbandry/berrily_alive": [
+      64,
+      54
+    ],
+    "biomeswevegone:biomeswevegone/husbandry/hot_diggity_not_dog": [
+      64,
+      81
+    ],
+    "biomeswevegone:biomeswevegone/husbandry/forgotten_nostalgia": [
+      64,
+      108
+    ],
+    "incendium:root": [
+      0,
+      216
+    ],
+    "incendium:toxic_heap/root": [
+      32,
+      67
+    ],
+    "incendium:misc/root": [
+      32,
+      418
+    ],
+    "incendium:ash_barrens/root": [
+      32,
+      13
+    ],
+    "incendium:toxic_heap/nuclear_fusion": [
+      64,
+      54
+    ],
+    "incendium:toxic_heap/slime_poison": [
+      64,
+      81
+    ],
+    "incendium:quartz_flats/root": [
+      32,
+      270
+    ],
+    "incendium:withered_forest/root": [
+      32,
+      351
+    ],
+    "incendium:misc/ruined_lab": [
+      64,
+      418
+    ],
+    "incendium:misc/loot_piglin_village": [
+      64,
+      391
+    ],
+    "incendium:misc/soul_searcher": [
+      64,
+      445
+    ],
+    "incendium:quartz_flats/torte/root": [
+      64,
+      310
+    ],
+    "incendium:volcanic_deltas/root": [
+      32,
+      202
+    ],
+    "incendium:volcanic_deltas/hidden_debris": [
+      64,
+      202
+    ],
+    "incendium:infernal_dunes/root": [
+      32,
+      141
+    ],
+    "incendium:quartz_flats/sanctum/root": [
+      64,
+      229
+    ],
+    "incendium:ash_barrens/enter_castle": [
+      64,
+      13
+    ],
+    "incendium:withered_forest/chain_armor": [
+      64,
+      364
+    ],
+    "incendium:infernal_dunes/dune_blaze": [
+      64,
+      175
+    ],
+    "incendium:quartz_flats/sanctum/vault_hunter": [
+      96,
+      229
+    ],
+    "incendium:toxic_heap/mystic_wisdom": [
+      96,
+      54
+    ],
+    "incendium:quartz_flats/torte/kitchen_treasure": [
+      96,
+      310
+    ],
+    "incendium:infernal_dunes/border_of_life": [
+      96,
+      175
+    ],
+    "incendium:quartz_flats/floor_is_tears": [
+      64,
+      270
+    ],
+    "incendium:ash_barrens/duel_of_the_fates": [
+      96,
+      0
+    ],
+    "incendium:withered_forest/kill_spirit": [
+      64,
+      337
+    ],
+    "incendium:ash_barrens/conquer_castle": [
+      96,
+      27
+    ],
+    "incendium:quartz_flats/ghast_buster": [
+      96,
+      256
+    ],
+    "incendium:infernal_dunes/pipeline/root": [
+      64,
+      108
+    ],
+    "incendium:infernal_dunes/inferno/root": [
+      64,
+      148
+    ],
+    "incendium:infernal_dunes/pipeline/unlimited_power": [
+      96,
+      108
+    ],
+    "incendium:infernal_dunes/inferno/summon": [
+      96,
+      148
+    ],
+    "incendium:quartz_flats/rescue_mission": [
+      96,
+      283
+    ],
+    "incendium:infernal_dunes/inferno/run": [
+      128,
+      148
+    ],
+    "incendium:infernal_dunes/pipeline/kill_sentry": [
+      128,
+      108
+    ],
+    "incendium:quartz_flats/feed_ghastling": [
+      128,
+      283
+    ],
+    "incendium:infernal_dunes/inferno/kill": [
+      160,
+      162
+    ],
+    "incendium:infernal_dunes/inferno/lunatic_mode": [
+      160,
+      135
+    ],
+    "incendium:infernal_dunes/inferno/armored_wings": [
+      192,
+      162
+    ],
+    "incendium:infernal_dunes/pipeline/pipeline_treasure": [
+      160,
+      108
+    ],
+    "beachparty:main/root": [
+      0,
+      54
+    ],
+    "beachparty:main/welcome_to_the_beach": [
+      32,
+      40
+    ],
+    "beachparty:main/get_any_artifact": [
+      64,
+      40
+    ],
+    "beachparty:main/build_a_tower": [
+      64,
+      67
+    ],
+    "beachparty:main/get_all_artifacts": [
+      96,
+      40
+    ],
+    "beachparty:main/reinforce_the_castle": [
+      96,
+      67
+    ],
+    "beachparty:main/place_palm_bar": [
+      32,
+      94
+    ],
+    "beachparty:main/hoarder": [
+      32,
+      13
+    ],
+    "beachparty:main/get_a_seashell": [
+      64,
+      13
+    ],
+    "beachparty:main/get_any_cocktail": [
+      64,
+      94
+    ],
+    "beachparty:main/find_a_overgrown_disc": [
+      96,
+      13
+    ],
+    "beachparty:main/get_all_cocktails": [
+      96,
+      94
+    ],
+    "beachparty:main/get_all_music_discs": [
+      128,
+      27
+    ],
+    "beachparty:main/place_radio": [
+      128,
+      0
+    ],
+    "regions_unexplored:parent": [
+      0,
+      108
+    ],
+    "regions_unexplored:eternal_expedition": [
+      32,
+      40
+    ],
+    "regions_unexplored:spelunker": [
+      32,
+      0
+    ],
+    "regions_unexplored:this_tree_bleeds_red": [
+      32,
+      162
+    ],
+    "regions_unexplored:got_wood": [
+      64,
+      162
+    ],
+    "regions_unexplored:regions_explored": [
+      32,
+      216
+    ],
+    "regions_unexplored:pioneer": [
+      32,
+      108
+    ],
+    "regions_unexplored:mycologist": [
+      32,
+      189
+    ],
+    "regions_unexplored:light_as_a_frog": [
+      64,
+      81
+    ],
+    "regions_unexplored:downer": [
+      64,
+      54
+    ],
+    "regions_unexplored:light_snack": [
+      64,
+      27
+    ],
+    "regions_unexplored:blind_as_a_bat": [
+      64,
+      0
+    ],
+    "regions_unexplored:ancient_specimens": [
+      64,
+      189
+    ],
+    "regions_unexplored:from_the_tree_tops": [
+      64,
+      135
+    ],
+    "regions_unexplored:every_bit_of_the_rainbow": [
+      64,
+      108
+    ],
+    "create_connected:root": [
+      0,
+      54
+    ],
+    "create_connected:kinetic_battery": [
+      32,
+      54
+    ],
+    "create_connected:brass_gearbox": [
+      32,
+      108
+    ],
+    "create_connected:control_chip": [
+      32,
+      27
+    ],
+    "create_connected:shear_pin": [
+      32,
+      0
+    ],
+    "create_connected:sequenced_pulse_generator": [
+      64,
+      27
+    ],
+    "create_connected:overpowered_brake_0": [
+      32,
+      81
+    ],
+    "create_connected:overstress_clutch": [
+      64,
+      0
+    ],
+    "create_connected:pulse_generator_infinite_loop": [
+      96,
+      27
+    ],
+    "confluence:achievements/new_world": [
+      0,
+      0
+    ],
+    "confluence:achievements/it_can_talk": [
+      352,
+      81
+    ],
+    "confluence:achievements/boned": [
+      128,
+      189
+    ],
+    "confluence:achievements/my_people_need_me": [
+      320,
+      324
+    ],
+    "confluence:achievements/good_little_slave": [
+      384,
+      216
+    ],
+    "confluence:achievements/til_death": [
+      160,
+      270
+    ],
+    "confluence:achievements/goblin_punter": [
+      64,
+      243
+    ],
+    "confluence:achievements/boots_of_the_hero": [
+      128,
+      81
+    ],
+    "confluence:achievements/star_power": [
+      160,
+      0
+    ],
+    "confluence:achievements/a_rather_blustery_day": [
+      352,
+      243
+    ],
+    "confluence:achievements/mini_me": [
+      128,
+      108
+    ],
+    "confluence:achievements/eye_on_you": [
+      0,
+      189
+    ],
+    "confluence:achievements/a_shimmer_in_the_dark": [
+      352,
+      108
+    ],
+    "confluence:achievements/fish_out_of_water": [
+      96,
+      216
+    ],
+    "confluence:achievements/hammer_time": [
+      96,
+      0
+    ],
+    "confluence:achievements/dungeon_heist": [
+      224,
+      27
+    ],
+    "confluence:achievements/feast_of_midas": [
+      160,
+      81
+    ],
+    "confluence:achievements/sea_you_later": [
+      80,
+      135
+    ],
+    "confluence:achievements/photosynthesis": [
+      384,
+      27
+    ],
+    "confluence:achievements/bulldozer": [
+      352,
+      189
+    ],
+    "confluence:achievements/obsessive_devotion": [
+      128,
+      216
+    ],
+    "confluence:achievements/tin_foil_hatter": [
+      160,
+      243
+    ],
+    "confluence:achievements/not_the_bees": [
+      256,
+      189
+    ],
+    "confluence:achievements/its_hard": [
+      288,
+      27
+    ],
+    "confluence:achievements/book_worm": [
+      256,
+      297
+    ],
+    "confluence:achievements/ice_scream": [
+      32,
+      270
+    ],
+    "confluence:achievements/an_eye_for_an_eye": [
+      64,
+      324
+    ],
+    "confluence:achievements/interdimensional_recycling": [
+      320,
+      351
+    ],
+    "confluence:achievements/dead_men_tell_no_tales": [
+      320,
+      270
+    ],
+    "confluence:achievements/prismancer": [
+      0,
+      81
+    ],
+    "confluence:achievements/hot_reels": [
+      384,
+      243
+    ],
+    "confluence:achievements/lucky_break": [
+      384,
+      189
+    ],
+    "confluence:achievements/like_a_boss": [
+      96,
+      27
+    ],
+    "confluence:achievements/training_day": [
+      320,
+      135
+    ],
+    "confluence:achievements/pretty_in_pink": [
+      32,
+      297
+    ],
+    "confluence:achievements/queen_machine": [
+      320,
+      297
+    ],
+    "confluence:achievements/fear_the_sun": [
+      384,
+      297
+    ],
+    "confluence:achievements/temple_raider": [
+      160,
+      27
+    ],
+    "confluence:achievements/slippery_shinobi": [
+      32,
+      243
+    ],
+    "confluence:achievements/jolly_jamboree": [
+      288,
+      270
+    ],
+    "confluence:achievements/marathon_medalist": [
+      320,
+      216
+    ],
+    "confluence:achievements/trout_monkey": [
+      416,
+      216
+    ],
+    "confluence:achievements/deceiver_of_fools": [
+      128,
+      270
+    ],
+    "confluence:achievements/on_fleek": [
+      96,
+      108
+    ],
+    "confluence:achievements/rock_bottom": [
+      320,
+      81
+    ],
+    "confluence:achievements/sticky_situation": [
+      384,
+      54
+    ],
+    "confluence:achievements/and_good_riddance": [
+      416,
+      270
+    ],
+    "confluence:achievements/quiet_neighborhood": [
+      256,
+      108
+    ],
+    "confluence:achievements/mecha_mayhem": [
+      288,
+      189
+    ],
+    "confluence:achievements/fortune_favors_the_bould": [
+      288,
+      135
+    ],
+    "confluence:achievements/mastermind": [
+      64,
+      189
+    ],
+    "confluence:achievements/extra_shiny": [
+      352,
+      27
+    ],
+    "confluence:achievements/just_desserts": [
+      96,
+      297
+    ],
+    "confluence:achievements/hey_listen": [
+      288,
+      108
+    ],
+    "confluence:achievements/worm_fodder": [
+      32,
+      189
+    ],
+    "confluence:achievements/rollin_in_your_grave": [
+      352,
+      297
+    ],
+    "confluence:achievements/watch_your_step": [
+      384,
+      81
+    ],
+    "confluence:achievements/archaeologist": [
+      0,
+      297
+    ],
+    "confluence:achievements/funkytown": [
+      256,
+      81
+    ],
+    "confluence:achievements/fae_flayer": [
+      64,
+      297
+    ],
+    "confluence:achievements/baleful_harvest": [
+      0,
+      270
+    ],
+    "confluence:achievements/wheres_my_honey": [
+      384,
+      0
+    ],
+    "confluence:achievements/organized_chaos": [
+      64,
+      108
+    ],
+    "confluence:achievements/lihzahrdian_idol": [
+      64,
+      216
+    ],
+    "confluence:achievements/going_oldschool": [
+      352,
+      324
+    ],
+    "confluence:achievements/heavy_metal": [
+      128,
+      0
+    ],
+    "confluence:achievements/feeling_petty": [
+      256,
+      270
+    ],
+    "confluence:achievements/champion_of_terraria": [
+      0,
+      243
+    ],
+    "confluence:achievements/dye_hard": [
+      64,
+      54
+    ],
+    "confluence:achievements/benched": [
+      64,
+      0
+    ],
+    "confluence:achievements/conservationist": [
+      416,
+      324
+    ],
+    "confluence:achievements/sick_throw": [
+      96,
+      54
+    ],
+    "confluence:achievements/do_you_want_to_slay_a_snowman": [
+      128,
+      243
+    ],
+    "confluence:achievements/sword_of_the_hero": [
+      32,
+      54
+    ],
+    "confluence:achievements/hero_of_etheria": [
+      160,
+      297
+    ],
+    "confluence:achievements/i_am_loot": [
+      320,
+      0
+    ],
+    "confluence:achievements/dont_dread_on_me": [
+      128,
+      297
+    ],
+    "confluence:achievements/you_and_what_army": [
+      288,
+      216
+    ],
+    "confluence:achievements/grave_mistake": [
+      224,
+      324
+    ],
+    "confluence:achievements/fast_and_fishious": [
+      224,
+      243
+    ],
+    "confluence:achievements/unusual_survival_strategies": [
+      352,
+      270
+    ],
+    "confluence:achievements/black_mirror": [
+      0,
+      108
+    ],
+    "confluence:achievements/to_infinity_and_beyond": [
+      224,
+      297
+    ],
+    "confluence:achievements/heliophobia": [
+      416,
+      243
+    ],
+    "confluence:achievements/the_great_southern_plantkill": [
+      32,
+      216
+    ],
+    "confluence:achievements/gelatin_world_tour": [
+      320,
+      189
+    ],
+    "confluence:achievements/bloodbath": [
+      320,
+      54
+    ],
+    "confluence:achievements/jeepers_creepers": [
+      224,
+      81
+    ],
+    "confluence:achievements/boulder_lord": [
+      288,
+      297
+    ],
+    "confluence:achievements/glorious_golden_pole": [
+      32,
+      81
+    ],
+    "confluence:achievements/slayer_of_worlds": [
+      320,
+      243
+    ],
+    "confluence:achievements/there_are_some_who_call_him": [
+      96,
+      270
+    ],
+    "confluence:achievements/timber": [
+      32,
+      0
+    ],
+    "confluence:achievements/the_great_slime_mitosis": [
+      384,
+      270
+    ],
+    "confluence:achievements/supreme_helper_minion": [
+      256,
+      243
+    ],
+    "confluence:achievements/miner_for_fire": [
+      32,
+      27
+    ],
+    "confluence:achievements/get_a_life": [
+      224,
+      54
+    ],
+    "confluence:achievements/extra_life": [
+      416,
+      297
+    ],
+    "confluence:achievements/throwing_lines": [
+      416,
+      189
+    ],
+    "confluence:achievements/head_in_the_clouds": [
+      64,
+      27
+    ],
+    "confluence:achievements/begone_evil": [
+      320,
+      27
+    ],
+    "confluence:achievements/completely_awesome": [
+      160,
+      54
+    ],
+    "confluence:achievements/ooo_shinny": [
+      256,
+      0
+    ],
+    "confluence:achievements/servant_in_training": [
+      352,
+      216
+    ],
+    "confluence:achievements/terrarist": [
+      288,
+      324
+    ],
+    "confluence:achievements/new_digs": [
+      160,
+      108
+    ],
+    "confluence:achievements/you_can_do_it": [
+      224,
+      108
+    ],
+    "confluence:achievements/hold_on_tight": [
+      0,
+      27
+    ],
+    "confluence:achievements/big_booty": [
+      288,
+      54
+    ],
+    "confluence:achievements/a_rare_realm": [
+      320,
+      108
+    ],
+    "confluence:achievements/buckets_of_bolts": [
+      0,
+      216
+    ],
+    "confluence:achievements/the_cavalry": [
+      128,
+      54
+    ],
+    "confluence:achievements/into_orbit": [
+      288,
+      81
+    ],
+    "confluence:achievements/still_hungry": [
+      160,
+      189
+    ],
+    "confluence:achievements/star_destroyer": [
+      160,
+      216
+    ],
+    "confluence:achievements/topped_off": [
+      288,
+      243
+    ],
+    "confluence:achievements/robbing_the_grave": [
+      256,
+      54
+    ],
+    "confluence:achievements/spicy_licks": [
+      256,
+      324
+    ],
+    "confluence:achievements/smashing_poppet": [
+      352,
+      0
+    ],
+    "confluence:achievements/its_getting_hot_in_here": [
+      256,
+      27
+    ],
+    "confluence:achievements/vehicular_manslaughter": [
+      64,
+      270
+    ],
+    "confluence:achievements/ankhumulation_complete": [
+      32,
+      108
+    ],
+    "confluence:achievements/no_hobo": [
+      224,
+      0
+    ],
+    "confluence:achievements/matching_attire": [
+      64,
+      81
+    ],
+    "confluence:achievements/heart_breaker": [
+      288,
+      0
+    ],
+    "confluence:achievements/rainbows_and_unicorns": [
+      256,
+      216
+    ],
+    "confluence:achievements/fashion_statement": [
+      0,
+      54
+    ],
+    "confluence:achievements/torch_god": [
+      96,
+      324
+    ],
+    "confluence:achievements/kill_the_sun": [
+      352,
+      54
+    ],
+    "confluence:achievements/sting_operation": [
+      96,
+      189
+    ],
+    "confluence:achievements/real_estate_agent": [
+      224,
+      189
+    ],
+    "confluence:achievements/walk_the_plank": [
+      96,
+      243
+    ],
+    "confluence:achievements/leading_landlord": [
+      224,
+      270
+    ],
+    "confluence:achievements/drax_attax": [
+      128,
+      27
+    ],
+    "confluence:achievements/its_shaling_outside": [
+      384,
+      108
+    ],
+    "confluence:achievements/infinity_1_sword": [
+      96,
+      81
+    ],
+    "confluence:achievements/the_frequent_flyer": [
+      224,
+      216
+    ],
+    "confluence:achievements/trash_compactor": [
+      384,
+      324
+    ],
+    "lilis_lucky_lures:main/root": [
+      0,
+      27
+    ],
+    "lilis_lucky_lures:main/place_fish_trap": [
+      32,
+      27
+    ],
+    "lilis_lucky_lures:main/spyglass_at_floating_debris": [
+      32,
+      54
+    ],
+    "lilis_lucky_lures:main/use_melon_seeds_on_fish_trap": [
+      64,
+      27
+    ],
+    "lilis_lucky_lures:main/get_soaked_bag": [
+      32,
+      0
+    ],
+    "lilis_lucky_lures:main/place_fish_bag": [
+      96,
+      27
+    ],
+    "lilis_lucky_lures:main/throw_spear": [
+      64,
+      0
+    ],
+    "lilis_lucky_lures:main/use_pufferfish_on_fish_trophy_frame": [
+      128,
+      27
+    ],
+    "lilis_lucky_lures:main/cross_collector": [
+      96,
+      0
+    ],
+    "deeper_dark:root": [
+      0,
+      94
+    ],
+    "deeper_dark:trap": [
+      32,
+      121
+    ],
+    "deeper_dark:way_out": [
+      32,
+      148
+    ],
+    "deeper_dark:armor": [
+      64,
+      121
+    ],
+    "deeper_dark:underground_map": [
+      32,
+      40
+    ],
+    "deeper_dark:night_vision": [
+      32,
+      94
+    ],
+    "deeper_dark:spelunker": [
+      32,
+      67
+    ],
+    "deeper_dark:locked_out": [
+      64,
+      148
+    ],
+    "deeper_dark:fortress": [
+      64,
+      40
+    ],
+    "deeper_dark:amethyst_mineshaft": [
+      96,
+      40
+    ],
+    "deeper_dark:void": [
+      64,
+      67
+    ],
+    "deeper_dark:altar_fragment": [
+      128,
+      27
+    ],
+    "deeper_dark:converter": [
+      160,
+      27
+    ],
+    "deeper_dark:light": [
+      192,
+      27
+    ],
+    "deeper_dark:kill_shockwave": [
+      128,
+      54
+    ],
+    "deeper_dark:resonate": [
+      192,
+      54
+    ],
+    "deeper_dark:shrieker_sense": [
+      192,
+      0
+    ],
+    "alpinewhispers:main/root": [
+      0,
+      27
+    ],
+    "alpinewhispers:main/find_grove": [
+      32,
+      27
+    ],
+    "alpinewhispers:main/feed_alpine_sheep": [
+      64,
+      54
+    ],
+    "alpinewhispers:main/get_arolla_pine_log": [
+      64,
+      27
+    ],
+    "alpinewhispers:main/place_arolla_pine_smoker": [
+      96,
+      27
+    ],
+    "alpinewhispers:main/use_flint_and_steel_on_candle_wreath": [
+      128,
+      27
+    ],
+    "alpinewhispers:main/shear_alpine_sheep": [
+      96,
+      54
+    ],
+    "alpinewhispers:main/spyglass_at_reindeer": [
+      64,
+      0
+    ],
+    "alpinewhispers:main/get_cooked_reindeer_dish": [
+      96,
+      0
+    ]
+  },
+  "tab_properties": {
+    "minecraft:story/root": {
+      "title": "",
+      "static_background": false,
+      "bg_width": 16,
+      "bg_height": 16,
+      "width": 0,
+      "height": 0,
+      "index": 0,
+      "background_rules": "[]"
+    },
+    "minecraft:adventure/root": {
+      "title": "",
+      "static_background": false,
+      "bg_width": 16,
+      "bg_height": 16,
+      "width": 0,
+      "height": 0,
+      "index": 1,
+      "background_rules": "[]"
+    },
+    "minecraft:husbandry/root": {
+      "title": "",
+      "static_background": false,
+      "bg_width": 16,
+      "bg_height": 16,
+      "width": 0,
+      "height": 0,
+      "index": 2,
+      "background_rules": "[]"
+    },
+    "minecraft:nether/root": {
+      "title": "",
+      "static_background": false,
+      "bg_width": 16,
+      "bg_height": 16,
+      "width": 0,
+      "height": 0,
+      "index": 3,
+      "background_rules": "[]"
+    },
+    "minecraft:end/root": {
+      "title": "",
+      "static_background": false,
+      "bg_width": 16,
+      "bg_height": 16,
+      "width": 0,
+      "height": 0,
+      "index": 4,
+      "background_rules": "[]"
+    },
+    "paraglider:root": {
+      "title": "",
+      "static_background": false,
+      "bg_width": 16,
+      "bg_height": 16,
+      "width": 0,
+      "height": 0,
+      "index": 5,
+      "background_rules": "[]"
+    },
+    "create:root": {
+      "title": "",
+      "static_background": false,
+      "bg_width": 16,
+      "bg_height": 16,
+      "width": 0,
+      "height": 0,
+      "index": 5,
+      "background_rules": "[]"
+    },
+    "minecraft:oritech/root": {
+      "title": "",
+      "static_background": false,
+      "bg_width": 16,
+      "bg_height": 16,
+      "width": 0,
+      "height": 0,
+      "index": 5,
+      "background_rules": "[]"
+    },
+    "meadow:main/root": {
+      "title": "",
+      "static_background": false,
+      "bg_width": 16,
+      "bg_height": 16,
+      "width": 0,
+      "height": 0,
+      "index": 5,
+      "background_rules": "[]"
+    },
+    "herbalbrews:main/root": {
+      "title": "",
+      "static_background": false,
+      "bg_width": 16,
+      "bg_height": 16,
+      "width": 0,
+      "height": 0,
+      "index": 5,
+      "background_rules": "[]"
+    },
+    "morevillagers:root": {
+      "title": "",
+      "static_background": false,
+      "bg_width": 16,
+      "bg_height": 16,
+      "width": 0,
+      "height": 0,
+      "index": 5,
+      "background_rules": "[]"
+    },
+    "biomeswevegone:biomeswevegone/root": {
+      "title": "",
+      "static_background": false,
+      "bg_width": 16,
+      "bg_height": 16,
+      "width": 0,
+      "height": 0,
+      "index": 5,
+      "background_rules": "[]"
+    },
+    "incendium:root": {
+      "title": "",
+      "static_background": false,
+      "bg_width": 16,
+      "bg_height": 16,
+      "width": 0,
+      "height": 0,
+      "index": 5,
+      "background_rules": "[]"
+    },
+    "beachparty:main/root": {
+      "title": "",
+      "static_background": false,
+      "bg_width": 16,
+      "bg_height": 16,
+      "width": 0,
+      "height": 0,
+      "index": 5,
+      "background_rules": "[]"
+    },
+    "regions_unexplored:parent": {
+      "title": "",
+      "static_background": false,
+      "bg_width": 16,
+      "bg_height": 16,
+      "width": 0,
+      "height": 0,
+      "index": 5,
+      "background_rules": "[]"
+    },
+    "create_connected:root": {
+      "title": "",
+      "static_background": false,
+      "bg_width": 16,
+      "bg_height": 16,
+      "width": 0,
+      "height": 0,
+      "index": 5,
+      "background_rules": "[]"
+    },
+    "confluence:achievements/new_world": {
+      "title": "",
+      "static_background": false,
+      "bg_width": 16,
+      "bg_height": 16,
+      "width": 0,
+      "height": 0,
+      "index": 5,
+      "background_rules": "[]"
+    },
+    "lilis_lucky_lures:main/root": {
+      "title": "",
+      "static_background": false,
+      "bg_width": 16,
+      "bg_height": 16,
+      "width": 0,
+      "height": 0,
+      "index": 5,
+      "background_rules": "[]"
+    },
+    "deeper_dark:root": {
+      "title": "",
+      "static_background": false,
+      "bg_width": 16,
+      "bg_height": 16,
+      "width": 0,
+      "height": 0,
+      "index": 5,
+      "background_rules": "[]"
+    },
+    "alpinewhispers:main/root": {
+      "title": "",
+      "static_background": false,
+      "bg_width": 16,
+      "bg_height": 16,
+      "width": 0,
+      "height": 0,
+      "index": 5,
+      "background_rules": "[]"
+    }
+  }
+}

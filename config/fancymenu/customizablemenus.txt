@@ -114,3 +114,18 @@ org.confluence.mod.client.gui.container.ExtraInventoryScreen {
 net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen {
 }
 
+io.wispforest.accessories.client.gui.AccessoriesScreen {
+}
+
+dev.shulkeraccessories.client.ShulkerAccessoryScreen {
+}
+
+net.minecraft.client.gui.screens.inventory.CraftingScreen {
+}
+
+io.github.fishstiz.packed_packs.gui.screens.PackedPacksScreen {
+}
+
+dev.latvian.mods.kubejs.client.KubeJSErrorScreen {
+}
+

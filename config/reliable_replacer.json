@@ -1,0 +1,7 @@
+{
+  "enabled": true,
+  "enable_retrogen": true,
+  "missing_id_map": {
+    "galosphere:palladium_ore": "minecraft:iron_ore"
+  }
+}
