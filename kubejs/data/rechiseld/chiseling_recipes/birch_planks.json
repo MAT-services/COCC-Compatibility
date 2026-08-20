@@ -6,25 +6,46 @@
       "item": "minecraft:birch_planks"
     },
     {
-      "item": "buildersdelight:birch_planks_1"
+      "block": "buildersdelight:birch_planks_1",
+      "slab": "buildersdelight:birch_slab_1",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:birch_stairs_1"
     },
     {
-      "item": "buildersdelight:birch_planks_2"
+      "block": "buildersdelight:birch_planks_2",
+      "slab": "buildersdelight:birch_slab_2",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:birch_stairs_2"
     },
     {
-      "item": "buildersdelight:birch_planks_3"
+      "block": "buildersdelight:birch_planks_3",
+      "slab": "buildersdelight:birch_slab_3",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:birch_stairs_3"
     },
     {
-      "item": "buildersdelight:birch_planks_4"
+      "block": "buildersdelight:birch_planks_4",
+      "slab": "buildersdelight:birch_slab_4",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:birch_stairs_4"
     },
     {
-      "item": "buildersdelight:birch_planks_5"
+      "block": "buildersdelight:birch_planks_5",
+      "slab": "buildersdelight:birch_slab_5",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:birch_stairs_5"
     },
     {
-      "item": "buildersdelight:birch_planks_6"
+      "block": "buildersdelight:birch_planks_6",
+      "slab": "buildersdelight:birch_slab_6",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:birch_stairs_6"
     },
     {
-      "item": "buildersdelight:birch_planks_7"
+      "block": "buildersdelight:birch_planks_7",
+      "slab": "buildersdelight:birch_slab_7",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:birch_stairs_7"
     }
   ]
 }

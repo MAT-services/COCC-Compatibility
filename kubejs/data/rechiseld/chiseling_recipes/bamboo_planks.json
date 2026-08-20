@@ -6,28 +6,49 @@
       "item": "minecraft:bamboo_planks"
     },
     {
-      "item": "minecraft:bamboo_mosaic"
+      "block": "minecraft:bamboo_mosaic"
     },
     {
-      "item": "buildersdelight:bamboo_planks_1"
+      "block": "buildersdelight:bamboo_planks_1",
+      "slab": "buildersdelight:bamboo_slab_1",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:bamboo_stairs_1"
     },
     {
-      "item": "buildersdelight:bamboo_planks_2"
+      "block": "buildersdelight:bamboo_planks_2",
+      "slab": "buildersdelight:bamboo_slab_2",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:bamboo_stairs_2"
     },
     {
-      "item": "buildersdelight:bamboo_planks_3"
+      "block": "buildersdelight:bamboo_planks_3",
+      "slab": "buildersdelight:bamboo_slab_3",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:bamboo_stairs_3"
     },
     {
-      "item": "buildersdelight:bamboo_planks_4"
+      "block": "buildersdelight:bamboo_planks_4",
+      "slab": "buildersdelight:bamboo_slab_4",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:bamboo_stairs_4"
     },
     {
-      "item": "buildersdelight:bamboo_planks_5"
+      "block": "buildersdelight:bamboo_planks_5",
+      "slab": "buildersdelight:bamboo_slab_5",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:bamboo_stairs_5"
     },
     {
-      "item": "buildersdelight:bamboo_planks_6"
+      "block": "buildersdelight:bamboo_planks_6",
+      "slab": "buildersdelight:bamboo_slab_6",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:bamboo_stairs_6"
     },
     {
-      "item": "buildersdelight:bamboo_planks_7"
+      "block": "buildersdelight:bamboo_planks_7",
+      "slab": "buildersdelight:bamboo_slab_7",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:bamboo_stairs_7"
     }
   ]
 }

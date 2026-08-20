@@ -6,25 +6,46 @@
       "item": "minecraft:crimson_planks"
     },
     {
-      "item": "buildersdelight:crimson_planks_1"
+      "block": "buildersdelight:crimson_planks_1",
+      "slab": "buildersdelight:crimson_slab_1",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:crimson_stairs_1"
     },
     {
-      "item": "buildersdelight:crimson_planks_2"
+      "block": "buildersdelight:crimson_planks_2",
+      "slab": "buildersdelight:crimson_slab_2",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:crimson_stairs_2"
     },
     {
-      "item": "buildersdelight:crimson_planks_3"
+      "block": "buildersdelight:crimson_planks_3",
+      "slab": "buildersdelight:crimson_slab_3",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:crimson_stairs_3"
     },
     {
-      "item": "buildersdelight:crimson_planks_4"
+      "block": "buildersdelight:crimson_planks_4",
+      "slab": "buildersdelight:crimson_slab_4",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:crimson_stairs_4"
     },
     {
-      "item": "buildersdelight:crimson_planks_5"
+      "block": "buildersdelight:crimson_planks_5",
+      "slab": "buildersdelight:crimson_slab_5",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:crimson_stairs_5"
     },
     {
-      "item": "buildersdelight:crimson_planks_6"
+      "block": "buildersdelight:crimson_planks_6",
+      "slab": "buildersdelight:crimson_slab_6",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:crimson_stairs_6"
     },
     {
-      "item": "buildersdelight:crimson_planks_7"
+      "block": "buildersdelight:crimson_planks_7",
+      "slab": "buildersdelight:crimson_slab_7",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:crimson_stairs_7"
     }
   ]
 }

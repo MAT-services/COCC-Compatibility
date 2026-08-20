@@ -6,25 +6,46 @@
       "item": "minecraft:dark_oak_planks"
     },
     {
-      "item": "buildersdelight:dark_oak_planks_1"
+      "block": "buildersdelight:dark_oak_planks_1",
+      "slab": "buildersdelight:dark_oak_slab_1",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:dark_oak_stairs_1"
     },
     {
-      "item": "buildersdelight:dark_oak_planks_2"
+      "block": "buildersdelight:dark_oak_planks_2",
+      "slab": "buildersdelight:dark_oak_slab_2",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:dark_oak_stairs_2"
     },
     {
-      "item": "buildersdelight:dark_oak_planks_3"
+      "block": "buildersdelight:dark_oak_planks_3",
+      "slab": "buildersdelight:dark_oak_slab_3",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:dark_oak_stairs_3"
     },
     {
-      "item": "buildersdelight:dark_oak_planks_4"
+      "block": "buildersdelight:dark_oak_planks_4",
+      "slab": "buildersdelight:dark_oak_slab_4",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:dark_oak_stairs_4"
     },
     {
-      "item": "buildersdelight:dark_oak_planks_5"
+      "block": "buildersdelight:dark_oak_planks_5",
+      "slab": "buildersdelight:dark_oak_slab_5",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:dark_oak_stairs_5"
     },
     {
-      "item": "buildersdelight:dark_oak_planks_6"
+      "block": "buildersdelight:dark_oak_planks_6",
+      "slab": "buildersdelight:dark_oak_slab_6",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:dark_oak_stairs_6"
     },
     {
-      "item": "buildersdelight:dark_oak_planks_7"
+      "block": "buildersdelight:dark_oak_planks_7",
+      "slab": "buildersdelight:dark_oak_slab_7",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:dark_oak_stairs_7"
     }
   ]
 }

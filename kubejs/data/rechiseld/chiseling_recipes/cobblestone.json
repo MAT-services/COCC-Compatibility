@@ -3,28 +3,49 @@
   "overwrite": false,
   "entries": [
     {
-      "item": "minecraft:cobblestone"
+      "block": "minecraft:cobblestone"
     },
     {
-      "item": "buildersdelight:cobblestone_1"
+      "block": "buildersdelight:cobblestone_1",
+      "slab": "buildersdelight:cobblestone_slab_1",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:cobblestone_stairs_1"
     },
     {
-      "item": "buildersdelight:cobblestone_2"
+      "block": "buildersdelight:cobblestone_2",
+      "slab": "buildersdelight:cobblestone_slab_2",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:cobblestone_stairs_2"
     },
     {
-      "item": "buildersdelight:cobblestone_3"
+      "block": "buildersdelight:cobblestone_3",
+      "slab": "buildersdelight:cobblestone_slab_3",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:cobblestone_stairs_3"
     },
     {
-      "item": "buildersdelight:cobblestone_4"
+      "block": "buildersdelight:cobblestone_4",
+      "slab": "buildersdelight:cobblestone_slab_4",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:cobblestone_stairs_4"
     },
     {
-      "item": "buildersdelight:cobblestone_5"
+      "block": "buildersdelight:cobblestone_5",
+      "slab": "buildersdelight:cobblestone_slab_5",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:cobblestone_stairs_5"
     },
     {
-      "item": "buildersdelight:cobblestone_6"
+      "block": "buildersdelight:cobblestone_6",
+      "slab": "buildersdelight:cobblestone_slab_6",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:cobblestone_stairs_6"
     },
     {
-      "item": "buildersdelight:cobblestone_7"
+      "block": "buildersdelight:cobblestone_7",
+      "slab": "buildersdelight:cobblestone_slab_7",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:cobblestone_stairs_7"
     }
   ]
 }

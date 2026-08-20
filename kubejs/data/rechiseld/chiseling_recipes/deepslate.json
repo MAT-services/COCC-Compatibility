@@ -3,40 +3,55 @@
   "overwrite": false,
   "entries": [
     {
-      "item": "minecraft:deepslate"
+      "block": "minecraft:deepslate"
     },
     {
-      "item": "minecraft:polished_deepslate"
+      "block": "minecraft:polished_deepslate"
     },
     {
-      "item": "minecraft:deepslate_bricks"
+      "block": "minecraft:deepslate_bricks"
     },
     {
-      "item": "minecraft:cracked_deepslate_bricks"
+      "block": "minecraft:cracked_deepslate_bricks"
     },
     {
-      "item": "minecraft:deepslate_tiles"
+      "block": "minecraft:deepslate_tiles"
     },
     {
-      "item": "minecraft:cracked_deepslate_tiles"
+      "block": "minecraft:cracked_deepslate_tiles"
     },
     {
-      "item": "minecraft:chiseled_deepslate"
+      "block": "minecraft:chiseled_deepslate"
     },
     {
-      "item": "buildersdelight:deepslate_1"
+      "block": "buildersdelight:deepslate_1",
+      "slab": "buildersdelight:deepslate_slab_1",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:deepslate_stairs_1"
     },
     {
-      "item": "buildersdelight:deepslate_2"
+      "block": "buildersdelight:deepslate_2",
+      "slab": "buildersdelight:deepslate_slab_2",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:deepslate_stairs_2"
     },
     {
-      "item": "buildersdelight:deepslate_3"
+      "block": "buildersdelight:deepslate_3",
+      "slab": "buildersdelight:deepslate_slab_3",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:deepslate_stairs_3"
     },
     {
-      "item": "buildersdelight:deepslate_4"
+      "block": "buildersdelight:deepslate_4",
+      "slab": "buildersdelight:deepslate_slab_4",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:deepslate_stairs_4"
     },
     {
-      "item": "buildersdelight:deepslate_5"
+      "block": "buildersdelight:deepslate_5",
+      "slab": "buildersdelight:deepslate_slab_5",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:deepslate_stairs_5"
     }
   ]
 }

@@ -3,28 +3,49 @@
   "overwrite": false,
   "entries": [
     {
-      "item": "minecraft:dripstone_block"
+      "block": "minecraft:dripstone_block"
     },
     {
-      "item": "buildersdelight:dripstone_1"
+      "block": "buildersdelight:dripstone_1",
+      "slab": "buildersdelight:dripstone_slab_1",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:dripstone_stairs_1"
     },
     {
-      "item": "buildersdelight:dripstone_2"
+      "block": "buildersdelight:dripstone_2",
+      "slab": "buildersdelight:dripstone_slab_2",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:dripstone_stairs_2"
     },
     {
-      "item": "buildersdelight:dripstone_3"
+      "block": "buildersdelight:dripstone_3",
+      "slab": "buildersdelight:dripstone_slab_3",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:dripstone_stairs_3"
     },
     {
-      "item": "buildersdelight:dripstone_4"
+      "block": "buildersdelight:dripstone_4",
+      "slab": "buildersdelight:dripstone_slab_4",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:dripstone_stairs_4"
     },
     {
-      "item": "buildersdelight:dripstone_5"
+      "block": "buildersdelight:dripstone_5",
+      "slab": "buildersdelight:dripstone_slab_5",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:dripstone_stairs_5"
     },
     {
-      "item": "buildersdelight:dripstone_6"
+      "block": "buildersdelight:dripstone_6",
+      "slab": "buildersdelight:dripstone_slab_6",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:dripstone_stairs_6"
     },
     {
-      "item": "buildersdelight:dripstone_7"
+      "block": "buildersdelight:dripstone_7",
+      "slab": "buildersdelight:dripstone_slab_7",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:dripstone_stairs_7"
     }
   ]
 }

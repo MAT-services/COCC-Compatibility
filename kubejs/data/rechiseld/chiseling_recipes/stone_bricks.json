@@ -3,31 +3,52 @@
   "overwrite": false,
   "entries": [
     {
-      "item": "minecraft:stone"
+      "block": "minecraft:stone"
     },
     {
-      "item": "minecraft:stone_bricks"
+      "block": "minecraft:stone_bricks"
     },
     {
-      "item": "buildersdelight:stone_bricks_1"
+      "block": "buildersdelight:stone_bricks_1",
+      "slab": "buildersdelight:stone_brick_slab_1",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:stone_brick_stairs_1"
     },
     {
-      "item": "buildersdelight:stone_bricks_2"
+      "block": "buildersdelight:stone_bricks_2",
+      "slab": "buildersdelight:stone_brick_slab_2",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:stone_brick_stairs_2"
     },
     {
-      "item": "buildersdelight:stone_bricks_3"
+      "block": "buildersdelight:stone_bricks_3",
+      "slab": "buildersdelight:stone_brick_slab_3",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:stone_brick_stairs_3"
     },
     {
-      "item": "buildersdelight:stone_bricks_4"
+      "block": "buildersdelight:stone_bricks_4",
+      "slab": "buildersdelight:stone_brick_slab_4",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:stone_brick_stairs_4"
     },
     {
-      "item": "buildersdelight:stone_bricks_5"
+      "block": "buildersdelight:stone_bricks_5",
+      "slab": "buildersdelight:stone_brick_slab_5",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:stone_brick_stairs_5"
     },
     {
-      "item": "buildersdelight:stone_bricks_6"
+      "block": "buildersdelight:stone_bricks_6",
+      "slab": "buildersdelight:stone_brick_slab_6",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:stone_brick_stairs_6"
     },
     {
-      "item": "buildersdelight:stone_bricks_7"
+      "block": "buildersdelight:stone_bricks_7",
+      "slab": "buildersdelight:stone_brick_slab_7",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:stone_brick_stairs_7"
     }
   ]
 }

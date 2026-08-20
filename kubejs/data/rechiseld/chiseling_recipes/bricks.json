@@ -3,34 +3,61 @@
   "overwrite": false,
   "entries": [
     {
-      "item": "minecraft:bricks"
+      "block": "minecraft:bricks"
     },
     {
-      "item": "buildersdelight:bricks_1"
+      "block": "buildersdelight:bricks_1",
+      "slab": "buildersdelight:brick_slab_1",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:brick_stairs_1"
     },
     {
-      "item": "buildersdelight:bricks_2"
+      "block": "buildersdelight:bricks_2",
+      "slab": "buildersdelight:brick_slab_2",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:brick_stairs_2"
     },
     {
-      "item": "buildersdelight:bricks_3"
+      "block": "buildersdelight:bricks_3",
+      "slab": "buildersdelight:brick_slab_3",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:brick_stairs_3"
     },
     {
-      "item": "buildersdelight:bricks_4"
+      "block": "buildersdelight:bricks_4",
+      "slab": "buildersdelight:brick_slab_4",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:brick_stairs_4"
     },
     {
-      "item": "buildersdelight:bricks_5"
+      "block": "buildersdelight:bricks_5",
+      "slab": "buildersdelight:brick_slab_5",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:brick_stairs_5"
     },
     {
-      "item": "buildersdelight:bricks_6"
+      "block": "buildersdelight:bricks_6",
+      "slab": "buildersdelight:brick_slab_6",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:brick_stairs_6"
     },
     {
-      "item": "buildersdelight:bricks_7"
+      "block": "buildersdelight:bricks_7",
+      "slab": "buildersdelight:brick_slab_7",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:brick_stairs_7"
     },
     {
-      "item": "buildersdelight:bricks_8"
+      "block": "buildersdelight:bricks_8",
+      "slab": "buildersdelight:brick_slab_8",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:brick_stairs_8"
     },
     {
-      "item": "buildersdelight:bricks_9"
+      "block": "buildersdelight:bricks_9",
+      "slab": "buildersdelight:brick_slab_9",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:brick_stairs_9"
     }
   ]
 }

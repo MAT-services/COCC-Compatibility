@@ -3,31 +3,52 @@
   "overwrite": false,
   "entries": [
     {
-      "item": "minecraft:diorite"
+      "block": "minecraft:diorite"
     },
     {
-      "item": "minecraft:polished_diorite"
+      "block": "minecraft:polished_diorite"
     },
     {
-      "item": "buildersdelight:diorite_1"
+      "block": "buildersdelight:diorite_1",
+      "slab": "buildersdelight:diorite_slab_1",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:diorite_stairs_1"
     },
     {
-      "item": "buildersdelight:diorite_2"
+      "block": "buildersdelight:diorite_2",
+      "slab": "buildersdelight:diorite_slab_2",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:diorite_stairs_2"
     },
     {
-      "item": "buildersdelight:diorite_3"
+      "block": "buildersdelight:diorite_3",
+      "slab": "buildersdelight:diorite_slab_3",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:diorite_stairs_3"
     },
     {
-      "item": "buildersdelight:diorite_4"
+      "block": "buildersdelight:diorite_4",
+      "slab": "buildersdelight:diorite_slab_4",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:diorite_stairs_4"
     },
     {
-      "item": "buildersdelight:diorite_5"
+      "block": "buildersdelight:diorite_5",
+      "slab": "buildersdelight:diorite_slab_5",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:diorite_stairs_5"
     },
     {
-      "item": "buildersdelight:diorite_6"
+      "block": "buildersdelight:diorite_6",
+      "slab": "buildersdelight:diorite_slab_6",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:diorite_stairs_6"
     },
     {
-      "item": "buildersdelight:diorite_7"
+      "block": "buildersdelight:diorite_7",
+      "slab": "buildersdelight:diorite_slab_7",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:diorite_stairs_7"
     }
   ]
 }

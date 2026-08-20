@@ -6,25 +6,46 @@
       "item": "minecraft:mangrove_planks"
     },
     {
-      "item": "buildersdelight:mangrove_planks_1"
+      "block": "buildersdelight:mangrove_planks_1",
+      "slab": "buildersdelight:mangrove_slab_1",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:mangrove_stairs_1"
     },
     {
-      "item": "buildersdelight:mangrove_planks_2"
+      "block": "buildersdelight:mangrove_planks_2",
+      "slab": "buildersdelight:mangrove_slab_2",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:mangrove_stairs_2"
     },
     {
-      "item": "buildersdelight:mangrove_planks_3"
+      "block": "buildersdelight:mangrove_planks_3",
+      "slab": "buildersdelight:mangrove_slab_3",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:mangrove_stairs_3"
     },
     {
-      "item": "buildersdelight:mangrove_planks_4"
+      "block": "buildersdelight:mangrove_planks_4",
+      "slab": "buildersdelight:mangrove_slab_4",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:mangrove_stairs_4"
     },
     {
-      "item": "buildersdelight:mangrove_planks_5"
+      "block": "buildersdelight:mangrove_planks_5",
+      "slab": "buildersdelight:mangrove_slab_5",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:mangrove_stairs_5"
     },
     {
-      "item": "buildersdelight:mangrove_planks_6"
+      "block": "buildersdelight:mangrove_planks_6",
+      "slab": "buildersdelight:mangrove_slab_6",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:mangrove_stairs_6"
     },
     {
-      "item": "buildersdelight:mangrove_planks_7"
+      "block": "buildersdelight:mangrove_planks_7",
+      "slab": "buildersdelight:mangrove_slab_7",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:mangrove_stairs_7"
     }
   ]
 }

@@ -3,31 +3,52 @@
   "overwrite": false,
   "entries": [
     {
-      "item": "minecraft:granite"
+      "block": "minecraft:granite"
     },
     {
-      "item": "minecraft:polished_granite"
+      "block": "minecraft:polished_granite"
     },
     {
-      "item": "buildersdelight:granite_1"
+      "block": "buildersdelight:granite_1",
+      "slab": "buildersdelight:granite_slab_1",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:granite_stairs_1"
     },
     {
-      "item": "buildersdelight:granite_2"
+      "block": "buildersdelight:granite_2",
+      "slab": "buildersdelight:granite_slab_2",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:granite_stairs_2"
     },
     {
-      "item": "buildersdelight:granite_3"
+      "block": "buildersdelight:granite_3",
+      "slab": "buildersdelight:granite_slab_3",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:granite_stairs_3"
     },
     {
-      "item": "buildersdelight:granite_4"
+      "block": "buildersdelight:granite_4",
+      "slab": "buildersdelight:granite_slab_4",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:granite_stairs_4"
     },
     {
-      "item": "buildersdelight:granite_5"
+      "block": "buildersdelight:granite_5",
+      "slab": "buildersdelight:granite_slab_5",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:granite_stairs_5"
     },
     {
-      "item": "buildersdelight:granite_6"
+      "block": "buildersdelight:granite_6",
+      "slab": "buildersdelight:granite_slab_6",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:granite_stairs_6"
     },
     {
-      "item": "buildersdelight:granite_7"
+      "block": "buildersdelight:granite_7",
+      "slab": "buildersdelight:granite_slab_7",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:granite_stairs_7"
     }
   ]
 }

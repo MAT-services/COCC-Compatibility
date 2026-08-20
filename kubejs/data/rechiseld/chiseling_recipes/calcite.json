@@ -3,28 +3,49 @@
   "overwrite": false,
   "entries": [
     {
-      "item": "minecraft:calcite"
+      "block": "minecraft:calcite"
     },
     {
-      "item": "buildersdelight:calcite_1"
+      "block": "buildersdelight:calcite_1",
+      "slab": "buildersdelight:calcite_slab_1",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:calcite_stairs_1"
     },
     {
-      "item": "buildersdelight:calcite_2"
+      "block": "buildersdelight:calcite_2",
+      "slab": "buildersdelight:calcite_slab_2",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:calcite_stairs_2"
     },
     {
-      "item": "buildersdelight:calcite_3"
+      "block": "buildersdelight:calcite_3",
+      "slab": "buildersdelight:calcite_slab_3",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:calcite_stairs_3"
     },
     {
-      "item": "buildersdelight:calcite_4"
+      "block": "buildersdelight:calcite_4",
+      "slab": "buildersdelight:calcite_slab_4",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:calcite_stairs_4"
     },
     {
-      "item": "buildersdelight:calcite_5"
+      "block": "buildersdelight:calcite_5",
+      "slab": "buildersdelight:calcite_slab_5",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:calcite_stairs_5"
     },
     {
-      "item": "buildersdelight:calcite_6"
+      "block": "buildersdelight:calcite_6",
+      "slab": "buildersdelight:calcite_slab_6",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:calcite_stairs_6"
     },
     {
-      "item": "buildersdelight:calcite_7"
+      "block": "buildersdelight:calcite_7",
+      "slab": "buildersdelight:calcite_slab_7",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:calcite_stairs_7"
     }
   ]
 }

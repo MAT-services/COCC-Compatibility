@@ -3,34 +3,52 @@
   "overwrite": false,
   "entries": [
     {
-      "item": "minecraft:sandstone"
+      "block": "minecraft:sandstone"
     },
     {
-      "item": "minecraft:chiseled_sandstone"
+      "block": "minecraft:chiseled_sandstone"
     },
     {
-      "item": "minecraft:cut_sandstone"
+      "block": "minecraft:cut_sandstone"
     },
     {
-      "item": "minecraft:smooth_sandstone"
+      "block": "minecraft:smooth_sandstone"
     },
     {
-      "item": "buildersdelight:sandstone_1"
+      "block": "buildersdelight:sandstone_1",
+      "slab": "buildersdelight:sandstone_slab_1",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:sandstone_stairs_1"
     },
     {
-      "item": "buildersdelight:sandstone_2"
+      "block": "buildersdelight:sandstone_2",
+      "slab": "buildersdelight:sandstone_slab_2",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:sandstone_stairs_2"
     },
     {
-      "item": "buildersdelight:sandstone_3"
+      "block": "buildersdelight:sandstone_3",
+      "slab": "buildersdelight:sandstone_slab_3",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:sandstone_stairs_3"
     },
     {
-      "item": "buildersdelight:sandstone_4"
+      "block": "buildersdelight:sandstone_4",
+      "slab": "buildersdelight:sandstone_slab_4",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:sandstone_stairs_4"
     },
     {
-      "item": "buildersdelight:sandstone_5"
+      "block": "buildersdelight:sandstone_5",
+      "slab": "buildersdelight:sandstone_slab_5",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:sandstone_stairs_5"
     },
     {
-      "item": "buildersdelight:sandstone_6"
+      "block": "buildersdelight:sandstone_6",
+      "slab": "buildersdelight:sandstone_slab_6",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:sandstone_stairs_6"
     }
   ]
 }

@@ -3,28 +3,49 @@
   "overwrite": false,
   "entries": [
     {
-      "item": "minecraft:tuff"
+      "block": "minecraft:tuff"
     },
     {
-      "item": "buildersdelight:tuff_1"
+      "block": "buildersdelight:tuff_1",
+      "slab": "buildersdelight:tuff_slab_1",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:tuff_stairs_1"
     },
     {
-      "item": "buildersdelight:tuff_2"
+      "block": "buildersdelight:tuff_2",
+      "slab": "buildersdelight:tuff_slab_2",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:tuff_stairs_2"
     },
     {
-      "item": "buildersdelight:tuff_3"
+      "block": "buildersdelight:tuff_3",
+      "slab": "buildersdelight:tuff_slab_3",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:tuff_stairs_3"
     },
     {
-      "item": "buildersdelight:tuff_4"
+      "block": "buildersdelight:tuff_4",
+      "slab": "buildersdelight:tuff_slab_4",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:tuff_stairs_4"
     },
     {
-      "item": "buildersdelight:tuff_5"
+      "block": "buildersdelight:tuff_5",
+      "slab": "buildersdelight:tuff_slab_5",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:tuff_stairs_5"
     },
     {
-      "item": "buildersdelight:tuff_6"
+      "block": "buildersdelight:tuff_6",
+      "slab": "buildersdelight:tuff_slab_6",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:tuff_stairs_6"
     },
     {
-      "item": "buildersdelight:tuff_7"
+      "block": "buildersdelight:tuff_7",
+      "slab": "buildersdelight:tuff_slab_7",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:tuff_stairs_7"
     }
   ]
 }

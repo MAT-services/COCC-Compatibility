@@ -3,28 +3,46 @@
   "overwrite": false,
   "entries": [
     {
-      "item": "minecraft:prismarine"
+      "block": "minecraft:prismarine"
     },
     {
-      "item": "minecraft:prismarine_bricks"
+      "block": "minecraft:prismarine_bricks"
     },
     {
-      "item": "buildersdelight:prismarine_1"
+      "block": "buildersdelight:prismarine_1",
+      "slab": "buildersdelight:prismarine_slab_1",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:prismarine_stairs_1"
     },
     {
-      "item": "buildersdelight:prismarine_2"
+      "block": "buildersdelight:prismarine_2",
+      "slab": "buildersdelight:prismarine_slab_2",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:prismarine_stairs_2"
     },
     {
-      "item": "buildersdelight:prismarine_3"
+      "block": "buildersdelight:prismarine_3",
+      "slab": "buildersdelight:prismarine_slab_3",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:prismarine_stairs_3"
     },
     {
-      "item": "buildersdelight:prismarine_4"
+      "block": "buildersdelight:prismarine_4",
+      "slab": "buildersdelight:prismarine_slab_4",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:prismarine_stairs_4"
     },
     {
-      "item": "buildersdelight:prismarine_5"
+      "block": "buildersdelight:prismarine_5",
+      "slab": "buildersdelight:prismarine_slab_5",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:prismarine_stairs_5"
     },
     {
-      "item": "buildersdelight:prismarine_6"
+      "block": "buildersdelight:prismarine_6",
+      "slab": "buildersdelight:prismarine_slab_6",
+      "slab_worth": 0.5,
+      "stairs": "buildersdelight:prismarine_stairs_6"
     }
   ]
 }
