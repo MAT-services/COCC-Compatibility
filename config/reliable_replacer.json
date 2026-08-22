@@ -2,6 +2,7 @@
   "enabled": true,
   "enable_retrogen": true,
   "missing_id_map": {
+    "galosphere:deepslate_palladium_ore": "kubejs:deepslate_thorium_ore",
     "galosphere:palladium_ore": "minecraft:iron_ore"
   }
 }

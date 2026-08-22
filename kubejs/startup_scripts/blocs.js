@@ -9,4 +9,5 @@ StartupEvents.registry('block', event => {
   event.create("kuebjs:electric_sander", "custommachinery:custom_machine").machine("custommachinery:electric_sander")
   event.create("kubejs:adamantite_melter", "custommachinery:custom_machine").machine("custommachinery:adamantite_melter")
   event.create("kubejs:titanium_melter", "custommachinery:custom_machine").machine("custommachinery:titanium_melter")
+  event.create('deepslate_thorium_ore')
 })
