@@ -1,0 +1,9 @@
+{
+  "priority": 0,
+  "title": {
+    "text": { "translate": "Hello, world !" },
+    "color": "#FFFFFF",
+    "background": "#AA000000"
+  },
+  "animation_mode": "play_on_hover"
+}

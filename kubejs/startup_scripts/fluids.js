@@ -1,46 +1,17 @@
 StartupEvents.registry('fluid', event => {
-    event.create('molten_steel')
-        .displayName('Molten Steel')
-        .stillTexture('kubejs:fluid/molten_steel_still')
-        .flowingTexture('kubejs:fluid/molten_steel_flow')
-    event.create('molten_platinum')
-        .displayName('Molten Platinum')
-        .stillTexture('kubejs:fluid/molten_platinum_still')
-        .flowingTexture('kubejs:fluid/molten_platinum_flow')
-    event.create('molten_thorium')
-        .displayName('Molten Thorium')
-        .stillTexture('kubejs:fluid/molten_thorium_still')
-        .flowingTexture('kubejs:fluid/molten_thorium_flow')
-    event.create('molten_lead')
-        .displayName('Molten Lead')
-        .stillTexture('kubejs:fluid/molten_lead_still')
-        .flowingTexture('kubejs:fluid/molten_lead_flow')
-    event.create('molten_nickel')
-        .displayName('Molten Nickel')
-        .stillTexture('kubejs:fluid/molten_nickel_still')
-        .flowingTexture('kubejs:fluid/molten_nickel_flow')
-    event.create('molten_tin')
-        .displayName('Molten Tin')
-        .stillTexture('kubejs:fluid/molten_tin_still')
-        .flowingTexture('kubejs:fluid/molten_tin_flow')
-    event.create('molten_silver')
-        .displayName('Molten Silver')
-        .stillTexture('kubejs:fluid/molten_silver_still')
-        .flowingTexture('kubejs:fluid/molten_silver_flow')
-    event.create('molten_tungsten')
-        .displayName('Molten Tungsten')
-        .stillTexture('kubejs:fluid/molten_tungsten_still')
-        .flowingTexture('kubejs:fluid/molten_tungsten_flow')
-    event.create('blood')
-        .displayName('Blood')
-        .stillTexture('kubejs:fluid/blood_still')
-        .flowingTexture('kubejs:fluid/blood_flow')
-    event.create('molten_crimtane')
-        .displayName('Molten Crimtane')
-        .stillTexture('kubejs:fluid/molten_crimtane_still')
-        .flowingTexture('kubejs:fluid/molten_crimtane_flow')
-    event.create('molten_demonite')
-        .displayName('Molten Demonite')
-        .stillTexture('kubejs:fluid/molten_demonite_still')
-        .flowingTexture('kubejs:fluid/molten_demonite_flow')
+    const moltenFluids = [
+        "steel",
+        "platinum",
+        "thorium",
+        "lead",
+        "nickel",
+        "tin",
+        "silver",
+        "tungsten",
+        "crimtane",
+        "demonite"
+    ]
+    moltenFluids.forEach(fluid => {
+        event.create(`kubejs:molten_${fluid}`).displayName(`Molten ${fluid}`).stillTexture(`kubejs:fluid/molten_${fluid}_still`).flowingTexture(`kubejs:fluid/molten_${fluid}_flow`).slopeFindDistance(2).levelDecreasePerBlock(2).tickRate(30).type(t => t.lightLevel(10).temperature(1300).viscosity(6000).canDrown(false))
+    });
 });

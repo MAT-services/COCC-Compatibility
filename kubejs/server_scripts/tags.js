@@ -167,6 +167,7 @@ ServerEvents.tags('item', event => {
     "terra_curio:frostspark_boots",
     "terra_curio:terraspark_boots"
   ])
+  event.add("c:raw_materials/thorium", "create_new_age:thorium")
 })
 
 ServerEvents.tags('fluid', event => {
