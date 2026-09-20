@@ -1,7 +1,7 @@
 {
   "priority": 0,
   "title": {
-    "text": { "translate": "Hello, world !" },
+    "text": { "text": "Hello, world !" },
     "color": "#FFFFFF",
     "background": "#AA000000"
   },
