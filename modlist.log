@@ -4,16 +4,16 @@ accessories-neoforge-1.1.0-beta.53+1.21.1.jar
 accessories_compat_layer-neoforge-0.1.12+1.21.1.jar
 additionalbars-5.1.0.jar
 aerellcrafter-1.1.0-1.21.1-neoforge.jar
-afterimages-neoforge-1.21.1-1.1.4.jar
+afterimages-neoforge-1.21.1-1.3.0.jar
 AI-Improvements-1.21-0.5.3.jar
 almostunified-neoforge-1.21.1-1.4.2.jar
 alternate_current-mc1.21-1.9.0.jar
 amplified-nether-height-1.2+datapack.jar
 Amplified_Nether_26.2_v1.2.16.jar
-arcadia-better-creative-1.1.0.jar
+arcadia-better-creative-2.0.0.jar
 architectury-13.0.8-neoforge.jar
 async-neoforge-0.2.0+alpha-1.21.1.jar
-AsyncParticles-21.1.4.1+1.21.1.jar
+AsyncParticles-21.1.4.5+1.21.1.jar
 athena-neoforge-1.21.1-4.0.6.jar
 atmospherics-2.6.5-mc-1.21.1.jar
 BadOptimizations-2.4.1-1.21.1.jar
@@ -22,7 +22,7 @@ BarteringStation-v21.1.0-1.21.1-NeoForge.jar
 belts-neoforge-0.2.2.jar
 better-advanced-tooltips-2101.1.0-build.5.jar
 bettercombat-neoforge-2.4.0+1.21.1.jar
-betterharvestlevels-neoforge-1.21.1-2.0.1.jar
+betterharvestlevels-neoforge-1.21.1-2.1.0.jar
 betterworldloadingnf21-1.0.jar
 better_saved_tabs-neoforge-0.1.0+1.21.1.jar
 beyond_mines_falling-1.3.0-neoforge-1.21.1.jar
@@ -48,7 +48,7 @@ ClimateRivers-v21.1.3-1.21.1-NeoForge.jar
 cloth-config-15.0.140-neoforge.jar
 CodeChickenLib-1.21.1-4.6.1.529.jar
 cogwheel-0.5.5.jar
-collective-1.21.1-8.39.jar
+collective-1.21.1-8.40.jar
 condensed_creative-3.4.1+1.21-neoforge.jar
 ConfigManager-neoforge-1.21.x-1.0.1.jar
 configured-neoforge-1.21.1-2.6.3.jar
@@ -72,6 +72,7 @@ create-renewable-netherite-2.0.1.jar
 create-wrencheable-planes-2.0.jar
 CreateAlerted-0.2.1.jar
 createbetterfps-1.21.1-1.1.5.jar
+createbettersaw-1.0.0.jar
 createcclogistics-1.21.1-0.3.6.jar
 createcontraptionterminals-1.21-1.4.0.jar
 createdeco-2.1.3.jar
@@ -79,8 +80,9 @@ createenchantablemachinery-3.6.0+mc1.21.1-neoforge.jar
 createfactorycontroller-1.1.1-neoforge-1.21.1.jar
 createfiltersanywhere-2.3.0-1.21.1.jar
 createjeicompat-1.0.3.jar
-CreateLazyTick-2.6.25-6.0.10-neoforge-1.21.1.jar
+CreateLazyTick-2.7.30-6.0.10-neoforge-1.21.1.jar
 createmorewrenchables-1.0.0.jar
+createphantom-1.0.2.jar
 createpipeconnector-neoforge-1.21.1-1.2.0.jar
 createprism-1.2.2.jar
 create_break_it_all_2.0.0.jar
@@ -99,7 +101,7 @@ Create_Redstone_Link_Essentials-1.0.1.jar
 create_storage_terminal-neoforge-1.21.1-0.1.3.jar
 cristellib-neoforge-1.21.1-3.1.7.jar
 curios-neoforge-9.5.1+1.21.1.jar
-CustomMachinery-neoforge-1.21.1-0.10.70.jar
+CustomMachinery-neoforge-1.21.1-0.10.72.jar
 CustomMachineryCreate-1.21.1-1.2.7.jar
 cwb-neoforge-3.0.0+mc1.21.jar
 Cyberspace 5.0.2 (NF1.21.1).jar
@@ -111,7 +113,7 @@ DiagonalFences-v21.1.1-1.21.1-NeoForge.jar
 DiagonalWalls-v21.1.2-1.21.1-NeoForge.jar
 DiagonalWindows-v21.1.1-1.21.1-NeoForge.jar
 dimensionaltrialchambers-neoforge-1.21.1-1.0.2.jar
-DistantHorizons-3.3.2-1.21.1.jar
+DistantHorizons-3.3.3-1.21.1.jar
 distantthunders-mc1.21.1-neoforge-1.1.0.jar
 DistinguishedPotions-v21.1.1-1.21.1-NeoForge.jar
 Drip Sounds-0.5.2+1.21.8-NeoForge.jar
@@ -124,7 +126,7 @@ dungeons-and-taverns-v4.4.4.jar
 dungeons-and-taverns-woodland-mansion-replacement-v1.2.jar
 DyedFlames-v21.1.1-1.21.1-NeoForge.jar
 dynamic-performance-0.2.0+1.21-neoforge.jar
-dynamicsurroundings-neoforge-1.21.1-0.4.4.jar
+dynamicsurroundings-neoforge-1.21.1-0.4.5.jar
 easybuilding-neoforge-1.21.1-v1.1.jar
 endercon-3.2.jar
 EnderZoology-v21.1.4-1.21.1-NeoForge.jar
@@ -132,7 +134,7 @@ enhanced-world-creation-1.3.2-neoforge+1.21.jar
 EnhancedTooltips-1.10.0+neoforge.1.21.1.jar
 enhanced_workbenches-neoforge-2.2+1.21.1.jar
 enoughfolders-1.21.1-neoforge-1.0.2.jar
-entityculling-neoforge-1.10.5-mc1.21.1.jar
+entityculling-neoforge-1.11.2-mc1.21.1.jar
 Epic Jungle Temples v1.0.2.jar
 epic-structures-villages-2.0.0.jar
 Essential_1-5-0-1_neoforge_1-21-1.jar
@@ -141,13 +143,13 @@ experiencelib-1.21.1-1.2.1.jar
 Explorify v1.6.5.mod.jar
 extra_gauges-2.1.3.jar
 factory_blocks-neoforge-1.4.0+mc1.21.1.jar
-fancymenu_neoforge_3.9.12_MC_1.21.1.jar
+fancymenu_neoforge_3.9.14_MC_1.21.1.jar
 FastItemFrames-v21.1.6-1.21.1-NeoForge.jar
 ferritecore-7.0.3-neoforge.jar
 field-neoforge-1.21.1-1.1.1.jar
 flerovium-neoforge-1.21.1-1.1.2-all.jar
 fluidjs-1.2.3.jar
-fluidlogistics-1.3.0-mc1.21.1.jar
+fluidlogistics-1.3.1-mc1.21.1.jar
 ForgeConfigAPIPort-v21.1.6-1.21.1-NeoForge.jar
 ftb-library-neoforge-2101.1.31.jar
 ftb-quests-neoforge-2101.1.24.jar
@@ -163,7 +165,7 @@ glow-1.3.1.jar
 GnKinetics-1.21.1-1.0m.jar
 GPUTape-1.20.6-1.21x-1.0.3.jar
 grounded-neoforge-1.21.1-0.2.0.jar
-guideme-21.1.17.jar
+guideme-21.1.19.jar
 HellishTrials-neoforge-1.0.5.jar
 HopoBetterMineshaft-[1.21-1.21.3]-1.3.0b.jar
 IllagerInvasion-v21.1.6-1.21.1-NeoForge.jar
@@ -187,14 +189,14 @@ justkeybinds-neoforge-1.21.1-1.0.0.jar
 keybindbundles-1.3.1.jar
 keybindjs-2101-1.0.1.jar
 Kiwi-1.21.1-NeoForge-15.8.7.jar
-kjscauto-0.8.0-beta-neoforge.jar
+kjscauto-0.9.0-beta-neoforge.jar
 konkrete_neoforge_1.9.9_MC_1.21.jar
 kotlinforforge-5.12.0-all.jar
 KryptonFoxified-0.1.0+mc1.21.jar
 kubejei-1.0.0.jar
 kubejs-create-neoforge-2101.3.1-build.18.jar
 kubejs-neoforge-2101.7.2-build.377.jar
-kubejsstudio-neoforge-1.21.1-1.1.0.jar
+kubejsstudio-neoforge-1.21.1-1.3.0.jar
 kubejs_curios_neoforge_1.21.1-1.0.4.jar
 kubejs_oritech-neoforge-1.21.1-0.4.5.jar
 kubejs_rechiseled-1.0.jar
@@ -213,10 +215,10 @@ letsdo-lilis_lucky_lures-neoforge-1.1.5.jar
 letsdo-meadow-neoforge-1.4.9.jar
 letsdo-wildernature-neoforge-1.1.6.jar
 licesidcopy-1.0.0.jar
-lightspeed-1.21.1-1.2.3.jar
+lightspeed-1.21.1-2.0.1.jar
 linktablet-1.14.0.jar
 lithium-neoforge-0.15.4+mc1.21.1.jar
-lithostitched-1.8.0+beta6-neoforge-21.1.jar
+lithostitched-1.8.0-neoforge-21.1.jar
 little-big-redstone-1.9.11-1.21.1.jar
 littlelogistics-mc1.21.1-v1.21.1.1-beta.2.jar
 locatefixer-3.1.0.jar
@@ -240,11 +242,11 @@ ModernTabs-neoforge-1.6.2.jar
 modernworldcreation_neoforge_2.0.1_MC_1.21.1.jar
 modtabs-1.21.1-2.5.9-Neoforge.jar
 modular_machinery_reborn-1.21.1-3.0.23.jar
-MoogsMineshaftsReimagined-1.21-1.0.3.jar
-MoogsStructureLib-neoforge-1.21.1-3.3.1.jar
+MoogsMineshaftsReimagined-universal-1.21-1.1.0.jar
+MoogsStructureLib-neoforge-1.21.1-3.4.1.jar
 moonlight-1.21.1-3.6.5-neoforge.jar
 MoreCraftingTables-1.2.9+1.21-Neo.jar
-MoreVillagers-Re-1.21.1-neoforge-1.25.12.4.jar
+MoreVillagers-Re-1.21.1-neoforge-1.26.9.4.jar
 more_rarities-1.1.0-mc1.21.x-neoforge.jar
 MossyLib-1.5.0+1.21.1+neoforge.jar
 MouseTweaks-neoforge-mc1.21-2.26.1.jar
@@ -295,13 +297,13 @@ redstonemanager-neoforge_1.21.1-0.0.9.jar
 redstonepen-1.21-neoforge-1.11.42.jar
 reeses-sodium-options-neoforge-2.2.4+mc1.21.1.jar
 regions-unexplored-0.6.2-neoforge-21.1.jar
-reliable_advancements-neoforge-1.21.1-6.2.5.jar
-reliable_recipes-neoforge-1.21.1-3.2.0.jar
+reliable_advancements-neoforge-1.21.1-6.2.6.jar
+reliable_recipes-3.3.0+1.21.1-neoforge.jar
 reliable_recount-neoforge-1.21.1-2.0.3.jar
-reliable_remover-neoforge-1.21.1-3.1.1.jar
-reliable_replacer-neoforge-1.21.1-1.8.0.jar
+reliable_remover-3.3.0+1.21.1-neoforge.jar
+reliable_replacer-1.8.1+1.21.1-neoforge.jar
 resourcefullib-neoforge-1.21-3.0.12.jar
-Resourcify (1.21.1-neoforge)-1.8.6.jar
+Resourcify (1.21.1-neoforge)-1.8.7.jar
 RespawningAnimals-v21.1.2-1.21.1-NeoForge.jar
 rhino-2101.2.7-build.85.jar
 rinku_neoforge_3.0.4_MC_1.21.1.jar
@@ -313,8 +315,7 @@ sawmill-1.21-1.8.1-neoforge.jar
 servercore-neoforge-1.5.19+1.21.1.jar
 shulker_accessories-1.2.0.jar
 SimpleCustomEarlyLoading-2.2-neoforge.jar
-Slag-n-Embers-1.21.1-1.1a.jar
-Slag-n-Embers-Create-Compat-1.21.1-1.0a.jar
+Slag-n-Embers-1.21.1-1.2b.jar
 SlotCycler-v21.1.1-1.21.1-NeoForge.jar
 smarterfarmers-1.21-2.2.4-neoforge.jar
 SmoothBoot-NeoForge+1.21-1.0.0.jar
@@ -327,7 +328,7 @@ spiffyhud_neoforge_3.1.2_MC_1.21.1.jar
 spyglass_improvements-1.5.7+mc1.21+neoforge.jar
 statuseffectbars-1.21.1-NeoForge-1.0.2.jar
 stonezone-1.21-2.11.17-neoforge.jar
-StreamsReflowing-1.21.1-neoforge-2.13.8.jar
+StreamsReflowing-1.21.1-neoforge-2.14.1.jar
 Structory_26.2_v1.3.7.jar
 Structory_Towers_26.1_v1.0.16.jar
 struts-1.3.1.jar
@@ -345,7 +346,6 @@ toms_storage-1.21-2.4.2.jar
 toolsjs-0.1.1.jar
 totw_modded-neoforge-1.21-1.0.9.jar
 tower_of_chambers-42.55 Release-neoforge-1.21.1.jar
-tracksta-neoforge-1.0.0.jar
 TradingPost-v21.1.1-1.21.1-NeoForge.jar
 trading_floor-3.0.16.jar
 trashslot-neoforge-1.21.1-21.1.11.jar
@@ -355,14 +355,14 @@ UniversalBoneMeal-v21.1.0-1.21.1-NeoForge.jar
 universalkeyboard-1.3.5.jar
 VanillaBackport-neoforge-1.21.1-1.1.7.10.jar
 vb-compat-2.2-1.21.1.jar
-Villager-API-1.21.1-neoforge-1.26.1.3.jar
+Villager-API-1.21.1-neoforge-1.26.9.6.jar
 villager-hats-1.7.2+1.21.jar
 villager_country_house-1.0.0-neoforge-1.21.1.jar
 villager_fishermans_hut-1.0.0-neoforge-1.21.1.jar
 villager_fletcher_house-1.0.0-neoforge-1.21.1.jar
 villager_forge-1.0.0-neoforge-1.21.1.jar
 villager_train_station-1.0.0-neoforge-1.21.1.jar
-visitingvillagers-1.0.2-mc1.21.1.jar
+visitingvillagers-1.0.3-nf-1.21.1.jar
 voicechat-neoforge-1.21.1-2.6.20.jar
 wandering-trader-maps-v1.0.0.jar
 waterfall-1.0.jar
@@ -382,4 +382,4 @@ YungsBetterNetherFortresses-1.21.1-NeoForge-3.1.5.jar
 YungsBetterOceanMonuments-1.21.1-NeoForge-4.1.2.jar
 YungsBridges-1.21.1-NeoForge-5.1.1.jar
 YungsMenuTweaks-1.21.1-NeoForge-2.1.2.jar
-zombievillagersfromspawner-1.21.1-3.9.jar
+zombievillagersfromspawner-1.21.1-4.0.jar
