@@ -1,15 +1,20 @@
-# COCC-Compatibility
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="art/header-dark.png">
+  <img alt="COCC Compatibility" src="art/header-light.png">
+</picture>
+
+
 <img width="1024" height="119" alt="model" src="https://raw.githubusercontent.com/MAT-services/COCC-Compatibility/refs/heads/main/config/fancymenu/assets/title.png" />
 
-## About this modpack
+# About this modpack
 Confluence of Creation is a Minecraft Modpack based on Create and Confluence: Otherworld mods. His name was chosen because it represents an intersection enter a lot of creation and aventure mods, it represents a CONFLUENCE... 
 
-## A goal ?
+# A goal ?
 The goal of CoC is to get the better player experience possible with Minecraft mods. It groups a lot of adventure mods, technology mods, fight mods, dificulty mods, personalisation mods, progression mods and building mods and made a compatibility and a coherence enter them. 
 > PS: This modpack is compatible to any Minecraft original gameplay style (please, say it if that's not true) and supports Multiplayers GREATLY, but a key mod of this modpack, `Confluence: Otherworld` that are one of the pillar of ingame progression still in developpement. Normally, there will be no problems of inter-versions compatibility while this modpack is maintened. 
 
-## Copyrights:
-### Assets
+# Copyrights:
+## Assets
 - ComputerCraft X Create: https://modrinth.com/resourcepack/computer-craft-recreated
 - Tom's Simple Storage X create: https://modrinth.com/resourcepack/toms-create-storage
 - Malcolmriley unused: https://github.com/malcolmriley/unused-textures
