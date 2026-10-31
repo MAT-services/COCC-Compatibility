@@ -1,12 +1,9 @@
 StartupEvents.registry('fluid', event => {
     const moltenFluids = [
         "steel",
-        "platinum",
         "thorium",
         "lead",
-        "nickel",
         "tin",
-        "silver",
         "tungsten",
         "crimtane",
         "demonite"

@@ -1,5 +1,5 @@
 // Check https://kubejs.com/wiki/tutorials/creative-tabs for general informations about Creative tabs.
-// Check https://github.com/Roboter007/ModernTabs for more informations about Creative tabs sections.
+// Check https://github.com/Roboter007/ModernTabs and https://github.com/Roboter007/ModernTabs/issues/3 for more informations about Creative tabs sections.
 
 
 //// CREATIVE TABS REGISTERING
@@ -73,18 +73,15 @@ vaults.forEach((vault) => {
 
 
 //// CREATIVE TABS SECTIONING (Expermiental !)
-
 /*
-// just an example color
-const exampleColor = new ModernColor("#36454F");
+const tabDesign = new TabDesign()
+        // makes it possible for the defined creative tab to use custom sections
+        .sectionsEnabled(true)
+        // this method does the same as the withCustomBackgroundColor method, but it also changes the tab icon background color
+        .color(ModernColor("#36454F"));
 
 // use your already registered creative tab (in this example: EXAMPLE_TAB)
-ModernTabs.builder("kubejs:tab")
-    // makes it possible for the defined creative tab to use custom sections
-    .withEnabledSections(true)
-    // this method does the same as the withCustomBackgroundColor method, but it also changes the tab icon background color
-	.withCustomColor(exampleColor);
+ModernTabs.configureTab('kubejs:tab', tabDesign);
 
-// this defines which items are included in which section
-// for creating a section you need to define a json file in your assets folder (scroll down a little, if you want to know how create a section)
-SectionedItems.addItem([Item.of("kubejs:adamantite_melter"), Item.of("kubejs:titanium_melter")], ResourceLocation.parse("kubejs:default_section"));*/
+// Lists registering are actually expermiental, so, we can do forEaches.
+["kubejs:adamantite_melter", "kubejs:titanium_melter"].forEach(item => SectionedItems.addItemById("kubejs:default_section", item));*/

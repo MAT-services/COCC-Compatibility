@@ -2724,24 +2724,6 @@ ServerEvents.recipes(event => {
     "accept_mirrored": true
   }); 
 
-  event.custom({
-    "type": "slag:alloying",
-    "ingredients": [
-      {
-        "amount": 8,
-        "id": "slag:molten_copper"
-      },
-      {
-        "amount": 8,
-        "id": "slag:molten_zinc"
-      }
-    ],
-    "result": {
-      "amount": 16,
-      "id": "slag:molten_brass"
-    }
-  }).id('cocc:alloying/molten_brass');
-
   event.remove({output: "oritech:pulverizer_block"});
   event.shaped('oritech:pulverizer_block', ['AAA', 'ABA', 'CDC'], { A: 'create:cogwheel', B: 'create:millstone', C: 'oritech:motor', D: '#oritech:plating' }).id('cocc:shaped/pulverizer_block');
 
@@ -4689,4 +4671,5 @@ ServerEvents.recipes(event => {
   event.shaped("magnumtorch:amethyst_magnum_torch", ["ABA", "CDC", "CDC"], { "A": "minecraft:gold_ingot", "B": "confluence:pink_gel", "C": "#c:gems/amethyst", "D": "#minecraft:logs"}).id("magnumtorch:amethyst_magnum_torch");
 
   event.remove({mod: "create_more_fluid_tanks"})
+  event.remove({id: "slag:alloying/molten_electrum"})
 })

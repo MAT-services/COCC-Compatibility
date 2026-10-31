@@ -176,7 +176,7 @@ ServerEvents.tags('fluid', event => {
   event.add('c:molten_steel', 'kubejs:molten_steel')
   event.add('c:molten_platinum', "kubejs:molten_platinum" )
   event.add('c:molten_lead', "kubejs:molten_lead" )
-  event.add('c:molten_nickel', "kubejs:molten_nickel")
+  //event.add('c:molten_nickel', "kubejs:molten_nickel")
   event.add('c:molten_tin', "kubejs:molten_tin")
   event.add('c:molten_silver', "kubejs:molten_silver")
   event.add('c:molten_tungsten', 'kubejs:molten_tungsten')

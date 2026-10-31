@@ -71,8 +71,9 @@ ServerEvents.recipes(event => {
         "result": [
             {
             "amount": 8,
-            "id": "kubejs:molten_platinum"
+            "id": "slag:molten_platinum"
             }
         ]
     })
 })
+// TODO: Rectify the recipes to match they slag variants via the KJS ERROR LOG file.

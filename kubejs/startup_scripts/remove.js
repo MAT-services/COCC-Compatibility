@@ -34,8 +34,10 @@ StartupEvents.modifyCreativeTab('chipped:main', event => {
 	event.remove('chipped:carpenters_table')
 })
 
-StartupEvents.modifyCreativeTab("belts:group", event => {
-    event.remove('belts:belt')
-    event.remove('belts:conveyor_support')
-    event.remove('belts:chute')
+let removes = ["belts:group", 'custommachinery:custom_machine']
+removes.forEach(remove => {
+	StartupEvents.modifyCreativeTab(remove, event => {
+		event.remove("*")
+	})
 });
+
