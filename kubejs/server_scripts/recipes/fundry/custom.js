@@ -76,4 +76,3 @@ ServerEvents.recipes(event => {
         ]
     })
 })
-// TODO: Rectify the recipes to match they slag variants via the KJS ERROR LOG file.

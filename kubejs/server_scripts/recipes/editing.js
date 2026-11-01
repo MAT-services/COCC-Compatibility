@@ -4509,7 +4509,7 @@ ServerEvents.recipes(event => {
 
   event.smelting('confluence:lead_ingot', 'create:crushed_raw_lead').xp(0.1).cookingTime(200).id('kubejs:smelting/lead_ingot');
   event.smelting('confluence:tungsten_ingot', 'confluence:crushed_raw_tungsten').xp(0.1).cookingTime(200).id('kubejs:smelting/tungsten_ingot');
-  event.smelting('confluence:tin_ingot', 'create:crushed_raw_tin').xp(0.1).cookingTime(200).id('kubejs:smelting/tungsten_ingot');
+  event.smelting('confluence:tin_ingot', 'create:crushed_raw_tin').xp(0.1).cookingTime(200).id('kubejs:smelting/tin_ingot');
 
   event.remove({id: "create_bs:crafting/wooden_item_vault"});
   event.shapeless('create_bs:wooden_item_vault', ['minecraft:barrel']).id('kubejs:wooden_item_vault');

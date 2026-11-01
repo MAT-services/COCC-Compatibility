@@ -3,11 +3,11 @@
   "durability": 2048.0,
   "enchantability": 15.0,
   "fireproof": true,
-  "id": "slag:platinum",
+  "id": "slag:platinum", // TODO: REPLACE WITH PLATINUM !!!
   "knockback_resistance": 0.1,
-  "molten_fluid": "kubejs:molten_platinum",
+  "molten_fluid": "kubejs:molten_thorium",
   "repair_ingredient": {
-    "tag": "c:ingots/platinum"
+    "tag": "c:ingots/thorium"
   },
   "palette": [ // Edit the palete.
     "0xc1c1c1",
