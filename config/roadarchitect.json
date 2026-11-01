@@ -1591,8 +1591,8 @@
     "enablePipelineProfiler": false,
     "enableCacheLogs": false,
     "showCacheStatsOverlay": false,
-    "showScanningBar": true,
-    "enableDebugMap": true,
+    "showScanningBar": false,
+    "enableDebugMap": false,
     "asyncThreads": 0
   }
 }
