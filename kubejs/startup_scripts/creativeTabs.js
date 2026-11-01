@@ -1,5 +1,5 @@
 // Check https://kubejs.com/wiki/tutorials/creative-tabs for general informations about Creative tabs.
-// Check https://github.com/Roboter007/ModernTabs and https://github.com/Roboter007/ModernTabs/issues/3 for more informations about Creative tabs sections.
+// Check https://github.com/Roboter007/ModernTabs/wiki/1.b-%E2%80%90-KubeJs-Developer and https://github.com/Roboter007/ModernTabs/issues/3 for more informations about Creative tabs sections.
 
 
 //// CREATIVE TABS REGISTERING
@@ -72,7 +72,7 @@ vaults.forEach((vault) => {
 })
 
 
-//// CREATIVE TABS SECTIONING (Expermiental !)
+//// CREATIVE TABS SECTIONING (Expermiental !) TODO: NEW UPDATE: https://github.com/Roboter007/ModernTabs/wiki/1.b-%E2%80%90-KubeJs-Developer
 /*
 const tabDesign = new TabDesign()
         // makes it possible for the defined creative tab to use custom sections
