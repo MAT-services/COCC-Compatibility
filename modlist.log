@@ -33,7 +33,7 @@ blocksabound-0.3.0.jar
 brick_and_mortar-neoforge-1.21.1-1.2.2.jar
 bugfixes-neoforge-1.0.0.0+1.21-1.21.5.jar
 BuildersDelight-1.21.1-v.1.4.jar
-c2me-neoforge-mc1.21.1-0.4.0-alpha.0.122.jar
+c2me-neoforge-mc1.21.1-0.4.0-alpha.0.124.jar
 cable_facades-1.21.1-NeoForge-2.1.4.jar
 castles_and_keeps-1.0.9.1-1.21.1-neoforge.jar
 caveoverhaul-nf-1.21.1-1.3.3.1.jar
@@ -42,7 +42,6 @@ cc-tweaked-1.21.1-forge-1.120.2.jar
 cc_modern-0.1.1.jar
 CerbonsAPI-NeoForge-1.21-1.3.0.jar
 chatbubbles-1.1.0.jar
-chatcalc-1.0.0-1.21.1.jar
 cherishedworlds-neoforge-10.1.1+1.21.1.jar
 chipped-neoforge-1.21.1-4.0.2.jar
 Chunky-NeoForge-1.4.23.jar
@@ -59,7 +58,7 @@ confluencegunanimationfix-1.5.0.jar
 ConfluenceOtherworld-1.2.4-260226.jar
 confluencerechiseled-1.0.0.jar
 confluence_music-1.2.4.1-260428.jar
-coolrain-1.21.1-NeoForge-1.0.1.jar
+coolrain-1.21.1-NeoForge-1.0.2.jar
 copycats-3.0.9+mc.1.21.1-neoforge.jar
 Corgilib-NeoForge-1.21.1-5.0.0.9.jar
 crafting_accessory-1.0.0.jar
@@ -129,17 +128,17 @@ DyedFlames-v21.1.1-1.21.1-NeoForge.jar
 dynamic-performance-0.2.0+1.21-neoforge.jar
 dynamicsurroundings-neoforge-1.21.1-0.4.5.jar
 easybuilding-neoforge-1.21.1-v1.1.jar
-endercon-3.2.jar
+endercon-3.3.jar
 EnderZoology-v21.1.4-1.21.1-NeoForge.jar
 enhanced-world-creation-1.3.2-neoforge+1.21.jar
 EnhancedTooltips-1.10.0+neoforge.1.21.1.jar
 enhanced_workbenches-neoforge-2.2+1.21.1.jar
 enoughfolders-1.21.1-neoforge-1.0.2.jar
-entityculling-neoforge-1.11.2-mc1.21.1.jar
+entityculling-neoforge-1.11.3-mc1.21.1.jar
 Epic Jungle Temples v1.0.2.jar
 epic-structures-villages-2.0.0.jar
-Essential_1-5-0-1_neoforge_1-21-1.jar
-everycomp-1.21-2.11.52-neoforge.jar
+Essential_1-5-1_neoforge_1-21-1.jar
+everycomp-1.21-2.11.56-neoforge.jar
 experiencelib-1.21.1-1.2.1.jar
 Explorify v1.6.5.mod.jar
 extra_gauges-2.1.3.jar
@@ -162,7 +161,7 @@ fusion-1.3.15a-neoforge-mc1.21.1.jar
 fzzy_config-0.7.6+1.21+neoforge.jar
 Galosphere-1.21.1-1.5.5-NeoForge.jar
 geckolib-neoforge-1.21.1-4.8.4.jar
-gemsrealm-1.21-2.11.3-neoforge.jar
+gemsrealm-1.21-2.11.5-neoforge.jar
 glow-1.3.1.jar
 GnKinetics-1.21.1-1.0m.jar
 GPUTape-1.20.6-1.21x-1.0.3.jar
@@ -171,7 +170,7 @@ guideme-21.1.19.jar
 HellishTrials-neoforge-1.0.5.jar
 HopoBetterMineshaft-[1.21-1.21.3]-1.3.0b.jar
 IllagerInvasion-v21.1.6-1.21.1-NeoForge.jar
-ImmediatelyFast-NeoForge-1.6.14+1.21.1.jar
+ImmediatelyFast-NeoForge-1.6.15+1.21.1.jar
 immersive_aircraft-1.5.2+1.21.1-neoforge.jar
 immersive_machinery-0.2.1+1.21.1-neoforge.jar
 improved-village-placement-1.1.1.jar
@@ -216,7 +215,7 @@ letsdo-lilis_lucky_lures-neoforge-1.1.5.jar
 letsdo-meadow-neoforge-1.4.10.jar
 letsdo-wildernature-neoforge-1.1.8.jar
 licesidcopy-1.0.0.jar
-lightspeed-1.21.1-2.0.1.jar
+lightspeed-1.21.1-2.0.5+hotfix.jar
 linktablet-1.14.0.jar
 lithium-neoforge-0.15.4+mc1.21.1.jar
 lithostitched-1.8.0-neoforge-21.1.jar
@@ -239,7 +238,7 @@ mezz_config-1.21.1-neoforge-0.6.8-standalone.jar
 mezz_config_gui-1.21.1-neoforge-mc1.21.1-0.5.5.jar
 midnightlib-neoforge-1.9.3+1.21.1.jar
 mmrcreate-0.1.1.jar
-modernfix-neoforge-5.27.24+mc1.21.1.jar
+modernfix-neoforge-5.27.27+mc1.21.1.jar
 ModernTabs-neoforge-1.6.2.jar
 modernworldcreation_neoforge_2.0.1_MC_1.21.1.jar
 modtabs-1.21.1-2.5.9-Neoforge.jar
@@ -261,7 +260,7 @@ netherrack-recipe-1.jar
 NETMiscCompat-1.21-v1.0.jar
 noisium-neoforge-2.7.0+mc1.21-1.21.1.jar
 NotEnoughTrials-1.21-v6.4-Neoforge.jar
-obe+1.21.1-neoforge-1.1.45.jar
+obe+1.21.1-neoforge-1.2.1-patch.1.jar
 Oh-The-Biomes-Weve-Gone-NeoForge-2.6.0.jar
 Oh-The-Trees-Youll-Grow-neoforge-1.21.1-5.3.2.jar
 opallight-1.0.0.jar
@@ -298,7 +297,7 @@ rechiseled_chipped-2.0-1.21.1.jar
 redstonemanager-neoforge_1.21.1-0.0.9.jar
 redstonepen-1.21-neoforge-1.11.42.jar
 reeses-sodium-options-neoforge-2.2.4+mc1.21.1.jar
-regions-unexplored-0.6.2-neoforge-21.1.jar
+regions-unexplored-0.6.3-neoforge-21.1.jar
 reliable_advancements-neoforge-1.21.1-6.2.6.jar
 reliable_recipes-3.3.0+1.21.1-neoforge.jar
 reliable_recount-neoforge-1.21.1-2.0.3.jar
@@ -329,7 +328,7 @@ spark-1.10.124-neoforge.jar
 spiffyhud_neoforge_3.1.2_MC_1.21.1.jar
 spyglass_improvements-1.5.7+mc1.21+neoforge.jar
 statuseffectbars-1.21.1-NeoForge-1.0.2.jar
-stonezone-1.21-2.11.17-neoforge.jar
+stonezone-1.21-2.11.21-neoforge.jar
 StreamsReflowing-1.21.1-neoforge-2.14.1.jar
 Structory_26.2_v1.3.7.jar
 Structory_Towers_26.1_v1.0.16.jar
