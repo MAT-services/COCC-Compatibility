@@ -1,9 +1,10 @@
-# BOGUES 
-- Sharing recipes do not works with Chat Better.
+TODO: PROGRESSION ! 
+TODO: Replace the rechiseled data folder with my new mod.
 # Avancements
 - Just delete FTB after reproducting progression.
+- Odissey Quests is now aviable on NeoForge 1.21.1.
 # GUIs
-- Replace all essentials-added buttons with CoC buttons and replace the terra advancements button.
+- Replace the terra advancements button.
 - Add a GUI for packs. (Textures, data, shaders...)
 # Blocks
 - Add the torium node.
